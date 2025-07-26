@@ -1,0 +1,649 @@
+body {
+    height: 100%;
+    margin: 0%;
+}
+
+.container {
+    background-color: #b1afaf;
+    background-size: cover;
+    height: 500vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 200px 850px 750px 1fr 1fr;
+    grid-template-areas:
+        "nav nav"
+        "asside asside"
+        "head head"
+        "head2 head2"
+        "footer footer";
+}
+
+.nav {
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    background-image: url(img/1608991c6d8e4627368b1688ef9cb1f6.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.h2a {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-size: 50px;
+    text-shadow: 4px 2px 2px #FF4C29;
+}
+
+.h2b {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 40px 30px 20px;
+    text-decoration: none;
+    color: wheat;
+    padding: 10px 25px;
+    font-family: "Quantico", sans-serif;
+    /*خط الازرار والخيارات*/
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.a1:hover {
+    color: black;
+    background-color: #FF4C29;
+    border-radius: 20px;
+}
+
+.main1 {
+    grid-area: asside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 75px;
+}
+
+.infobar {
+    height: 90px;
+    width: 40%;
+    position: absolute;
+    top: 250px;
+    left: -100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 0 8px 8px 0;
+    white-space: nowrap;
+    opacity: 0;
+    gap: 10px;
+}
+
+.infobar img {
+    height: 70px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.price1 {
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: wheat;
+    padding: 10px;
+    border: #FF4C29 2px solid;
+}
+
+/* حركة الشريط */
+.slide {
+    animation: slideBar 8s ease-in-out forwards;
+}
+
+@keyframes slideBar {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    20% {
+        left: 20px;
+        opacity: 1;
+    }
+
+    80% {
+        left: 20px;
+        opacity: 1;
+    }
+
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+}
+
+.parandimg {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_news1 {
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 2px 2px;
+    width: 60%;
+    height: 600px;
+    margin-left: 20px;
+    background-image: url(img/hyundai-unveils-2025-e-2.jpg);
+    background-size: cover;
+}
+
+.paragraf1 {
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 2px 2px;
+    margin-right: 20px;
+    width: 40%;
+    height: 600px;
+    background-color: #444444;
+}
+
+.h2c {
+    color: #FF4C29;
+    font-family: "Almarai", sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    direction: rtl;
+}
+
+.p1 {
+    direction: rtl;
+    font-size: 20px;
+    padding: 30px;
+    line-height: 40px;
+}
+
+.main2 {
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_news2 {
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 2px 2px;
+    background-image: url(img/Stellantis-plant-morocco.png);
+    background-size: cover;
+    width: 60%;
+    height: 600px;
+    margin-left: 20px;
+}
+
+.paragraf2 {
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 2px 2px;
+    margin-right: 20px;
+    width: 40%;
+    height: 600px;
+    background-color: #444444;
+}
+
+.h2d {
+    font-family: "Almarai", sans-serif;
+    color: #FF4C29;
+    padding: 10px;
+    font-size: 25px;
+    text-align: right;
+    direction: rtl;
+}
+
+.main3 {
+    grid-area: head2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title1 {
+    width: 500px;
+    height: 300px;
+    background-image: url(img/shadoo.png);
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.h2e {
+    font-family: "Quantico", sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+.img_gallery {
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "ic ic ic ic ic"
+        "a b c d imgbig"
+        "e f g h imgbig"
+        "i j k l imgbig"
+        "m n o p imgbig"
+        "q r s t imgbig";
+        row-gap: 15px;
+}
+.companyicons {
+    grid-area: ic;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+}
+.logo {
+     width: 75px;
+     height: 50px;
+    
+}
+.mar {
+    width: 80px;
+    height: 80px;
+  
+}
+.bm {
+    order: 2;
+    margin-left: 25px;
+}
+.ma {
+    order: 3;
+    height: 90px;
+    margin-left: 40px;
+}
+.au {
+    order: 1;
+    width: 85px;
+    margin-left: 30px;
+}
+.hu {
+    margin-left: 55px;
+}
+
+.all {
+    width: 130px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.a {
+    grid-area: a;
+    margin-left: 20px;
+    background-image: url(img/Avante.webp);
+    background-size: cover;
+}
+.a:hover~.imgbig {
+    background-image:url(img/Avante.webp);
+    background-size: cover;
+}
+
+.b {
+    overflow: hidden; /* لإخفاء أي جزء من الصورة خارج المربع */
+    position: relative;
+    grid-area: b;
+    margin-left: 10px;
+}
+.b:hover~.imgbig {
+    background-image: url(img/audi\ a8.jpeg);
+    background-size: cover;
+}
+
+
+.c {
+    overflow: hidden; /* لإخفاء أي جزء من الصورة خارج المربع */
+    position: relative;
+    grid-area: c;
+    margin-right: 20px;
+}
+
+.c:hover~.imgbig {
+    background-image: url(img/BMW\ 1series.webp);
+    background-size: cover;
+}
+
+.d {
+    overflow: hidden; /* لإخفاء أي جزء من الصورة خارج المربع */
+    position: relative;
+    grid-area: d;
+}
+
+.d:hover~.imgbig {
+    background-image: url(img/cls.jpg);
+    background-size: cover;
+}
+
+.e {
+    background-image: url(img/Grandeur.webp);
+    background-size: cover;
+    grid-area: e;
+    margin-left: 20px;
+}
+
+.e:hover~.imgbig {
+    background-image: url(img/Grandeur.webp);
+    background-size: cover;
+}
+
+.f {
+    background-image: url(img/audi\ coupe.jpg);
+    background-size: cover;
+    grid-area: f;
+    margin-left: 10px;
+}
+
+.f:hover~.imgbig {
+    background-image:url(img/audi\ coupe.jpg);
+    background-size: cover;
+}
+
+.g {
+    background-image: url(img/BMW\ i7.webp);
+    background-size: cover;
+    grid-area: g;
+    margin-right: 20px;
+}
+
+.g:hover~.imgbig {
+    background-image: url(img/BMW\ i7.webp);
+    background-size: cover;
+}
+
+.h {
+    position: relative;
+    overflow: hidden;
+    background-image:url(img/g\ class.jpeg);
+    background-size: cover;
+    grid-area: h;
+}
+
+.h:hover~.imgbig {
+    background-image: url(img/g\ class.jpeg);
+    background-size: cover;
+}
+
+.i {
+    background-image:url(img/Palisade.jpg);
+    background-size: cover;
+    grid-area: i;
+    margin-left: 20px;
+}
+
+.i:hover~.imgbig {
+    background-image: url(img/Palisade.jpg);
+    background-size: cover;
+}
+
+.j {
+    background-image:url(img/audi\ q3.jpg);
+    background-size: cover;
+    grid-area: j;
+    margin-left: 10px;
+}
+
+.j:hover~.imgbig {
+    background-image: url(img/audi\ q3.jpg);
+    background-size: cover;
+}
+
+.k {
+    background-image: url(img/BMW\ m3.jpg);
+    background-size: cover;
+    grid-area: k;
+    margin-right: 20px;
+}
+
+.k:hover~.imgbig {
+    background-image: url(img/BMW\ m3.jpg);
+    background-size: cover;
+}
+
+.l {
+    background-image:url(img/maybach.jpg);
+    background-size: cover;
+    grid-area: l;
+}
+
+.l:hover~.imgbig {
+    background-image: url(img/maybach.jpg);
+    background-size: cover;
+}
+
+.m {
+    background-image: url(img/Santafe.jpg);
+    background-size: cover;
+    grid-area: m;
+    margin-left: 20px;
+}
+
+.m:hover~.imgbig {
+    background-image: url(img/Santafe.jpg);
+    background-size: cover;
+}
+
+.n {
+    position: relative;
+    overflow: hidden;
+    /*background-image: url(img/audi\ q6.jpg);
+    background-size: cover;*/
+    grid-area: n;
+    margin-left: 10px;
+}
+
+.n:hover~.imgbig {
+    background-image: url(img/audi\ q6.jpg);
+    background-size: cover;
+}
+
+.o {
+    background-image: url(img/BMW\ x3.jpg);
+    background-size: cover;
+    grid-area: o;
+    margin-right: 20px;
+}
+
+.o:hover~.imgbig {
+    background-image:url(img/BMW\ x3.jpg);
+    background-size: cover;
+}
+
+.p {
+    background-image: url(img/s\ class.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: p;
+}
+
+.p:hover~.imgbig {
+    background-image: url(img/s\ class.jpg);
+    background-size: cover;
+}
+
+.q {
+    background-image: url(img/sonataaa.jpg);
+    background-size: cover;
+    grid-area: q;
+    margin-left: 20px;
+}
+
+.q:hover~.imgbig {
+    background-image: url(img/sonataaa.jpg);
+    background-size: cover;
+}
+
+.r {
+    background-image: url(img/audi\ rs7.jpg);
+    background-size: cover;
+    grid-area: r;
+    margin-left: 10px;
+}
+
+.r:hover~.imgbig {
+    background-image: url(img/audi\ rs7.jpg);
+    background-size: cover;
+}
+
+.s {
+    background-image:url(img/BMW\ x5.jpg);
+    background-size: cover;
+    grid-area: s;
+    margin-right: 20px;
+}
+
+.s:hover~.imgbig {
+    background-image:url(img/BMW\ x5.jpg);
+    background-size: cover;
+}
+
+.t {
+    background-image:url(img/mercedes100.jpg);
+    background-size: cover;
+    grid-area: t;
+}
+
+.t:hover~.imgbig {
+    background-image: url(img/mercedes100.jpg);
+    background-size: cover;
+}
+.img_al {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تجعل الصورة تملأ المربع مع الحفاظ على التناسق */
+    object-position: center; 
+}
+
+.imgbig {
+    margin-top: 30px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    height: 500px;
+    grid-area: imgbig;
+   background-image: url(img/touche\ an\ image2.png);
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+
+
+
+
+/*الذيل*/
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    height: 500px;
+    width: 100%;
+    background-color: #444444;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.p2 {
+    color: wheat;
+    font-family: "Almarai", sans-serif;
+    font-size: 30px;
+    direction: rtl;
+    padding: 25px;
+    text-align: right;
+}
+
+.p2 span {
+    font-family: "Zen Dots", sans-serif;
+    color: #FF4C29;
+}
+
+p {
+    color: wheat;
+    font-family: "Almarai", sans-serif;
+    font-size: 20px;
+    direction: rtl;
+    padding: 25px;
+    text-align: right;
+    line-height: 40px;
+}
+
+p span {
+    color: #FF4C29;
+}
+
+.aboutlink {
+    width: 90%;
+    padding: 65px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a2 {
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 50px;
+    text-transform: capitalize;
+
+}
+
+.a2:hover {
+    text-decoration: underline 2px #FF4C29;
+}
