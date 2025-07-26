@@ -688,14 +688,20 @@ p span {
 .inform{
     grid-area: inform;
     font-family: "Quantico", sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.inall {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0px 10px;
 }
 .in1{
     grid-area: in1;
-  /*  padding: 15px 40px;
-    border-radius: 10px;
-    font-size: 10px;
-    text-align: center; */
-
 }
 .in2 {
     grid-area: in2;
@@ -705,10 +711,16 @@ p span {
 }
 .country{
     grid-area: country;
-    padding: 4px 25px;
-    font-size: 10px;
+    padding: 10px 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
     text-align: center;
 
+}
+.yuor_c {
+    font-size: 25px;
+    padding: 20px;
 }
 .submitt{
     grid-area: submitt;
