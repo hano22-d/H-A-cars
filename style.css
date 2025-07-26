@@ -647,3 +647,78 @@ p span {
 .a2:hover {
     text-decoration: underline 2px #FF4C29;
 }
+
+/* صفحة تسجيل الدخول*/
+
+.container2{
+    background-color: silver;
+    height:150vh;
+    width: 100%;
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 200px 1fr 200px;
+    grid-template-areas: 
+    "nav nav"
+    "parameters parameters"
+    "footer footer";
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.nav {
+    margin-bottom: 40px;
+    grid-area: nav;
+}
+.parameters {
+    grid-area: parameters;
+    display: grid;
+     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-areas: 
+    "inform inform inform"
+    "in1 in2 in3"
+    "country country submitt"
+    ;
+    gap: 10px;
+    margin: 0px auto;
+    align-items: center;
+
+}
+.inform{
+    grid-area: inform;
+    font-family: "Quantico", sans-serif;
+}
+.in1{
+    grid-area: in1;
+  /*  padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-align: center; */
+
+}
+.in2 {
+    grid-area: in2;
+}
+.in3 {
+    grid-area: in3;
+}
+.country{
+    grid-area: country;
+    padding: 4px 25px;
+    font-size: 10px;
+    text-align: center;
+
+}
+.submitt{
+    grid-area: submitt;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 10px; 
+}
+
+.footer {
+    grid-area: footer;
+}
+
