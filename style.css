@@ -271,8 +271,9 @@ body {
         "i j k l imgbig"
         "m n o p imgbig"
         "q r s t imgbig";
-        row-gap: 15px;
+    row-gap: 15px;
 }
+
 .companyicons {
     grid-area: ic;
     width: 90%;
@@ -283,30 +284,36 @@ body {
     align-items: center;
     gap: 35px;
 }
+
 .logo {
-     width: 75px;
-     height: 50px;
-    
+    width: 75px;
+    height: 50px;
+
 }
+
 .mar {
     width: 80px;
     height: 80px;
-  
+
 }
+
 .bm {
     order: 2;
     margin-left: 25px;
 }
+
 .ma {
     order: 3;
     height: 90px;
     margin-left: 40px;
 }
+
 .au {
     order: 1;
     width: 85px;
     margin-left: 30px;
 }
+
 .hu {
     margin-left: 55px;
 }
@@ -324,17 +331,20 @@ body {
     background-image: url(img/Avante.webp);
     background-size: cover;
 }
+
 .a:hover~.imgbig {
-    background-image:url(img/Avante.webp);
+    background-image: url(img/Avante.webp);
     background-size: cover;
 }
 
 .b {
-    overflow: hidden; /* لإخفاء أي جزء من الصورة خارج المربع */
+    overflow: hidden;
+    /* لإخفاء أي جزء من الصورة خارج المربع */
     position: relative;
     grid-area: b;
     margin-left: 10px;
 }
+
 .b:hover~.imgbig {
     background-image: url(img/audi\ a8.jpeg);
     background-size: cover;
@@ -342,7 +352,8 @@ body {
 
 
 .c {
-    overflow: hidden; /* لإخفاء أي جزء من الصورة خارج المربع */
+    overflow: hidden;
+    /* لإخفاء أي جزء من الصورة خارج المربع */
     position: relative;
     grid-area: c;
     margin-right: 20px;
@@ -354,7 +365,8 @@ body {
 }
 
 .d {
-    overflow: hidden; /* لإخفاء أي جزء من الصورة خارج المربع */
+    overflow: hidden;
+    /* لإخفاء أي جزء من الصورة خارج المربع */
     position: relative;
     grid-area: d;
 }
@@ -384,7 +396,7 @@ body {
 }
 
 .f:hover~.imgbig {
-    background-image:url(img/audi\ coupe.jpg);
+    background-image: url(img/audi\ coupe.jpg);
     background-size: cover;
 }
 
@@ -403,7 +415,7 @@ body {
 .h {
     position: relative;
     overflow: hidden;
-    background-image:url(img/g\ class.jpeg);
+    background-image: url(img/g\ class.jpeg);
     background-size: cover;
     grid-area: h;
 }
@@ -414,7 +426,7 @@ body {
 }
 
 .i {
-    background-image:url(img/Palisade.jpg);
+    background-image: url(img/Palisade.jpg);
     background-size: cover;
     grid-area: i;
     margin-left: 20px;
@@ -426,7 +438,7 @@ body {
 }
 
 .j {
-    background-image:url(img/audi\ q3.jpg);
+    background-image: url(img/audi\ q3.jpg);
     background-size: cover;
     grid-area: j;
     margin-left: 10px;
@@ -450,7 +462,7 @@ body {
 }
 
 .l {
-    background-image:url(img/maybach.jpg);
+    background-image: url(img/maybach.jpg);
     background-size: cover;
     grid-area: l;
 }
@@ -494,7 +506,7 @@ body {
 }
 
 .o:hover~.imgbig {
-    background-image:url(img/BMW\ x3.jpg);
+    background-image: url(img/BMW\ x3.jpg);
     background-size: cover;
 }
 
@@ -535,19 +547,19 @@ body {
 }
 
 .s {
-    background-image:url(img/BMW\ x5.jpg);
+    background-image: url(img/BMW\ x5.jpg);
     background-size: cover;
     grid-area: s;
     margin-right: 20px;
 }
 
 .s:hover~.imgbig {
-    background-image:url(img/BMW\ x5.jpg);
+    background-image: url(img/BMW\ x5.jpg);
     background-size: cover;
 }
 
 .t {
-    background-image:url(img/mercedes100.jpg);
+    background-image: url(img/mercedes100.jpg);
     background-size: cover;
     grid-area: t;
 }
@@ -556,11 +568,13 @@ body {
     background-image: url(img/mercedes100.jpg);
     background-size: cover;
 }
+
 .img_al {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* تجعل الصورة تملأ المربع مع الحفاظ على التناسق */
-    object-position: center; 
+    object-fit: cover;
+    /* تجعل الصورة تملأ المربع مع الحفاظ على التناسق */
+    object-position: center;
 }
 
 .imgbig {
@@ -571,7 +585,7 @@ body {
     width: 700px;
     height: 500px;
     grid-area: imgbig;
-   background-image: url(img/touche\ an\ image2.png);
+    background-image: url(img/touche\ an\ image2.png);
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px black;
 }
@@ -650,87 +664,96 @@ p span {
 
 /* صفحة تسجيل الدخول*/
 
-.container2{
+.container2 {
     background-color: silver;
-    height:150vh;
+    height: 150vh;
     width: 100%;
-    display: grid ;
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px 1fr 200px;
-    grid-template-areas: 
-    "nav nav"
-    "parameters parameters"
-    "footer footer";
+    grid-template-areas:
+        "nav nav"
+        "parameters parameters"
+        "footer footer";
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
+
 .nav {
     margin-bottom: 40px;
     grid-area: nav;
 }
+
 .parameters {
+    margin: 0 auto;
     grid-area: parameters;
     display: grid;
-     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr) ;
-    grid-template-areas: 
-    "inform inform inform"
-    "in1 in2 in3"
-    "country country submitt"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "inform inform inform"
+        "in1 in2 in3"
+        "yuor country submitt"
     ;
-    gap: 10px;
-    margin: 0px auto;
-    align-items: center;
-
+    row-gap: 20px;
+    width: 50%;
 }
-.inform{
+
+.inform {
     grid-area: inform;
     font-family: "Quantico", sans-serif;
     font-size: 35px;
     font-style: italic;
-    margin-bottom: 30px;
 }
+
 .inall {
-    padding: 10px 40px;
+    padding: 10px 30px;
     border: none;
     border-radius: 10px;
     font-size: 15px;
     text-align: center;
-    margin: 0px 10px;
+    width: 125px;
+    height: 20px;
 }
-.in1{
+
+.in1 {
     grid-area: in1;
 }
+
 .in2 {
     grid-area: in2;
 }
+
 .in3 {
     grid-area: in3;
 }
-.country{
+
+.country {
     grid-area: country;
-    padding: 10px 35px;
-    font-size: 20px;
+    font-size: 15px;
     border: none;
     border-radius: 10px;
-    text-align: center;
+    height: 40px;
+}
 
-}
 .yuor_c {
-    font-size: 25px;
-    padding: 20px;
+    grid-area: yuor;
+    margin-left: 75px;
+    font-size: 20px;
+    margin-top: 7.5px;
 }
-.submitt{
+
+.submitt {
     grid-area: submitt;
     padding: 10px;
-    border-radius: 15px;
-    font-size: 25px;
-    margin-top: 10px; 
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    margin-left: 50px;
 }
 
 .footer {
     grid-area: footer;
 }
-
