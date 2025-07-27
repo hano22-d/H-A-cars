@@ -724,10 +724,11 @@ p span {
 }
 .submitt{
     grid-area: submitt;
-    padding: 10px;
+    padding: 5px;
     border-radius: 15px;
     font-size: 25px;
     margin-top: 10px; 
+    font-family:'Times New Roman', Times, serif;
 }
 
 .footer {
