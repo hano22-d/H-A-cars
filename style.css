@@ -747,11 +747,19 @@ p span {
 
 .submitt {
     grid-area: submitt;
+<<<<<<< HEAD
     padding: 10px;
     font-size: 15px;
     height: 40px;
     width: 100px;
     margin-left: 50px;
+=======
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 10px; 
+    font-family:'Times New Roman', Times, serif;
+>>>>>>> 280709da222448aa0a96634feef721d540861335
 }
 
 .footer {
