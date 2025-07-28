@@ -19,7 +19,7 @@ body {
         "footer footer";
 }
 
-.nav {
+.header {
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;
     grid-area: nav;
@@ -662,3 +662,164 @@ p span {
     text-decoration: underline 2px #FF4C29;
 }
 
+
+
+
+
+/*صفحة تسجيل الدخول*/
+
+
+.container2 {
+    background-color: #b1afaf;
+    height: 160vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 1fr 1fr 1fr 200px;
+    grid-template-areas: 
+    "head2 head2 head2"
+     "title title title"
+    "inputinfo inputinfo inputinfo"
+    "cu_sub cu_sub cu_sub"
+    "aboutlinkk aboutlinkk aboutlinkk";
+}
+/*الشريط العلوي*/
+.header {
+    grid-area: head2;
+}
+/*حاوية tit*/
+.title {
+    animation: slideFromTop 1s ease-out forwards;
+    grid-area: title;
+}
+/*النص العلوي*/
+.tit {
+    color: #FF4C29;
+    text-shadow: 1px 1px 0px black;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 35px;
+    margin-top: 150px;
+  margin-left: 350px;
+}
+/*حاوية الحقول الثلاثة*/
+.input_info {
+    grid-area: inputinfo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+/*الحقول الثلاثة*/
+.information {
+    font-family: "Quantico", sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.information:hover {
+    cursor: pointer;
+    background-color: #e7e6e6;
+    transition: background-color 0.3s ease-out;
+}
+.information:focus {
+    box-shadow: 0px 0px 4px 4px #FF4C29 inset;
+}
+/*حاوية الخيارات وزر الارسال*/
+.country_submit {
+    grid-area: cu_sub;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 150px;
+}
+/*حاوية الخيارات ووصف الخيارات*/
+.countext_country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;
+}
+/*الخيارات (select)*/
+.country {
+    font-family: "Quantico", sans-serif;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    padding: 5px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1s;
+}
+.country:hover {
+    cursor: pointer;
+    background-color: #e7e6e6;
+    transition: background-color 0.3s ease-out
+}
+.country:focus {
+    background-color: #e67c67;
+}
+/*وصف الخيارات*/
+.countext {
+    font-family: "Quantico", sans-serif;
+   font-size: 18px;
+   opacity: 0;
+   animation: fadeInUp 1s ease forwards;
+   animation-delay: 0.8s;
+}
+/*زر الارسال*/
+.submit {
+    font-family: "Quantico", sans-serif;
+    padding: 5px 20px;
+    margin-right: 25px;
+    font-size: 19px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1.2s;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.submit:hover {
+    background-color: #e7e6e6;
+}
+/*الذيل*/
+.aboutlink {
+    grid-area: aboutlinkk;
+}
+
+
+
+/*Animation*/
+
+/* animation for title*/
+@keyframes slideFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /*animation for input & select & submit*/
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
