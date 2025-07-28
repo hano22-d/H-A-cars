@@ -1,4 +1,5 @@
 git pull         آخر التعديلات 
 git add .        تحميل التعديلات 
+git status       التحقق من التعديلات
 "" git commit -m   وصف التعديل 
 git push origin main     ارسال 
