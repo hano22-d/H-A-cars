@@ -244,12 +244,49 @@ body {
   }
   
 
+/*صفحة الاخبار*/
 
+.mudir {
+    height: 300vh;
+    direction: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 200px 300px 100px 1fr 1fr 1fr 200px;
+    grid-template-areas: 
+    "he he"
+    "dinamic dinamic"
+    "filter filter"
+    "news1 news1"
+    "news2 news2"
+    "news3 news3"
+    "foo foo";
+}
 
- 
-
-
-  
+.header {
+    grid-area: he;
+}
+.dinamic_news {
+    background-color: red;
+    grid-area: dinamic;
+}
+ .filter {
+    background-color: rgb(85, 0, 255);
+    grid-area: filter;
+ }
+.news1 {
+    background-color: olivedrab;
+    grid-area: news1;
+}
+.news2 {
+    background-color: rgb(89, 255, 0);
+    grid-area: news2;
+}
+.news3 {
+    background-color: blue;
+    grid-area: news3;
+}
+.aboutlink {
+    grid-area: foo;
+}
 
 
 
