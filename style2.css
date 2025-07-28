@@ -10,15 +10,16 @@ body {
     height: 160vh;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px 1fr 1fr 1fr 200px;
-    grid-template-areas: 
-    "head2 head2 head2"
-     "title title title"
-    "inputinfo inputinfo inputinfo"
-    "cu_sub cu_sub cu_sub"
-    "aboutlinkk aboutlinkk aboutlinkk";
+    grid-template-areas:
+        "head2 head2 head2"
+        "title title title"
+        "inputinfo inputinfo inputinfo"
+        "cu_sub cu_sub cu_sub"
+        "aboutlinkk aboutlinkk aboutlinkk";
 }
+
 /*الشريط العلوي*/
 .header {
     grid-area: head2;
@@ -27,6 +28,7 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
 .icon {
     margin-top: 20px;
     background-image: url(img/1608991c6d8e4627368b1688ef9cb1f6.png);
@@ -83,12 +85,13 @@ body {
     background-color: #FF4C29;
     border-radius: 20px;
 }
-  
+
 /*حاوية tit*/
 .title {
     animation: slideFromTop 1s ease-out forwards;
     grid-area: title;
 }
+
 /*النص العلوي*/
 .tit {
     color: #FF4C29;
@@ -96,8 +99,9 @@ body {
     font-family: "Zen Dots", sans-serif;
     font-size: 35px;
     margin-top: 150px;
-  margin-left: 350px;
+    margin-left: 350px;
 }
+
 /*حاوية الحقول الثلاثة*/
 .input_info {
     grid-area: inputinfo;
@@ -106,6 +110,7 @@ body {
     align-items: center;
     gap: 40px;
 }
+
 /*الحقول الثلاثة*/
 .information {
     font-family: "Quantico", sans-serif;
@@ -117,14 +122,17 @@ body {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.5s;
 }
+
 .information:hover {
     cursor: pointer;
     background-color: #e7e6e6;
     transition: background-color 0.3s ease-out;
 }
+
 .information:focus {
     box-shadow: 0px 0px 4px 4px #FF4C29 inset;
 }
+
 /*حاوية الخيارات وزر الارسال*/
 .country_submit {
     grid-area: cu_sub;
@@ -134,6 +142,7 @@ body {
     gap: 60px;
     margin-bottom: 150px;
 }
+
 /*حاوية الخيارات ووصف الخيارات*/
 .countext_country {
     display: flex;
@@ -142,6 +151,7 @@ body {
     gap: 15px;
     margin-right: 40px;
 }
+
 /*الخيارات (select)*/
 .country {
     font-family: "Quantico", sans-serif;
@@ -153,22 +163,26 @@ body {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 1s;
 }
+
 .country:hover {
     cursor: pointer;
     background-color: #e7e6e6;
     transition: background-color 0.3s ease-out
 }
+
 .country:focus {
     background-color: #e67c67;
 }
+
 /*وصف الخيارات*/
 .countext {
     font-family: "Quantico", sans-serif;
-   font-size: 18px;
-   opacity: 0;
-   animation: fadeInUp 1s ease forwards;
-   animation-delay: 0.8s;
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.8s;
 }
+
 /*زر الارسال*/
 .submit {
     font-family: "Quantico", sans-serif;
@@ -183,9 +197,11 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 .submit:hover {
     background-color: #e7e6e6;
 }
+
 /*الذيل*/
 .aboutlink {
     grid-area: aboutlinkk;
@@ -222,71 +238,163 @@ body {
 /* animation for title*/
 @keyframes slideFromTop {
     from {
-      opacity: 0;
-      transform: translateY(-30px);
+        opacity: 0;
+        transform: translateY(-30px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  /*animation for input & select & submit*/
-  @keyframes fadeInUp {
+}
+
+/*animation for input & select & submit*/
+@keyframes fadeInUp {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
+}
+
+
+
+
+
 
 /*صفحة الاخبار*/
 
 .mudir {
     height: 300vh;
     direction: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px 300px 100px 1fr 1fr 1fr 200px;
-    grid-template-areas: 
-    "he he"
-    "dinamic dinamic"
-    "filter filter"
-    "news1 news1"
-    "news2 news2"
-    "news3 news3"
-    "foo foo";
+    grid-template-areas:
+        "he he"
+        "dinamic dinamic"
+        "filter filter"
+        "news1 news1"
+        "news2 news2"
+        "news3 news3"
+        "foo foo";
 }
 
-.header {
+.headerr {
     grid-area: he;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.icon {
+    margin-top: 20px;
+    background-image: url(img/1608991c6d8e4627368b1688ef9cb1f6.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.h2a {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-size: 50px;
+    text-shadow: 4px 2px 2px #FF4C29;
+}
+
+.h2b {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 40px 30px 20px;
+    text-decoration: none;
+    color: wheat;
+    padding: 10px 25px;
+    font-family: "Quantico", sans-serif;
+    /*خط الازرار والخيارات*/
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.a1:hover {
+    color: black;
+    background-color: #FF4C29;
+    border-radius: 20px;
+}
+
+
+
 .dinamic_news {
     background-color: red;
     grid-area: dinamic;
 }
- .filter {
+
+.filter {
     background-color: rgb(85, 0, 255);
     grid-area: filter;
- }
+}
+
 .news1 {
     background-color: olivedrab;
     grid-area: news1;
 }
+
 .news2 {
     background-color: rgb(89, 255, 0);
     grid-area: news2;
 }
+
 .news3 {
     background-color: blue;
     grid-area: news3;
 }
-.aboutlink {
+.aboutlinkkk {
     grid-area: foo;
+    width: 90%;
+    padding: 65px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.a2 {
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 50px;
+    text-transform: capitalize;
 
+}
 
+.a2:hover {
+    text-decoration: underline 2px #FF4C29;
+}
