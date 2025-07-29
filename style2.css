@@ -269,6 +269,7 @@ body {
 /*صفحة الاخبار*/
 
 .mudir {
+    background-color: #b1afaf;
     height: 300vh;
     direction: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -351,13 +352,59 @@ body {
 
 
 .dinamic_news {
-    background-color: red;
+    
     grid-area: dinamic;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
 }
+.dinamic_news_image{
+    background-color:  #444444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+   
+}
+.dinamic_news_text{
+    order: 1;
+    color: wheat;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+    font-family: "Almarai", sans-serif;
+    line-height: 50px;
+}
+.mercedes_office{
+    border-radius: 10px;
+    margin: 10px;
+}
+.NP{
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+.dinamic_news_button{
+    background-color: #b1afaf;
+}
+    
+
 
 .filter {
-    background-color: rgb(85, 0, 255);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
     grid-area: filter;
+}
+.result_filters{
+    display: flex;
+
+}
+.button_filters{
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
 }
 
 .news1 {
