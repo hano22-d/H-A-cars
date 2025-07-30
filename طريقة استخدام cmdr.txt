@@ -3,3 +3,22 @@ git add .        تحميل التعديلات
 git status       التحقق من التعديلات
 "" git commit -m   وصف التعديل 
 git push origin main     ارسال 
+
+
+طريقة بيان التعديلات 
+
+اسم الملف / اسم التاغ(HTML) أو اسم الكلاس(CSS) /تعديل(change) او اضافة(push) أو حذف(pop)
+
+مثال:
+
+قمت بتعديل على الاخبار الديناميكية في ملف CSS 
+طريقة بيان التعديل :
+
+style2.css/dinamic_news/ change
+
+مثال 2 :
+
+قمت باضافات على فلتر النتائج في ملفي html و css:
+
+style2.css/result_filters/push
+news.html/div class=result_filters/push
