@@ -399,7 +399,10 @@ body {
 }
 .result_filters{
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 .button_filters{
     justify-content: space-evenly;
