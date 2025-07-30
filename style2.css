@@ -434,12 +434,49 @@ body {
     margin-bottom: 30px;
     font-size: 20px;
 }
-.R{ 
+
+.filter_title {
+    font-family: "Almarai", sans-serif;
+    font-size: 30px;
+    color: #FF4C29;
+    text-shadow: 1px 1px 2px #1B1B1B;
+}
+
+.R {
     padding: 5px;
     padding-left: 25px;
     padding-right: 25px;
 
 }
+
+.result_search {
+    border: 2px solid #444444;
+    padding: 5px 60px;
+    border-radius: 5px;
+    background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 8px center;
+    background-size: 20px;
+}
+
+.result_search:hover {
+    background-color: rgba(240, 248, 255, 0.336);
+    transition: all 0.2s ease-in-out;
+}
+
+.result_submit {
+    background-color: #b1afaf;
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+}
+
+.result_submit:hover {
+    color: wheat;
+    background-color: #FF4C29;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
 
 .button_filters {
     justify-content: space-evenly;
@@ -449,19 +486,22 @@ body {
     padding: 10px;
     margin: 17px;
     border-radius: 10px 10px 0px 0px;
-    
+
 }
-.BU{
+
+.BU {
     font-size: 25px;
     border-radius: 10px;
     padding: 10px;
-     background-color: wheat;
+    background-color: wheat;
     border: none;
     font-family: "Almarai", sans-serif;
-    
-    
 }
 
+.BU:hover {
+    background-image: radial-gradient(#554242af, transparent 70%);
+    transition: all 0.5s ease-in-out;
+}
 
 .fixed_news {
     grid-area: fixed_n;
@@ -474,13 +514,14 @@ body {
 }
 
 .results {
-    padding: 15px 20px 0px 0px;
+    padding: 45px 20px 0px 0px;
     text-align: right;
     font-family: "Almarai", sans-serif;
     font-size: 30px;
     color: #FF4C29;
 }
-.result_submit{
+
+.result_submit {
     margin: 10px;
 }
 
