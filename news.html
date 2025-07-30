@@ -1,112 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>News</title>
+    <link rel="stylesheet" href="style2.css" />
+    <!--خط الازرار والخيارات-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--خط العناوين-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--خط اسم الموقع-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>News</title>
-  <link rel="stylesheet" href="style2.css" />
-  <!--خط الازرار والخيارات-->
-  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-  <!--خط العناوين-->
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
-  <!--خط اسم الموقع-->
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
-</head>
-</head>
+  <body>
+    <div class="mudir">
+      <header class="headerr">
+        <div class="icon">
+          <h2 class="h2a">H&A</h2>
+          <h2 class="h2b">cars</h2>
+        </div>
 
-<body>
-  <div class="mudir">
-    <header class="headerr">
-      <div class="icon">
-        <h2 class="h2a">H&A</h2>
-        <h2 class="h2b">cars</h2>
-      </div>
+        <div class="tab">
+          <a class="a1" href="home.html">Home</a>
+          <a class="a1" href="">cars</a>
+          <a class="a1" href="">Compare</a>
+          <a class="a1" href="news.html">news</a>
+          <a class="a1" href="">store</a>
+          <a class="a1" href="login.html">login</a>
+        </div>
+      </header>
 
-      <div class="tab">
-        <a class="a1" href="home.html">Home</a>
-        <a class="a1" href="">cars</a>
-        <a class="a1" href="">Compare</a>
-        <a class="a1" href="news.html">news</a>
-        <a class="a1" href="">store</a>
-        <a class="a1" href="login.html">login</a>
-      </div>
-    </header>
+      <main class="dinamic_news">
+        <div class="dinamic_news_image">
+          <p class="dinamic_news_text">
+            تراجعت أرباح شركة "مرسيدس بنز" الألمانية للسيارات الفاخرة على نحو
+            كبير العام الماضي، ويرجع ذلك بصورة رئيسية إلى ضعف أعمالها في الصين.
+            وأعلنت الشركة المدرجة في مؤشر "داكس" للبورصة الألمانية، الخميس، أن
+            أرباحها تراجعت العام الماضي بنسبة 28 بالمئة على أساس سنوي إلى 10.4
+            مليار يورو
+          </p>
+          <img
+            class="mercedes_office"
+            src="car img (news page)/Mercedes-Benz-logo.jpg"
+            width="500px"
+          />
+        </div>
+        <div class="dinamic_news_button">
+          <button class="next_page NP" type="button">Next</button>
+          <button class="last_page NP" type="button">Last</button>
+        </div>
+      </main>
 
-    <main class="dinamic_news">
-      <div class="dinamic_news_image">
-        <p class="dinamic_news_text">تراجعت أرباح شركة "مرسيدس بنز" الألمانية للسيارات الفاخرة على نحو كبير العام
-          الماضي، ويرجع ذلك بصورة رئيسية إلى
-          ضعف أعمالها في الصين. وأعلنت الشركة المدرجة في مؤشر "داكس" للبورصة الألمانية، الخميس، أن أرباحها تراجعت العام
-          الماضي بنسبة 28 بالمئة على أساس سنوي إلى 10.4 مليار يورو</p>
-        <img class="mercedes_office" src="car img (news page)/Mercedes-Benz-logo.jpg" width="500px">
-      </div>
-      <div class="dinamic_news_button">
-        <button class="next_page NP" type="button">Next</button>
-        <button class="last_page NP" type="button">Last</button>
-      </div>
-    </main>
+      <aside class="filter">
+        <div class="result_filters">
+          <h2>:فلترة النتائج</h2>
+          <input class="result_search R" type="search" />
+          <input class="result_submit R" type="submit" value="بحث" />
+        </div>
+        <div class="button_filters">
+          <button class="BU">Mercedes-Benz</button>
+          <button class="BU">BMW</button>
+          <button class="BU">Tesla</button>
+          <button class="BU">احدث الاخبار</button>
+          <button class="BU">هذا الاسبوع</button>
+        </div>
+      </aside>
 
-    <aside class="filter">
-      <div class="result_filters">
-        <h2>:فلترة النتائج</h2>
-        <input type="search">
-        <input type="submit">
+      <main class="fixed_news">
+        <h2 class="results">:أبرز النتائج</h2>
+        <div class="news1 all2">
+          <img
+            class="fixed_nimage"
+            src="car img (news page)/kadilac_in_UK.png"
+            alt=""
+            width="500px"
+          />
+          <p class="fixed_ntext">
+            كاديلاك تعود إلى السوق البريطانية بعد غياب 8 سنوات بسيارات كهربائية
+            فقط أكدت General Motors نية إعادة العلامة التجارية الفاخرة Cadillac
+            إلى المملكة المتحدة، وذلك بطراز Lyriq الكهربائي فقط، والمتوفر حالياً
+            في دول أوروبية محدودة، بسعر يقارب 68,000 جنيه إسترليني ومدى يصل إلى
+            330 ميلًا
+          </p>
+        </div>
 
-      </div>
-      <div class="button_filters">
-        <button>احدث الاخبار</button>
-        <button>هذا الاسبوع</button>
-        <button>Mercedes-Benz</button>
-        <button>BMW</button>
-        <button>Tesla</button>
-      </div>
+        <div class="news2 all2">
+          <img
+            class="fixed_nimage"
+            src="car img (news page)/Nissancompany.jpg"
+            alt=""
+            width="500px"
+          />
+          <p class="fixed_ntext">
+            غلقت شركة Nissan وكيلها في ولاية كاليفورنيا بعد انخفاض الأرباح بنسبة
+            90٪ خلال عام، وتخطط لإغلاق مصانع في المكسيك واليابان بحلول 2028، مما
+            يثير مخاوف واسعة حول تأثير تراجع الطلب في الصين على أدائها العالمي
+          </p>
+        </div>
 
-    </aside>
+        <div class="news3 all2">
+          <img
+            class="fixed_nimage"
+            src="car img (news page)/vximg.jpeg"
+            alt="vx comany"
+            title="شعار شركة VX"
+            width="500px"
+          />
+          <p class="fixed_ntext">
+            ولكس‌فاجن تحذر من خسائر ضخمة وتطرح إنشاء مصانع بأمريكا تكبدت VW نحو
+            1.5 مليار دولار نتيجة الرسوم. وتدرس فكرة تصنيع سيارات Audi في
+            الولايات المتحدة كجزء من استراتيجيتها للتوسع، ضمن استثمارات تتجاوز 5
+            مليارات دولار في مشاريع مثل شركة Scout وRivian
+          </p>
+        </div>
 
-    <main class="fixed_news">
-     <h2 class="results">:أبرز النتائج</h2>
-    <div class="news1 all2">
-      <img class="fixed_nimage" src="car img (news page)/kadilac_in_UK.png" alt="" width="500px">
-      <p class="fixed_ntext">كاديلاك تعود إلى السوق البريطانية بعد غياب 8 سنوات بسيارات كهربائية فقط
-        أكدت General Motors نية إعادة العلامة التجارية الفاخرة Cadillac إلى المملكة المتحدة، وذلك بطراز Lyriq الكهربائي فقط، والمتوفر حالياً في دول أوروبية محدودة، بسعر يقارب 68,000 جنيه إسترليني ومدى يصل إلى 330 ميلًا</p>
+        <div class="news4 all2">
+          <img
+            class="fixed_nimage"
+            src="car img (news page)/Rivian-R1S.webp"
+            alt="Rivian-R1S"
+            width="500px"
+            title=" Rivian-R1S سيارة"
+          />
+          <p class="fixed_ntext">
+            رحلة تجربة من ميشيغان إلى مين في الولايات المتحدة عبر سيارة Rivian
+            R1S حققت مدى تشغيل فعلي حوالي 326 ميلًا، مع وضوح نمو شبكات الشحن
+            السريع، رغم ارتفاع تكاليف الشحن خارج المنزل
+          </p>
+        </div>
+
+        <div class="news5 all2">
+          <img
+            class="fixed_nimage"
+            src="car img (news page)/BMW-USA.jpg"
+            alt="BMW car in USA"
+            width="500px"
+            title="سيارة BMW"
+          />
+          <p class="fixed_ntext">
+            ارتفعت مبيعات علامة BMW في الولايات المتحدة بنسبة 1.6٪ خلال النصف
+            الأول من 2025 مقارنة بالعام السابق، رغم تباطؤ طفيف في الربع الثاني
+          </p>
+        </div>
+
+        <div class="news6 all2">
+          <img
+            class="fixed_nimage"
+            src="car img (news page)/teslacar_inRyad.png"
+            alt="Tesla cars in Ryad"
+            width="500px"
+            title="معرض تيسلا في مدينة الرياض"
+          />
+          <p class="fixed_ntext">
+            تم افتتاح أول صالة عرض ومركز خدمة لتيسلا في الرياض، وسيبدأ تقديم
+            موديلات Model 3، Y وCybertruck قريبًا، مع خطة لافتتاح فروع أخرى في
+            جدة والدمام، ضمن رؤية المملكة لجعل 30٪ من سيارات الرياض كهربائية
+            بحلول عام 2030
+          </p>
+        </div>
+      </main>
+
+      <footer class="aboutlinkkk">
+        <a class="a2" href="mailto:">Email</a>
+        <a class="a2" href="">Facebook</a>
+        <a class="a2" href="">Instagram</a>
+        <a class="a2" href="">About us</a>
+      </footer>
     </div>
-
-    <div class="news2 all2">
-      <img  class="fixed_nimage" src="car img (news page)/Nissancompany.jpg" alt="" width="500px">
-      <p class="fixed_ntext">غلقت شركة Nissan وكيلها في ولاية كاليفورنيا بعد انخفاض الأرباح بنسبة 90٪ خلال عام، وتخطط لإغلاق مصانع في المكسيك واليابان بحلول 2028، مما يثير مخاوف واسعة حول تأثير تراجع الطلب في الصين على أدائها العالمي</p>
-    </div>
-
-    <div class="news3 all2">
-      <img class="fixed_nimage" src="car img (news page)/vximg.jpeg" alt="vx comany" title="شعار شركة VX" width="500px">
-      <p class="fixed_ntext">ولكس‌فاجن تحذر من خسائر ضخمة وتطرح إنشاء مصانع بأمريكا
-        تكبدت VW نحو 1.5 مليار دولار نتيجة الرسوم. وتدرس فكرة تصنيع سيارات Audi في الولايات المتحدة كجزء من استراتيجيتها للتوسع، ضمن استثمارات تتجاوز 5 مليارات دولار في مشاريع مثل شركة Scout وRivian</p>
-    </div>
-
-    <div class="news4 all2">
-      <img class="fixed_nimage" src="car img (news page)/Rivian-R1S.webp" alt="Rivian-R1S" width="500px" title=" Rivian-R1S سيارة">
-      <p class="fixed_ntext">رحلة تجربة من ميشيغان إلى مين في الولايات المتحدة عبر سيارة Rivian R1S حققت مدى تشغيل فعلي حوالي 326 ميلًا، مع وضوح نمو شبكات الشحن السريع، رغم ارتفاع تكاليف الشحن خارج المنزل</p>
-    </div>
-
-    <div class="news5 all2">
-      <img class="fixed_nimage" src="car img (news page)/BMW-USA.jpg" alt="BMW car in USA" width="500px" title="سيارة BMW">
-      <p class="fixed_ntext">ارتفعت مبيعات علامة BMW في الولايات المتحدة بنسبة 1.6٪ خلال النصف الأول من 2025 مقارنة بالعام السابق، رغم تباطؤ طفيف في الربع الثاني</p>
-    </div>
-
-    <div class="news6 all2">
-      <img class="fixed_nimage" src="car img (news page)/teslacar_inRyad.png" alt="Tesla cars in Ryad" width="500px" title="معرض تيسلا في مدينة الرياض">
-      <p class="fixed_ntext">تم افتتاح أول صالة عرض ومركز خدمة لتيسلا في الرياض، وسيبدأ تقديم موديلات Model 3، Y وCybertruck قريبًا، مع خطة لافتتاح فروع أخرى في جدة والدمام، ضمن رؤية المملكة لجعل 30٪ من سيارات الرياض كهربائية بحلول عام 2030</p>
-    </div>
-
-  </main>
-
-
-    <footer class="aboutlinkkk">
-      <a class="a2" href="mailto:">Email</a>
-      <a class="a2" href="">Facebook</a>
-      <a class="a2" href="">Instagram</a>
-      <a class="a2" href="">About us</a>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>
