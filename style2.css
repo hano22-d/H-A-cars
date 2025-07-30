@@ -270,17 +270,15 @@ body {
 
 .mudir {
     background-color: #b1afaf;
-    height: 300vh;
+    height: 530vh;
     direction: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 300px 100px 1fr 1fr 1fr 200px;
+    grid-template-rows: 200px 300px 200px 1fr 200px;
     grid-template-areas:
         "he he"
         "dinamic dinamic"
         "filter filter"
-        "news1 news1"
-        "news2 news2"
-        "news3 news3"
+        "fixed_n fixed_n"
         "foo foo";
 }
 
@@ -352,22 +350,38 @@ body {
 
 
 .dinamic_news {
-    
     grid-area: dinamic;
     display: flex;
     flex-direction: column;
     margin: 15px;
 }
-.dinamic_news_image{
-    background-color:  #444444;
+
+.dinamic_news_image {
+    background-color: #444444;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border: 5px solid #444444;
     border-radius: 10px;
-   
+    animation: dim 2s infinite ease-in-out alternate;
 }
-.dinamic_news_text{
+
+@keyframes dim {
+    0% {
+        border: 5px solid #FF4C29;
+    }
+
+    50% {
+        border: 5px solid #444444;
+    }
+
+    100% {
+        border: 5px solid #FF4C29;
+    }
+}
+
+.dinamic_news_text {
     order: 1;
     color: wheat;
     font-size: 25px;
@@ -376,19 +390,33 @@ body {
     font-family: "Almarai", sans-serif;
     line-height: 50px;
 }
-.mercedes_office{
+
+.mercedes_office {
     border-radius: 10px;
     margin: 10px;
 }
-.NP{
+
+.NP {
+    background-color: #b1afaf;
     margin: 10px;
-    padding: 5px;
-    font-size: 15px;
+    padding: 5px 15px;
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
 }
-.dinamic_news_button{
+
+.NP:hover {
+    color: wheat;
+    background-color: #FF4C29;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dinamic_news_button {
     background-color: #b1afaf;
 }
-    
+
 
 
 .filter {
@@ -397,33 +425,100 @@ body {
     flex-direction: column;
     grid-area: filter;
 }
-.result_filters{
+
+.result_filters {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
 }
-.button_filters{
+
+.button_filters {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
 }
 
+
+.fixed_news {
+    grid-area: fixed_n;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 200px 20px 50px 20px;
+    background-color: #444444;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.results {
+    padding: 15px 20px 0px 0px;
+    text-align: right;
+    font-family: "Almarai", sans-serif;
+    font-size: 30px;
+    color: #FF4C29;
+}
+
 .news1 {
-    background-color: olivedrab;
-    grid-area: news1;
+    background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .news2 {
-    background-color: rgb(89, 255, 0);
-    grid-area: news2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .news3 {
-    background-color: blue;
-    grid-area: news3;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.news4 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news5 {
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news6 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fixed_ntext {
+    color: wheat;
+    font-size: 21px;
+    text-align: right;
+    font-family: "Almarai", sans-serif;
+    line-height: 40px;
+}
+
+.fixed_nimage {
+    border-radius: 10px;
+}
+
+
+
 .aboutlinkkk {
     grid-area: foo;
     width: 90%;
