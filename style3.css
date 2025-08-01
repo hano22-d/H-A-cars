@@ -282,25 +282,30 @@ body {
     margin: 20px;
     background-color: #4444449a;
 }
+
 /*خلفية عرض السيارات*/
 .wall {
     height: 400px;
-    width: 400px;
+    width: 500px;
     margin: 25px;
     background-color: #444444c0;
     border-radius: 10px;
 }
+
 .Hyundai_view {
     position: absolute;
     right: 0;
 }
+
 .Hyundai_view:hover {
-   opacity: 0.7;
-   cursor: pointer;
+    opacity: 0.7;
+    cursor: pointer;
 }
+
 #ck {
     display: none;
 }
+
 .ee {
     margin-top: 50px;
     max-height: 0;
@@ -315,59 +320,95 @@ body {
     cursor: pointer;
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+
 .ee:hover {
     color: #FF4C29;
     text-shadow: 1px 1px 1px black;
 }
+
 .e1 {
     position: absolute;
     right: 200px;
 }
+
 .e2 {
     position: absolute;
     right: 300px;
 }
+
 .e3 {
     position: absolute;
     right: 400px;
 }
+
 .e4 {
     position: absolute;
     right: 500px;
 }
-#ck:checked ~ .ee {
-    max-height: 200px; /* حسب ارتفاع العنصر النهائي */
+
+#ck:checked~.ee {
+    max-height: 200px;
+    /* حسب ارتفاع العنصر النهائي */
     opacity: 1;
     padding: 10px;
-  }
-  .dad {
+}
+
+.dad {
+    color: wheat;
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;
     margin-left: 40px;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    background-color: #f2f2f2;
+    border-top: 3px solid #FF4C29;
+    border-bottom: 3px solid #FF4C29;
+    border-left: 3px solid #FF4C29;
+    background-image: linear-gradient(to right, #1B1B1B, transparent 85%);
     padding: 0 10px;
-    border: 1px solid #ccc;
     transition: max-height 0.5s ease, opacity 0.5s ease;
-  }
-  .dad1 {
+}
+
+.dad1 {
     position: relative;
-    top: 70px;
-  }
-  .dad2 {
+    top: 90px;
+}
+
+.dad2 {
     position: relative;
-    top: 120px;
-    right: 120px;
-  }
-  #v-e1 {
+    top: 141px;
+    left: -512px;
+    border-top: none;
+}
+
+.v-submit {
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-family: "Almarai", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #44444400;
+    border: none;
+    color: wheat;
+}
+
+.v-submit:hover {
+    background-color: #FF4C29;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+#v-e1 {
     display: none;
-  }
-  #v-e1:checked ~ .dad {
-    max-height: 200px; /* حسب ارتفاع العنصر النهائي */
+}
+
+#v-e1:checked~.dad {
+    max-height: 200px;
+    /* حسب ارتفاع العنصر النهائي */
     opacity: 1;
     padding: 10px;
-  }
-  
+}
+
 
 
 
