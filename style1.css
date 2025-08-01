@@ -1,0 +1,347 @@
+/*صفحة الاخبار*/
+body {
+    height: 100%;
+    margin: 0%;
+}
+.mudir {
+    background-color: #b1afaf;
+    height: 530vh;
+    direction: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 300px 200px 1fr 200px;
+    grid-template-areas:
+        "he he"
+        "dinamic dinamic"
+        "filter filter"
+        "fixed_n fixed_n"
+        "foo foo";
+}
+
+.headerr {
+    grid-area: he;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon {
+    margin-top: 25px;
+    background-image: url(img/icon.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+
+.h2a {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-size: 50px;
+    text-shadow: 4px 2px 2px #FF4C29;
+}
+
+.h2b {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 40px 30px 20px;
+    text-decoration: none;
+    color: wheat;
+    padding: 10px 25px;
+    font-family: "Quantico", sans-serif;
+    /*خط الازرار والخيارات*/
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.a1:hover {
+    color: black;
+    background-color: #FF4C29;
+    border-radius: 20px;
+}
+
+
+
+.dinamic_news {
+    grid-area: dinamic;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.dinamic_news_image {
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 5px solid #444444;
+    border-radius: 10px;
+    animation: dim 2s infinite ease-in-out alternate;
+}
+
+@keyframes dim {
+    0% {
+        border: 5px solid #FF4C29;
+    }
+
+    50% {
+        border: 5px solid #444444;
+    }
+
+    100% {
+        border: 5px solid #FF4C29;
+    }
+}
+
+.dinamic_news_text {
+    order: 1;
+    color: wheat;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+    font-family: "Almarai", sans-serif;
+    line-height: 50px;
+}
+
+.mercedes_office {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.NP {
+    background-color: #b1afaf;
+    margin: 10px;
+    padding: 5px 15px;
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+}
+
+.NP:hover {
+    color: wheat;
+    background-color: #FF4C29;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dinamic_news_button {
+    background-color: #b1afaf;
+}
+
+
+
+.filter {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-area: filter;
+}
+
+.result_filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.filter_title {
+    font-family: "Almarai", sans-serif;
+    font-size: 30px;
+    color: #FF4C29;
+    text-shadow: 1px 1px 2px #1B1B1B;
+}
+
+.R {
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.result_search {
+    border: 2px solid #444444;
+    padding: 5px 60px;
+    border-radius: 5px;
+    background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 8px center;
+    background-size: 20px;
+}
+
+.result_search:hover {
+    background-color: rgba(240, 248, 255, 0.336);
+    transition: all 0.2s ease-in-out;
+}
+
+.result_submit {
+    background-color: #b1afaf;
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+}
+
+.result_submit:hover {
+    color: wheat;
+    background-color: #FF4C29;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.button_filters {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    background-color: wheat;
+    padding: 10px;
+    margin: 17px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.BU {
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: wheat;
+    border: none;
+    font-family: "Almarai", sans-serif;
+}
+
+.BU:hover {
+    background-image: radial-gradient(#554242af, transparent 70%);
+    transition: all 0.5s ease-in-out;
+}
+
+.fixed_news {
+    grid-area: fixed_n;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 200px 20px 50px 20px;
+    background-color: #444444;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.results {
+    padding: 45px 20px 0px 0px;
+    text-align: right;
+    font-family: "Almarai", sans-serif;
+    font-size: 30px;
+    color: #FF4C29;
+}
+
+.result_submit {
+    margin: 10px;
+}
+
+.news1 {
+    background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news2 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news3 {
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news4 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news5 {
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news6 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fixed_ntext {
+    color: wheat;
+    font-size: 21px;
+    text-align: right;
+    font-family: "Almarai", sans-serif;
+    line-height: 40px;
+}
+
+.fixed_nimage {
+    border-radius: 10px;
+}
+
+
+
+.aboutlinkkk {
+    grid-area: foo;
+    width: 90%;
+    padding: 65px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a2 {
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 50px;
+    text-transform: capitalize;
+
+}
+
+.a2:hover {
+    text-decoration: underline 2px #FF4C29;
+}
