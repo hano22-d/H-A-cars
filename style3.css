@@ -1,18 +1,21 @@
 body {
     margin: 0%;
 }
+
 .controlar {
+    background-color: #b1afaf;
     height: 300vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px 1fr 1fr 1fr 200px;
-    grid-template-areas: 
-    "hrr hrr"
-    "sale suggestions"
-    "view view"
-    "view_search view_search"
-    "foo2 foo2";
+    grid-template-areas:
+        "hrr hrr"
+        "sale suggestions"
+        "view view"
+        "view_search view_search"
+        "foo2 foo2";
 }
+
 .hr {
     grid-area: hrr;
     box-shadow: 0px 0px 4px 4px #FF4C29;
@@ -21,6 +24,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .icon {
     background-image: url(img/1608991c6d8e4627368b1688ef9cb1f6.png);
     background-size: cover;
@@ -78,19 +82,294 @@ body {
 }
 
 
-
-
-
-
 .sale {
+    margin: 20px;
     grid-area: sale;
+    background-color: #4444449a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.sale_title {
+    margin-top: 50px;
+    color: #FF4C29;
+    font-family: "Black Ops One", system-ui;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.sale_img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sale_text {
+    order: 1;
+    direction: rtl;
+    font-family: "Almarai", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: wheat;
+    line-height: 45px;
+    list-style: square;
+    text-shadow: 1px 1px 1px black;
+}
+
+.sale_img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.sale_price-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.go {
+    margin-right: 220px;
+    padding: 5px 20px;
+    font-family: "Almarai", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #44444400;
+    border: none;
+    color: wheat;
+}
+
+.go:hover {
+    background-color: #FF4C29;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.price_new {
+    padding: 5px;
+    border-radius: 7px;
+    order: 1;
+    font-family: "Almarai", sans-serif;
+    color: aliceblue;
+    animation: new 1s infinite step-end alternate;
+}
+
+@keyframes new {
+    0% {
+        background-color: #44444400;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: #44444400;
+    }
+}
+
+.price_old {
+    padding: 5px;
+    border-radius: 7px;
+    order: 1;
+    font-family: "Almarai", sans-serif;
+    color: aliceblue;
+    text-decoration: 2px solid orange line-through;
+    animation: old 1s infinite 1s step-end alternate;
+}
+
+@keyframes old {
+    0% {
+        background-color: #44444400;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: #44444400;
+    }
+}
+
+
 .suggestions {
+    margin: 20px;
+    background-color: #4444449a;
     grid-area: suggestions;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.sugg_title {
+    margin-top: 20px;
+    color: #FF4C29;
+    font-family: "Black Ops One", system-ui;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.car_name {
+    color: #d4b4ad;
+    font-family: "Almarai", sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.sugg_img_text {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sugg_img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.sugg_text {
+    order: 1;
+    direction: rtl;
+    font-family: "Almarai", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: wheat;
+    line-height: 45px;
+    list-style: square;
+    text-shadow: 1px 1px 1px black;
+}
+
+.goo_div {
+    margin-top: 45px;
+    margin-right: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.goo {
+    padding: 5px 20px;
+    font-family: "Almarai", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #44444400;
+    border: none;
+    color: wheat;
+}
+
+.goo:hover {
+    background-color: #FF4C29;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
 .view {
     grid-area: view;
+    margin: 20px;
+    background-color: #4444449a;
 }
+/*خلفية عرض السيارات*/
+.wall {
+    height: 400px;
+    width: 400px;
+    margin: 25px;
+    background-color: #444444c0;
+    border-radius: 10px;
+}
+.Hyundai_view {
+    position: absolute;
+    right: 0;
+}
+.Hyundai_view:hover {
+   opacity: 0.7;
+   cursor: pointer;
+}
+#ck {
+    display: none;
+}
+.ee {
+    margin-top: 50px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    color: wheat;
+    background-color: #44444400;
+    padding: 0 10px;
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.ee:hover {
+    color: #FF4C29;
+    text-shadow: 1px 1px 1px black;
+}
+.e1 {
+    position: absolute;
+    right: 200px;
+}
+.e2 {
+    position: absolute;
+    right: 300px;
+}
+.e3 {
+    position: absolute;
+    right: 400px;
+}
+.e4 {
+    position: absolute;
+    right: 500px;
+}
+#ck:checked ~ .ee {
+    max-height: 200px; /* حسب ارتفاع العنصر النهائي */
+    opacity: 1;
+    padding: 10px;
+  }
+  .dad {
+    margin-left: 40px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  .dad1 {
+    position: relative;
+    top: 70px;
+  }
+  .dad2 {
+    position: relative;
+    top: 120px;
+    right: 120px;
+  }
+  #v-e1 {
+    display: none;
+  }
+  #v-e1:checked ~ .dad {
+    max-height: 200px; /* حسب ارتفاع العنصر النهائي */
+    opacity: 1;
+    padding: 10px;
+  }
+  
+
+
+
 .view_search {
     grid-area: view_search;
 }
@@ -108,6 +387,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .a2 {
     font-family: "Zen Dots", sans-serif;
     color: white;
