@@ -7,6 +7,7 @@
   <title>Store</title>
   <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" href="style3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!--خط الازرار والخيارات-->
   <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
@@ -14,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
   <!--خط اسم الموقع-->
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
           <li>مدى يصل إلى 531 كم</li>
           <li>مزودة بـ Autopilot</li>
         </ol>
-        <img class="sale_img" src="cars img/tesla_y.webp" alt="Tesla Y" title="Tesla Y" width="300px" />
+        <img class="sale_img" src="img/tesla y.jpg" alt="Tesla Y" title="Tesla Y" width="300px" />
       </div>
       <div class="sale_price-submit">
         <h2 class="price_old">50,490$</h2>
@@ -104,29 +105,53 @@
     <!--قسم البحث-->
 
     <main class="view_search">
-      <div class="d_s_label">
-        <label class="s_label">Chosse your reuest</label>
-      </div>
+
       <div class="input_search">
-      
-        <input class="in_s" type="search" placeholder="chose the company">
-        <input class="in_s" type="search" placeholder="chose the model">
-        <input class="in_s" type="search" placeholder="Year">
-        <input class="in_s" type="submit" value="search">
-      </div>
-      <div class="img_list_search">
-        <img class="img_search" src="img/Genesis.jpeg" alt="" width="600px">
-        <ul>
-          <li>
-            اللون: ابيض
-          </li>
-          <li>
-            عدد المقاعد:5
-          </li>
-        </ul>
+
+        <div class="d_s_label">
+          <label class="s_label">Chosse your reuest</label>
+        </div>
+        <div class="in_search">
+          <input class="in_ss" type="search" placeholder="chose the company">
+          <input class="in_ss" type="search" placeholder="chose the model">
+          <input class="in_ss" type="search" placeholder="Year">
+          <div class="in_submit">
+            <a class="in_s" href="#sec1">View</a>
+            <input class="in_s" type="submit" value="search">
+          </div>
+
+        </div>
+
       </div>
 
+      <section id="sec1">
 
+        <div class="img_list_search">
+
+          <!--لتطبيق التعتيم-->
+          <div class="overlay"></div>
+
+          <!--حاوية العنوان-->
+          <span class="the_car">🔥 S Class - 2015 🔥</span>
+
+          <!--حاوية الصورة والمواصفات-->
+          <div class="list">
+            <img class="img_search" src="cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015.jpg" width="600px">
+            <ul class="list_s" style="list-style: none; font-size: 18px;">
+              <li><i class="fas fa-gauge"></i> سعة المحرك: 3 لتر</li>
+              <li><i class="fas fa-cogs"></i> عدد الاسطوانات: 6</li>
+              <li><i class="fas fa-bolt"></i> قوة المحرك: 436 حصان</li>
+              <li><i class="fas fa-gear"></i> ناقل الحركة: أوتوماتيك</li>
+              <li><i class="fas fa-road"></i> نظام الدفع: دفع خلفي</li>
+              <li><i class="fas fa-user-friends"></i> عدد المقاعد: 5</li>
+              <li><i class="fas fa-wrench"></i> الحالة: مستعمل</li>
+              <li><i class="fas fa-percent"></i> نسبة النظافة: 95%</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
 
     </main>
 
