@@ -1,0 +1,231 @@
+.body {
+   
+}
+.parents {
+    background-color: #b1afaf;
+}
+
+.header {
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    margin-top: 25px;
+    background-image: url(img/icon.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.h2a {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-size: 50px;
+    text-shadow: 4px 2px 2px #FF4C29;
+}
+
+.h2b {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 40px 30px 20px;
+    text-decoration: none;
+    color: wheat;
+    padding: 10px 25px;
+    font-family: "Quantico", sans-serif;
+    /*خط الازرار والخيارات*/
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.a1:hover {
+    color: black;
+    background-color: #FF4C29;
+    border-radius: 20px;
+}
+
+h1{
+    margin: 30px 0 20px;
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+}
+
+.grid {
+    padding: 20px 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 350px 1fr 350px; 
+    grid-template-rows: 100px 350px 350px 100px;
+    grid-template-areas:
+    "header header header"
+    "card1  listdiv card2"
+    "card3  listdiv card4"  
+    "footer footer footer"
+    ;
+}
+
+.card1 {
+    background: wheat;
+    border-radius: 14px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    grid-area: card1;
+}
+
+.card2 {
+    background: wheat;
+    border-radius: 14px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    grid-area: card2;
+}
+
+.card3 {
+    background: wheat;
+    border-radius: 14px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    grid-area: card3;
+}
+
+.card4 {
+    background: wheat;
+    border-radius: 14px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    grid-area: card4;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.h31, .h32, .h33, .h34 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+ }
+
+ .p1, .p2, .p3, .p4 {
+    margin: 0 0 15px;
+ }
+ button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+ }
+
+ button:hover {
+    background: #FF4C29;
+ }
+
+ .listdiv {
+    background: wheat;
+    padding: 20px;
+    margin: 100px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    width: 280px;
+    grid-area: listdiv;
+ }
+ .listdiv label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+ }
+ .listdiv select,
+ .listdiv input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+ .listdiv button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #ff0000;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+ .listdiv button:hover {
+    background: #FF4C29;
+ }
+
+.aboutlink {
+    grid-area: aboutlinkk;
+    width: 90%;
+    padding: 65px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a2 {
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 50px;
+    text-transform: capitalize;
+
+}
+
+.a2:hover {
+    text-decoration: underline 2px #FF4C29;
+}
