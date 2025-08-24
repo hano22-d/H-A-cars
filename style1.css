@@ -1,11 +1,10 @@
 /*صفحة الاخبار*/
 body {
-    height: 100%;
     margin: 0%;
 }
 .mudir {
     background-color: #b1afaf;
-    height: 530vh;
+    height: 100%;
     direction: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px 300px 200px 1fr 200px;
@@ -323,7 +322,6 @@ body {
 
 .aboutlinkkk {
     grid-area: foo;
-    width: 90%;
     padding: 65px;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;

@@ -5,7 +5,7 @@ body {
 
 .controlar {
     background-color: #b1afaf;
-    height: 500vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px 1fr 1fr 1fr 200px;
@@ -630,7 +630,6 @@ i {
 
 .foo2 {
     grid-area: foo2;
-    width: 90%;
     padding: 65px;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;

@@ -1,11 +1,12 @@
-.body {
-   
-}
-.parents {
+body {
+    margin: 0%;
     background-color: #b1afaf;
+
+   
 }
 
 .header {
+    width: 100%;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;
     grid-area: nav;
@@ -79,8 +80,9 @@ h1{
 }
 
 .grid {
-    padding: 20px 40px;
+    padding: 50px;
     justify-content: center;
+    gap: 10px;
     display: grid;
     grid-template-columns: 350px 1fr 350px; 
     grid-template-rows: 100px 350px 350px 100px;
@@ -97,7 +99,7 @@ h1{
     border-radius: 14px;
     text-align: center;
     padding: 25px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px 4px #FF4C29;
     transition: transform 0.3s, box-shadow 0.3s;
     grid-area: card1;
 }
@@ -107,7 +109,7 @@ h1{
     border-radius: 14px;
     text-align: center;
     padding: 25px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px 4px #FF4C29;
     transition: transform 0.3s, box-shadow 0.3s;
     grid-area: card2;
 }
@@ -117,7 +119,7 @@ h1{
     border-radius: 14px;
     text-align: center;
     padding: 25px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px 4px #FF4C29;
     transition: transform 0.3s, box-shadow 0.3s;
     grid-area: card3;
 }
@@ -127,7 +129,7 @@ h1{
     border-radius: 14px;
     text-align: center;
     padding: 25px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px 4px #FF4C29;
     transition: transform 0.3s, box-shadow 0.3s;
     grid-area: card4;
 }
@@ -207,7 +209,6 @@ h1{
 
 .aboutlink {
     grid-area: aboutlinkk;
-    width: 90%;
     padding: 65px;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;
