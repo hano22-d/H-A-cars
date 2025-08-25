@@ -261,62 +261,53 @@ body {
 
 
 .img_gallery {
-    margin-bottom: 200px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    padding: 20px 20px;
+    grid-template-columns:  1fr 1fr 1fr 1fr 5fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-        "ic ic ic ic ic"
+        "au bm ma hu gallary"
         "a b c d imgbig"
         "e f g h imgbig"
         "i j k l imgbig"
         "m n o p imgbig"
         "q r s t imgbig";
     row-gap: 15px;
+    column-gap: 15px;
 }
-
-.companyicons {
-    grid-area: ic;
-    width: 90%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 35px;
+.text_gallary {
+    grid-area: gallary;
+    width: 50px;
+    height: 50px;
 }
 
 .logo {
-    width: 75px;
-    height: 50px;
-
-}
-
-.mar {
-    width: 80px;
-    height: 80px;
-
+    width: 130px;
+    height: 100px;
 }
 
 .bm {
-    order: 2;
-    margin-left: 25px;
+        grid-area: bm;
+        background-image: url(Car/bmw.png);
+        background-size: cover;
 }
 
 .ma {
-    order: 3;
-    height: 90px;
-    margin-left: 40px;
+        grid-area: ma;
+        background-image: url(Car/mercedes.png);
+        background-size: cover;
 }
 
 .au {
-    order: 1;
-    width: 85px;
-    margin-left: 30px;
+        grid-area: au;
+        background-image: url(Car/audi.jpg);
+        background-size: cover;
 }
 
 .hu {
-    margin-left: 55px;
+        grid-area: hu;
+        background-image: url(Car//hyundai.jpg);
+        background-size: cover;
 }
 
 .all {
@@ -328,7 +319,6 @@ body {
 
 .a {
     grid-area: a;
-    margin-left: 20px;
     background-image: url(img/Avante.webp);
     background-size: cover;
 }
@@ -339,11 +329,9 @@ body {
 }
 
 .b {
-    overflow: hidden;
-    /* لإخفاء أي جزء من الصورة خارج المربع */
-    position: relative;
     grid-area: b;
-    margin-left: 10px;
+    background-image: url(/img/audi\ a8.jpeg) ;
+    background-size: cover;
 }
 
 .b:hover~.imgbig {
@@ -353,11 +341,10 @@ body {
 
 
 .c {
-    overflow: hidden;
-    /* لإخفاء أي جزء من الصورة خارج المربع */
-    position: relative;
     grid-area: c;
-    margin-right: 20px;
+    background-image: url(/img/BMW\ 1series.webp);
+    background-size: cover;
+
 }
 
 .c:hover~.imgbig {
@@ -366,10 +353,9 @@ body {
 }
 
 .d {
-    overflow: hidden;
-    /* لإخفاء أي جزء من الصورة خارج المربع */
-    position: relative;
     grid-area: d;
+    background-image: url(/img/cls.jpg);
+    background-size: cover;
 }
 
 .d:hover~.imgbig {
@@ -378,10 +364,9 @@ body {
 }
 
 .e {
+    grid-area: e;
     background-image: url(img/Grandeur.webp);
     background-size: cover;
-    grid-area: e;
-    margin-left: 20px;
 }
 
 .e:hover~.imgbig {
@@ -390,10 +375,9 @@ body {
 }
 
 .f {
+    grid-area: f;
     background-image: url(img/audi\ coupe.jpg);
     background-size: cover;
-    grid-area: f;
-    margin-left: 10px;
 }
 
 .f:hover~.imgbig {
@@ -402,10 +386,9 @@ body {
 }
 
 .g {
+    grid-area: g;
     background-image: url(img/BMW\ i7.webp);
     background-size: cover;
-    grid-area: g;
-    margin-right: 20px;
 }
 
 .g:hover~.imgbig {
@@ -414,11 +397,9 @@ body {
 }
 
 .h {
-    position: relative;
-    overflow: hidden;
+    grid-area: h;
     background-image: url(img/g\ class.jpeg);
     background-size: cover;
-    grid-area: h;
 }
 
 .h:hover~.imgbig {
@@ -427,10 +408,9 @@ body {
 }
 
 .i {
+    grid-area: i;
     background-image: url(img/Palisade.jpg);
     background-size: cover;
-    grid-area: i;
-    margin-left: 20px;
 }
 
 .i:hover~.imgbig {
@@ -439,10 +419,9 @@ body {
 }
 
 .j {
+    grid-area: j;
     background-image: url(img/audi\ q3.jpg);
     background-size: cover;
-    grid-area: j;
-    margin-left: 10px;
 }
 
 .j:hover~.imgbig {
@@ -451,10 +430,9 @@ body {
 }
 
 .k {
+    grid-area: k;
     background-image: url(img/BMW\ m3.jpg);
     background-size: cover;
-    grid-area: k;
-    margin-right: 20px;
 }
 
 .k:hover~.imgbig {
@@ -463,9 +441,9 @@ body {
 }
 
 .l {
+    grid-area: l;
     background-image: url(img/maybach.jpg);
     background-size: cover;
-    grid-area: l;
 }
 
 .l:hover~.imgbig {
@@ -474,10 +452,9 @@ body {
 }
 
 .m {
+    grid-area: m;
     background-image: url(img/Santafe.jpg);
     background-size: cover;
-    grid-area: m;
-    margin-left: 20px;
 }
 
 .m:hover~.imgbig {
@@ -486,12 +463,9 @@ body {
 }
 
 .n {
-    position: relative;
-    overflow: hidden;
-    /*background-image: url(img/audi\ q6.jpg);
-    background-size: cover;*/
     grid-area: n;
-    margin-left: 10px;
+    background-image: url(/img/audi\ q6.jpg);
+    background-size: cover;
 }
 
 .n:hover~.imgbig {
@@ -500,10 +474,9 @@ body {
 }
 
 .o {
+    grid-area: o;
     background-image: url(img/BMW\ x3.jpg);
     background-size: cover;
-    grid-area: o;
-    margin-right: 20px;
 }
 
 .o:hover~.imgbig {
@@ -512,10 +485,9 @@ body {
 }
 
 .p {
+    grid-area: p;
     background-image: url(img/s\ class.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: p;
 }
 
 .p:hover~.imgbig {
@@ -524,10 +496,9 @@ body {
 }
 
 .q {
+    grid-area: q;
     background-image: url(img/sonataaa.jpg);
     background-size: cover;
-    grid-area: q;
-    margin-left: 20px;
 }
 
 .q:hover~.imgbig {
@@ -536,10 +507,9 @@ body {
 }
 
 .r {
+    grid-area: r;
     background-image: url(img/audi\ rs7.jpg);
     background-size: cover;
-    grid-area: r;
-    margin-left: 10px;
 }
 
 .r:hover~.imgbig {
@@ -548,10 +518,9 @@ body {
 }
 
 .s {
+    grid-area: s;
     background-image: url(img/BMW\ x5.jpg);
     background-size: cover;
-    grid-area: s;
-    margin-right: 20px;
 }
 
 .s:hover~.imgbig {
@@ -560,9 +529,9 @@ body {
 }
 
 .t {
+    grid-area: t;
     background-image: url(img/mercedes100.jpg);
     background-size: cover;
-    grid-area: t;
 }
 
 .t:hover~.imgbig {
@@ -579,12 +548,10 @@ body {
 }
 
 .imgbig {
-    margin-top: 30px;
-    margin-right: 20px;
-    position: relative;
-    overflow: hidden;
-    width: 700px;
-    height: 500px;
+    align-self: center;
+
+    width: 100%;
+    height: 85%;
     grid-area: imgbig;
     background-image: url(img/touche\ an\ image2.png);
     border-radius: 20px;
