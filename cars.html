@@ -1,109 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style4.css" />
-  </head>
-  <body>
-    <div class="parents">
-      <header class="header">
-        <div class="icon">
-          <h2 class="h2a">H&A</h2>
-          <h2 class="h2b">cars</h2>
-        </div>
 
-        <div class="tab">
-          <a class="a1" href="home.html">Home</a>
-          <a class="a1" href="cars.html">cars</a>
-          <a class="a1" href="">Compare</a>
-          <a class="a1" href="news.html">news</a>
-          <a class="a1" href="store.html">store</a>
-          <a class="a1" href="login.html">login</a>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style4.css" />
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--خط الازرار والخيارات-->
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!--خط العناوين-->
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <!--خط اسم الموقع-->
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+</head>
 
-      <div class="grid">
-        <main class="card1">
-          <img
-            class="img1"
-            src="cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2023.jpg"
-            alt="Mercedes"
-          />
-          <h3 class="h31">Mercedes</h3>
-          <p class="p1">germany</p>
-          <button>show</button>
-        </main>
-
-        <main class="card2">
-          <img
-            class="img2"
-            src="cars img (store page)/BMW/BMW-3-series-2024.jpg"
-            alt="BMW"
-          />
-          <h3 class="h32">BMW</h3>
-          <p class="p2">germany</p>
-          <button>show</button>
-        </main>
-
-        <main class="card3">
-          <img class="img3" src="cars img/Toyota-Camry-2025.jpg" alt="Toyota" />
-          <h3 class="h33">Toyota</h3>
-          <p class="p3">Japan</p>
-          <button>show</button>
-        </main>
-
-        <main class="card4">
-          <img class="img4" src="cars img/Ford-Edge-2024.jpg" alt="Ford" />
-          <h3 class="h34">Ford</h3>
-          <p class="p4">USA</p>
-          <button>show</button>
-        </main>
-
-        <div class="listdiv">
-          <h1>Auto Archive</h1>
-          <form>
-            <label for="make">Make</label>
-            <select name="make" id="make">
-              <option value="">Select Make</option>
-              <option value="audi">Audi</option>
-              <option value="bmw">BMW</option>
-              <option value="mercedes-benz">Mercedes-Benz</option>
-              <option value="kia">Kia</option>
-              <option value="hyundai">Hyundai</option>
-            </select>
-
-            <label for="model">Model</label>
-            <select name="model" id="model">
-              <option value="">Select Model</option>
-              <option value="a8">A8</option>
-              <option value="x6">X6</option>
-              <option value="cls-class">CLS-Class</option>
-              <option value="elantra">Elantra</option>
-              <option value="palisade">Palisade</option>
-            </select>
-
-            <label for="year">Year</label>
-            <select name="year" id="year">
-              <option value="">Select Year</option>
-              <option>2024</option>
-              <option>2024</option>
-              <option>2018</option>
-              <option>2025</option>
-              <option>2024</option>
-            </select>
-
-            <button type="submit">Go</button>
-          </form>
-        </div>
+<body>
+  <div class="parents">
+    <header class="header">
+      <div class="icon">
+        <h2 class="h2a">H&A</h2>
+        <h2 class="h2b">cars</h2>
       </div>
 
-      <footer class="aboutlink">
-        <a class="a2" href="mailto:">Email</a>
-        <a class="a2" href="">Facebook</a>
-        <a class="a2" href="">Instagram</a>
-        <a class="a2" href="">About us</a>
-      </footer>
+      <div class="tab">
+        <a class="a1" href="home.html">Home</a>
+        <a class="a1" href="cars.html">cars</a>
+        <a class="a1" href="">Compare</a>
+        <a class="a1" href="news.html">news</a>
+        <a class="a1" href="store.html">store</a>
+        <a class="a1" href="login.html">login</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card1">
+        <div class="face_rotate">
+          <div class="face1">
+            <img class="img1" src="cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2023.jpg" alt="Mercedes" />
+            <h3 class="h31">Mercedes-CLS-Class-2023</h3>
+            <p class="p1">germany</p>
+          </div>
+
+          <div class="face2">
+            <ul class="list_face">
+              <li>3.0L :سعة المحرك</li>
+              <li>6 :عدد الاسطوانات</li>
+              <li>362HP :قوة المحرك</li>
+              <li>نظام الدفع: رباعي</li>
+            </ul>
+            <button type="button">More from Mercedes</button>
+          </div>
+        </div>
+      </main>
+
+      <main class="card2">
+        <div class="face_rotate">
+          <div class="face1">
+            <img class="img2" src="cars img (store page)/BMW/BMW-3-series-2024.jpg" alt="BMW" />
+            <h3 class="h32">BMW-3-series-2024</h3>
+            <p class="p2">germany</p>
+          </div>
+
+          <div class="face2">
+            <ul class="list_face">
+              <li>2.0L :سعة المحرك</li>
+              <li>4 :عدد الاسطوانات</li>
+              <li>255HP :قوة المحرك</li>
+              <li>نظام الدفع: خلفي</li>
+            </ul>
+            <button type="button">More from BMW</button>
+          </div>
+        </div>
+      </main>
+
+      <main class="card3">
+        <div class="face_rotate">
+          <div class="face1">
+            <img class="img3" src="cars img/Toyota-Camry-2025.jpg" alt="Toyota" />
+            <h3 class="h33">Toyota-Camry-2025</h3>
+            <p class="p3">Japan</p>
+          </div>
+
+          <div class="face2">
+            <ul class="list_face">
+              <li><i class="fas fa-gauge"></i>2.5L :سعة المحرك</li>
+              <li><i class="fas fa-cogs"></i>4 :عدد الاسطوانات</li>
+              <li><i class="fas fa-bolt"></i>232HP :قوة المحرك</li>
+              <li><i class="fas fa-road"></i>نظام الدفع: رباعي</li>
+            </ul>
+            <button type="button">More from Toyota</button>
+          </div>
+        </div>
+      </main>
+
+      <main class="card4">
+        <div class="face_rotate">
+          <div class="face1">
+            <img class="img4" src="cars img/Ford-Edge-2024.jpg" alt="Ford" />
+            <h3 class="h34">Ford-Edge-2024</h3>
+            <p class="p4">USA</p>
+          </div>
+
+          <div class="face2">
+            <ul class="list_face">
+              <li>2.0L :سعة المحرك</li>
+              <li>4 :عدد الاسطوانات</li>
+              <li>250HP :قوة المحرك</li>
+              <li>نظام الدفع: رباعي</li>
+            </ul>
+            <button type="button">More from Ford</button>
+          </div>
+        </div>
+      </main>
+
+      <div class="listdiv">
+        <h1>Auto Archive</h1>
+        <form>
+          <label for="make">Make</label>
+          <select name="make" id="make">
+            <option value="">Select Make</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+          </select>
+
+          <label for="model">Model</label>
+          <select name="model" id="model">
+            <option value="">Select Model</option>
+            <option value="a8">A8</option>
+            <option value="x6">X6</option>
+            <option value="cls-class">CLS-Class</option>
+            <option value="elantra">Elantra</option>
+            <option value="palisade">Palisade</option>
+          </select>
+
+          <label for="year">Year</label>
+          <select name="year" id="year">
+            <option value="">Select Year</option>
+            <option>2024</option>
+            <option>2024</option>
+            <option>2018</option>
+            <option>2025</option>
+            <option>2024</option>
+          </select>
+
+          <button type="submit">Go</button>
+        </form>
+      </div>
     </div>
-  </body>
+
+    <footer class="aboutlink">
+      <a class="a2" href="mailto:">Email</a>
+      <a class="a2" href="">Facebook</a>
+      <a class="a2" href="">Instagram</a>
+      <a class="a2" href="">About us</a>
+    </footer>
+  </div>
+</body>
+
 </html>
