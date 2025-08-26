@@ -8,7 +8,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 1fr 1fr 1fr 200px;
+    grid-template-rows: 200px 800px 1200px 1200px 200px;
     grid-template-areas:
         "hrr hrr"
         "sale suggestions"
@@ -86,7 +86,9 @@ body {
 .sale {
     margin: 20px;
     grid-area: sale;
-    background-color: #4444449a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #444444;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +204,9 @@ body {
 
 .suggestions {
     margin: 20px;
-    background-color: #4444449a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #444444;
     grid-area: suggestions;
     display: flex;
     flex-direction: column;
@@ -281,7 +285,9 @@ body {
     grid-area: view;
     height: 900px;
     margin: 20px;
-    background-color: #4444449a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #444444;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -416,15 +422,13 @@ body {
 
 
 .view_search {
+    position: relative;
+    bottom: 100px;
     margin: 20px;
     grid-area: view_search;
-    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
-
 }
 
 .input_search {

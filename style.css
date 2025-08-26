@@ -11,19 +11,19 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: 200px 850px 750px 1fr 1fr;
+    grid-template-rows: 200px 850px 750px 1fr 200px;
     grid-template-areas:
-        "nav nav"
-        "asside asside"
         "head head"
-        "head2 head2"
+        "main1 main1"
+        "main2 main2"
+        "main3 main3"
         "footer footer";
 }
 
 .header {
+    grid-area: head;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;
-    grid-area: nav;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -86,7 +86,7 @@ body {
 }
 
 .main1 {
-    grid-area: asside;
+    grid-area: main1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +202,7 @@ body {
 }
 
 .main2 {
-    grid-area: head;
+    grid-area: main2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,7 @@ body {
 }
 
 .main3 {
-    grid-area: head2;
+    grid-area: main3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,7 +263,7 @@ body {
 .img_gallery {
     display: grid;
     padding: 20px 20px;
-    grid-template-columns:  1fr 1fr 1fr 1fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
         "hu au bm ma gallary"
@@ -275,6 +275,7 @@ body {
     row-gap: 15px;
     column-gap: 15px;
 }
+
 .text_gallary {
     grid-area: gallary;
     width: 50px;
@@ -287,6 +288,7 @@ body {
     mix-blend-mode: multiply;
     margin-left: 31px;
 }
+
 .logo:hover {
     mix-blend-mode: color-burn;
 }
@@ -321,6 +323,7 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 2px 2px black;
 }
+
 .all:hover {
     transform: translateY(-2px);
     box-shadow: 0px 0px 6px 0px black;
@@ -339,7 +342,7 @@ body {
 
 .b {
     grid-area: b;
-    background-image: url(Home-gallary/Audi-A4.avif) ;
+    background-image: url(Home-gallary/Audi-A4.avif);
     background-size: cover;
 }
 

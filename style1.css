@@ -2,6 +2,7 @@
 body {
     margin: 0%;
 }
+
 .mudir {
     background-color: #b1afaf;
     height: 100%;
@@ -17,6 +18,7 @@ body {
 }
 
 .headerr {
+    height: 200px;
     grid-area: he;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;
@@ -24,8 +26,8 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .icon {
-    margin-top: 25px;
     background-image: url(img/iconGeneral.png);
     background-size: cover;
     width: 150px;
