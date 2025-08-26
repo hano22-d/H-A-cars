@@ -7,7 +7,7 @@ body {
 .container {
     background-color: #b1afaf;
     background-size: cover;
-    height: 500vh;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 2fr;
@@ -30,7 +30,7 @@ body {
 }
 
 .icon {
-    background-image: url(img/icon.png);
+    background-image: url(img/iconGeneral.png);
     background-size: cover;
     width: 150px;
     height: 150px;
@@ -266,7 +266,7 @@ body {
     grid-template-columns:  1fr 1fr 1fr 1fr 5fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-        "au bm ma hu gallary"
+        "hu au bm ma gallary"
         "a b c d imgbig"
         "e f g h imgbig"
         "i j k l imgbig"
@@ -282,285 +282,282 @@ body {
 }
 
 .logo {
-    width: 130px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    mix-blend-mode: multiply;
+    margin-left: 31px;
+}
+.logo:hover {
+    mix-blend-mode: color-burn;
 }
 
 .bm {
-        grid-area: bm;
-        background-image: url(Car/bmw.png);
-        background-size: cover;
+    grid-area: bm;
+    background-image: url(car/bmw.webp);
+    background-size: cover;
 }
 
 .ma {
-        grid-area: ma;
-        background-image: url(Car/mercedes.png);
-        background-size: cover;
+    grid-area: ma;
+    background-image: url(Car/Mercedes-Benz-Logo.png);
+    background-size: cover;
 }
 
 .au {
-        grid-area: au;
-        background-image: url(Car/audi.jpg);
-        background-size: cover;
+    grid-area: au;
+    background-image: url(Car/audi.webp);
+    background-size: cover;
 }
 
 .hu {
-        grid-area: hu;
-        background-image: url(Car//hyundai.jpg);
-        background-size: cover;
+    grid-area: hu;
+    background-image: url(Car/hyundai.webp);
+    background-size: cover;
 }
 
 .all {
     width: 130px;
-    height: 100px;
+    height: 85px;
     border-radius: 5px;
     box-shadow: 0px 0px 2px 2px black;
+}
+.all:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 6px 0px black;
 }
 
 .a {
     grid-area: a;
-    background-image: url(img/Avante.webp);
+    background-image: url(Home-gallary/Hyundai-Elantra.webp);
     background-size: cover;
 }
 
 .a:hover~.imgbig {
-    background-image: url(img/Avante.webp);
+    background-image: url(Home-gallary/Hyundai-Elantra.webp);
     background-size: cover;
 }
 
 .b {
     grid-area: b;
-    background-image: url(/img/audi\ a8.jpeg) ;
+    background-image: url(Home-gallary/Audi-A4.avif) ;
     background-size: cover;
 }
 
 .b:hover~.imgbig {
-    background-image: url(img/audi\ a8.jpeg);
+    background-image: url(Home-gallary/Audi-A4.avif);
     background-size: cover;
 }
 
-
 .c {
     grid-area: c;
-    background-image: url(/img/BMW\ 1series.webp);
+    background-image: url(Home-gallary/BMW-3series.jpg);
     background-size: cover;
 
 }
 
 .c:hover~.imgbig {
-    background-image: url(img/BMW\ 1series.webp);
+    background-image: url(Home-gallary/BMW-3series.jpg);
     background-size: cover;
 }
 
 .d {
     grid-area: d;
-    background-image: url(/img/cls.jpg);
+    background-image: url(Home-gallary/Mercedes-Bemz-CLS-Class.jpg);
     background-size: cover;
 }
 
 .d:hover~.imgbig {
-    background-image: url(img/cls.jpg);
+    background-image: url(Home-gallary/Mercedes-Bemz-CLS-Class.jpg);
     background-size: cover;
 }
 
 .e {
     grid-area: e;
-    background-image: url(img/Grandeur.webp);
+    background-image: url(Home-gallary/Hyundai-Palisade.avif);
     background-size: cover;
 }
 
 .e:hover~.imgbig {
-    background-image: url(img/Grandeur.webp);
+    background-image: url(Home-gallary/Hyundai-Palisade.avif);
     background-size: cover;
 }
 
 .f {
     grid-area: f;
-    background-image: url(img/audi\ coupe.jpg);
+    background-image: url(Home-gallary/Audi-Q7.avif);
     background-size: cover;
 }
 
 .f:hover~.imgbig {
-    background-image: url(img/audi\ coupe.jpg);
+    background-image: url(Home-gallary/Audi-Q7.avif);
     background-size: cover;
 }
 
 .g {
     grid-area: g;
-    background-image: url(img/BMW\ i7.webp);
+    background-image: url(Home-gallary/BMW-7series.avif);
     background-size: cover;
 }
 
 .g:hover~.imgbig {
-    background-image: url(img/BMW\ i7.webp);
+    background-image: url(Home-gallary/BMW-7series.avif);
     background-size: cover;
 }
 
 .h {
     grid-area: h;
-    background-image: url(img/g\ class.jpeg);
+    background-image: url(Home-gallary/Mercedes-Benz-E-Class.avif);
     background-size: cover;
 }
 
 .h:hover~.imgbig {
-    background-image: url(img/g\ class.jpeg);
+    background-image: url(Home-gallary/Mercedes-Benz-E-Class.avif);
     background-size: cover;
 }
 
 .i {
     grid-area: i;
-    background-image: url(img/Palisade.jpg);
+    background-image: url(Home-gallary/Hyundai-Tucson.avif);
     background-size: cover;
 }
 
 .i:hover~.imgbig {
-    background-image: url(img/Palisade.jpg);
+    background-image: url(Home-gallary/Hyundai-Tucson.avif);
     background-size: cover;
 }
 
 .j {
     grid-area: j;
-    background-image: url(img/audi\ q3.jpg);
+    background-image: url(Home-gallary/Audi-SQ8.avif);
     background-size: cover;
 }
 
 .j:hover~.imgbig {
-    background-image: url(img/audi\ q3.jpg);
+    background-image: url(Home-gallary/Audi-SQ8.avif);
     background-size: cover;
 }
 
 .k {
     grid-area: k;
-    background-image: url(img/BMW\ m3.jpg);
+    background-image: url(Home-gallary/BMW-i5.jpg);
     background-size: cover;
 }
 
 .k:hover~.imgbig {
-    background-image: url(img/BMW\ m3.jpg);
+    background-image: url(Home-gallary/BMW-i5.jpg);
     background-size: cover;
 }
 
 .l {
     grid-area: l;
-    background-image: url(img/maybach.jpg);
+    background-image: url(Home-gallary/Mercedes-Benz-G-Class.avif);
     background-size: cover;
 }
 
 .l:hover~.imgbig {
-    background-image: url(img/maybach.jpg);
+    background-image: url(Home-gallary/Mercedes-Benz-G-Class.avif);
     background-size: cover;
 }
 
 .m {
     grid-area: m;
-    background-image: url(img/Santafe.jpg);
+    background-image: url(Home-gallary/Hyundai-Sonata.avif);
     background-size: cover;
 }
 
 .m:hover~.imgbig {
-    background-image: url(img/Santafe.jpg);
+    background-image: url(Home-gallary/Hyundai-Sonata.avif);
     background-size: cover;
 }
 
 .n {
     grid-area: n;
-    background-image: url(/img/audi\ q6.jpg);
+    background-image: url(Home-gallary/Audi-S8.jpg);
     background-size: cover;
 }
 
 .n:hover~.imgbig {
-    background-image: url(img/audi\ q6.jpg);
+    background-image: url(Home-gallary/Audi-S8.jpg);
     background-size: cover;
 }
 
 .o {
     grid-area: o;
-    background-image: url(img/BMW\ x3.jpg);
+    background-image: url(Home-gallary/BMW-X3.avif);
     background-size: cover;
 }
 
 .o:hover~.imgbig {
-    background-image: url(img/BMW\ x3.jpg);
+    background-image: url(Home-gallary/BMW-X3.avif);
     background-size: cover;
 }
 
 .p {
     grid-area: p;
-    background-image: url(img/s\ class.jpg);
+    background-image: url(Home-gallary/Mercedes-Benz-Maybach.jpg);
     background-size: cover;
 }
 
 .p:hover~.imgbig {
-    background-image: url(img/s\ class.jpg);
+    background-image: url(Home-gallary/Mercedes-Benz-Maybach.jpg);
     background-size: cover;
 }
 
 .q {
     grid-area: q;
-    background-image: url(img/sonataaa.jpg);
+    background-image: url(Home-gallary/Hyundai-SantaFe.avif);
     background-size: cover;
 }
 
 .q:hover~.imgbig {
-    background-image: url(img/sonataaa.jpg);
+    background-image: url(Home-gallary/Hyundai-SantaFe.avif);
     background-size: cover;
 }
 
 .r {
     grid-area: r;
-    background-image: url(img/audi\ rs7.jpg);
+    background-image: url(Home-gallary/Audi-TT.avif);
     background-size: cover;
 }
 
 .r:hover~.imgbig {
-    background-image: url(img/audi\ rs7.jpg);
+    background-image: url(Home-gallary/Audi-TT.avif);
     background-size: cover;
 }
 
 .s {
     grid-area: s;
-    background-image: url(img/BMW\ x5.jpg);
+    background-image: url(Home-gallary/BMW-X5.avif);
     background-size: cover;
 }
 
 .s:hover~.imgbig {
-    background-image: url(img/BMW\ x5.jpg);
+    background-image: url(Home-gallary/BMW-X5.avif);
     background-size: cover;
 }
 
 .t {
     grid-area: t;
-    background-image: url(img/mercedes100.jpg);
+    background-image: url(Home-gallary/Mercedes-Benz-S-Class.avif);
     background-size: cover;
 }
 
 .t:hover~.imgbig {
-    background-image: url(img/mercedes100.jpg);
+    background-image: url(Home-gallary/Mercedes-Benz-S-Class.avif);
     background-size: cover;
-}
-
-.img_al {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* تجعل الصورة تملأ المربع مع الحفاظ على التناسق */
-    object-position: center;
 }
 
 .imgbig {
     align-self: center;
-
     width: 100%;
-    height: 85%;
+    height: 80%;
     grid-area: imgbig;
-    background-image: url(img/touche\ an\ image2.png);
+    background-image: url(img/Website-icon.webp);
+    background-size: cover;
+    mix-blend-mode: multiply;
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px black;
 }
-
-
-
-
 
 /*الذيل*/
 .footer {

@@ -17,7 +17,7 @@ body {
 
 .icon {
     margin-top: 25px;
-    background-image: url(img/icon.png);
+    background-image: url(img/iconGeneral.png);
     background-size: cover;
     width: 150px;
     height: 150px;
@@ -227,6 +227,8 @@ i {
     height: 110px;
     object-fit: contain;
     margin-bottom: 15px;
+    mix-blend-mode:darken;
+
 }
 
 .h31,

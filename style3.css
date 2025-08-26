@@ -27,7 +27,7 @@ body {
 }
 
 .icon {
-    background-image: url(img/icon.png);
+    background-image: url(img/iconGeneral.png);
     background-size: cover;
     width: 150px;
     height: 150px;
