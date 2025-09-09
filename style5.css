@@ -1,0 +1,87 @@
+.header {
+    grid-area: head;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    background-image: url(img/iconGeneral.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.h2a {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-size: 50px;
+    text-shadow: 4px 2px 2px #FF4C29;
+}
+
+.h2b {
+    position: relative;
+    bottom: 45px;
+    color: #d4b4ad;
+    font-family: "Zen Dots", sans-serif;
+    /*خط اسم الموقع*/
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 40px 30px 20px;
+    text-decoration: none;
+    color: wheat;
+    padding: 10px 25px;
+    font-family: "Quantico", sans-serif;
+    /*خط الازرار والخيارات*/
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.a1:hover {
+    color: black;
+    background-color: #FF4C29;
+    border-radius: 20px;
+}
+.aboutlink {
+    width: 90%;
+    padding: 65px;
+    box-shadow: 0px 0px 4px 4px #FF4C29;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a2 {
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 50px;
+    text-transform: capitalize;
+
+}
+
+.a2:hover {
+    text-decoration: underline 2px #FF4C29;
+}
