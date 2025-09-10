@@ -11,7 +11,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: 200px 850px 750px 600px 1fr 200px;
+    grid-template-rows: 200px 1fr 1fr 1fr 1.5fr 200px;
     grid-template-areas:
         "head head"
         "main1 main1"
@@ -247,7 +247,7 @@ body {
 
 .news1 {
     display: grid;
-    height: 950px;
+    height: 1300px;
     padding: 10px;
     border-radius: 10px;
     background: rgb(0, 0, 0);
@@ -266,7 +266,7 @@ body {
     height: 600px;
     border-radius: 5px;
     background-size: cover;
-    background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.87)22%, transparent 55%), url(Home/hyundai_palisade_2025-3840x2160.jpg);
+    background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.87)22%, transparent 55%), url(img/new-palisade-15.jpg);
 }
 
 .img_text0 {
@@ -294,7 +294,7 @@ body {
     width: 390px;
     height: 200px;
     border-radius: 5px;
-    background-image: url(Home/Mercedes-Benz-2026.jpg);
+    background-image: url(img/Mercedes-Benz-2026.jpg);
     background-size: cover;
 }
 
@@ -303,7 +303,7 @@ body {
     width: 390px;
     height: 200px;
     border-radius: 5px;
-    background-image: url(Home/Rolls-Royse-spectre.jpg);
+    background-image: url(img/Rolls-Royse-spectre.jpg);
     background-size: cover;
 }
 
@@ -312,7 +312,7 @@ body {
     width: 390px;
     height: 200px;
     border-radius: 5px;
-    background-image: url(Home/BMW-series-7.jpg);
+    background-image: url(img/BMW-series-7.jpg);
     background-size: cover;
 }
 
@@ -328,7 +328,7 @@ body {
 /*----------------*/
 
 .main4 {
-    grid-area: main3;
+    grid-area: main4;
     display: flex;
     flex-direction: column;
     justify-content: center;
