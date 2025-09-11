@@ -237,6 +237,14 @@ body {
     direction: rtl;
 }
 
+
+
+
+
+
+
+
+
 .main3 {
     grid-area: main3;
     display: flex;
@@ -247,10 +255,10 @@ body {
 
 .news1 {
     display: grid;
-    height: 1300px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-    background: rgb(0, 0, 0);
+    gap: 15px;
+    background: #444444;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr ;
     grid-template-areas: 
@@ -263,18 +271,18 @@ body {
 .big_photo {
     grid-area: big;
     width: 1210px;
-    height: 600px;
+    height: 700px;
     border-radius: 5px;
     background-size: cover;
     background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.87)22%, transparent 55%), url(img/new-palisade-15.jpg);
 }
 
 .img_text0 {
-    transform: translateY(420px);
     font-family:'Times New Roman', Times, serif;
-    padding: 20px;
+    padding: 30px;
     color: #ccc;
     font-size: 40px;
+    transform: translateY(500px);
 }
 
 .img_text0:hover {
@@ -286,7 +294,6 @@ body {
     grid-area: pic;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-15px);
 }
 
 .photo1{
@@ -316,12 +323,19 @@ body {
     background-size: cover;
 }
 
-.img_text1 {
+.text_h1 {
+    font-size: 32.1px;
+
+    padding: 0;
+    color: #ccc;
+    text-align: left;
     transform: translateY(200px);
 }
-
-.h2 {
+.text_p {
+    margin: 0;
+    padding: 0;
     color: #ccc;
+    text-align: left;
     transform: translateY(200px);
 }
 
