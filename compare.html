@@ -3,6 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!--خط الازرار والخيارات-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--خط العناوين-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--خط اسم الموقع-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -20,144 +43,151 @@
         <a class="a1" href="login.html">login</a>
       </div>
     </header>
-    <div class="main_div">
-      <div class="comparison_container">
-        <!--first car-->
-        <div class="car_card">
-          <div class="car_header">
-            <select>
-              <optgroup label="Companies">
-                <option>BMW</option>
-                <option>Mercedes-benz</option>
-                <option>Toyota</option>
-                <option>Hyundai</option>
-              </optgroup>
-            </select>
-            <select>
-              <optgroup label="Model">
-                <option></option>
-              </optgroup>
-            </select>
-            <select>
-              <optgroup label="Year">
-                <option></option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="car_image">Car photo</div>
-          <div class="car_title">
-            <h1>Car Spacialists</h1>
-          </div>
-          <div class="car_specs">
-            <ul class="spacialists">
-              <li>Engine:</li>
-              <li>Power:</li>
-              <li>Transmission:</li>
-              <li>Drivetrain:</li>
-              <li>Price:</li>
-            </ul>
-          </div>
-        </div>
-        <!--second car-->
-        <div class="car_card">
-          <div class="car_header">
-            <select>
-              <optgroup label="Companies">
-                <option>BMW</option>
-                <option>Mercedes-ben</option>
-                <option>Toyota</option>
-                <option>Hyundai</option>
-              </optgroup>
-            </select>
-            <select>
-              <optgroup label="Model">
-                <option></option>
-              </optgroup>
-            </select>
-            <select>
-              <optgroup label="Year">
-                <option></option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="car_image">Car photo</div>
-          <div class="car_title">
-            <h1>Car Spacialists</h1>
-          </div>
-          <div class="car_specs">
-            <ul class="spacialists">
-              <li>Engine</li>
-              <li>Power:</li>
-              <li>Transmission:</li>
-              <li>Drivetrain:</li>
-              <li>Price:</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="datain">
+      <input list="id1" />
+      <datalist id="id1">
+        <option value="">bmw</option>
+        <option value="">kia</option>
+        <option value=""></option>
+        <option value=""></option>
+      </datalist>
+      <input list="id2" />
+      <datalist id="id2">
+        <option value="">maybach</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </datalist>
+      <select>
+        <option value="">2001</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
 
-      <div class="compare">
-        <div class="car_card2">
-          <img src="img/BMW-Series3.jpg" alt="" />
-          <h2>BMW Series 3 - 2025</h2>
-          <table>
-            <tr>
-              <th>Specifications</th>
-              <th>Value</th>
-            </tr>
-            <tr>
-              <td>Engine</td>
-              <td>6V - 3.0 L</td>
-            </tr>
-            <tr>
-              <td>Power</td>
-              <td>386 hp</td>
-            </tr>
-            <tr>
-              <td>Transmission</td>
-              <td>Automatic</td>
-            </tr>
-            <tr>
-              <td>Price</td>
-              <td>$50,000</td>
-            </tr>
-          </table>
-        </div>
+      <button>
+        go
+      </button>
 
-        <div class="car_card2">
-          <img src="img/Mercedes-S_Class.avif" alt="" />
-          <h2>Mercedes-Benz S-Class 2024</h2>
-          <table>
-            <tr>
-              <th>Specifications</th>
-              <th>Value</th>
-            </tr>
-            <tr>
-              <td>Engine</td>
-              <td>8V - 4.0 L</td>
-            </tr>
-            <tr>
-              <td>Power</td>
-              <td>802 hp</td>
-            </tr>
-            <tr>
-              <td>Transmission</td>
-              <td>Automatic</td>
-            </tr>
-            <tr>
-              <td>Price</td>
-              <td>$119,000</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <footer class="aboutlink">
-        <a class="a2" href="mailto:">Email</a>
-        <a class="a2" href="">Facebook</a>
-        <a class="a2" href="">Instagram</a>
-        <a class="a2" href="">About us</a>
-      </footer>
+      <input list="id3" />
+      <datalist id="id3">
+        <option value="">bmw</option>
+        <option value="">kia</option>
+        <option value=""></option>
+        <option value=""></option>
+      </datalist>
+      <input list="id4" />
+      <datalist id="id4">
+        <option value="">maybach</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </datalist>
+      <select>
+        <option value="">2001</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
     </div>
+
+    <div class="comparison_container">
+      <!--first car-->
+      <div class="car_card">
+        <div class="car_image">
+        </div>
+        <div class="car_title">
+          <h1>Car Spacialists</h1>
+        </div>
+        <div class="car_specs">
+          <ul class="spacialists">
+            <li>Engine:</li>
+            <li>Power:</li>
+            <li>Transmission:</li>
+            <li>Drivetrain:</li>
+            <li>Price:</li>
+          </ul>
+        </div>
+      </div>
+      <!--second car-->
+      <div class="car_card">
+        <div class="car_image">Car photo</div>
+        <div class="car_title">
+          <h1>Car Spacialists</h1>
+        </div>
+        <div class="car_specs">
+          <ul class="spacialists">
+            <li>Engine</li>
+            <li>Power:</li>
+            <li>Transmission:</li>
+            <li>Drivetrain:</li>
+            <li>Price:</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare">
+      <div class="car_card2">
+        <img src="img/BMW-Series3.jpg" alt="" />
+        <h2>BMW Series 3 - 2025</h2>
+        <table>
+          <tr>
+            <th>Specifications</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Engine</td>
+            <td>6V - 3.0 L</td>
+          </tr>
+          <tr>
+            <td>Power</td>
+            <td>386 hp</td>
+          </tr>
+          <tr>
+            <td>Transmission</td>
+            <td>Automatic</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>$50,000</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="car_card2">
+        <img src="img/Mercedes-S_Class.avif" alt="" />
+        <h2>Mercedes-Benz S-Class 2024</h2>
+        <table>
+          <tr>
+            <th>Specifications</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Engine</td>
+            <td>8V - 4.0 L</td>
+          </tr>
+          <tr>
+            <td>Power</td>
+            <td>802 hp</td>
+          </tr>
+          <tr>
+            <td>Transmission</td>
+            <td>Automatic</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>$119,000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer class="aboutlink">
+      <a class="a2" href="mailto:">Email</a>
+      <a class="a2" href="">Facebook</a>
+      <a class="a2" href="">Instagram</a>
+      <a class="a2" href="">About us</a>
+    </footer>
   </body>
 </html>

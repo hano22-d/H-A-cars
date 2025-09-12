@@ -1,8 +1,9 @@
 body {
     height: 100%;
     margin: 0;
+    background-color: #b1afaf;
 }
-
+/*
 .main_div {
     display: grid;
     grid-template-columns: 1fr;
@@ -13,9 +14,10 @@ body {
         "comp2"
         "foot"
     ;
-}
+}*/
 
 .header {
+    height: 200px;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;
     grid-area: head;
@@ -83,6 +85,37 @@ body {
 
 /*جدولا المقارنة */
 
+.datain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 30px auto;
+    gap: 45px;
+}
+
+.datain input, select {
+    font-size: 15px;
+    box-shadow: 0 0 4px 2px #FF4C29;
+}
+
+.datain button {
+    padding: 5px 25px;
+     font-family: "Quantico", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    color: #FF4C29;
+    text-shadow: 1px 1px 1px black;
+}
+.datain button:hover {
+    background-color: #FF4C29;
+    border-radius: 10px;
+    transition: all 0.55s ease;
+    color: wheat;
+}
 
 .comparison_container {
     grid-area: comp1;
@@ -101,22 +134,6 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.car_header {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    margin-bottom: 15px;
-}
-
-.car_header select,
-.car_header input {
-    flex: 1;
-    padding: 6px;
-    border:  1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
 .car_image {
     width: 100%;
     height: 300px;
@@ -128,18 +145,10 @@ body {
     margin-bottom: 15px;
     font-size: 14px;
     color: #666;
+    background-image: url(img/audi_e_tron.jpg);
+    background-size: cover;
 }
 
-.car_title input {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    align-items: center;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
 
 .spacialists li {
     width: 100%;
@@ -155,10 +164,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 20px 0;
 }
 
 .car_card2 {
-    width: 90%;
+    width: 45%;
     background: #cecece;
     padding: 20px;
     border: 2px solid #ddd;
@@ -178,7 +188,6 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
 }
 
 th, td {
