@@ -11,12 +11,13 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: 200px 850px 750px 1fr 200px;
+    grid-template-rows: 200px 850px 750px 600px 1fr 200px;
     grid-template-areas:
         "head head"
         "main1 main1"
         "main2 main2"
         "main3 main3"
+        "main4 main4"
         "footer footer";
 }
 
@@ -237,6 +238,96 @@ body {
 }
 
 .main3 {
+    grid-area: main3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.news1 {
+    display: grid;
+    height: 950px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "big big big"
+        "big big big"
+        "pic pic pic"
+    ;
+}
+
+.big_photo {
+    grid-area: big;
+    width: 1210px;
+    height: 600px;
+    border-radius: 5px;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87)22%, transparent 55%), url(Home/hyundai_palisade_2025-3840x2160.jpg);
+}
+
+.img_text0 {
+    transform: translateY(420px);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    color: #ccc;
+    font-size: 40px;
+}
+
+.img_text0:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 10px 10px rgba(163, 160, 160, 0.87);
+}
+
+.pictures {
+    grid-area: pic;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-15px);
+}
+
+.photo1 {
+    grid-area: ph1;
+    width: 390px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: url(Home/Mercedes-Benz-2026.jpg);
+    background-size: cover;
+}
+
+.photo2 {
+    grid-area: ph2;
+    width: 390px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: url(Home/Rolls-Royse-spectre.jpg);
+    background-size: cover;
+}
+
+.photo3 {
+    grid-area: ph3;
+    width: 390px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: url(Home/BMW-series-7.jpg);
+    background-size: cover;
+}
+
+.img_text1 {
+    transform: translateY(200px);
+}
+
+.h2 {
+    color: #ccc;
+    transform: translateY(200px);
+}
+
+/*----------------*/
+
+.main4 {
     grid-area: main3;
     display: flex;
     flex-direction: column;
