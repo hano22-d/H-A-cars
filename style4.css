@@ -16,31 +16,31 @@ body {
 }
 
 .icon {
-    background-image: url(img/iconGeneral.png);
-    background-size: cover;
-    width: 150px;
-    height: 150px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon img {
+    width: 80%;
+    filter: drop-shadow(0px 1px 1px wheat);
 }
 
 .h2a {
-    position: relative;
-    bottom: 45px;
-    color: #d4b4ad;
-    font-family: "Zen Dots", sans-serif;
+    margin: 0;
+    color: #FF4C29;
+    font-family: "Bowlby One SC", sans-serif;
     /*خط اسم الموقع*/
-    font-size: 50px;
-    text-shadow: 4px 2px 2px #FF4C29;
+    font-size: 2rem;
 }
 
-.h2b {
-    position: relative;
-    bottom: 45px;
-    color: #d4b4ad;
-    font-family: "Zen Dots", sans-serif;
-    /*خط اسم الموقع*/
-    font-weight: bolder;
-    font-size: 40px;
-    margin-left: 20px;
+.h2a span {
+    font-family: "Bowlby One SC", sans-serif;
+    color: wheat;
 }
 
 .tab {
@@ -269,7 +269,7 @@ button:hover {
     margin: 100px;
     border-radius: 12px;
     box-shadow: 0px 0px 4px 4px #FF4C29;
-    width: 280px;
+    max-width: 280px;
     grid-area: listdiv;
 }
 
@@ -320,25 +320,377 @@ button:hover {
 }
 
 .aboutlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     grid-area: aboutlinkk;
     padding: 65px;
     box-shadow: 0px 0px 4px 4px #FF4C29;
     background-color: #1B1B1B;
+}
+
+.search-div {
+    position: relative;
+    display: inline;
+    width: 90%;
+    height: 2rem;
+}
+
+.search-div input {
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem 0.7rem;
+    font-size: 16px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    outline: none;
+}
+
+.search-div .fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #FF4C29;
+    z-index: 1;
+    transition: width 0.5s ease;
+    pointer-events: none;
+    border-radius: 5px;
+}
+
+.search-div input:focus~.fill {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    color: wheat;
+    display: block;
+    order: -1;
+}
+
+.about p {
+    direction: rtl;
+    text-align: right;
+    line-height: 1.7rem;
+    font-family: "Almarai", sans-serif;
+    font-size: 1.2rem;
+}
+
+.p2 span {
+    font-family: "Zen Dots", sans-serif;
+    color: #FF4C29;
+}
+
+.links {
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.a2 {
-    font-family: "Zen Dots", sans-serif;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 50px;
-    text-transform: capitalize;
+.links a {
+    font-size: 2rem;
+}
+
+.links a:hover {
+    transform: scale(1.1);
+}
+
+.aboutlink h2 {
+    font-size: 1.7rem;
+    font-family: "Quantico", sans-serif;
+    color: #FF4C29;
+}
+
+.direction {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services-blog {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Services-blog h2 {
+    font-size: 2rem;
+    font-family: "Quantico", sans-serif;
+    color: #FF4C29;
 
 }
 
-.a2:hover {
-    text-decoration: underline 2px #FF4C29;
+.Services-blog a {
+    width: fit-content;
+    text-decoration: none;
+    color: wheat;
+    font-family: "Almarai", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.Services-blog a:hover {
+    color: #FF4C29;
+    word-spacing: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.privacy {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.privacy h2 {
+    font-size: 2rem;
+    font-family: "Quantico", sans-serif;
+    color: #FF4C29;
+    text-align: center;
+}
+
+.privacy a {
+    width: fit-content;
+    text-decoration: none;
+    color: wheat;
+    font-family: "Almarai", sans-serif;
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+.privacy a:hover {
+    color: #FF4C29;
+    word-spacing: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.map {
+    flex: 1;
+}
+
+.map iframe {
+    width: 50%;
+    margin-left: 5rem;
+    border: #FF4C29 2px solid;
+}
+
+
+
+/*Responsive to mobile*/
+@media (max-width: 600px) {
+    .body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icon {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        background-color: #1B1B1B;
+        flex: 1;
+    }
+
+    .icon img {
+        width: 100%;
+    }
+
+    .h2a {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .tab {
+        flex-direction: column;
+        gap: 0.4rem;
+        flex: 1;
+    }
+
+    .tab a {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    .grid {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        align-self: center;
+        width: 80%;
+        top: 0;
+        right: 0;
+        order: 1;
+    }
+
+    .listdiv {
+        width: 80%;
+        flex: 1;
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+
+    .aboutlink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .search-div {
+        position: relative;
+        display: inline;
+        width: 90%;
+        height: 1.5rem;
+    }
+
+    .search-div input {
+        width: 100%;
+        height: 100%;
+        padding: 0.7rem 0.7rem;
+        font-size: 16px;
+        border: 2px solid wheat;
+        border-radius: 5px;
+        background: transparent;
+        position: relative;
+        z-index: 2;
+        outline: none;
+    }
+
+    .search-div .fill {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #FF4C29;
+        z-index: 1;
+        transition: width 0.5s ease;
+        pointer-events: none;
+        border-radius: 5px;
+    }
+
+    .search-div input:focus~.fill {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        color: wheat;
+        display: block;
+    }
+
+    .about p {
+        direction: rtl;
+        text-align: center;
+        line-height: 1.7rem;
+        font-family: "Almarai", sans-serif;
+        font-size: 0.7rem;
+    }
+
+    .p2 span {
+        font-family: "Zen Dots", sans-serif;
+        color: #FF4C29;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-family: "Quantico", sans-serif;
+        color: #FF4C29;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .links a {
+        margin: 0 0 0 0.2rem;
+        font-size: 1rem;
+    }
+
+    .links a:hover {
+        transform: scale(1.1);
+    }
+
+    .direction {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Services-blog {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .Services-blog h2 {
+        font-size: 1.1rem;
+        font-family: "Quantico", sans-serif;
+        color: #FF4C29;
+        text-align: center;
+    }
+
+    .Services-blog a {
+        width: 100%;
+        text-decoration: none;
+        color: wheat;
+        font-family: "Almarai", sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .Services-blog a:hover {
+        color: #FF4C29;
+        word-spacing: 0.3rem;
+        transition: all 0.2s ease;
+    }
+
+    .map {
+        display: block;
+        flex: 1;
+    }
+
+    .map iframe {
+        margin: 0;
+        width: 80%;
+        height: 30%;
+        border: #FF4C29 2px solid;
+    }
+
+    .privacy {
+        display: none;
+    }
+
 }
