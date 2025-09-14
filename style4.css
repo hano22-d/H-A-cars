@@ -694,3 +694,85 @@ button:hover {
     }
 
 }
+
+/*Responsive to Ipad and Tabs*/
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tab {
+        gap: 1rem;
+    }
+
+    .tab a {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem 0;
+    }
+
+    .tab a:hover {
+        padding: 0.5rem 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header"
+            "listdiv listdiv listdiv listdiv"
+            "card1 card1 card2 card2"
+            "card3 card3 card4 card4"
+            "footer footer footer footer";
+        gap: 2rem;
+    }
+
+    .listdiv {
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        width: 40vw;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .direction {
+        width: 100%;
+
+    }
+
+    .Services-blog {
+        gap: 0.7rem;
+        flex: 2;
+    }
+
+    .privacy {
+        flex: 2;
+        gap: 1rem;
+    }
+
+    .privacy a {
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .map iframe {
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        border: #FF4C29 2px solid;
+    }
+
+}
