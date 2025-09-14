@@ -124,19 +124,59 @@ body {
     margin: 30px auto;
 }
 
-.car_card {
-    background: #fff;
-    border: 2px solid #ddd;
+.car_card1 {
+    background: #444444;
+    border: 2px solid #FF4C29;
     border-radius: 12px;
     width: 45%;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: card1 2s infinite ease-in-out alternate;
 }
 
-.car_image {
+@keyframes card1 {
+    0% {
+        border: 3px solid #FF4C29;
+    }
+
+    50% {
+        border: 3px solid #444444;
+    }
+
+    100% {
+        border: 3px solid #FF4C29;
+    }
+}
+
+.car_card2 {
+    background: #444444;
+    border: 2px solid #FF4C29;
+    border-radius: 12px;
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: card2 2s infinite ease-in-out alternate;
+}
+
+@keyframes card2 {
+    0% {
+        border: 3px solid #FF4C29;
+    }
+
+    50% {
+        border: 3px solid #444444;
+    }
+
+    100% {
+        border: 3px solid #FF4C29;
+    }
+}
+
+.car_image1 {
     width: 100%;
     height: 300px;
     background: #eee;
+    border: 2px solid #FF4C29;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -148,8 +188,50 @@ body {
     background-size: cover;
 }
 
+.car_image2 {
+    width: 100%;
+    height: 300px;
+    background: #eee;
+    border: 2px solid #FF4C29;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    background-image: url(img/audi_e_tron.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    background: #b1afaf;
+    border-radius: 10px;
+    border: 2px solid #ff2a00;
+    animation: special 2s infinite ease-in-out alternate;
+}
+
+@keyframes special {
+    0%{
+        background:#b1afaf ;
+        border: 2px solid #FF4C29;
+    }
+    50%{
+        background: #FF4C29;
+        color: #b1afaf;
+        border: 2px solid #FF4C29;
+    }
+    100%{
+        background: #b1afaf;
+        border: 2px solid #FF4C29;
+    }
+}
+
 
 .spacialists li {
+    color: #b7b7b7;
+    font-size: 25px;
     width: 100%;
     padding: 6px;
 }
@@ -166,42 +248,105 @@ body {
     margin: 20px 0;
 }
 
-.car_card2 {
+.car_card3 {
     width: 45%;
-    background: #cecece;
+    background: linear-gradient(270deg, #3333333f, #FF4C29, #3333333f);
     padding: 20px;
-    border: 2px solid #ddd;
+    border: 2px solid #3333332f;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 2s;
 }
 
-.car_card2 img {
+.car_card4 {
+    width: 45%;
+    background: linear-gradient(270deg, #3333333f, #FF4C29, #3333333f);
+    padding: 20px;
+    border: 2px solid #3333332f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 2s;
+}
+
+
+.car_card3 img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
+.car_card4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.h1_special {
+    font-size: 35px;
+    text-shadow: 0 0 15px #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+
 table {
     width: 100%;
+
     border-collapse: collapse;
 }
 
 th, td {
-    border: 1px solid #ddd;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.31),#FF4C29,rgba(0,0,0,0.31));
     padding: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
 }
 
 th {
-    background: #222;
-    color: #fff;
+
+    text-shadow: 0 0 20px wheat;
 }
 
 td {
-    background: #f9f9f9;
+
+    text-shadow: 0 0 20px wheat;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.th31 {
+    border-radius: 10px 0 0 0;
+}
+
+.th32 {
+    border-radius: 0 10px 0 0;
+}
+
+.th41 {
+   border-radius: 10px 0 0 0 ;
+}
+
+.th42 {
+    border-radius: 0 10px 0 0;
+}
+
+.td31 {
+    border-radius: 0 0 0 10px;
+}
+
+.td32 {
+    border-radius: 0 0 10px 0;
+}
+
+.td41 {
+    border-radius: 0 0 0 10px;
+}
+
+.td42 {
+    border-radius: 0 0 10px 0;
 }
 
 .aboutlink {
