@@ -249,7 +249,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     gap: 15px;
-    background: #444444;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
@@ -264,23 +263,20 @@ body {
     width: 1210px;
     height: 700px;
     border-radius: 5px;
+    border: 5px solid #727171;
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87)22%, transparent 55%), url(Home/hyundai_palisade_2025-3840x2160.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87)22%, transparent 55%), url(img/new-palisade-15.jpg);
 }
 
 .img_text0 {
-    transform: translateY(420px);
-    font-family: 'Times New Roman', Times, serif;
+    transform: translateY(470px);
+    font-family: "Almarai", sans-serif;
     padding: 20px;
     color: #ccc;
     font-size: 40px;
-    transform: translateY(500px);
+    text-align: right;
 }
 
-.img_text0:hover {
-    transition: 0.5s;
-    box-shadow: 0 0 10px 10px rgba(163, 160, 160, 0.87);
-}
 
 .pictures {
     grid-area: pic;
@@ -293,6 +289,7 @@ body {
     width: 390px;
     height: 200px;
     border-radius: 5px;
+    border: 5px solid #727171;
     background-image: url(img/Mercedes-Benz-2026.jpg);
     background-size: cover;
 }
@@ -302,6 +299,7 @@ body {
     width: 390px;
     height: 200px;
     border-radius: 5px;
+    border: 5px solid #727171;
     background-image: url(img/Rolls-Royse-spectre.jpg);
     background-size: cover;
 }
@@ -311,23 +309,26 @@ body {
     width: 390px;
     height: 200px;
     border-radius: 5px;
+    border: 5px solid #727171;
     background-image: url(img/BMW-series-7.jpg);
     background-size: cover;
 }
 
-.text_h1 {
-    font-size: 32.1px;
+.h2h {
+    font-family: "Almarai", sans-serif;
+    font-size: 30px;
     padding: 0;
-    color: #ccc;
-    text-align: left;
+    color: black;
+    text-align: right;
     transform: translateY(200px);
 }
 
-.text_p {
+.h2p {
+    font-family: "Almarai", sans-serif;
     margin: 0;
     padding: 0;
-    color: #ccc;
-    text-align: left;
+    color: black;
+    text-align: right;
     transform: translateY(200px);
 }
 
@@ -356,7 +357,6 @@ body {
     text-align: center;
 }
 
-
 .img_gallery {
     display: grid;
     padding: 20px 20px;
@@ -368,7 +368,8 @@ body {
         "e f g h imgbig"
         "i j k l imgbig"
         "m n o p imgbig"
-        "q r s t imgbig";
+        "q r s t imgbig"
+        ;
     row-gap: 15px;
     column-gap: 15px;
 }
@@ -387,6 +388,8 @@ body {
 }
 
 .logo:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
     mix-blend-mode: color-burn;
 }
 
@@ -422,7 +425,8 @@ body {
 }
 
 .all:hover {
-    transform: translateY(-2px);
+    transition: 0.3s;
+    transform: scale(1.1);
     box-shadow: 0px 0px 6px 0px black;
 }
 
@@ -654,7 +658,6 @@ body {
     grid-area: imgbig;
     background-image: url(img/Website-icon.webp);
     background-size: cover;
-    mix-blend-mode: multiply;
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px black;
 }
