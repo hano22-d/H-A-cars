@@ -90,12 +90,26 @@ body {
     align-items: center;
     padding: 10px;
     margin: 30px auto;
-    gap: 45px;
+    gap: 35px;
 }
 
 .datain input, select {
+    padding: 4px;
+    background: none;
     font-size: 15px;
-    box-shadow: 0 0 4px 2px #FF4C29;
+    border: 3px solid black;
+}
+
+.datain select:hover {
+    transition: 0.2s;
+    background: rgb(240, 248, 255);
+    box-shadow: 0 0 5px 1px black;
+}
+
+.datain input:hover {
+    transition: 0.2s;
+    background: rgb(240, 248, 255);
+    box-shadow: 0 0 5px 1px black;
 }
 
 .datain button {
