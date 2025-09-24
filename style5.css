@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #b1afaf;
 }
+
 /*
 .main_div {
     display: grid;
@@ -93,7 +94,8 @@ body {
     gap: 35px;
 }
 
-.datain input, select {
+.datain input,
+select {
     padding: 4px;
     background: none;
     font-size: 15px;
@@ -114,7 +116,7 @@ body {
 
 .datain button {
     padding: 5px 25px;
-     font-family: "Quantico", sans-serif;
+    font-family: "Quantico", sans-serif;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -123,6 +125,7 @@ body {
     color: #FF4C29;
     text-shadow: 1px 1px 1px black;
 }
+
 .datain button:hover {
     background-color: #FF4C29;
     border-radius: 10px;
@@ -192,11 +195,7 @@ body {
     background: #eee;
     border: 2px solid #FF4C29;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 15px;
-    font-size: 14px;
     color: #666;
     background-image: url(img/audi_e_tron.jpg);
     background-size: cover;
@@ -208,11 +207,7 @@ body {
     background: #eee;
     border: 2px solid #FF4C29;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 15px;
-    font-size: 14px;
     color: #666;
     background-image: url(img/audi_e_tron.jpg);
     background-size: cover;
@@ -227,16 +222,18 @@ h1 {
 }
 
 @keyframes special {
-    0%{
-        background:#b1afaf ;
+    0% {
+        background: #b1afaf;
         border: 2px solid #FF4C29;
     }
-    50%{
+
+    50% {
         background: #FF4C29;
         color: #b1afaf;
         border: 2px solid #FF4C29;
     }
-    100%{
+
+    100% {
         background: #b1afaf;
         border: 2px solid #FF4C29;
     }
@@ -264,7 +261,7 @@ h1 {
 
 .car_card3 {
     width: 45%;
-    background: linear-gradient(270deg, #3333333f, #FF4C29, #3333333f);
+    background: linear-gradient(270deg, #333333, #FF4C29, #333333);
     padding: 20px;
     border: 2px solid #3333332f;
     border-radius: 15px;
@@ -274,7 +271,7 @@ h1 {
 
 .car_card4 {
     width: 45%;
-    background: linear-gradient(270deg, #3333333f, #FF4C29, #3333333f);
+    background: linear-gradient(270deg, #333333, #FF4C29, #333333);
     padding: 20px;
     border: 2px solid #3333332f;
     border-radius: 15px;
@@ -300,67 +297,31 @@ h1 {
 }
 
 .h1_special {
+    font-family: "Quantico", sans-serif;
     font-size: 35px;
-    text-shadow: 0 0 15px #ccc;
-    font-weight: bold;
+    color: wheat;
+    -webkit-text-stroke: 1px #1B1B1B;
+    font-weight: 800;
     text-align: center;
 }
 
 table {
     width: 100%;
-
-    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-th, td {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.31),#FF4C29,rgba(0,0,0,0.31));
+th,
+td {
+    color: wheat;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.31), #FF4C29, rgba(0, 0, 0, 0.31));
     padding: 10px;
+    font-family: "Quantico", sans-serif;
     font-size: 20px;
     text-align: center;
 }
 
-th {
-
-    text-shadow: 0 0 20px wheat;
-}
-
-td {
-
-    text-shadow: 0 0 20px wheat;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.th31 {
-    border-radius: 10px 0 0 0;
-}
-
-.th32 {
-    border-radius: 0 10px 0 0;
-}
-
-.th41 {
-   border-radius: 10px 0 0 0 ;
-}
-
-.th42 {
-    border-radius: 0 10px 0 0;
-}
-
-.td31 {
-    border-radius: 0 0 0 10px;
-}
-
-.td32 {
-    border-radius: 0 0 10px 0;
-}
-
-.td41 {
-    border-radius: 0 0 0 10px;
-}
-
-.td42 {
-    border-radius: 0 0 10px 0;
+th h2 {
+    color: wheat;
 }
 
 .aboutlink {
@@ -526,4 +487,498 @@ td {
     width: 50%;
     margin-left: 5rem;
     border: #FF4C29 2px solid;
+}
+
+/*Responsive to mobile*/
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icon {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        background-color: #1B1B1B;
+        flex: 1;
+    }
+
+    .icon img {
+        width: 100%;
+    }
+
+    .h2a {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .tab {
+        flex-direction: column;
+        gap: 0.4rem;
+        flex: 1;
+    }
+
+    .tab a {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    .datain {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 1rem;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "id1 btn id3"
+            "id2 btn id4"
+            "selectCar1 btn selectCar2";
+    }
+
+    .datain input {
+        font-size: 0.55rem;
+    }
+
+    .datain select {
+        font-size: 0.55rem;
+        padding: 2px;
+    }
+
+    #id1 {
+        padding: 0;
+        grid-area: id1;
+    }
+
+    #id2 {
+        padding: 0;
+        grid-area: id2;
+    }
+
+    .selectCar1 {
+        grid-area: selectCar1;
+    }
+
+    .datain button {
+        grid-area: btn;
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    #id3 {
+        padding: 0;
+        grid-area: id3;
+    }
+
+    #id4 {
+        padding: 0;
+        grid-area: id4;
+    }
+
+    .selectCar2 {
+        grid-area: selectCar2;
+    }
+
+    .comparison_container {
+        width: 80vw;
+        gap: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .car_card1 {
+        width: 50%;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .car_card2 {
+        width: 50%;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .car_image1 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .car_image2 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .car_title {
+        font-size: 1.3rem;
+    }
+
+    .spacialists li {
+        font-size: 1rem;
+    }
+
+    .compare {
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+    }
+
+    .car_card3 {
+        width: 80%;
+    }
+
+    .car_card4 {
+        width: 80%;
+    }
+
+    .car_card3 img,
+    .car_card4 img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    td,
+    th {
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px #1B1B1B;
+    }
+
+    .h1_special {
+        font-size: 1.5rem;
+    }
+
+    .aboutlink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .search-div {
+        position: relative;
+        display: inline;
+        width: 90%;
+        height: 1.5rem;
+    }
+
+    .search-div input {
+        width: 100%;
+        height: 100%;
+        padding: 0.7rem 0.7rem;
+        font-size: 16px;
+        border: 2px solid wheat;
+        border-radius: 5px;
+        background: transparent;
+        position: relative;
+        z-index: 2;
+        outline: none;
+    }
+
+    .search-div .fill {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #FF4C29;
+        z-index: 1;
+        transition: width 0.5s ease;
+        pointer-events: none;
+        border-radius: 5px;
+    }
+
+    .search-div input:focus~.fill {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        color: wheat;
+        display: block;
+    }
+
+    .about p {
+        direction: rtl;
+        text-align: center;
+        line-height: 1.7rem;
+        font-family: "Almarai", sans-serif;
+        font-size: 0.7rem;
+    }
+
+    .p2 span {
+        font-family: "Zen Dots", sans-serif;
+        color: #FF4C29;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-family: "Quantico", sans-serif;
+        color: #FF4C29;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .links a {
+        margin: 0 0 0 0.2rem;
+        font-size: 1rem;
+    }
+
+    .links a:hover {
+        transform: scale(1.1);
+    }
+
+    .direction {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Services-blog {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .Services-blog h2 {
+        font-size: 1.1rem;
+        font-family: "Quantico", sans-serif;
+        color: #FF4C29;
+        text-align: center;
+    }
+
+    .Services-blog a {
+        width: 100%;
+        text-decoration: none;
+        color: wheat;
+        font-family: "Almarai", sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .Services-blog a:hover {
+        color: #FF4C29;
+        word-spacing: 0.3rem;
+        transition: all 0.2s ease;
+    }
+
+    .map {
+        display: block;
+        flex: 1;
+    }
+
+    .map iframe {
+        margin: 0;
+        width: 80%;
+        height: 30%;
+        border: #FF4C29 2px solid;
+    }
+
+    .privacy {
+        display: none;
+    }
+
+}
+
+/*Responsive to Ipad and Tabs*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tab {
+        gap: 1rem;
+    }
+
+    .tab a {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem 0;
+    }
+
+    .tab a:hover {
+        padding: 0.5rem 1rem;
+    }
+
+    .datain {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 3rem;
+        padding-bottom: 1rem;
+        row-gap: 2rem;
+        column-gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "selectCar1 selectCar1 selectCar2 selectCar2"
+            "id1 id2 id3 id4"
+            "btn btn btn btn"
+    }
+
+    .datain input {
+        font-size: 0.75rem;
+        padding: 6px;
+    }
+
+    .datain select {
+        margin: 0 auto;
+        width: 40%;
+        font-size: 0.5rem;
+        padding: 2px;
+    }
+
+    #id1 {
+        padding: 0;
+        grid-area: id1;
+    }
+
+    #id2 {
+        padding: 0;
+        grid-area: id2;
+    }
+
+    .selectCar1 {
+        grid-area: selectCar1;
+    }
+
+    .datain button {
+        justify-self: center;
+        width: fit-content;
+        grid-area: btn;
+        padding: 0.2rem 1rem;
+        font-size: 2.5rem;
+    }
+
+    #id3 {
+        padding: 0;
+        grid-area: id3;
+    }
+
+    #id4 {
+        padding: 0;
+        grid-area: id4;
+    }
+
+    .selectCar2 {
+        grid-area: selectCar2;
+    }
+
+    .comparison_container {
+        padding-bottom: 1rem;
+        width: 90vw;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .car_card1 {
+        width: 50%;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .car_card2 {
+        width: 50%;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .car_image1 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .car_image2 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .car_title {
+        font-size: 1.8rem;
+    }
+
+    .spacialists li {
+        font-size: 1.4rem;
+    }
+
+    .compare {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .car_card3 {
+        width: 80%;
+    }
+
+    .car_card4 {
+        width: 80%;
+    }
+
+    .car_card3 img,
+    .car_card4 img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    td,
+    th {
+        font-size: 1.7rem;
+        text-shadow: 1px 1px 1px #1B1B1B;
+    }
+
+    .h1_special {
+        font-size: 2.5rem;
+    }
+
+    .direction {
+        width: 100%;
+
+    }
+
+    .Services-blog {
+        gap: 0.7rem;
+        flex: 2;
+    }
+
+    .privacy {
+        flex: 2;
+        gap: 1rem;
+    }
+
+    .privacy a {
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .map iframe {
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        border: #FF4C29 2px solid;
+    }
+
 }
