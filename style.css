@@ -316,23 +316,29 @@ body {
     border-radius: 5px;
 }
 
+.h2p-h2h {
+    width: 80%;
+}
+
 .h2h {
+    width: 100%;
     font-family: "Almarai", sans-serif;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
     color: black;
-    text-align: center;
+    text-align: right;
 }
 
 .h2p {
+    width: 100%;
     font-size: 0.9rem;
     font-family: "Almarai", sans-serif;
     margin: 0;
     padding: 0;
     color: black;
     line-height: 2rem;
-    text-align: center;
+    text-align: right;
 }
 
 /*----------------*/
@@ -370,8 +376,8 @@ body {
 .img_gallery {
     display: grid;
     padding: 20px 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr) 5fr;
+    grid-template-rows: auto;
     grid-template-areas:
         "hu au bm ma gallary"
         "a b c d imgbig"
@@ -430,7 +436,7 @@ body {
 .all {
     cursor: pointer;
     width: 130px;
-    height: 85px;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0px 0px 2px 2px black;
 }
@@ -524,7 +530,7 @@ body {
 .imgbigers {
     align-self: center;
     width: 100%;
-    height: 80%;
+    height: auto;
     grid-area: imgbig;
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px black;
@@ -880,6 +886,7 @@ body {
     .photo2 img,
     .photo3 img {
         width: 40vw;
+        height: auto;
     }
 
     .h2p-h2h {
