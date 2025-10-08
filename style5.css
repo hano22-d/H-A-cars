@@ -1,7 +1,7 @@
 body {
-    height: 100%;
-    margin: 0;
-    background-color: #b1afaf;
+  height: 100%;
+  margin: 0;
+  background-color: #b1afaf;
 }
 
 /*
@@ -18,332 +18,663 @@ body {
 }*/
 
 .header {
-    height: 200px;
-    box-shadow: 0px 0px 4px 4px #FF4C29;
-    background-color: #1B1B1B;
-    grid-area: head;
-    display: flex;
-    justify-content: space-evenly;
+  height: 200px;
+  box-shadow: 0px 0px 4px 4px #ff4c29;
+  background-color: #1b1b1b;
+  grid-area: head;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .icon {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .icon img {
-    width: 80%;
-    filter: drop-shadow(0px 1px 1px wheat);
+  width: 80%;
+  filter: drop-shadow(0px 1px 1px wheat);
 }
 
 .h2a {
-    margin: 0;
-    color: #FF4C29;
-    font-family: "Bowlby One SC", sans-serif;
-    /*خط اسم الموقع*/
-    font-size: 2rem;
+  margin: 0;
+  color: #ff4c29;
+  font-family: "Bowlby One SC", sans-serif;
+  /*خط اسم الموقع*/
+  font-size: 2rem;
 }
 
 .h2a span {
-    font-family: "Bowlby One SC", sans-serif;
-    color: wheat;
+  font-family: "Bowlby One SC", sans-serif;
+  color: wheat;
 }
 
 .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .a1 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px 40px 30px 20px;
-    text-decoration: none;
-    color: wheat;
-    padding: 10px 25px;
-    font-family: "Quantico", sans-serif;
-    /*خط الازرار والخيارات*/
-    font-size: 20px;
-    font-weight: 700;
-    transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 40px 30px 20px;
+  text-decoration: none;
+  color: wheat;
+  padding: 10px 25px;
+  font-family: "Quantico", sans-serif;
+  /*خط الازرار والخيارات*/
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.2s ease;
 }
 
 .a1:hover {
-    color: black;
-    background-color: #FF4C29;
-    border-radius: 20px;
+  color: black;
+  background-color: #ff4c29;
+  border-radius: 20px;
 }
-
 
 /*جدولا المقارنة */
 
 .datain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 30px auto;
-    gap: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 30px auto;
+  gap: 35px;
 }
 
 .datain input,
 select {
-    padding: 4px;
-    background: none;
-    font-size: 15px;
-    border: 3px solid black;
+  padding: 4px;
+  background: none;
+  font-size: 15px;
+  border: 3px solid black;
 }
 
 .datain select:hover {
-    transition: 0.2s;
-    background: rgb(240, 248, 255);
-    box-shadow: 0 0 5px 1px black;
+  transition: 0.2s;
+  background: rgb(240, 248, 255);
+  box-shadow: 0 0 5px 1px black;
 }
 
 .datain input:hover {
-    transition: 0.2s;
-    background: rgb(240, 248, 255);
-    box-shadow: 0 0 5px 1px black;
+  transition: 0.2s;
+  background: rgb(240, 248, 255);
+  box-shadow: 0 0 5px 1px black;
 }
 
 .datain button {
-    padding: 5px 25px;
-    font-family: "Quantico", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    background: transparent;
-    color: #FF4C29;
-    text-shadow: 1px 1px 1px black;
+  padding: 5px 25px;
+  font-family: "Quantico", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  color: #ff4c29;
+  text-shadow: 1px 1px 1px black;
 }
 
 .datain button:hover {
-    background-color: #FF4C29;
-    border-radius: 10px;
-    transition: all 0.55s ease;
-    color: wheat;
+  background-color: #ff4c29;
+  border-radius: 10px;
+  transition: all 0.55s ease;
+  color: wheat;
 }
 
 .comparison_container {
-    grid-area: comp1;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px auto;
+  grid-area: comp1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
 }
 
 .car_card1 {
-    background: #444444;
-    border: 2px solid #FF4C29;
-    border-radius: 12px;
-    width: 45%;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    animation: card1 2s infinite ease-in-out alternate;
+  background: #444444;
+  border: 2px solid #ff4c29;
+  border-radius: 12px;
+  width: 45%;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: card1 2s infinite ease-in-out alternate;
 }
 
 @keyframes card1 {
-    0% {
-        border: 3px solid #FF4C29;
-    }
+  0% {
+    border: 3px solid #ff4c29;
+  }
 
-    50% {
-        border: 3px solid #444444;
-    }
+  50% {
+    border: 3px solid #444444;
+  }
 
-    100% {
-        border: 3px solid #FF4C29;
-    }
+  100% {
+    border: 3px solid #ff4c29;
+  }
 }
 
 .car_card2 {
-    background: #444444;
-    border: 2px solid #FF4C29;
-    border-radius: 12px;
-    width: 45%;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    animation: card2 2s infinite ease-in-out alternate;
+  background: #444444;
+  border: 2px solid #ff4c29;
+  border-radius: 12px;
+  width: 45%;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: card2 2s infinite ease-in-out alternate;
 }
 
 @keyframes card2 {
-    0% {
-        border: 3px solid #FF4C29;
-    }
+  0% {
+    border: 3px solid #ff4c29;
+  }
 
-    50% {
-        border: 3px solid #444444;
-    }
+  50% {
+    border: 3px solid #444444;
+  }
 
-    100% {
-        border: 3px solid #FF4C29;
-    }
+  100% {
+    border: 3px solid #ff4c29;
+  }
 }
 
 .car_image1 {
-    width: 100%;
-    height: 300px;
-    background: #eee;
-    border: 2px solid #FF4C29;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    color: #666;
-    background-image: url(img/audi_e_tron.jpg);
-    background-size: cover;
+  width: 100%;
+  height: 300px;
+  background: #eee;
+  border: 2px solid #ff4c29;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #666;
+  background-image: url(img/audi_e_tron.jpg);
+  background-size: cover;
 }
 
 .car_image2 {
-    width: 100%;
-    height: 300px;
-    background: #eee;
-    border: 2px solid #FF4C29;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    color: #666;
-    background-image: url(img/audi_e_tron.jpg);
-    background-size: cover;
+  width: 100%;
+  height: 300px;
+  background: #eee;
+  border: 2px solid #ff4c29;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #666;
+  background-image: url(img/audi_e_tron.jpg);
+  background-size: cover;
 }
 
 h1 {
-    text-align: center;
-    background: #b1afaf;
-    border-radius: 10px;
-    border: 2px solid #ff2a00;
-    animation: special 2s infinite ease-in-out alternate;
+  text-align: center;
+  background: #b1afaf;
+  border-radius: 10px;
+  border: 2px solid #ff2a00;
+  animation: special 2s infinite ease-in-out alternate;
 }
 
 @keyframes special {
-    0% {
-        background: #b1afaf;
-        border: 2px solid #FF4C29;
-    }
+  0% {
+    background: #b1afaf;
+    border: 2px solid #ff4c29;
+  }
 
-    50% {
-        background: #FF4C29;
-        color: #b1afaf;
-        border: 2px solid #FF4C29;
-    }
+  50% {
+    background: #ff4c29;
+    color: #b1afaf;
+    border: 2px solid #ff4c29;
+  }
 
-    100% {
-        background: #b1afaf;
-        border: 2px solid #FF4C29;
-    }
+  100% {
+    background: #b1afaf;
+    border: 2px solid #ff4c29;
+  }
 }
-
 
 .spacialists li {
-    color: #b7b7b7;
-    font-size: 25px;
-    width: 100%;
-    padding: 6px;
+  color: #b7b7b7;
+  font-size: 25px;
+  width: 100%;
+  padding: 6px;
 }
-
 
 /*جدولا المقارنة الجاهزة */
 
-
 .compare {
-    grid-area: comp2;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+  grid-area: comp2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
 }
 
 .car_card3 {
-    width: 45%;
-    background: linear-gradient(270deg, #333333, #FF4C29, #333333);
-    padding: 20px;
-    border: 2px solid #3333332f;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 2s;
+  width: 45%;
+  background: linear-gradient(270deg, #333333, #ff4c29, #333333);
+  padding: 20px;
+  border: 2px solid #3333332f;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 2s;
 }
 
 .car_card4 {
-    width: 45%;
-    background: linear-gradient(270deg, #333333, #FF4C29, #333333);
-    padding: 20px;
-    border: 2px solid #3333332f;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 2s;
+  width: 45%;
+  background: linear-gradient(270deg, #333333, #ff4c29, #333333);
+  padding: 20px;
+  border: 2px solid #3333332f;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 2s;
 }
 
-
 .car_card3 img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .car_card4 img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .h1_special {
-    font-family: "Quantico", sans-serif;
-    font-size: 35px;
-    color: wheat;
-    -webkit-text-stroke: 1px #1B1B1B;
-    font-weight: 800;
-    text-align: center;
+  font-family: "Quantico", sans-serif;
+  font-size: 35px;
+  color: wheat;
+  -webkit-text-stroke: 1px #1b1b1b;
+  font-weight: 800;
+  text-align: center;
 }
 
 table {
-    width: 100%;
-    border-spacing: 0;
+  width: 100%;
+  border-spacing: 0;
 }
 
 th,
 td {
-    color: wheat;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.31), #FF4C29, rgba(0, 0, 0, 0.31));
-    padding: 10px;
-    font-family: "Quantico", sans-serif;
-    font-size: 20px;
-    text-align: center;
+  color: wheat;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.31),
+    #ff4c29,
+    rgba(0, 0, 0, 0.31)
+  );
+  padding: 10px;
+  font-family: "Quantico", sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 th h2 {
-    color: wheat;
+  color: wheat;
 }
 
 .aboutlink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  grid-area: aboutlinkk;
+  padding: 65px;
+  box-shadow: 0px 0px 4px 4px #ff4c29;
+  background-color: #1b1b1b;
+}
+
+.search-div {
+  position: relative;
+  display: inline;
+  width: 90%;
+  height: 2rem;
+}
+
+.search-div input {
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem 0.7rem;
+  font-size: 16px;
+  border: 2px solid wheat;
+  border-radius: 5px;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  outline: none;
+}
+
+.search-div .fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: #ff4c29;
+  z-index: 1;
+  transition: width 0.5s ease;
+  pointer-events: none;
+  border-radius: 5px;
+}
+
+.search-div input:focus ~ .fill {
+  width: 100%;
+}
+
+.about {
+  width: 100%;
+  color: wheat;
+  display: block;
+  order: -1;
+}
+
+.about p {
+  direction: rtl;
+  text-align: right;
+  line-height: 1.7rem;
+  font-family: "Almarai", sans-serif;
+  font-size: 1.2rem;
+}
+
+.p2 span {
+  font-family: "Zen Dots", sans-serif;
+  color: #ff4c29;
+}
+
+.links {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links a {
+  font-size: 2rem;
+}
+
+.links a:hover {
+  transform: scale(1.1);
+}
+
+.aboutlink h2 {
+  font-size: 1.7rem;
+  font-family: "Quantico", sans-serif;
+  color: #ff4c29;
+}
+
+.direction {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Services-blog {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Services-blog h2 {
+  font-size: 2rem;
+  font-family: "Quantico", sans-serif;
+  color: #ff4c29;
+}
+
+.Services-blog a {
+  width: fit-content;
+  text-decoration: none;
+  color: wheat;
+  font-family: "Almarai", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.Services-blog a:hover {
+  color: #ff4c29;
+  word-spacing: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.privacy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.privacy h2 {
+  font-size: 2rem;
+  font-family: "Quantico", sans-serif;
+  color: #ff4c29;
+  text-align: center;
+}
+
+.privacy a {
+  width: fit-content;
+  text-decoration: none;
+  color: wheat;
+  font-family: "Almarai", sans-serif;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.privacy a:hover {
+  color: #ff4c29;
+  word-spacing: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.map {
+  flex: 1;
+}
+
+.map iframe {
+  width: 50%;
+  margin-left: 5rem;
+  border: #ff4c29 2px solid;
+}
+
+/*Responsive to mobile*/
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .header {
+    margin: 0;
+    padding: 0;
+  }
+
+  .icon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    background-color: #1b1b1b;
+    flex: 1;
+  }
+
+  .icon img {
+    width: 100%;
+  }
+
+  .h2a {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .tab {
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+  }
+
+  .tab a {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .datain {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "id1 btn id3"
+      "id2 btn id4"
+      "selectCar1 btn selectCar2";
+  }
+
+  .datain input {
+    font-size: 0.55rem;
+  }
+
+  .datain select {
+    font-size: 0.55rem;
+    padding: 2px;
+  }
+
+  #id1 {
+    padding: 0;
+    grid-area: id1;
+  }
+
+  #id2 {
+    padding: 0;
+    grid-area: id2;
+  }
+
+  .selectCar1 {
+    grid-area: selectCar1;
+  }
+
+  .datain button {
+    grid-area: btn;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  #id3 {
+    padding: 0;
+    grid-area: id3;
+  }
+
+  #id4 {
+    padding: 0;
+    grid-area: id4;
+  }
+
+  .selectCar2 {
+    grid-area: selectCar2;
+  }
+
+  .comparison_container {
+    width: 80vw;
+    gap: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .car_card1 {
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .car_card2 {
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .car_image1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .car_image2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .car_title {
+    font-size: 1.3rem;
+  }
+
+  .spacialists li {
+    font-size: 1rem;
+  }
+
+  .compare {
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+
+  .car_card3 {
+    width: 80%;
+  }
+
+  .car_card4 {
+    width: 80%;
+  }
+
+  .car_card3 img,
+  .car_card4 img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  td,
+  th {
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px #1b1b1b;
+  }
+
+  .h1_special {
+    font-size: 1.5rem;
+  }
+
+  .aboutlink {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    grid-area: aboutlinkk;
-    padding: 65px;
-    box-shadow: 0px 0px 4px 4px #FF4C29;
-    background-color: #1B1B1B;
-}
+    gap: 1rem;
+    padding: 1rem;
+  }
 
-.search-div {
+  .search-div {
     position: relative;
     display: inline;
     width: 90%;
-    height: 2rem;
-}
+    height: 1.5rem;
+  }
 
-.search-div input {
+  .search-div input {
     width: 100%;
     height: 100%;
     padding: 0.7rem 0.7rem;
@@ -354,631 +685,296 @@ th h2 {
     position: relative;
     z-index: 2;
     outline: none;
-}
+  }
 
-.search-div .fill {
+  .search-div .fill {
     position: absolute;
     bottom: 0;
     left: 0;
     height: 100%;
     width: 0;
-    background: #FF4C29;
+    background: #ff4c29;
     z-index: 1;
     transition: width 0.5s ease;
     pointer-events: none;
     border-radius: 5px;
-}
+  }
 
-.search-div input:focus~.fill {
+  .search-div input:focus ~ .fill {
     width: 100%;
-}
+  }
 
-.about {
+  .about {
     width: 100%;
     color: wheat;
     display: block;
-    order: -1;
-}
+  }
 
-.about p {
+  .about p {
     direction: rtl;
-    text-align: right;
+    text-align: center;
     line-height: 1.7rem;
     font-family: "Almarai", sans-serif;
-    font-size: 1.2rem;
-}
+    font-size: 0.7rem;
+  }
 
-.p2 span {
+  .p2 span {
     font-family: "Zen Dots", sans-serif;
-    color: #FF4C29;
-}
+    color: #ff4c29;
+  }
 
-.links {
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.links a {
-    font-size: 2rem;
-}
-
-.links a:hover {
-    transform: scale(1.1);
-}
-
-.aboutlink h2 {
-    font-size: 1.7rem;
+  h2 {
+    font-size: 1.2rem;
     font-family: "Quantico", sans-serif;
-    color: #FF4C29;
-}
+    color: #ff4c29;
+  }
 
-.direction {
-    width: 90%;
+  .links {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .links a {
+    margin: 0 0 0 0.2rem;
+    font-size: 1rem;
+  }
+
+  .links a:hover {
+    transform: scale(1.1);
+  }
+
+  .direction {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.Services-blog {
+  .Services-blog {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
+    gap: 0.5rem;
+  }
 
-.Services-blog h2 {
-    font-size: 2rem;
+  .Services-blog h2 {
+    font-size: 1.1rem;
     font-family: "Quantico", sans-serif;
-    color: #FF4C29;
+    color: #ff4c29;
+    text-align: center;
+  }
 
-}
-
-.Services-blog a {
-    width: fit-content;
+  .Services-blog a {
+    width: 100%;
     text-decoration: none;
     color: wheat;
     font-family: "Almarai", sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     text-align: center;
-}
+  }
 
-.Services-blog a:hover {
-    color: #FF4C29;
+  .Services-blog a:hover {
+    color: #ff4c29;
     word-spacing: 0.3rem;
     transition: all 0.2s ease;
-}
+  }
 
-.privacy {
+  .map {
+    display: block;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+  }
 
-.privacy h2 {
-    font-size: 2rem;
-    font-family: "Quantico", sans-serif;
-    color: #FF4C29;
-    text-align: center;
-}
+  .map iframe {
+    margin: 0;
+    width: 80%;
+    height: 30%;
+    border: #ff4c29 2px solid;
+  }
 
-.privacy a {
-    width: fit-content;
-    text-decoration: none;
-    color: wheat;
-    font-family: "Almarai", sans-serif;
-    font-size: 1.2rem;
-    align-self: center;
-}
-
-.privacy a:hover {
-    color: #FF4C29;
-    word-spacing: 0.3rem;
-    transition: all 0.2s ease;
-}
-
-.map {
-    flex: 1;
-}
-
-.map iframe {
-    width: 50%;
-    margin-left: 5rem;
-    border: #FF4C29 2px solid;
-}
-
-/*Responsive to mobile*/
-@media (max-width: 600px) {
-    body {
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    .header {
-        margin: 0;
-        padding: 0;
-    }
-
-    .icon {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-        background-color: #1B1B1B;
-        flex: 1;
-    }
-
-    .icon img {
-        width: 100%;
-    }
-
-    .h2a {
-        font-size: 1.5rem;
-        margin: 0;
-    }
-
-    .tab {
-        flex-direction: column;
-        gap: 0.4rem;
-        flex: 1;
-    }
-
-    .tab a {
-        margin: 0;
-        padding: 0;
-        font-size: 0.8rem;
-    }
-
-    .datain {
-        width: 80vw;
-        margin: 0 auto;
-        padding: 1rem;
-        gap: 1rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "id1 btn id3"
-            "id2 btn id4"
-            "selectCar1 btn selectCar2";
-    }
-
-    .datain input {
-        font-size: 0.55rem;
-    }
-
-    .datain select {
-        font-size: 0.55rem;
-        padding: 2px;
-    }
-
-    #id1 {
-        padding: 0;
-        grid-area: id1;
-    }
-
-    #id2 {
-        padding: 0;
-        grid-area: id2;
-    }
-
-    .selectCar1 {
-        grid-area: selectCar1;
-    }
-
-    .datain button {
-        grid-area: btn;
-        padding: 0;
-        font-size: 2rem;
-    }
-
-    #id3 {
-        padding: 0;
-        grid-area: id3;
-    }
-
-    #id4 {
-        padding: 0;
-        grid-area: id4;
-    }
-
-    .selectCar2 {
-        grid-area: selectCar2;
-    }
-
-    .comparison_container {
-        width: 80vw;
-        gap: 0.5rem;
-        margin: 0 auto;
-    }
-
-    .car_card1 {
-        width: 50%;
-        padding: 0.5rem;
-        margin: 0;
-    }
-
-    .car_card2 {
-        width: 50%;
-        padding: 0.5rem;
-        margin: 0;
-    }
-
-    .car_image1 {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
-    .car_image2 {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
-    .car_title {
-        font-size: 1.3rem;
-    }
-
-    .spacialists li {
-        font-size: 1rem;
-    }
-
-    .compare {
-        flex-direction: column;
-        align-items: center;
-        align-items: center;
-    }
-
-    .car_card3 {
-        width: 80%;
-    }
-
-    .car_card4 {
-        width: 80%;
-    }
-
-    .car_card3 img,
-    .car_card4 img {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
-    td,
-    th {
-        font-size: 1rem;
-        text-shadow: 1px 1px 1px #1B1B1B;
-    }
-
-    .h1_special {
-        font-size: 1.5rem;
-    }
-
-    .aboutlink {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .search-div {
-        position: relative;
-        display: inline;
-        width: 90%;
-        height: 1.5rem;
-    }
-
-    .search-div input {
-        width: 100%;
-        height: 100%;
-        padding: 0.7rem 0.7rem;
-        font-size: 16px;
-        border: 2px solid wheat;
-        border-radius: 5px;
-        background: transparent;
-        position: relative;
-        z-index: 2;
-        outline: none;
-    }
-
-    .search-div .fill {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 100%;
-        width: 0;
-        background: #FF4C29;
-        z-index: 1;
-        transition: width 0.5s ease;
-        pointer-events: none;
-        border-radius: 5px;
-    }
-
-    .search-div input:focus~.fill {
-        width: 100%;
-    }
-
-    .about {
-        width: 100%;
-        color: wheat;
-        display: block;
-    }
-
-    .about p {
-        direction: rtl;
-        text-align: center;
-        line-height: 1.7rem;
-        font-family: "Almarai", sans-serif;
-        font-size: 0.7rem;
-    }
-
-    .p2 span {
-        font-family: "Zen Dots", sans-serif;
-        color: #FF4C29;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-        font-family: "Quantico", sans-serif;
-        color: #FF4C29;
-    }
-
-    .links {
-        width: 100%;
-        justify-content: space-evenly;
-        margin: 0;
-    }
-
-    .links a {
-        margin: 0 0 0 0.2rem;
-        font-size: 1rem;
-    }
-
-    .links a:hover {
-        transform: scale(1.1);
-    }
-
-    .direction {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Services-blog {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .Services-blog h2 {
-        font-size: 1.1rem;
-        font-family: "Quantico", sans-serif;
-        color: #FF4C29;
-        text-align: center;
-    }
-
-    .Services-blog a {
-        width: 100%;
-        text-decoration: none;
-        color: wheat;
-        font-family: "Almarai", sans-serif;
-        font-size: 0.7rem;
-        text-align: center;
-    }
-
-    .Services-blog a:hover {
-        color: #FF4C29;
-        word-spacing: 0.3rem;
-        transition: all 0.2s ease;
-    }
-
-    .map {
-        display: block;
-        flex: 1;
-    }
-
-    .map iframe {
-        margin: 0;
-        width: 80%;
-        height: 30%;
-        border: #FF4C29 2px solid;
-    }
-
-    .privacy {
-        display: none;
-    }
-
+  .privacy {
+    display: none;
+  }
 }
 
 /*Responsive to Ipad and Tabs*/
 @media (min-width: 601px) and (max-width: 1024px) {
-    .header {
-        flex-direction: column;
-        height: auto;
-    }
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .tab {
-        gap: 1rem;
-    }
+  .tab {
+    gap: 1rem;
+  }
 
-    .tab a {
-        font-size: 1.5rem;
-        margin: 0;
-        padding: 2rem 0;
-    }
+  .tab a {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 2rem 0;
+  }
 
-    .tab a:hover {
-        padding: 0.5rem 1rem;
-    }
+  .tab a:hover {
+    padding: 0.5rem 1rem;
+  }
 
-    .datain {
-        width: 80vw;
-        margin: 0 auto;
-        padding: 3rem;
-        padding-bottom: 1rem;
-        row-gap: 2rem;
-        column-gap: 1.5rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "selectCar1 selectCar1 selectCar2 selectCar2"
-            "id1 id2 id3 id4"
-            "btn btn btn btn"
-    }
+  .datain {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 3rem;
+    padding-bottom: 1rem;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "selectCar1 selectCar1 selectCar2 selectCar2"
+      "id1 id2 id3 id4"
+      "btn btn btn btn";
+  }
 
-    .datain input {
-        font-size: 0.75rem;
-        padding: 6px;
-    }
+  .datain input {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
 
-    .datain select {
-        margin: 0 auto;
-        width: 40%;
-        font-size: 0.5rem;
-        padding: 2px;
-    }
+  .datain select {
+    margin: 0 auto;
+    width: 40%;
+    font-size: 0.5rem;
+    padding: 2px;
+  }
 
-    #id1 {
-        padding: 0;
-        grid-area: id1;
-    }
+  #id1 {
+    padding: 0;
+    grid-area: id1;
+  }
 
-    #id2 {
-        padding: 0;
-        grid-area: id2;
-    }
+  #id2 {
+    padding: 0;
+    grid-area: id2;
+  }
 
-    .selectCar1 {
-        grid-area: selectCar1;
-    }
+  .selectCar1 {
+    grid-area: selectCar1;
+  }
 
-    .datain button {
-        justify-self: center;
-        width: fit-content;
-        grid-area: btn;
-        padding: 0.2rem 1rem;
-        font-size: 2.5rem;
-    }
+  .datain button {
+    justify-self: center;
+    width: fit-content;
+    grid-area: btn;
+    padding: 0.2rem 1rem;
+    font-size: 2.5rem;
+  }
 
-    #id3 {
-        padding: 0;
-        grid-area: id3;
-    }
+  #id3 {
+    padding: 0;
+    grid-area: id3;
+  }
 
-    #id4 {
-        padding: 0;
-        grid-area: id4;
-    }
+  #id4 {
+    padding: 0;
+    grid-area: id4;
+  }
 
-    .selectCar2 {
-        grid-area: selectCar2;
-    }
+  .selectCar2 {
+    grid-area: selectCar2;
+  }
 
-    .comparison_container {
-        padding-bottom: 1rem;
-        width: 90vw;
-        gap: 2rem;
-        margin: 0 auto;
-    }
+  .comparison_container {
+    padding-bottom: 1rem;
+    width: 90vw;
+    gap: 2rem;
+    margin: 0 auto;
+  }
 
-    .car_card1 {
-        width: 50%;
-        padding: 1rem;
-        margin: 0;
-    }
+  .car_card1 {
+    width: 50%;
+    padding: 1rem;
+    margin: 0;
+  }
 
-    .car_card2 {
-        width: 50%;
-        padding: 1rem;
-        margin: 0;
-    }
+  .car_card2 {
+    width: 50%;
+    padding: 1rem;
+    margin: 0;
+  }
 
-    .car_image1 {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
+  .car_image1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 
-    .car_image2 {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
+  .car_image2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 
-    .car_title {
-        font-size: 1.8rem;
-    }
+  .car_title {
+    font-size: 1.8rem;
+  }
 
-    .spacialists li {
-        font-size: 1.4rem;
-    }
+  .spacialists li {
+    font-size: 1.4rem;
+  }
 
-    .compare {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .compare {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .car_card3 {
-        width: 80%;
-    }
+  .car_card3 {
+    width: 80%;
+  }
 
-    .car_card4 {
-        width: 80%;
-    }
+  .car_card4 {
+    width: 80%;
+  }
 
-    .car_card3 img,
-    .car_card4 img {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
+  .car_card3 img,
+  .car_card4 img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 
-    td,
-    th {
-        font-size: 1.7rem;
-        text-shadow: 1px 1px 1px #1B1B1B;
-    }
+  td,
+  th {
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 1px #1b1b1b;
+  }
 
-    .h1_special {
-        font-size: 2.5rem;
-    }
+  .h1_special {
+    font-size: 2.5rem;
+  }
 
-    .direction {
-        width: 100%;
+  .direction {
+    width: 100%;
+  }
 
-    }
+  .Services-blog {
+    gap: 0.7rem;
+    flex: 2;
+  }
 
-    .Services-blog {
-        gap: 0.7rem;
-        flex: 2;
-    }
+  .privacy {
+    flex: 2;
+    gap: 1rem;
+  }
 
-    .privacy {
-        flex: 2;
-        gap: 1rem;
-    }
+  .privacy a {
+    text-align: center;
+    line-height: 1.5rem;
+  }
 
-    .privacy a {
-        text-align: center;
-        line-height: 1.5rem;
-    }
-
-    .map iframe {
-        margin: 0;
-        width: 100%;
-        height: 50%;
-        border: #FF4C29 2px solid;
-    }
-
+  .map iframe {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    border: #ff4c29 2px solid;
+  }
 }
