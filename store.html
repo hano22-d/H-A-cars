@@ -1,434 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Store</title>
-    <link rel="icon" href="img/Website-icon.webp" />
-    <link rel="stylesheet" href="style3.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!--خط الازرار والخيارات-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!--خط العناوين-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!--خط اسم الموقع-->
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="controlar">
-      <header class="hr">
-        <div class="icon">
-          <img src="img/Car-Automobile-Fast-Vector-Logo-Design-Graphics-13409048-1-1-580x387.png" alt="">
-          <h2 class="h2a"> <span>H&A</span> CARS</h2>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store</title>
+  <link rel="icon" href="img/Website-icon.webp" />
+  <link rel="stylesheet" href="style3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!--خط الازرار والخيارات-->
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!--خط العناوين-->
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <!--خط اسم الموقع-->
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+</head>
 
-        <div class="tab">
-          <a class="a1" href="home.html">Home</a>
-          <a class="a1" href="cars.html">cars</a>
-          <a class="a1" href="compare.html">Compare</a>
-          <a class="a1" href="news.html">news</a>
-          <a class="a1" href="store.html">store</a>
-          <a class="a1" href="login.html">login</a>
-        </div>
-      </header>
-      <!-- قسم العروض -->
-      <aside class="sale">
-        <h1 class="sale_title">offers</h1>
-        <h1 class="car_name">Tesla Y</h1>
-        <div class="sale_img-text">
-          <ol class="sale_text">
-            <li>تسارع من 0 إلى 100 كم/س خلال 3.5 ثانية</li>
-            <li>نظام دفع رباعي AWD بمحركين</li>
-            <li>مدى يصل إلى 531 كم</li>
-            <li>مزودة بـ Autopilot</li>
-          </ol>
-          <img
-            class="sale_img"
-            src="img/tesla y.jpg"
-            alt="Tesla Y"
-            title="Tesla Y"
-            width="300px"
-          />
-        </div>
-        <div class="sale_price-submit">
-          <h2 class="price_old">50,490$</h2>
-          <h2 class="price_new">48,490$</h2>
-          <input class="go" type="button" value="انتقال" />
-        </div>
-      </aside>
-      <!-- قسم الاقتراحات-->
-      <aside class="suggestions">
-        <h1 class="sugg_title">suggestions</h1>
-        <h1 class="car_name">Hyundai Tucson 2010</h1>
-        <div class="sugg_img_text">
-          <img
-            class="sugg_img"
-            src="cars img (store page)/Hyundai/Hyundai-Tucson-2010.jpg"
-            alt="Tuscan 2010"
-            title="Tuscan 2010"
-            width="300px"
-          />
-          <ol class="sugg_text">
-            <li><b>4 سلندر، سعة 2.0 لتر (بنزين)</b>:المحرك الأساسي</li>
-            <li><b>164 حصان</b>:القوة الحصانية</li>
-            <li><b>أمامي (FWD)</b>نظام الدفع</li>
-            <li><b>حوالي 55 لتر</b>سعة خزان الوقود</li>
-          </ol>
-        </div>
-        <div class="goo_div">
-          <input class="goo" type="button" value="التالي" />
-          <input class="goo" type="button" value="شراء" />
-        </div>
-      </aside>
-      <!--قسم العرض -->
+<body>
+  <div class="controlar">
+    <header class="hr">
+      <div class="icon">
+        <img src="img/Car-Automobile-Fast-Vector-Logo-Design-Graphics-13409048-1-1-580x387.png" alt="">
+        <h2 class="h2a"> <span>H&A</span> CARS</h2>
+      </div>
 
-      <main class="view">
-        <div class="company">
-          <img src="" onclick="showCategories('toyota')" />
-          <img
-            class="marsids img"
-            src="img/marsidsicon (2).png"
-            width="110px"
-            onclick="showCategories('mercedes')"
-          />
-          <img
-            class="bmw img"
-            src="img/bmwico (1).png"
-            width="110px"
-            onclick="showCategories('bmw')"
-          />
-          <img
-            class="hyundai img"
-            src="img/Hyundai-Logo-11.png"
-            width="160px"
-            onclick="showCategories('hyundai')"
-          />
-          <img
-            class="kia img"
-            src="img/images (3).png"
-            width="140px"
-            onclick="showCategories('kia')"
-          />
+      <div class="tab">
+        <a class="a1" href="home.html">Home</a>
+        <a class="a1" href="cars.html">cars</a>
+        <a class="a1" href="compare.html">Compare</a>
+        <a class="a1" href="news.html">news</a>
+        <a class="a1" href="store.html">store</a>
+        <a class="a1" href="login.html">login</a>
+      </div>
+    </header>
+    <!-- قسم العروض -->
+    <aside class="sale">
+      <h1 class="sale_title">offers</h1>
+      <h1 class="car_name">Tesla Y</h1>
+      <div class="sale_img-text">
+        <ol class="sale_text">
+          <li>تسارع من 0 إلى 100 كم/س خلال 3.5 ثانية</li>
+          <li>نظام دفع رباعي AWD بمحركين</li>
+          <li>مدى يصل إلى 531 كم</li>
+          <li>مزودة بـ Autopilot</li>
+        </ol>
+        <img class="sale_img" src="img/tesla y.jpg" alt="Tesla Y" title="Tesla Y" width="300px" />
+      </div>
+      <div class="sale_price-submit">
+        <h2 class="price_old">50,490$</h2>
+        <h2 class="price_new">48,490$</h2>
+        <input class="go" type="button" value="انتقال" />
+      </div>
+    </aside>
+    <!-- قسم الاقتراحات-->
+    <aside class="suggestions">
+      <h1 class="sugg_title">suggestions</h1>
+      <h1 class="car_name">Hyundai Tucson 2010</h1>
+      <div class="sugg_img_text">
+        <img class="sugg_img" src="cars img (store page)/Hyundai/Hyundai-Tucson-2010.jpg" alt="Tuscan 2010"
+          title="Tuscan 2010" width="300px" />
+        <ol class="sugg_text">
+          <li><b>4 سلندر، سعة 2.0 لتر (بنزين)</b>:المحرك الأساسي</li>
+          <li><b>164 حصان</b>:القوة الحصانية</li>
+          <li><b>أمامي (FWD)</b>نظام الدفع</li>
+          <li><b>حوالي 55 لتر</b>سعة خزان الوقود</li>
+        </ol>
+      </div>
+      <div class="goo_div">
+        <input class="goo" type="button" value="التالي" />
+        <input class="goo" type="button" value="شراء" />
+      </div>
+    </aside>
+    <!--قسم العرض -->
+
+    <main class="view">
+      <div class="company">
+        <img src="" onclick="showCategories('toyota')" />
+        <img class="marsids img" src="img/marsidsicon (2).png" width="110px" onclick="showCategories('mercedes')" />
+        <img class="bmw img" src="img/bmwico (1).png" width="110px" onclick="showCategories('bmw')" />
+        <img class="hyundai img" src="img/Hyundai-Logo-11.png" width="160px" onclick="showCategories('hyundai')" />
+        <img class="kia img" src="img/images (3).png" width="140px" onclick="showCategories('kia')" />
+      </div>
+    </main>
+
+    <!--قسم البحث-->
+
+    <main class="view_search">
+      <div class="input_search">
+        <div class="d_s_label">
+          <label class="s_label">Chosse your reuest</label>
         </div>
-
-        <div class="categories">
-          <!-- هنا نعرض أزرار الفئات الخاصة بكل شركة -->
-          <div id="toyotaCategories" class="category-buttons"></div>
-          <div id="mercedesCategories" class="category-buttons"></div>
-          <div id="bmwCategories" class="category-buttons"></div>
-          <div id="hyundaiCategories" class="category-buttons"></div>
-          <div id="kiaCategories" class="category-buttons"></div>
-        </div>
-
-        <!-- هنا تظهر السيارات المشتركة -->
-        <div id="carDisplay" class="car-display"></div>
-      </main>
-
-      <!--قسم البحث-->
-
-      <main class="view_search">
-        <div class="input_search">
-          <div class="d_s_label">
-            <label class="s_label">Chosse your reuest</label>
-          </div>
-          <div class="in_search">
-            <input
-              class="in_ss"
-              type="search"
-              placeholder="chose the company"
-            />
-            <input class="in_ss" type="search" placeholder="chose the model" />
-            <input class="in_ss" type="search" placeholder="Year" />
-            <div class="in_submit">
-              <a class="in_s" href="#sec1">View</a>
-              <input class="in_s" type="submit" value="search" />
-            </div>
+        <div class="in_search">
+          <input class="in_ss" type="search" placeholder="chose the company" />
+          <input class="in_ss" type="search" placeholder="chose the model" />
+          <input class="in_ss" type="search" placeholder="Year" />
+          <div class="in_submit">
+            <a class="in_s" href="#sec1">View</a>
+            <input class="in_s" type="submit" value="search" />
           </div>
         </div>
+      </div>
 
-        <section id="sec1">
-          <div class="img_list_search">
-            <!--لتطبيق التعتيم-->
-            <div class="overlay"></div>
+      <section id="sec1">
+        <div class="img_list_search">
+          <!--لتطبيق التعتيم-->
+          <div class="overlay"></div>
 
-            <!--حاوية العنوان-->
-            <span class="the_car">🔥 CLS-Class 2014 🔥</span>
+          <!--حاوية العنوان-->
+          <span class="the_car">🔥 CLS-Class 2014 🔥</span>
 
-            <!--حاوية الصورة والمواصفات-->
-            <div class="list">
-              <img
-                class="img_search"
-                src="cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014.jpg"
-                width="600px"
-              />
-              <ul class="list_s" style="list-style: none; font-size: 18px">
-                <li><i class="fas fa-gauge"></i>سعة المحرك: 4.7 لتر</li>
-                <li><i class="fas fa-cogs"></i>عدد الاسطوانات: 8</li>
-                <li><i class="fas fa-bolt"></i>قوة المحرك: 402 حصان</li>
-                <li><i class="fas fa-gear"></i>ناقل الحركة: اوتوماتيكي</li>
-                <li><i class="fas fa-road"></i>نظام الدفع: دفع خلفي</li>
-                <li><i class="fas fa-user-friends"></i>عدد المقاعد: 4</li>
-                <li><i class="fas fa-wrench"></i>الحالة: جديد</li>
-                <li><i class="fas fa-percent"></i>نسبة النظافة: 100%</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- التذييل-->
-      <footer class="aboutlink">
-
-        <div class="search-div">
-          <input type="search" placeholder="Seatch">
-          <span class="fill"></span>
-        </div>
-    
-        <div class="about">
-          <p class="p2">مرحباً بك في <span>H&A Cars</span></p>
-          <p>
-            نحن هاني جمعة و علي سعدو، شغفنا بالسيارات كان الدافع الأكبر لإنشاء هذا
-            الموقع. هنا، نأخذك في جولة بين أحدث الطرازات، أخبار الصناعة، وتقنيات
-            المستقبل في عالم السيارات. هدفنا أن نصبح مرجعك الأول لكل ما تحتاجه عن
-            السيارات، من المواصفات والأسعار، إلى أحدث الإصدارات والنصائح الذكية.
-            في H&A Cars، نؤمن أن السيارة ليست مجرد وسيلة نقل، بل هي تجربة، قصة،
-            وعالم من الإبداع.
-          </p>
-        </div>
-    
-        <h2>Links</h2>
-        <div class="links">
-          <a id="email" class="a2" href="mailto:" title="تواصل معنا عبر البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
-          <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"><i class="fa-brands fa-facebook"></i></a>
-          <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"><i class="fa-brands fa-instagram"></i></a>
-          <a id="about" class="a2" href="" title="أسئلة شائعة"><i class="fa-solid fa-question"></i></a>
-          <a id="phone" class="a2" href=""  title="اتصل عبر الهاتف"><i class="fa-solid fa-phone-volume"></i></a>
-        </div>
-    
-        <div class="direction">
-    
-          <div class="Services-blog">
-            <h2>Services</h2>
-            <a href="">خدمة البحث عن السيارات</a>
-            <a href="">تقييم السيارات المستعملة</a>
-            <h2>Blog</h2>
-            <a href="">أخبار عالم السيارات</a>
-            <a href="">دليل المشتري</a>
-            <a href="">مقارنة السيارات</a>
-          </div>
-    
-          <div class="privacy">
-            <h2>Site policies</h2>
-            <a href="">سياسة الخصوصية</a>
-            <a href="">الشروط والاحكام</a>
-            <a href="">الكوكيز</a>
-          </div>
-    
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
-              width="100%" height="200" loading="lazy" title="Our title" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+          <!--حاوية الصورة والمواصفات-->
+          <div class="list">
+            <img class="img_search" src="cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014.jpg"
+              width="600px" />
+            <ul class="list_s" style="list-style: none; font-size: 18px">
+              <li><i class="fas fa-gauge"></i>سعة المحرك: 4.7 لتر</li>
+              <li><i class="fas fa-cogs"></i>عدد الاسطوانات: 8</li>
+              <li><i class="fas fa-bolt"></i>قوة المحرك: 402 حصان</li>
+              <li><i class="fas fa-gear"></i>ناقل الحركة: اوتوماتيكي</li>
+              <li><i class="fas fa-road"></i>نظام الدفع: دفع خلفي</li>
+              <li><i class="fas fa-user-friends"></i>عدد المقاعد: 4</li>
+              <li><i class="fas fa-wrench"></i>الحالة: جديد</li>
+              <li><i class="fas fa-percent"></i>نسبة النظافة: 100%</li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
 
-    <script>
-      const data = {
-        mercedes: {
-          CLS_Class: [
-            { name: "Marcedes CLS Class - 2007" },
-            { name: "Marcedes CLS Class - 2010" },
-            { name: "Marcedes CLS Class - 2014" },
-            { name: "Marcedes CLS Class - 2019" },
-            { name: "Marcedes CLS Class - 2023" },
-          ],
-          E_Class: [
-            { name: "Marcedes E Class - 2008" },
-            { name: "Marcedes E Class - 2012" },
-            { name: "Marcedes E Class - 2015" },
-            { name: "Marcedes E Class - 2020" },
-            { name: "Marcedes E Class - 2024" },
-          ],
-          G_Class: [
-            { name: "Marcedes G Class - 2009" },
-            { name: "Marcedes G Class - 2013" },
-            { name: "Marcedes G Class - 2018" },
-            { name: "Marcedes G Class - 2022" },
-            { name: "Marcedes G Class - 2025" },
-          ],
-          Maybach: [
-            { name: "Marcedes Maybach - 2016" },
-            { name: "Marcedes Maybach GLS SVU - 2021" },
-            { name: "Marcedes Maybach - 2023" },
-            { name: "Marcedes Maybach EQS SVU - 2024" },
-            { name: "Marcedes Maybach GLS SVU - 2024" },
-          ],
-          S_Class: [
-            { name: "Marcedes S Class - 2009" },
-            { name: "Marcedes S Class - 2013" },
-            { name: "Marcedes S Class - 2015" },
-            { name: "Marcedes S Class - 2021" },
-            { name: "Marcedes S Class - 2025" },
-          ],
-        },
-        bmw: {
-          Z4: [
-            { name: "BMW Z4 - 2010" },
-            { name: "BMW Z4 - 2014" },
-            { name: "BMW Z4 - 2019" },
-            { name: "BMW Z4 - 2023" },
-            { name: "BMW Z4 - 2025" },
-          ],
-          X5: [
-            { name: "BMW X5 - 2009" },
-            { name: "BMW X5 - 2013" },
-            { name: "BMW X5 - 2017" },
-            { name: "BMW X5 - 2022" },
-            { name: "BMW X5 - 2026" },
-          ],
-          M3: [
-            { name: "BMW M3 - 2010" },
-            { name: "BMW M3 - 2015" },
-            { name: "BMW X5 - 2017" },
-            { name: "BMW X5 - 2022" },
-            { name: "BMW X5 - 2025" },
-          ],
-          7: [
-            { name: "BMW 7 - 2011" },
-            { name: "BMW 7 - 2014" },
-            { name: "BMW 7 - 2016" },
-            { name: "BMW 7 - 2021" },
-            { name: "BMW 7 - 2025" },
-          ],
-          3: [
-            { name: "BMW 3 - 2015" },
-            { name: "BMW 3 - 2018" },
-            { name: "BMW 3 - 2020" },
-            { name: "BMW 3 - 2022" },
-            { name: "BMW 3 - 2024" },
-          ],
-        },
-        hyundai: {
-          SantaFe: [
-            { name: " Hyundai SantaFe - 2005" },
-            { name: "Hyundai SantaFe - 2007" },
-            { name: "Hyundai SantaFe - 2011" },
-            { name: "Hyundai SantaFe - 2018" },
-            { name: "Hyundai SantaFe - 2023" },
-          ],
-          Elentra: [
-            { name: "Hyundai Elantra - 2014" },
-            { name: "Hyundai Elantra - 2017" },
-            { name: "Hyundai Elantra - 2020" },
-            { name: "Hyundai Elantra - 2023" },
-            { name: "Hyundai Elantra - 2024" },
-          ],
-          Tuscon: [
-            { name: "Hyundai Tuscon - 2010" },
-            { name: "Hyundai Tuscon - 2013" },
-            { name: "Hyundai Tuscon - 2016" },
-            { name: "Hyundai Tuscon - 2022" },
-            { name: "Hyundai Tuscon - 2024" },
-          ],
-          Sonata: [
-            { name: "Hyundai Sonata - 2010" },
-            { name: "Hyundai Sonata - 2014" },
-            { name: "Hyundai Sonata - 2017" },
-            { name: "Hyundai Sonata - 2021" },
-            { name: "Hyundai Sonata - 2025" },
-          ],
-          Other: [
-            { name: "Hyundai Venue - 2024" },
-            { name: "Hyundai IONIQ 5 - 2023" },
-            { name: "Hyundai NEXO - 2023" },
-            { name: "Hyundai Palisad - 2023" },
-          ],
-        },
-        kia: {
-          Forte: [
-            { name: "KIA Forte - 2010" },
-            { name: "KIA Forte - 2014" },
-            { name: "KIA Forte - 2016" },
-            { name: "KIA Forte - 2019" },
-            { name: "KIA Forte - 2023" },
-          ],
-          K4_K5: [
-            { name: "KIA K4 - 2025" },
-            { name: "KIA K4 - 2026" },
-            { name: "KIA K5 - 2021" },
-            { name: "KIA K5 - 2025" },
-          ],
-          Sorento: [
-            { name: "KIA Sorento - 2011" },
-            { name: "KIA Sorento - 2018" },
-            { name: "KIA Sorento - 2021" },
-            { name: "KIA Sorento - 2022" },
-            { name: "KIA Sorento - 2025" },
-          ],
-          Sportage: [
-            { name: "KIA Sportage - 2011" },
-            { name: "KIA Sportage - 2017" },
-            { name: "KIA Sportage - 2019" },
-            { name: "KIA Sportage - 2021" },
-            { name: "KIA Sportage - 2025" },
-          ],
-          Other: [
-            { name: "KIA Carnival - 2025" },
-            { name: "KIA EV6 - 2024" },
-            { name: "KIA EV9 - 2024" },
-          ],
-        },
-      };
+    <!-- التذييل-->
+    <footer class="aboutlink">
 
-      function showCategories(company) {
-        const containerId = company + "Categories";
-        const container = document.getElementById(containerId);
-        container.innerHTML = ""; // مسح الأزرار القديمة
+      <div class="search-div">
+        <input type="search" placeholder="Seatch">
+        <span class="fill"></span>
+      </div>
 
-        const categories = Object.keys(data[company]);
-        categories.forEach((cat) => {
-          const btn = document.createElement("button");
-          btn.innerText = cat;
-          btn.onclick = () => showCars(company, cat);
-          container.appendChild(btn);
-        });
-      }
+      <div class="about">
+        <p class="p2">مرحباً بك في <span>H&A Cars</span></p>
+        <p>
+          نحن هاني جمعة و علي سعدو، شغفنا بالسيارات كان الدافع الأكبر لإنشاء هذا
+          الموقع. هنا، نأخذك في جولة بين أحدث الطرازات، أخبار الصناعة، وتقنيات
+          المستقبل في عالم السيارات. هدفنا أن نصبح مرجعك الأول لكل ما تحتاجه عن
+          السيارات، من المواصفات والأسعار، إلى أحدث الإصدارات والنصائح الذكية.
+          في H&A Cars، نؤمن أن السيارة ليست مجرد وسيلة نقل، بل هي تجربة، قصة،
+          وعالم من الإبداع.
+        </p>
+      </div>
 
-      function showCars(company, category) {
-        const cars = data[company][category];
-        const display = document.getElementById("carDisplay");
-        display.innerHTML = ""; // مسح السيارات القديمة
+      <h2>Links</h2>
+      <div class="links">
+        <a id="email" class="a2" href="mailto:" title="تواصل معنا عبر البريد الإلكتروني"><i
+            class="fa-solid fa-envelope"></i></a>
+        <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"><i class="fa-brands fa-facebook"></i></a>
+        <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"><i class="fa-brands fa-instagram"></i></a>
+        <a id="about" class="a2" href="" title="أسئلة شائعة"><i class="fa-solid fa-question"></i></a>
+        <a id="phone" class="a2" href="" title="اتصل عبر الهاتف"><i class="fa-solid fa-phone-volume"></i></a>
+      </div>
 
-        cars.forEach((car) => {
-          const carDiv = document.createElement("div");
-          carDiv.className = "car";
-          carDiv.innerHTML = `
-        <div class="span_buttons">
-          <span>${car.name}</span>
-          <div>
-            <button>عرض المواصفات</button>
-            <button>شراء</button>
-          </div>
-        `;
-          display.appendChild(carDiv);
-        });
-      }
-    </script>
-  </body>
+      <div class="direction">
+
+        <div class="Services-blog">
+          <h2>Services</h2>
+          <a href="">خدمة البحث عن السيارات</a>
+          <a href="">تقييم السيارات المستعملة</a>
+          <h2>Blog</h2>
+          <a href="">أخبار عالم السيارات</a>
+          <a href="">دليل المشتري</a>
+          <a href="">مقارنة السيارات</a>
+        </div>
+
+        <div class="privacy">
+          <h2>Site policies</h2>
+          <a href="">سياسة الخصوصية</a>
+          <a href="">الشروط والاحكام</a>
+          <a href="">الكوكيز</a>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
+            width="100%" height="200" loading="lazy" title="Our title" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
 </html>

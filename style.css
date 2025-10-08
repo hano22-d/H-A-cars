@@ -396,6 +396,7 @@ body {
     row-gap: 15px;
     column-gap: 15px;
 }
+
 .text_gallary {
     grid-area: gallary;
     width: 50px;

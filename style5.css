@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 700px 700px 200px;
-    grid-template-areas: 
+    grid-template-areas:
         "head"
         "comp1"
         "comp2"
