@@ -51,7 +51,6 @@ body {
   margin: 0;
   color: #ff4c29;
   font-family: "Bowlby One SC", sans-serif;
-  /*خط اسم الموقع*/
   font-size: 2rem;
 }
 
@@ -76,7 +75,6 @@ body {
   color: wheat;
   padding: 10px 25px;
   font-family: "Quantico", sans-serif;
-  /*خط الازرار والخيارات*/
   font-size: 1rem;
   font-weight: 700;
   transition: all 0.2s ease;
@@ -184,7 +182,7 @@ body {
 
 .h2c {
   color: #ff4c29;
-  font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
   padding: 10px;
   font-size: 15px;
   text-align: right;
@@ -214,16 +212,12 @@ body {
 
 .big_photo {
   height: 500px;
-  box-shadow: 0 0 10px 2px #1b1b1b;
-  border-radius: 5px;
+  border: 3px solid #b1afaf;
+  box-shadow: 0 0 10px 2px black;
   margin-right: 15px;
   margin-left: 15px;
   background-size: cover;
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.87) 22%,
-      transparent 55%
-    ),
+  background-image: linear-gradient(to top,rgba(0, 0, 0, 0.87) 22%, transparent 55%),
     url(img/new-palisade-15.jpg);
 }
 
@@ -256,8 +250,8 @@ body {
 .photo2 img,
 .photo3 img {
   width: 50%;
-  box-shadow: 0 0 10px 2px #1b1b1b;
-  border-radius: 5px;
+  border: 3px solid #b1afaf;
+  box-shadow: 0 0 10px 2px black;
 }
 
 .h2p-h2h {
@@ -303,8 +297,6 @@ body {
   text-align: right;
   line-height: 30px;
 }
-
-/*----------------*/
 
 .main4 {
   grid-area: main4;
@@ -526,10 +518,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 50% 5%;
+  border-top-right-radius: 50% 5%;
   gap: 3rem;
   grid-area: aboutlinkk;
   padding: 65px;
-  background-image: linear-gradient(to top, #1b1b1b 95%, #555555, transparent);
+  background: #1b1b1b;
+  filter: drop-shadow(10px 0 10px #ff4c29);
 }
 
 .search-div {
@@ -580,12 +575,12 @@ body {
   direction: rtl;
   text-align: right;
   line-height: 1.7rem;
-  font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
   font-size: 1.2rem;
 }
 
 .p2 span {
-  font-family: "Zen Dots", sans-serif;
+  font-family: "Markazi Text", serif;
   color: #ff4c29;
 }
 
@@ -606,7 +601,7 @@ body {
 
 .aboutlink h2 {
   font-size: 1.7rem;
-  font-family: "Quantico", sans-serif;
+  font-family: "Markazi Text", serif;
   color: #ff4c29;
 }
 
@@ -626,7 +621,7 @@ body {
 
 .Services-blog h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
+  font-family: "Markazi Text", serif;
   color: #ff4c29;
 }
 
@@ -634,7 +629,7 @@ body {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -654,7 +649,7 @@ body {
 
 .privacy h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
+  font-family: "Markazi Text", serif;
   color: #ff4c29;
   text-align: center;
 }
@@ -663,7 +658,7 @@ body {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
   font-size: 1.2rem;
   align-self: center;
 }
@@ -684,6 +679,7 @@ body {
 }
 
 /*Responsive to mobile*/
+
 @media (max-width: 600px) {
   body {
     padding: 0;
@@ -757,7 +753,7 @@ body {
   }
 
   .price1 {
-    font-family: "Quantico", sans-serif;
+  font-family: "Markazi Text", serif;
     font-size: 0.4rem;
     font-weight: 700;
     text-transform: capitalize;
@@ -795,7 +791,7 @@ body {
   }
 
   .p1 {
-    font-family: "Almarai", sans-serif;
+    font-family: "Markazi Text", serif;
     margin: 0;
     padding: 0 0.5rem;
     font-size: 0.7rem;
@@ -878,7 +874,7 @@ body {
   }
 
   .h2h {
-    font-family: "Almarai", sans-serif;
+    font-family: "Markazi Text", serif;
     font-size: 0.8rem;
     padding: 0;
     color: black;
@@ -887,7 +883,7 @@ body {
 
   .h2p {
     line-height: 1rem;
-    font-family: "Almarai", sans-serif;
+    font-family: "Markazi Text", serif;
     font-size: 0.5rem;
     margin: 0;
     padding: 0;
@@ -1019,18 +1015,18 @@ body {
     direction: rtl;
     text-align: center;
     line-height: 1.7rem;
-    font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
     font-size: 0.7rem;
   }
 
   .p2 span {
-    font-family: "Zen Dots", sans-serif;
+  font-family: "Markazi Text", serif;
     color: #ff4c29;
   }
 
   h2 {
     font-size: 1.2rem;
-    font-family: "Quantico", sans-serif;
+  font-family: "Markazi Text", serif;
     color: #ff4c29;
   }
 
@@ -1065,7 +1061,7 @@ body {
 
   .Services-blog h2 {
     font-size: 1.1rem;
-    font-family: "Quantico", sans-serif;
+  font-family: "Markazi Text", serif;
     color: #ff4c29;
     text-align: center;
   }
@@ -1074,7 +1070,7 @@ body {
     width: 100%;
     text-decoration: none;
     color: wheat;
-    font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
     font-size: 0.7rem;
     text-align: center;
   }
