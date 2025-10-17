@@ -221,17 +221,18 @@ body {
 }
 
 .goo_div {
+  height: 88px;
   margin-right: 350px;
+  gap: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .goo {
-  padding: 5px 20px;
   font-family: "Markazi Text", serif;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 800;
   background-color: #44444400;
   border: none;
   color: wheat;
@@ -242,6 +243,8 @@ body {
   border-radius: 7px;
   transition: all 0.2s ease-in-out;
 }
+
+/**/
 
 .view {
   grid-area: view;
