@@ -3,9 +3,56 @@ body {
   margin: 0%;
 }
 
+:root {
+  --Body-color: #b1afaf;
+  --feaderAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ff4c29;
+  --text-color: #111;
+  --text-headerFoter-color: wheat;
+  --window-color: #9190904;
+
+  --font-English: Georgia, "Times New Roman", Times, serif;
+}
+
+header,
+footer {
+  background-color: var(--feaderAndfooter-color);
+}
+
+button {
+  background-color: var(--button-color);
+}
+
+a {
+  color: var(--link-color);
+  font-size: var(--font-English);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-size: var(--font-English);
+}
+
+p,
+span,
+pre {
+  color: var(--text-color);
+  font-size: var(--font-English);
+}
+
+header p,
+footer p,
+header span {
+  color: var(--text-headerFoter-color);
+  font-size: var(--font-English);
+}
+
 .mudir {
   background-color: #b1afaf;
-  height: 100%;
   direction: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 200px 300px 200px 1fr auto;
@@ -18,11 +65,10 @@ body {
 }
 
 .headerr {
-  height: 200px;
   grid-area: he;
-  box-shadow: 0px 0px 4px 4px #ff4c29;
+  filter: drop-shadow(0 6px 5px #ff4c29);
   background-color: #1b1b1b;
-    border-bottom-left-radius: 50% 20%;
+  border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
   display: flex;
   flex-direction: column;
@@ -49,13 +95,11 @@ body {
   margin: 0;
   color: #ff4c29;
   font-family: "Bowlby One SC", sans-serif;
-  /*خط اسم الموقع*/
   font-size: 2rem;
 }
 
 .h2a span {
   font-family: "Bowlby One SC", sans-serif;
-  color: wheat;
 }
 
 .tab {
@@ -73,8 +117,6 @@ body {
   text-decoration: none;
   color: wheat;
   padding: 10px 25px;
-  font-family: "Quantico", sans-serif;
-  /*خط الازرار والخيارات*/
   font-size: 1rem;
   font-weight: 700;
   transition: all 0.2s ease;
@@ -124,7 +166,6 @@ body {
   font-size: 1.7rem;
   text-align: right;
   margin-right: 10px;
-  font-family: "Almarai", sans-serif;
   line-height: 50px;
 }
 
@@ -132,7 +173,6 @@ body {
   background-color: #b1afaf;
   margin: 10px;
   padding: 5px 15px;
-  font-family: "Quantico", sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   border: none;
@@ -166,7 +206,6 @@ body {
 }
 
 .filter_title {
-  font-family: "Almarai", sans-serif;
   font-size: 30px;
   color: #ff4c29;
   text-shadow: 1px 1px 2px #1b1b1b;
@@ -194,7 +233,6 @@ body {
 
 .result_submit {
   background-color: #b1afaf;
-  font-family: "Quantico", sans-serif;
   font-size: 20px;
   font-weight: 900;
   border: none;
@@ -227,7 +265,6 @@ body {
   padding: 10px;
   background-color: wheat;
   border: none;
-  font-family: "Almarai", sans-serif;
 }
 
 .BU:hover {
@@ -248,7 +285,6 @@ body {
 .results {
   padding: 45px 20px 0px 0px;
   text-align: right;
-  font-family: "Almarai", sans-serif;
   font-size: 30px;
   color: #ff4c29;
 }
@@ -319,7 +355,6 @@ body {
   color: wheat;
   font-size: 21px;
   text-align: right;
-  font-family: "Almarai", sans-serif;
   line-height: 40px;
 }
 
@@ -387,12 +422,10 @@ body {
   direction: rtl;
   text-align: right;
   line-height: 1.7rem;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
 }
 
 .p2 span {
-  font-family: "Zen Dots", sans-serif;
   color: #ff4c29;
 }
 
@@ -413,7 +446,6 @@ body {
 
 .aboutlink h2 {
   font-size: 1.7rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
 }
 
@@ -433,7 +465,6 @@ body {
 
 .Services-blog h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
 }
 
@@ -441,7 +472,6 @@ body {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -461,7 +491,6 @@ body {
 
 .privacy h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
   text-align: center;
 }
@@ -470,7 +499,6 @@ body {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
   align-self: center;
 }
@@ -644,18 +672,15 @@ body {
     direction: rtl;
     text-align: center;
     line-height: 1.7rem;
-    font-family: "Almarai", sans-serif;
     font-size: 0.7rem;
   }
 
   .p2 span {
-    font-family: "Zen Dots", sans-serif;
     color: #ff4c29;
   }
 
   h2 {
     font-size: 1.2rem;
-    font-family: "Quantico", sans-serif;
     color: #ff4c29;
   }
 
@@ -690,7 +715,6 @@ body {
 
   .Services-blog h2 {
     font-size: 1.1rem;
-    font-family: "Quantico", sans-serif;
     color: #ff4c29;
     text-align: center;
   }
@@ -699,7 +723,6 @@ body {
     width: 100%;
     text-decoration: none;
     color: wheat;
-    font-family: "Almarai", sans-serif;
     font-size: 0.7rem;
     text-align: center;
   }

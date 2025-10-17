@@ -4,24 +4,57 @@ body {
   background-color: #b1afaf;
 }
 
-/*
-.main_div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 700px 700px 200px;
-    grid-template-areas:
-        "head"
-        "comp1"
-        "comp2"
-        "foot"
-    ;
-}*/
+:root {
+  --Body-color: #b1afaf;
+  --feaderAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ff4c29;
+  --text-color: #111;
+  --text-headerFoter-color: wheat;
+  --window-color: #9190904;
+  --font-English: Georgia, "Times New Roman", Times, serif;
+}
+
+header,
+footer {
+  background-color: var(--feaderAndfooter-color);
+}
+
+button {
+  background-color: var(--button-color);
+}
+
+a {
+  color: var(--link-color);
+  font-size: var(--font-English);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-size: var(--font-English);
+}
+
+p,
+span,
+pre {
+  color: var(--text-color);
+  font-size: var(--font-English);
+}
+
+header p,
+footer p,
+header span {
+  color: var(--text-headerFoter-color);
+  font-size: var(--font-English);
+}
 
 .header {
-  height: 200px;
-  box-shadow: 0px 0px 4px 4px #ff4c29;
+  filter: drop-shadow(0 6px 5px #ff4c29);
   background-color: #1b1b1b;
-    border-bottom-left-radius: 50% 20%;
+  border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
   grid-area: head;
   display: flex;
@@ -49,13 +82,11 @@ body {
   margin: 0;
   color: #ff4c29;
   font-family: "Bowlby One SC", sans-serif;
-  /*خط اسم الموقع*/
   font-size: 2rem;
 }
 
 .h2a span {
   font-family: "Bowlby One SC", sans-serif;
-  color: wheat;
 }
 
 .tab {
@@ -73,8 +104,6 @@ body {
   text-decoration: none;
   color: wheat;
   padding: 10px 25px;
-  font-family: "Quantico", sans-serif;
-  /*خط الازرار والخيارات*/
   font-size: 1rem;
   font-weight: 700;
   transition: all 0.2s ease;

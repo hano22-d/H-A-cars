@@ -152,7 +152,8 @@ header span {
 .infobar img {
   width: 135px;
   object-fit: cover;
-  border-radius: 5px;
+  box-shadow: 0 0 7px 3px black;
+  border-radius: 0 5px 5px 0;
 }
 
 .price1 {
@@ -161,7 +162,8 @@ header span {
   text-transform: capitalize;
   color: var(--text-color);
   padding: 5px;
-  border: #111 2px solid;
+  border-radius: 0 5px 5px 0;
+ box-shadow: 0 0 7px 3px black;
 }
 
 /* حركة الشريط */
@@ -357,8 +359,8 @@ header span {
   text-align: center;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
-  -webkit-text-stroke: 3px #1b1b1b;
+  background-image: linear-gradient(to right, black, black, black);
+  -webkit-text-stroke: 0.2px #fff;
   letter-spacing: 0.5rem;
   position: relative;
   top: 80px;

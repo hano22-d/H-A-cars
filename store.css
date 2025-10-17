@@ -3,12 +3,59 @@ body {
   margin: 0%;
 }
 
+:root {
+  --Body-color: #b1afaf;
+  --feaderAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ff4c29;
+  --text-color: #111;
+  --text-headerFoter-color: wheat;
+  --window-color: #9190904;
+
+  --font-English: Georgia, "Times New Roman", Times, serif;
+}
+
+header,
+footer {
+  background-color: var(--feaderAndfooter-color);
+}
+
+button {
+  background-color: var(--button-color);
+}
+
+a {
+  color: var(--link-color);
+  font-size: var(--font-English);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-size: var(--font-English);
+}
+
+p,
+span,
+pre {
+  color: var(--text-color);
+  font-size: var(--font-English);
+}
+
+header p,
+footer p,
+header span {
+  color: var(--text-headerFoter-color);
+  font-size: var(--font-English);
+}
+
 .controlar {
   background-color: #b1afaf;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 200px auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "hrr hrr"
     "sale suggestions"
@@ -19,7 +66,7 @@ body {
 
 .hr {
   grid-area: hrr;
-  box-shadow: 0px 0px 4px 4px #ff4c29;
+  filter: drop-shadow(0 6px 5px #ff4c29);
   background-color: #1b1b1b;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
@@ -48,13 +95,11 @@ body {
   margin: 0;
   color: #ff4c29;
   font-family: "Bowlby One SC", sans-serif;
-  /*خط اسم الموقع*/
   font-size: 2rem;
 }
 
 .h2a span {
   font-family: "Bowlby One SC", sans-serif;
-  color: wheat;
 }
 
 .tab {
@@ -72,8 +117,6 @@ body {
   text-decoration: none;
   color: wheat;
   padding: 10px 25px;
-  font-family: "Quantico", sans-serif;
-  /*خط الازرار والخيارات*/
   font-size: 1rem;
   font-weight: 700;
   transition: all 0.2s ease;
@@ -99,7 +142,6 @@ body {
 
 .sale_title {
   color: #ff4c29;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px black;
@@ -115,7 +157,6 @@ body {
 .sale_text {
   order: 1;
   direction: rtl;
-  font-family: "Markazi Text", serif;
   font-size: 18px;
   font-weight: 800;
   color: wheat;
@@ -139,8 +180,6 @@ body {
 
 .go {
   margin-right: 220px;
-
-  font-family: "Markazi Text", serif;
   font-size: 25px;
   font-weight: 700;
   background-color: #44444400;
@@ -158,7 +197,6 @@ body {
   padding: 5px;
   border-radius: 7px;
   order: 1;
-  font-family: "Almarai", sans-serif;
   color: aliceblue;
   animation: new 1s infinite step-end alternate;
 }
@@ -181,7 +219,6 @@ body {
   padding: 5px;
   border-radius: 7px;
   order: 1;
-  font-family: "Markazi Text", serif;
   color: aliceblue;
   text-decoration: 2px solid orange line-through;
   animation: old 1s infinite 1s step-end alternate;
@@ -216,7 +253,6 @@ body {
 
 .car_name {
   color: #d4b4ad;
-  font-family: Georgia, "Times New Roman", Times, serif;
   text-shadow: 1px 1px 1px black;
 }
 
@@ -230,7 +266,6 @@ body {
 }
 
 .goo {
-  font-family: "Markazi Text", serif;
   font-size: 25px;
   font-weight: 800;
   background-color: #44444400;
@@ -336,7 +371,6 @@ body {
   margin-top: 45px;
   color: #ff4c29;
   -webkit-text-stroke: 2px black;
-  font-family: Georgia, "Times New Roman", Times, serif;
   background: linear-gradient(270deg, #ff4c29, black, #ff4c29, black);
   background-size: 1000% 1000%;
   background-clip: text;
@@ -369,7 +403,6 @@ body {
 .in_search [placeholder] {
   background-color: azure;
   padding: 10px 15px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   border-radius: 5px;
   margin: 30px;
@@ -392,7 +425,6 @@ body {
   text-decoration: none;
   background-color: #1b1b1b00;
   padding: 7px 15px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: 700;
   margin: 30px;
@@ -439,7 +471,6 @@ body {
   position: relative;
   bottom: 15px;
   right: 30px;
-  font-family: "Quantico", sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: white;
@@ -462,7 +493,6 @@ body {
 }
 
 .list {
-  font-family: "Alexandria", sans-serif;
   font-weight: 800;
   display: flex;
   flex-direction: row;
@@ -486,7 +516,6 @@ body {
   color: antiquewhite;
   font-size: 23px;
   direction: rtl;
-  font-family: "Almarai", sans-serif;
   line-height: 50px;
   position: relative;
   left: 150px;
@@ -564,12 +593,10 @@ i {
   direction: rtl;
   text-align: right;
   line-height: 1.7rem;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
 }
 
 .p2 span {
-  font-family: "Zen Dots", sans-serif;
   color: #ff4c29;
 }
 
@@ -590,7 +617,6 @@ i {
 
 .aboutlink h2 {
   font-size: 1.7rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
 }
 
@@ -610,7 +636,6 @@ i {
 
 .Services-blog h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
 }
 
@@ -618,7 +643,6 @@ i {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -638,7 +662,6 @@ i {
 
 .privacy h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
   text-align: center;
 }
@@ -647,7 +670,6 @@ i {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
   align-self: center;
 }
@@ -961,18 +983,15 @@ i {
     direction: rtl;
     text-align: center;
     line-height: 1.7rem;
-    font-family: "Almarai", sans-serif;
     font-size: 0.7rem;
   }
 
   .p2 span {
-    font-family: "Zen Dots", sans-serif;
     color: #ff4c29;
   }
 
   h2 {
     font-size: 1.2rem;
-    font-family: "Quantico", sans-serif;
     color: #ff4c29;
   }
 
@@ -1007,7 +1026,6 @@ i {
 
   .Services-blog h2 {
     font-size: 1.1rem;
-    font-family: "Quantico", sans-serif;
     color: #ff4c29;
     text-align: center;
   }
@@ -1016,7 +1034,6 @@ i {
     width: 100%;
     text-decoration: none;
     color: wheat;
-    font-family: "Almarai", sans-serif;
     font-size: 0.7rem;
     text-align: center;
   }
