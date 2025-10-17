@@ -245,7 +245,6 @@ body {
 
 .view {
   grid-area: view;
-
   border-radius: 15px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
   background-color: #444444;
