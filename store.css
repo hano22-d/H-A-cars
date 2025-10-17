@@ -8,7 +8,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 200px 800px 1200px 1200px auto;
+  grid-template-rows: 200px auto auto auto auto;
   grid-template-areas:
     "hrr hrr"
     "sale suggestions"
@@ -21,7 +21,7 @@ body {
   grid-area: hrr;
   box-shadow: 0px 0px 4px 4px #ff4c29;
   background-color: #1b1b1b;
-    border-bottom-left-radius: 50% 20%;
+  border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
   display: flex;
   flex-direction: column;
@@ -98,9 +98,8 @@ body {
 }
 
 .sale_title {
-  margin-top: 50px;
   color: #ff4c29;
-  font-family: "Black Ops One", system-ui;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px black;
@@ -110,14 +109,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   padding: 20px;
 }
 
 .sale_text {
   order: 1;
   direction: rtl;
-  font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
   font-size: 18px;
   font-weight: 800;
   color: wheat;
@@ -127,6 +125,8 @@ body {
 }
 
 .sale_img {
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
   box-shadow: 0px 0px 2px 2px black;
 }
@@ -135,15 +135,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 15px;
 }
 
 .go {
   margin-right: 220px;
-  padding: 5px 20px;
-  font-family: "Almarai", sans-serif;
-  font-size: 18px;
+
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
   font-weight: 700;
   background-color: #44444400;
   border: none;
@@ -183,7 +181,7 @@ body {
   padding: 5px;
   border-radius: 7px;
   order: 1;
-  font-family: "Almarai", sans-serif;
+  font-family: "Markazi Text", serif;
   color: aliceblue;
   text-decoration: 2px solid orange line-through;
   animation: old 1s infinite 1s step-end alternate;
@@ -205,68 +203,34 @@ body {
 
 .suggestions {
   margin: 20px;
+  grid-area: suggestions;
   border-radius: 15px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
   background-color: #444444;
-  grid-area: suggestions;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.sugg_title {
-  margin-top: 20px;
-  color: #ff4c29;
-  font-family: "Black Ops One", system-ui;
-  font-size: 30px;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 2px black;
-}
-
 .car_name {
   color: #d4b4ad;
-  font-family: "Almarai", sans-serif;
-  text-shadow: 1px 1px 1px black;
-}
-
-.sugg_img_text {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sugg_img {
-  border-radius: 10px;
-  box-shadow: 0px 0px 2px 2px black;
-}
-
-.sugg_text {
-  order: 1;
-  direction: rtl;
-  font-family: "Almarai", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  color: wheat;
-  line-height: 45px;
-  list-style: square;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-shadow: 1px 1px 1px black;
 }
 
 .goo_div {
-  margin-top: 45px;
   margin-right: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
 .goo {
   padding: 5px 20px;
-  font-family: "Almarai", sans-serif;
-  font-size: 18px;
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
   font-weight: 700;
   background-color: #44444400;
   border: none;
@@ -281,20 +245,18 @@ body {
 
 .view {
   grid-area: view;
-  height: 900px;
-  margin: 20px;
+
   border-radius: 15px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
   background-color: #444444;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .company {
   order: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   gap: 60px;
@@ -303,12 +265,14 @@ body {
 }
 
 .marsids {
-  padding: 10px 20px 10px 20px;
+  width: 158px;
+  height: 158px;
   background-image: linear-gradient(to left, silver, transparent 90%);
 }
 
 .bmw {
-  padding: 20px;
+  width: 158px;
+  height: 158px;
   background-image: linear-gradient(
     to left,
     rgb(72, 168, 233),
@@ -317,29 +281,31 @@ body {
 }
 
 .hyundai {
+  width: 158px;
+  height: 158px;
   background-image: linear-gradient(to left, rgb(7, 7, 151), transparent 95%);
 }
 
 .kia {
-  padding: 25px 10px 25px 10px;
+  width: 158px;
+  height: 158px;
   background-image: linear-gradient(to left, rgb(233, 56, 56), transparent 95%);
 }
 
 .img {
+  padding: 5px;
   border: 4px solid #1b1b1b;
   border-radius: 10px;
 }
 
 .img:hover {
-  box-shadow: 2px 3px 4px 2px black;
-  transform: skewX(-5deg);
+  cursor: pointer;
+  box-shadow: 0 0px 10px #111;
+  transform: translateY(-5px);
   transition: all 0.2s ease;
 }
 
 .view_search {
-  position: relative;
-  bottom: 100px;
-  margin: 20px;
   grid-area: view_search;
   display: flex;
   flex-direction: column;
@@ -367,7 +333,8 @@ body {
   font-weight: 800;
   margin-top: 45px;
   color: #ff4c29;
-  font-family: "Quantico", sans-serif;
+  -webkit-text-stroke: 2px black;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background: linear-gradient(270deg, #ff4c29, black, #ff4c29, black);
   background-size: 1000% 1000%;
   background-clip: text;
@@ -400,7 +367,7 @@ body {
 .in_search [placeholder] {
   background-color: azure;
   padding: 10px 15px;
-  font-family: "Quantico", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   border-radius: 5px;
   margin: 30px;
@@ -423,7 +390,7 @@ body {
   text-decoration: none;
   background-color: #1b1b1b00;
   padding: 7px 15px;
-  font-family: "Quantico", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: 700;
   margin: 30px;

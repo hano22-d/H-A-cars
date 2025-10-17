@@ -145,58 +145,28 @@ select {
 }
 
 .car_card1 {
-  background: #444444;
-  border: 2px solid #ff4c29;
+  background: #9190904f;
+  box-shadow: 0 0 7px 2px #1b1b1b;
   border-radius: 12px;
   width: 45%;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   animation: card1 2s infinite ease-in-out alternate;
 }
 
-@keyframes card1 {
-  0% {
-    border: 3px solid #ff4c29;
-  }
-
-  50% {
-    border: 3px solid #444444;
-  }
-
-  100% {
-    border: 3px solid #ff4c29;
-  }
-}
-
 .car_card2 {
-  background: #444444;
-  border: 2px solid #ff4c29;
+  background: #9190904f;
+  box-shadow: 0 0 7px 2px #1b1b1b;
   border-radius: 12px;
   width: 45%;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   animation: card2 2s infinite ease-in-out alternate;
-}
-
-@keyframes card2 {
-  0% {
-    border: 3px solid #ff4c29;
-  }
-
-  50% {
-    border: 3px solid #444444;
-  }
-
-  100% {
-    border: 3px solid #ff4c29;
-  }
 }
 
 .car_image1 {
   width: 100%;
   height: 300px;
   background: #eee;
-  border: 2px solid #ff4c29;
+  border: 2px solid #1b1b1b;
   border-radius: 8px;
   margin-bottom: 15px;
   color: #666;
@@ -208,7 +178,7 @@ select {
   width: 100%;
   height: 300px;
   background: #eee;
-  border: 2px solid #ff4c29;
+  border: 2px solid #1b1b1b;
   border-radius: 8px;
   margin-bottom: 15px;
   color: #666;
@@ -220,30 +190,12 @@ h1 {
   text-align: center;
   background: #b1afaf;
   border-radius: 10px;
-  border: 2px solid #ff2a00;
+  border: 2px solid #1b1b1b;
   animation: special 2s infinite ease-in-out alternate;
 }
 
-@keyframes special {
-  0% {
-    background: #b1afaf;
-    border: 2px solid #ff4c29;
-  }
-
-  50% {
-    background: #ff4c29;
-    color: #b1afaf;
-    border: 2px solid #ff4c29;
-  }
-
-  100% {
-    background: #b1afaf;
-    border: 2px solid #ff4c29;
-  }
-}
-
 .spacialists li {
-  color: #b7b7b7;
+  color: #1b1b1b;
   font-size: 25px;
   width: 100%;
   padding: 6px;

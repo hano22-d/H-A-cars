@@ -312,20 +312,19 @@ body {
   height: 300px;
   background-image: url(img/shadoo.png);
   background-size: cover;
-  margin-top: 40px;
 }
 
 .h2e {
-  color: white;
-  font-family: "Bowlby One SC", sans-serif;
-  font-size: 70px;
-  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 65px;
   text-align: center;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, white, #ff4c29, wheat, #ff4c29);
+  background-image: linear-gradient(to right,#ffffff, #ffffff, #ffffff);
   -webkit-text-stroke: 3px #1b1b1b;
   letter-spacing: 0.5rem;
+  position: relative;
+  top: 80px;
 }
 
 .img_gallery {
