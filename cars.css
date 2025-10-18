@@ -1,27 +1,29 @@
 body {
   margin: 0%;
-  background-color: #b1afaf;
+  background-color: var(--Body-color);
 }
 
 :root {
   --Body-color: #b1afaf;
-  --feaderAndfooter-color: #1b1b1b;
+  --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
   --link-color: wheat;
   --title-color: #ff4c29;
   --text-color: #111;
   --text-headerFoter-color: wheat;
-  --window-color: #9190904;
+  --window-color: #919090dc;
   --font-English: Georgia, "Times New Roman", Times, serif;
 }
 
 header,
 footer {
-  background-color: var(--feaderAndfooter-color);
+  background-color: var(--headerAndfooter-color);
 }
 
 button {
   background-color: var(--button-color);
+  color: var(--link-color);
+  font-family:var(--font-English) ;
 }
 
 a {
@@ -53,7 +55,7 @@ header span {
 .header {
   height: auto;
   filter: drop-shadow(0 6px 5px #ff4c29);
-  background-color: #1b1b1b;
+  background-color: var(--headerAndfooter-color);
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
   grid-area: nav;
@@ -124,11 +126,10 @@ h1 {
 
 .grid {
   padding: 50px;
-  justify-content: center;
-  gap: 10px;
   display: grid;
-  grid-template-columns: 350px 1fr 350px;
-  grid-template-rows: 100px 350px 350px 100px;
+  gap: 15px;
+  grid-template-columns: 2fr 1.5fr 2fr;
+  grid-template-rows: auto 350px 350px auto;
   grid-template-areas:
     "header header header"
     "card1  listdiv card2"
@@ -136,21 +137,7 @@ h1 {
     "footer footer footer";
 }
 
-.card3,
-.card4 {
-  position: relative;
-  top: 25px;
-}
-
-.card4,
-.card2 {
-  position: relative;
-  right: 30px;
-}
-
 .card1 {
-  width: 350px;
-  height: 350px;
   text-align: center;
   padding: 25px;
   grid-area: card1;
@@ -162,8 +149,6 @@ h1 {
 }
 
 .card2 {
-  width: 350px;
-  height: 350px;
   text-align: center;
   padding: 25px;
   grid-area: card2;
@@ -175,8 +160,6 @@ h1 {
 }
 
 .card3 {
-  width: 350px;
-  height: 350px;
   text-align: center;
   padding: 25px;
   grid-area: card3;
@@ -188,8 +171,6 @@ h1 {
 }
 
 .card4 {
-  width: 350px;
-  height: 350px;
   text-align: center;
   padding: 25px;
   grid-area: card4;
@@ -216,11 +197,11 @@ h1 {
   backface-visibility: hidden;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0px 0px 4px 4px #ff4c29;
+  box-shadow: 0px 0px 7px 2px black;
 }
 
 .face1 {
-  background-color: #444444;
+  background-color: var(--window-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +209,7 @@ h1 {
 }
 
 .face2 {
-  background-image: url(img/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circle-gradient-color_1258-101807.avif);
+  background-image: radial-gradient(circle, #919090dc 50%, #ff4c29);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -272,23 +253,26 @@ i {
 .h32,
 .h33,
 .h34 {
-  color: #ff4c29;
+  color: var(--text-color);
+  -webkit-text-stroke: 0.05px white;
   margin: 10px 0 5px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .p1,
 .p2,
 .p3,
 .p4 {
-  color: wheat;
+  font-size: 17px;
+  font-weight: bold;
   margin: 0 0 15px;
 }
 
 button {
-  background-color: #44444400;
   color: wheat;
   padding: 10px 18px;
+  border-radius: 5px;
   border: none;
   font-size: 20px;
   cursor: pointer;
@@ -301,24 +285,24 @@ button:hover {
 }
 
 .listdiv {
-  background-color: #444444;
+
+  height: 400px;
+  align-self: center;
+  background-color: var(--window-color);
   padding: 20px;
-  margin: 100px;
   border-radius: 12px;
-  box-shadow: 0px 0px 4px 4px #ff4c29;
-  max-width: 280px;
+  box-shadow: 0px 0px 7px 2px black;
   grid-area: listdiv;
 }
 
 .listdiv h1 {
-  color: wheat;
+  font-weight: bold;
 }
 
 .listdiv label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
-  color: wheat;
 }
 
 .listdiv select,
@@ -337,8 +321,9 @@ button:hover {
 }
 
 .listdiv button {
-  background-color: #44444400;
-  color: wheat;
+  -webkit-text-stroke: 0.05px white;
+  box-shadow: 0 0 5px 1px black;
+  border-radius: 5px;
   width: 100%;
   padding: 8px;
   border: none;
@@ -358,11 +343,12 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 50% 5%;
+  border-top-right-radius: 50% 5%;
   gap: 3rem;
   grid-area: aboutlinkk;
   padding: 65px;
-  box-shadow: 0px 0px 4px 4px #ff4c29;
-  background-color: #1b1b1b;
+  filter: drop-shadow(10px 0 10px #ff4c29);
 }
 
 .search-div {
@@ -437,7 +423,6 @@ button:hover {
 
 .aboutlink h2 {
   font-size: 1.7rem;
-  color: #ff4c29;
 }
 
 .direction {
@@ -456,13 +441,11 @@ button:hover {
 
 .Services-blog h2 {
   font-size: 2rem;
-  color: #ff4c29;
 }
 
 .Services-blog a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -482,7 +465,6 @@ button:hover {
 
 .privacy h2 {
   font-size: 2rem;
-  color: #ff4c29;
   text-align: center;
 }
 
