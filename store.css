@@ -294,28 +294,26 @@ header span {
   background-color: #919090dc;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 20px;
 }
 
 .company {
-  order: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 60px;
-  padding: 60px;
+  justify-content: space-between;
 }
 
 .marsids {
   width: 158px;
   height: 158px;
+  margin: 50px;
   background-image: linear-gradient(to left, silver, transparent 90%);
 }
 
 .bmw {
   width: 158px;
   height: 158px;
+  margin: 50px;
   background-image: linear-gradient(
     to left,
     rgb(72, 168, 233),
@@ -326,12 +324,14 @@ header span {
 .hyundai {
   width: 158px;
   height: 158px;
+  margin: 50px;
   background-image: linear-gradient(to left, rgb(7, 7, 151), transparent 95%);
 }
 
 .kia {
   width: 158px;
   height: 158px;
+  margin: 50px;
   background-image: linear-gradient(to left, rgb(233, 56, 56), transparent 95%);
 }
 
