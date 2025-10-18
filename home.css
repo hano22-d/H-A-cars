@@ -12,7 +12,7 @@ body {
   --title-color: #ff4c29;
   --text-color: #111;
   --text-headerFoter-color: wheat;
-  --window-color: #9190904;
+  --window-color: #91909097;
 
   --font-English: Georgia, "Times New Roman", Times, serif;
 }
@@ -163,7 +163,7 @@ header span {
   color: var(--text-color);
   padding: 5px;
   border-radius: 0 5px 5px 0;
- box-shadow: 0 0 7px 3px black;
+  box-shadow: 0 0 7px 3px black;
 }
 
 /* حركة الشريط */
@@ -259,7 +259,11 @@ header span {
   margin-right: 15px;
   margin-left: 15px;
   background-size: cover;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87) 22%, transparent 55%),
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.87) 22%,
+      transparent 55%
+    ),
     url(img/new-palisade-15.jpg);
 }
 
@@ -359,8 +363,8 @@ header span {
   text-align: center;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, black, black, black);
-  -webkit-text-stroke: 0.2px #fff;
+  background-image: linear-gradient(to top, #000);
+  -webkit-text-stroke: 0.27px #fff;
   letter-spacing: 0.5rem;
   position: relative;
   top: 80px;
@@ -596,7 +600,7 @@ header span {
   border-radius: 5px;
 }
 
-.search-div input:focus~.fill {
+.search-div input:focus ~ .fill {
   width: 100%;
 }
 
@@ -1026,7 +1030,7 @@ header span {
     border-radius: 5px;
   }
 
-  .search-div input:focus~.fill {
+  .search-div input:focus ~ .fill {
     width: 100%;
   }
 
