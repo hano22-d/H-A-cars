@@ -1,4 +1,7 @@
 /*صفحة الاخبار*/
+html {
+  font-family: var(--font-English);
+}
 body {
   margin: 0%;
 }
@@ -20,54 +23,72 @@ header,
 footer {
   background-color: var(--feaderAndfooter-color);
 }
-
+header p,
+footer p,
+header span {
+  color: var(--text-headerFoter-color);
+}
 button {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
   background-color: var(--button-color);
   color: var(--link-color);
-  font-family: var(--font-English);
+  padding: 10px 18px;
+  box-shadow: 0 0 5px 1px black;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
 }
+button:hover {
+  text-shadow: 0 0 15px wheat;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg) translateY(100%);
+  transition: 0.5s;
+}
+button:hover::before {
+  transform: rotate(45deg) translateY(-100%);
+}
+
 
 a {
   color: var(--link-color);
-  font-size: var(--font-English);
 }
 
 h1,
 h2,
 h3 {
   color: var(--title-color);
-  font-size: var(--font-English);
 }
 
 p,
 span,
 pre {
   color: var(--text-color);
-  font-size: var(--font-English);
 }
 
 i {
   color: var(--icon);
 }
 
-header p,
-footer p,
-header span {
-  color: var(--text-headerFoter-color);
-  font-size: var(--font-English);
-}
-
 .mudir {
   background-color: #b1afaf;
   direction: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 200px 300px 200px 1fr auto;
+  grid-template-rows: auto;
   grid-template-areas:
     "he he"
     "dinamic dinamic"
     "filter filter"
     "fixed_n fixed_n"
     "foo foo";
+    gap: 20px;
 }
 
 .headerr {
@@ -142,57 +163,28 @@ header span {
 }
 
 .dinamic_news_image {
-  background-color: #444444;
+  background-color: var(--window-color);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border: 5px solid #444444;
-  border-radius: 10px;
-  animation: dim 2s infinite ease-in-out alternate;
+  border-radius: 5px;
 }
-
-@keyframes dim {
-  0% {
-    border: 5px solid #ff4c29;
-  }
-
-  50% {
-    border: 5px solid #444444;
-  }
-
-  100% {
-    border: 5px solid #ff4c29;
-  }
+.dinamic_news_image img {
+  border-radius: 5px 0 0 5px;
 }
-
 .dinamic_news_text {
   order: 1;
-  color: wheat;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: right;
   margin-right: 10px;
   line-height: 50px;
 }
-
 .NP {
-  background-color: #b1afaf;
   margin: 10px;
   padding: 5px 15px;
   font-size: 1.2rem;
   font-weight: 800;
-  border: none;
-}
-
-.NP:hover {
-  color: wheat;
-  background-color: #ff4c29;
-  border-radius: 7px;
-  transition: all 0.2s ease-in-out;
-}
-
-.dinamic_news_button {
-  background-color: #b1afaf;
 }
 
 .filter {
@@ -213,8 +205,6 @@ header span {
 
 .filter_title {
   font-size: 30px;
-  color: #ff4c29;
-  text-shadow: 1px 1px 2px #1b1b1b;
 }
 
 .R {
@@ -224,12 +214,14 @@ header span {
 }
 
 .result_search {
+  width: 50%;
   border: 2px solid #444444;
-  padding: 5px 60px;
+  padding: 12px;
   border-radius: 5px;
   background: url("https://cdn-icons-png.flaticon.com/512/622/622669.png")
     no-repeat right 8px center;
   background-size: 20px;
+  font-size: 18px;
 }
 
 .result_search:hover {
@@ -238,19 +230,9 @@ header span {
 }
 
 .result_submit {
-  background-color: #b1afaf;
   font-size: 20px;
   font-weight: 900;
-  border: none;
 }
-
-.result_submit:hover {
-  color: wheat;
-  background-color: #ff4c29;
-  border-radius: 7px;
-  transition: all 0.2s ease-in-out;
-}
-
 #FiltersSelect {
   display: none;
 }
@@ -267,17 +249,9 @@ header span {
 
 .BU {
   font-size: 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
-  background-color: wheat;
-  border: none;
 }
-
-.BU:hover {
-  background-image: radial-gradient(#554242af, transparent 70%);
-  transition: all 0.5s ease-in-out;
-}
-
 .fixed_news {
   grid-area: fixed_n;
   display: flex;
@@ -298,7 +272,9 @@ header span {
 .result_submit {
   margin: 10px;
 }
-
+.all2 {
+  background-color: var(--window-color);
+}
 .news1 {
   background-image: linear-gradient(
     to right,
@@ -358,14 +334,14 @@ header span {
 }
 
 .fixed_ntext {
-  color: wheat;
   font-size: 21px;
   text-align: right;
   line-height: 40px;
 }
 
 .fixed_nimage {
-  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .aboutlink {

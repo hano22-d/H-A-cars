@@ -1,4 +1,7 @@
 /*الصفحة الرئيسية*/
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 body {
   margin: 0;
   background-color: var(--Body-color);
@@ -6,7 +9,7 @@ body {
 
 :root {
   --Body-color: #b1afaf;
-  --feaderAndfooter-color: #1b1b1b;
+  --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
   --link-color: wheat;
   --title-color: #ff4c29;
@@ -14,48 +17,41 @@ body {
   --text-headerFoter-color: wheat;
   --window-color: #919090dc;
   --icon: #ff4c29;
-  --font-English: Georgia, "Times New Roman", Times, serif;
 }
 
 header,
 footer {
-  background-color: var(--feaderAndfooter-color);
+  background-color: var(--headerAndfooter-color);
+}
+header p,
+footer p,
+header span {
+  color: var(--text-headerFoter-color);
 }
 
 button {
   background-color: var(--button-color);
   color: var(--link-color);
-  font-family: var(--font-English);
 }
 
 a {
   color: var(--link-color);
-  font-size: var(--font-English);
 }
 
 h1,
 h2,
 h3 {
   color: var(--title-color);
-  font-size: var(--font-English);
 }
 
 p,
 span,
 pre {
   color: var(--text-color);
-  font-size: var(--font-English);
 }
 
 i {
   color: var(--icon);
-}
-
-header p,
-footer p,
-header span {
-  color: var(--text-headerFoter-color);
-  font-size: var(--font-English);
 }
 
 .container {
