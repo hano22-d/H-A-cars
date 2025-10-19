@@ -246,7 +246,6 @@ h1 {
 
 .car_card3 {
   width: 45%;
-  background: linear-gradient(270deg, #333333, #ff4c29, #333333);
   padding: 20px;
   border: 2px solid #3333332f;
   border-radius: 15px;
@@ -256,7 +255,6 @@ h1 {
 
 .car_card4 {
   width: 45%;
-  background: linear-gradient(270deg, #333333, #ff4c29, #333333);
   padding: 20px;
   border: 2px solid #3333332f;
   border-radius: 15px;
@@ -281,10 +279,8 @@ h1 {
 }
 
 .h1_special {
-  font-family: "Quantico", sans-serif;
   font-size: 35px;
   color: wheat;
-  -webkit-text-stroke: 1px #1b1b1b;
   font-weight: 800;
   text-align: center;
 }
@@ -299,12 +295,12 @@ td {
   color: wheat;
   background: linear-gradient(
     270deg,
-    rgba(0, 0, 0, 0.31),
-    #ff4c29,
-    rgba(0, 0, 0, 0.31)
+      #ff4c29,
+    #919090dc,
+      #ff4c29
   );
+  border-radius: 10px;
   padding: 10px;
-  font-family: "Quantico", sans-serif;
   font-size: 20px;
   text-align: center;
 }
@@ -373,12 +369,10 @@ th h2 {
   direction: rtl;
   text-align: right;
   line-height: 1.7rem;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
 }
 
 .p2 span {
-  font-family: "Zen Dots", sans-serif;
   color: #ff4c29;
 }
 
@@ -399,7 +393,6 @@ th h2 {
 
 .aboutlink h2 {
   font-size: 1.7rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
 }
 
@@ -419,7 +412,6 @@ th h2 {
 
 .Services-blog h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
 }
 
@@ -427,7 +419,6 @@ th h2 {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -447,7 +438,6 @@ th h2 {
 
 .privacy h2 {
   font-size: 2rem;
-  font-family: "Quantico", sans-serif;
   color: #ff4c29;
   text-align: center;
 }
@@ -456,7 +446,6 @@ th h2 {
   width: fit-content;
   text-decoration: none;
   color: wheat;
-  font-family: "Almarai", sans-serif;
   font-size: 1.2rem;
   align-self: center;
 }
