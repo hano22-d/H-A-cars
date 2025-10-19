@@ -12,7 +12,7 @@ body {
   --text-color: #111;
   --text-headerFoter-color: wheat;
   --window-color: #919090dc;
-
+  --icon: #ff4c29;
   --font-English: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -23,6 +23,8 @@ footer {
 
 button {
   background-color: var(--button-color);
+  color: var(--link-color);
+  font-family: var(--font-English);
 }
 
 a {
@@ -42,6 +44,10 @@ span,
 pre {
   color: var(--text-color);
   font-size: var(--font-English);
+}
+
+i {
+  color: var(--icon);
 }
 
 header p,

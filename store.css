@@ -24,6 +24,7 @@ footer {
 button {
   background-color: var(--button-color);
   color: var(--link-color);
+  font-family: var(--font-English);
 }
 
 a {
@@ -425,12 +426,11 @@ header span {
 
 .in_s {
   text-decoration: none;
-  background-color: #919090dc;
+  background-color: #ff4c29;
   padding: 7px 15px;
   font-size: 20px;
   font-weight: 700;
   margin: 30px;
-  color: black;
   border-radius: 5px;
   box-shadow: 0 0 5px 1px black;
 }
