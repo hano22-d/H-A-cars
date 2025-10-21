@@ -1,4 +1,5 @@
 /*الصفحة الرئيسية*/
+
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -70,15 +71,15 @@ i {
 }
 
 .header {
-  height: auto;
   grid-area: head;
-  filter: drop-shadow(0 6px 5px #ff4c29);
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  filter: drop-shadow(0 6px 5px #ff4c29);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
 }
 
 .icon {
@@ -88,7 +89,6 @@ i {
   justify-content: center;
   align-items: center;
   width: 15%;
-  height: 100%;
 }
 
 .icon img {
@@ -108,7 +108,6 @@ i {
 
 .tab {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -120,7 +119,6 @@ i {
   margin: 20px 40px 30px 20px;
   text-decoration: none;
   padding: 10px 25px;
-  font-size: 1rem;
   font-weight: 700;
   transition: all 0.2s ease;
 }
@@ -146,7 +144,6 @@ i {
   padding: 10px 30px;
   font-size: 1.1rem;
   border-radius: 0 8px 8px 0;
-  white-space: nowrap;
   opacity: 0;
   gap: 10px;
 }
@@ -162,13 +159,13 @@ i {
   font-size: 15px;
   font-weight: 700;
   text-transform: capitalize;
-  color: var(--text-color);
   padding: 5px;
   border-radius: 0 5px 5px 0;
   box-shadow: 0 0 7px 3px black;
 }
 
 /* حركة الشريط */
+
 .slide {
   animation: slideBar 8s ease-in-out forwards;
 }
@@ -226,7 +223,6 @@ i {
 }
 
 .h2c {
-  color: var(--title-color);
   padding: 10px;
   font-size: 15px;
   text-align: right;
@@ -234,7 +230,6 @@ i {
 }
 
 .p1 {
-  color: var(--text-color);
   direction: rtl;
   font-size: 16px;
   padding: 10px;
@@ -243,7 +238,7 @@ i {
 
 .main3 {
   grid-area: main3;
-  width: 97vw;
+  width: 98vw;
   display: grid;
   grid-template-columns: 2fr 1.2fr;
   grid-template-rows: auto;
@@ -258,8 +253,7 @@ i {
   height: 500px;
   border: 3px solid #b1afaf;
   box-shadow: 0 0 10px 2px black;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 15px;
   background-size: cover;
   background-image: linear-gradient(
       to top,
@@ -325,21 +319,17 @@ i {
 }
 
 .h2h {
-  width: 100%;
   font-size: 20px;
   margin: 0;
   padding: 0;
-  color: var(--text-color);
   text-align: right;
   line-height: 30px;
 }
 
 .h2p {
-  width: 100%;
   font-size: 15px;
   margin: 0;
   padding: 0;
-  color: var(--text-color);
   text-align: right;
   line-height: 30px;
 }
@@ -368,8 +358,6 @@ i {
   background-image: linear-gradient(to top, #000);
   -webkit-text-stroke: 0.27px #fff;
   letter-spacing: 0.5rem;
-  position: relative;
-  top: 80px;
 }
 
 .img_gallery {
@@ -385,8 +373,7 @@ i {
     "i j k l imgbig"
     "m n o p imgbig"
     "q r s t imgbig";
-  row-gap: 15px;
-  column-gap: 15px;
+  gap: 15px;
 }
 
 .text_gallary {
@@ -401,7 +388,7 @@ i {
   opacity: 0;
   position: absolute;
   bottom: 6%;
-  right: 6.7%;
+  right: 5.5%;
 }
 
 .textShow {
@@ -455,7 +442,6 @@ i {
 .all {
   cursor: pointer;
   width: 130px;
-  height: auto;
   border-radius: 5px;
   box-shadow: 0px 0px 2px 2px black;
 }
@@ -550,13 +536,14 @@ i {
   grid-area: imgbig;
   align-self: center;
   width: 100%;
-  height: auto;
   border-radius: 20px;
   box-shadow: 0px 0px 2px 2px black;
 }
 
 /*الذيل*/
+
 .aboutlink {
+  grid-area: aboutlinkk;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -564,7 +551,6 @@ i {
   border-top-left-radius: 50% 5%;
   border-top-right-radius: 50% 5%;
   gap: 3rem;
-  grid-area: aboutlinkk;
   padding: 65px;
   filter: drop-shadow(10px 0 10px #ff4c29);
 }
@@ -579,8 +565,7 @@ i {
 .search-div input {
   width: 100%;
   height: 100%;
-  padding: 0.7rem 0.7rem;
-  font-size: 16px;
+  padding: 0.7rem;
   border: 2px solid wheat;
   border-radius: 5px;
   background: transparent;
