@@ -1,6 +1,7 @@
 /*صفحة الاخبار*/
 html {
   font-family: var(--font-English);
+  scroll-behavior: smooth;
 }
 body {
   margin: 0%;
@@ -46,8 +47,10 @@ button:hover {
 button::before {
   content: "";
   position: absolute;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
   background: rgba(255, 255, 255, 0.2);
   transform: rotate(45deg) translateY(100%);
   transition: 0.5s;
@@ -55,7 +58,6 @@ button::before {
 button:hover::before {
   transform: rotate(45deg) translateY(-100%);
 }
-
 
 a {
   color: var(--link-color);
@@ -79,7 +81,7 @@ i {
 
 .mudir {
   background-color: #b1afaf;
-  direction: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
@@ -87,8 +89,8 @@ i {
     "dinamic dinamic"
     "filter filter"
     "fixed_n fixed_n"
-    "foo foo";
-    gap: 20px;
+    "aboutlink aboutlink";
+    gap: 30px;
 }
 
 .headerr {
@@ -169,9 +171,11 @@ i {
   align-items: center;
   gap: 10px;
   border-radius: 5px;
+  box-shadow: 0 0 7px 2px black;
 }
 .dinamic_news_image img {
-  border-radius: 5px 0 0 5px;
+  margin: 5px;
+  border-radius: 5px;
 }
 .dinamic_news_text {
   order: 1;
@@ -199,7 +203,6 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
   font-size: 20px;
 }
 
@@ -243,7 +246,7 @@ i {
   display: flex;
   background-color: wheat;
   padding: 10px;
-  margin: 17px;
+  margin: 20px;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -256,10 +259,9 @@ i {
   grid-area: fixed_n;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   margin: 200px 20px 50px 20px;
   background-color: #444444;
-  box-shadow: 0px 0px 2px 2px black;
 }
 
 .results {
@@ -345,15 +347,17 @@ i {
 }
 
 .aboutlink {
+  grid-area: aboutlink;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  grid-area: aboutlinkk;
   padding: 65px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
   background-color: #1b1b1b;
+  border-top-left-radius: 50% 5%;
+  border-top-right-radius: 50% 5%;
 }
 
 .search-div {

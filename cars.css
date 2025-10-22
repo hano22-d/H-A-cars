@@ -1,5 +1,6 @@
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   --text-headerFoter-color: wheat;
   --window-color: #919090dc;
   --icon: #ff4c29;
-  --font-English:
+  --font-English: ;
 }
 
 header,
@@ -275,7 +276,9 @@ i {
   height: 160px;
   object-fit: contain;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 4px rgba(245, 222, 179, 0.829)) drop-shadow(0 8px 7px rgba(245, 222, 179, 0.671)) drop-shadow(0 12px 10px rgba(245, 222, 179, 0.377));
+  filter: drop-shadow(0 5px 4px rgba(245, 222, 179, 0.829))
+    drop-shadow(0 8px 7px rgba(245, 222, 179, 0.671))
+    drop-shadow(0 12px 10px rgba(245, 222, 179, 0.377));
 }
 
 .h31,
@@ -386,7 +389,7 @@ i {
   border-radius: 5px;
 }
 
-.search-div input:focus~.fill {
+.search-div input:focus ~ .fill {
   width: 100%;
 }
 
@@ -605,7 +608,7 @@ i {
     border-radius: 5px;
   }
 
-  .search-div input:focus~.fill {
+  .search-div input:focus ~ .fill {
     width: 100%;
   }
 

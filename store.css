@@ -1,7 +1,7 @@
 /*صفحة المتجر*/
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
-  ;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -317,9 +317,11 @@ header span {
   width: 158px;
   height: 158px;
   margin: 50px;
-  background-image: linear-gradient(to left,
-      rgb(72, 168, 233),
-      transparent 95%);
+  background-image: linear-gradient(
+    to left,
+    rgb(72, 168, 233),
+    transparent 95%
+  );
 }
 
 .hyundai {
@@ -338,15 +340,15 @@ header span {
 
 .img {
   padding: 5px;
-  border: 4px solid #1b1b1b;
+  box-shadow: 0 0 5px 1px black;
   border-radius: 10px;
 }
 
 .img:hover {
   cursor: pointer;
-  box-shadow: 0 0px 10px #111;
-  transform: translateY(-5px);
-  transition: all 0.2s ease;
+  box-shadow: 0 0 9px 4px black;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 .view_search {
@@ -372,7 +374,7 @@ header span {
   font-weight: 800;
   margin-top: 45px;
   color: #ff4c29;
-  -webkit-text-stroke: 1px #1b1b1b;
+  -webkit-text-stroke: 0.5px #1b1b1b;
   background: linear-gradient(270deg, #ff4c29, wheat, #ff4c29, wheat);
   background-size: 1000% 1000%;
   background-clip: text;
@@ -398,7 +400,6 @@ header span {
   align-items: center;
   background-color: #919090dc;
   border-radius: 20px 5px 20px 5px;
-  border: black 2px solid;
   box-shadow: 0px 0px 7px 2px black;
 }
 
@@ -514,7 +515,7 @@ header span {
 .list_s {
   list-style: none;
   font-weight: 800;
-  font-size: 23px;
+  font-size: 18px;
   direction: rtl;
   line-height: 50px;
   word-spacing: 5px;
@@ -541,6 +542,8 @@ i {
   padding: 65px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
   background-color: #1b1b1b;
+  border-top-left-radius: 50% 5%;
+  border-top-right-radius: 50% 5%;
 }
 
 .search-div {
@@ -576,7 +579,7 @@ i {
   border-radius: 5px;
 }
 
-.search-div input:focus~.fill {
+.search-div input:focus ~ .fill {
   width: 100%;
 }
 
@@ -967,7 +970,7 @@ i {
     border-radius: 5px;
   }
 
-  .search-div input:focus~.fill {
+  .search-div input:focus ~ .fill {
     width: 100%;
   }
 

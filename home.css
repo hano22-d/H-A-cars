@@ -2,6 +2,7 @@
 
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;

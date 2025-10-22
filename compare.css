@@ -1,5 +1,6 @@
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
@@ -42,8 +43,10 @@ button:hover {
 button::before {
   content: "";
   position: absolute;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
   background: rgba(255, 255, 255, 0.2);
   transform: rotate(45deg) translateY(100%);
   transition: 0.5s;
@@ -304,12 +307,7 @@ table {
 th,
 td {
   color: wheat;
-  background: linear-gradient(
-    270deg,
-      #ff4c29,
-    #919090dc,
-      #ff4c29
-  );
+  background: linear-gradient(270deg, #ff4c29, #919090dc, #ff4c29);
   border-radius: 10px;
   padding: 10px;
   font-size: 20px;
@@ -330,6 +328,8 @@ th h2 {
   padding: 65px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
   background-color: #1b1b1b;
+  border-top-left-radius: 50% 5%;
+  border-top-right-radius: 50% 5%;
 }
 
 .search-div {
