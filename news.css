@@ -192,10 +192,11 @@ i {
 }
 
 .filter {
-  height: 50px;
+  grid-area: filter;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  grid-area: filter;
+
 }
 
 .result_filters {
@@ -235,7 +236,9 @@ i {
 .result_submit {
   font-size: 20px;
   font-weight: 900;
+  margin: 10px;
 }
+
 #FiltersSelect {
   display: none;
 }
@@ -247,7 +250,7 @@ i {
   background-color: wheat;
   padding: 10px;
   margin: 20px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
 }
 
 .BU {
@@ -259,30 +262,21 @@ i {
   grid-area: fixed_n;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin: 200px 20px 50px 20px;
-  background-color: #444444;
+  margin: 20px;
 }
 
 .results {
-  padding: 45px 20px 0px 0px;
+  padding: 20px;
   text-align: right;
   font-size: 30px;
   color: #ff4c29;
 }
 
-.result_submit {
-  margin: 10px;
-}
 .all2 {
   background-color: var(--window-color);
 }
 .news1 {
-  background-image: linear-gradient(
-    to right,
-    rgba(240, 248, 255, 0.623),
-    transparent 90%
-  );
+  background-image: linear-gradient( to right, rgba(240, 248, 255, 0.623), transparent 90%);
   margin-top: 20px;
   padding: 20px;
   display: flex;
@@ -299,11 +293,7 @@ i {
 
 .news3 {
   padding: 20px;
-  background-image: linear-gradient(
-    to right,
-    rgba(240, 248, 255, 0.623),
-    transparent 90%
-  );
+  background-image: linear-gradient( to right, rgba(240, 248, 255, 0.623), transparent 90%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -318,11 +308,7 @@ i {
 
 .news5 {
   padding: 20px;
-  background-image: linear-gradient(
-    to right,
-    rgba(240, 248, 255, 0.623),
-    transparent 90%
-  );
+  background-image: linear-gradient( to right, rgba(240, 248, 255, 0.623), transparent 90%);
   display: flex;
   justify-content: space-around;
   align-items: center;
