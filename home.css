@@ -237,18 +237,43 @@ i {
   line-height: 30px;
 }
 
+/* أحدث السيارات */
+
 .main3 {
   grid-area: main3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main3_title {
+  width: 500px;
+  height: 300px;
+  background-image: url(img/shadoo.png);
+  background-size: cover;
+}
+
+.m3tt {
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  margin-top: 150px;
+}
+
+.modern_news {
   width: 98vw;
   display: grid;
   grid-template-columns: 2fr 1.2fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "h2b  h2t"
     "big  pic"
     "big  pic"
-    "big  pic";
+    "big  pic"
+    "pt2  pt1"
+    ;
 }
+
 
 .big_photo {
   height: 500px;
@@ -297,29 +322,28 @@ i {
   box-shadow: 0 0 10px 2px black;
 }
 
-.h2p-h2h {
-  width: 50%;
-}
-
-.h2b {
-  grid-area: h2b;
-  color: #b1afaf;
+.big_photo_text1 {
+  grid-area: pt1;
   font-size: 25px;
   position: relative;
-  top: 470px;
+  bottom: 150px;
+  right: 292.5px;
+}
+
+.big_photo_text2 {
+  grid-area: pt2;
+  font-size: 25px;
+  color: var(--Body-color);
+  position: relative;
+  bottom: 100px;
   left: 25px;
 }
 
-.h2t {
-  grid-area: h2t;
-  color: #b1afaf;
-  font-size: 25px;
-  position: relative;
-  top: 410px;
-  right: 500px;
+.para_text {
+  width: 50%;
 }
 
-.h2h {
+.picture_text {
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -327,7 +351,7 @@ i {
   line-height: 30px;
 }
 
-.h2p {
+.picture_paragraph {
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -359,6 +383,7 @@ i {
   background-image: linear-gradient(to top, #000);
   -webkit-text-stroke: 0.27px #fff;
   letter-spacing: 0.5rem;
+  margin-top: 100px;
 }
 
 .img_gallery {
