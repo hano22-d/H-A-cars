@@ -3,6 +3,7 @@ html {
   font-family: var(--font-English);
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0%;
 }
@@ -24,11 +25,13 @@ header,
 footer {
   background-color: var(--feaderAndfooter-color);
 }
+
 header p,
 footer p,
 header span {
   color: var(--text-headerFoter-color);
 }
+
 button {
   cursor: pointer;
   position: relative;
@@ -41,9 +44,11 @@ button {
   border: none;
   transition: 0.5s;
 }
+
 button:hover {
   text-shadow: 0 0 15px wheat;
 }
+
 button::before {
   content: "";
   position: absolute;
@@ -55,6 +60,7 @@ button::before {
   transform: rotate(45deg) translateY(100%);
   transition: 0.5s;
 }
+
 button:hover::before {
   transform: rotate(45deg) translateY(-100%);
 }
@@ -90,7 +96,7 @@ i {
     "filter filter"
     "fixed_n fixed_n"
     "aboutlink aboutlink";
-    gap: 30px;
+  gap: 30px;
 }
 
 .headerr {
@@ -173,10 +179,12 @@ i {
   border-radius: 5px;
   box-shadow: 0 0 7px 2px black;
 }
+
 .dinamic_news_image img {
   margin: 5px;
   border-radius: 5px;
 }
+
 .dinamic_news_text {
   order: 1;
   font-size: 1.5rem;
@@ -184,6 +192,7 @@ i {
   margin-right: 10px;
   line-height: 50px;
 }
+
 .NP {
   margin: 10px;
   padding: 5px 15px;
@@ -222,8 +231,7 @@ i {
   border: 2px solid #444444;
   padding: 12px;
   border-radius: 5px;
-  background: url("https://cdn-icons-png.flaticon.com/512/622/622669.png")
-    no-repeat right 8px center;
+  background: url("https://cdn-icons-png.flaticon.com/512/622/622669.png") no-repeat right 8px center;
   background-size: 20px;
   font-size: 18px;
 }
@@ -258,6 +266,7 @@ i {
   border-radius: 5px;
   padding: 10px;
 }
+
 .fixed_news {
   grid-area: fixed_n;
   display: flex;
@@ -266,7 +275,7 @@ i {
 }
 
 .results {
-  padding: 40px 20px 0px 20px ;
+  padding: 40px 20px 0px 20px;
   text-align: right;
   font-size: 30px;
   color: #ff4c29;
@@ -275,8 +284,9 @@ i {
 .all2 {
   background-color: var(--window-color);
 }
+
 .news1 {
-  background-image: linear-gradient( to right, rgba(240, 248, 255, 0.623), transparent 90%);
+  background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
   margin-top: 20px;
   padding: 20px;
   display: flex;
@@ -293,7 +303,7 @@ i {
 
 .news3 {
   padding: 20px;
-  background-image: linear-gradient( to right, rgba(240, 248, 255, 0.623), transparent 90%);
+  background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -308,7 +318,7 @@ i {
 
 .news5 {
   padding: 20px;
-  background-image: linear-gradient( to right, rgba(240, 248, 255, 0.623), transparent 90%);
+  background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -379,7 +389,7 @@ i {
   border-radius: 5px;
 }
 
-.search-div input:focus ~ .fill {
+.search-div input:focus~.fill {
   width: 100%;
 }
 
@@ -489,6 +499,29 @@ i {
   width: 50%;
   margin-left: 5rem;
   border: #ff4c29 2px solid;
+}
+
+.scroolZero {
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff4c29;
+  box-shadow: 0 0 5px 0 #111;
+}
+
+.scroolZero:hover {
+  background-color: rgba(245, 222, 179, 0.651)
+}
+
+.scroolZero i {
+  position: relative;
+  right: 5px;
 }
 
 /*Responsive to mobile*/
@@ -630,7 +663,7 @@ i {
     border-radius: 5px;
   }
 
-  .search-div input:focus ~ .fill {
+  .search-div input:focus~.fill {
     width: 100%;
   }
 
