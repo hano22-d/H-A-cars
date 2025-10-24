@@ -66,6 +66,7 @@ i {
     "main1 main1"
     "main2 main2"
     "main3 main3"
+    "main5 main5"
     "main4 main4"
     "footer footer";
   gap: 7rem;
@@ -270,14 +271,12 @@ i {
     "big  pic"
     "big  pic"
     "big  pic"
-    "pt2  pt1"
-    ;
+    "pt2  pt1";
 }
-
 
 .big_photo {
   height: 500px;
-  border: 3px solid #b1afaf;
+  border: 2.5px solid #919090dc;
   box-shadow: 0 0 10px 2px black;
   margin: 0 15px;
   background-size: cover;
@@ -318,7 +317,7 @@ i {
 .photo2 img,
 .photo3 img {
   width: 50%;
-  border: 3px solid #b1afaf;
+  border: 2.5px solid #919090dc;
   box-shadow: 0 0 10px 2px black;
 }
 
@@ -357,6 +356,39 @@ i {
   padding: 0;
   text-align: right;
   line-height: 30px;
+}
+
+.main5 {
+  grid-area: main5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main5 video {
+  border-radius: 5px;
+  box-shadow: 0 0 7px 3px black;
+}
+
+.main5 h1 {
+  -webkit-text-stroke: black 0.3px;
+  font-size: 2rem;
+  background: linear-gradient(270deg, #ff4c29, wheat, #ff4c29, wheat);
+  background-size: 1000% 1000%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 5s linear infinite alternate;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .main4 {
