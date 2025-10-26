@@ -85,22 +85,9 @@ i {
   color: var(--icon);
 }
 
-.mudir {
-  background-color: #b1afaf;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "he he"
-    "dinamic dinamic"
-    "filter filter"
-    "fixed_n fixed_n"
-    "aboutlink aboutlink";
-  gap: 30px;
-}
-
-.headerr {
-  grid-area: he;
+header {
+  height: 300px;
+  grid-area: header;
   filter: drop-shadow(0 6px 5px #ff4c29);
   background-color: #1b1b1b;
   border-bottom-left-radius: 50% 20%;
@@ -109,16 +96,91 @@ i {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-image: linear-gradient(to top, black, transparent 100%),
+    url(img/Tesla.jpg);
+  background-size: cover;
+}
+
+.material {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_search {
+  width: 50%;
+  height: 30px;
+  padding: 15px;
+  box-shadow: 0 0 7px 2px black;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.163);
+  color: wheat;
+  position: relative;
+  top: 35px;
+}
+
+.header_submit {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.163);
+  border: 1px solid white;
+  box-shadow: 0 0 7px 2px black;
+  font-size: 15px;
+  position: relative;
+  top: 35px;
+  right: 45px;
+}
+
+.header_submit i {
+  color: wheat;
+}
+
+.setting {
+  width: 15%;
+  display: flex;
+  gap: 10px;
+  background: transparent;
+  position: relative;
+  bottom: 25px;
+}
+
+.setting button {
+  width: 50px;
+  height: 40px;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.setting button i {
+  font-size: 15px;
+  color: wheat;
+}
+
+.setting select {
+  padding: 0;
+  box-shadow: none;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  color: wheat;
 }
 
 .icon {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 15%;
-  height: 100%;
+  align-self: flex-start;
+  position: relative;
+  bottom: 25px;
+  right: 20px;
 }
 
 .icon img {
@@ -128,9 +190,8 @@ i {
 
 .h2a {
   margin: 0;
-  color: #ff4c29;
   font-family: "Bowlby One SC", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .h2a span {
@@ -139,7 +200,6 @@ i {
 
 .tab {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -150,9 +210,7 @@ i {
   align-items: center;
   margin: 20px 40px 30px 20px;
   text-decoration: none;
-  color: wheat;
   padding: 10px 25px;
-  font-size: 1rem;
   font-weight: 700;
   transition: all 0.2s ease;
 }
@@ -161,6 +219,20 @@ i {
   color: black;
   background-color: #ff4c29;
   border-radius: 20px;
+}
+
+.mudir {
+  background-color: #b1afaf;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "dinamic dinamic"
+    "filter filter"
+    "fixed_n fixed_n"
+    "footer footer";
+  gap: 30px;
 }
 
 .dinamic_news {
@@ -342,8 +414,8 @@ i {
   border-radius: 5px;
 }
 
-.aboutlink {
-  grid-area: aboutlink;
+footer {
+  grid-area: footer;
   display: flex;
   flex-direction: column;
   justify-content: center;
