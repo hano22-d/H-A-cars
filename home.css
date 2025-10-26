@@ -391,15 +391,9 @@ i {
 }
 
 video {
-  width: 50%;
+  width: 65%;
   border-radius: 5px;
   box-shadow: 0 0 7px 3px black;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-video:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 10px 6px black;
 }
 
 .main5 h1 {
