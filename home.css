@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0%;
   background-color: var(--Body-color);
 }
 
@@ -19,6 +19,7 @@ body {
   --text-headerFoter-color: wheat;
   --window-color: #919090dc;
   --icon: #ff4c29;
+  --font-English: ;
 }
 
 header,
@@ -31,6 +32,7 @@ footer p,
 header span {
   color: var(--text-headerFoter-color);
 }
+
 button {
   cursor: pointer;
   position: relative;
@@ -43,9 +45,11 @@ button {
   border: none;
   transition: 0.5s;
 }
+
 button:hover {
   text-shadow: 0 0 15px wheat;
 }
+
 button::before {
   content: "";
   position: absolute;
@@ -57,9 +61,11 @@ button::before {
   transform: rotate(45deg) translateY(100%);
   transition: 0.5s;
 }
+
 button:hover::before {
   transform: rotate(45deg) translateY(-100%);
 }
+
 a {
   color: var(--link-color);
 }
@@ -80,41 +86,102 @@ i {
   color: var(--icon);
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "head head"
-    "info info"
-    "main1 main1"
-    "main2 main2"
-    "main3 main3"
-    "main5 main5"
-    "main4 main4"
-    "footer footer";
-  gap: 7rem;
-}
-
-.header {
-  grid-area: head;
-  height: auto;
+header {
+  height: 300px;
+  filter: drop-shadow(0 6px 5px #ff4c29);
+  background-color: var(--headerAndfooter-color);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  grid-area: header;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  filter: drop-shadow(0 6px 5px #ff4c29);
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
+  background-image: linear-gradient(to top, black, transparent 100%),
+    url(img/Tesla.jpg);
+  background-size: cover;
+}
+
+.material {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_search {
+  width: 50%;
+  height: 30px;
+  padding: 15px;
+  box-shadow: 0 0 7px 2px black;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.163);
+  color: wheat;
+  position: relative;
+  top: 35px;
+}
+
+.header_submit {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.163);
+  border: 1px solid white;
+  box-shadow: 0 0 7px 2px black;
+  font-size: 15px;
+  position: relative;
+  top: 35px;
+  right: 45px;
+}
+
+.header_submit i {
+  color: wheat;
+}
+
+.setting {
+  width: 15%;
+  display: flex;
+  gap: 10px;
+  background: transparent;
+  position: relative;
+  bottom: 25px;
+}
+
+.setting button {
+  width: 50px;
+  height: 40px;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.setting button i {
+  font-size: 1rem;
+  color: wheat;
+}
+
+.setting select {
+  padding: 0;
+  box-shadow: none;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  color: wheat;
 }
 
 .icon {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 15%;
+  align-self: flex-start;
+  position: relative;
+  bottom: 25px;
+  right: 20px;
 }
 
 .icon img {
@@ -125,7 +192,7 @@ i {
 .h2a {
   margin: 0;
   font-family: "Bowlby One SC", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .h2a span {
@@ -153,6 +220,22 @@ i {
   color: black;
   background-color: #ff4c29;
   border-radius: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "head head"
+    "info info"
+    "main1 main1"
+    "main2 main2"
+    "main3 main3"
+    "main5 main5"
+    "main4 main4"
+    "footer footer";
+  gap: 7rem;
 }
 
 /*شريط متنقل*/
@@ -305,9 +388,11 @@ i {
   box-shadow: 0 0 10px 2px black;
   margin: 0 15px;
   background-size: cover;
-  background-image: linear-gradient(to top,
+  background-image: linear-gradient(
+      to top,
       rgba(0, 0, 0, 0.87) 22%,
-      transparent 55%),
+      transparent 55%
+    ),
     url(img/new-palisade-15.jpg);
 }
 
@@ -624,7 +709,7 @@ video {
 
 /*الذيل*/
 
-.aboutlink {
+footer {
   grid-area: aboutlinkk;
   display: flex;
   flex-direction: column;
@@ -669,7 +754,7 @@ video {
   border-radius: 5px;
 }
 
-.search-div input:focus~.fill {
+.search-div input:focus ~ .fill {
   width: 100%;
 }
 
@@ -791,7 +876,7 @@ video {
 }
 
 .scroolZero:hover {
-  background-color: rgba(245, 222, 179, 0.651)
+  background-color: rgba(245, 222, 179, 0.651);
 }
 .scroolZero i {
   position: relative;
@@ -1121,7 +1206,7 @@ video {
     border-radius: 5px;
   }
 
-  .search-div input:focus~.fill {
+  .search-div input:focus ~ .fill {
     width: 100%;
   }
 
