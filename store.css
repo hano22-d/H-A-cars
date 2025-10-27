@@ -1,3 +1,4 @@
+/*الصفحة الرئيسية*/
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
   scroll-behavior: smooth;
@@ -5,7 +6,6 @@ html {
 
 body {
   margin: 0%;
-  background-color: var(--Body-color);
 }
 
 :root {
@@ -19,6 +19,18 @@ body {
   --window-color: #919090dc;
   --icon: #ff4c29;
   --font-English: ;
+}
+
+.darkmood {
+  --Body-color: #121212;
+  --headerAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ffffff;
+  --text-color: #e5e5e5;
+  --text-headerFoter-color: wheat;
+  --window-color: #1e1e1e;
+  --icon: #ff4c29;
 }
 
 header,
@@ -84,6 +96,7 @@ pre {
 i {
   color: var(--icon);
 }
+
 
 header {
   height: 300px;
@@ -190,6 +203,7 @@ header {
 }
 
 .h2a {
+  color: #ff4c29;
   margin: 0;
   font-family: "Bowlby One SC", sans-serif;
   font-size: 1.6rem;
@@ -223,7 +237,7 @@ header {
 }
 
 .controlar {
-  background-color: #b1afaf;
+  background-color: var(--Body-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto auto auto;
@@ -241,7 +255,7 @@ header {
   grid-area: sale;
   border-radius: 15px;
   box-shadow: 0px 0px 7px 2px black;
-  background-color: #919090dc;
+  background-color: var(--window-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +267,7 @@ header {
   grid-area: suggestions;
   border-radius: 15px;
   box-shadow: 0px 0px 7px 2px black;
-  background-color: #919090dc;
+  background-color: var(--window-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,11 +275,9 @@ header {
 }
 
 .car_name {
-  color: black;
+  color: var(--text-color);
   font-size: 30px;
-  font-weight: 800;
-  text-shadow: 0.5px 0.5px 0.5px white;
-  -webkit-text-stroke: 0.08px white;
+  font-weight: 600;
 }
 
 .sale_title {
@@ -289,7 +301,7 @@ header {
   direction: rtl;
   font-size: 18px;
   font-weight: 800;
-  color: black;
+  color: var(--text-color);
   line-height: 30px;
   list-style: square;
 }
@@ -368,7 +380,7 @@ header {
   grid-area: view;
   border-radius: 15px;
   box-shadow: 0px 0px 7px 2px black;
-  background-color: #919090dc;
+  background-color: var(--window-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,7 +484,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #919090dc;
+  background-color: var(--window-color);
   border-radius: 20px 5px 20px 5px;
   box-shadow: 0px 0px 7px 2px black;
 }

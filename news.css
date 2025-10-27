@@ -5,7 +5,6 @@ html {
 
 body {
   margin: 0%;
-  background-color: var(--Body-color);
 }
 
 :root {
@@ -18,9 +17,19 @@ body {
   --text-headerFoter-color: wheat;
   --window-color: #919090dc;
   --icon: #ff4c29;
-  --font-English: ;
 }
 
+.darkmood {
+  --Body-color: #121212;
+  --headerAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ffffff;
+  --text-color: #e5e5e5;
+  --text-headerFoter-color: wheat;
+  --window-color: #1e1e1e;
+  --icon: #ff4c29;
+}
 header,
 footer {
   background-color: var(--headerAndfooter-color);
@@ -190,6 +199,7 @@ header {
 }
 
 .h2a {
+  color: #ff4c29;
   margin: 0;
   font-family: "Bowlby One SC", sans-serif;
   font-size: 1.6rem;
@@ -223,7 +233,7 @@ header {
 }
 
 .mudir {
-  background-color: #b1afaf;
+  background-color: var(--Body-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -300,8 +310,9 @@ header {
 }
 
 .result_search {
+  color: var(--text-color);
   width: 50%;
-  border: 2px solid #444444;
+  border: 2px solid var(--text-color);
   padding: 12px;
   border-radius: 5px;
   background: url("https://cdn-icons-png.flaticon.com/512/622/622669.png") no-repeat right 8px center;

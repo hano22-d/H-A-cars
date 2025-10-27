@@ -22,6 +22,18 @@ body {
   --font-English: ;
 }
 
+.darkmood {
+  --Body-color: #121212;
+  --headerAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ffffff;
+  --text-color: #e5e5e5;
+  --text-headerFoter-color: wheat;
+  --window-color: #1e1e1e;
+  --icon: #ff4c29;
+}
+
 header,
 footer {
   background-color: var(--headerAndfooter-color);
@@ -191,6 +203,7 @@ header {
 }
 
 .h2a {
+  color: #ff4c29;
   margin: 0;
   font-family: "Bowlby One SC", sans-serif;
   font-size: 1.6rem;
@@ -359,14 +372,12 @@ header {
 .main3_title {
   width: 500px;
   height: 300px;
-  background-image: url(img/shadoo.png);
-  background-size: cover;
 }
 
 .m3tt {
   font-size: 50px;
   text-align: center;
-  color: black;
+  color: var(--text-color);
   text-shadow: 1px 1px 2px white;
   margin-top: 150px;
 }
@@ -389,11 +400,9 @@ header {
   box-shadow: 0 0 10px 2px black;
   margin: 0 15px;
   background-size: cover;
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.87) 22%,
-      transparent 55%
-    ),
+      transparent 55%),
     url(img/new-palisade-15.jpg);
 }
 
@@ -441,7 +450,7 @@ header {
 .big_photo_text2 {
   grid-area: pt2;
   font-size: 25px;
-  color: var(--Body-color);
+  color: var(--link-color);
   position: relative;
   bottom: 100px;
   left: 25px;
@@ -513,17 +522,13 @@ video {
 .title1 {
   width: 500px;
   height: 300px;
-  background-image: url(img/shadoo.png);
   background-size: cover;
 }
 
 .h2e {
   font-size: 65px;
   text-align: center;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to top, #000);
-  -webkit-text-stroke: 0.27px #fff;
+  color: var(--text-color);
   letter-spacing: 0.5rem;
   margin-top: 100px;
 }
@@ -573,14 +578,12 @@ video {
 .logo {
   width: 70px;
   height: 70px;
-  mix-blend-mode: multiply;
   margin-left: 31px;
 }
 
 .logo:hover {
   transition: 0.3s;
   transform: scale(1.1);
-  mix-blend-mode: color-burn;
 }
 
 .bm {
@@ -597,13 +600,13 @@ video {
 
 .au {
   grid-area: au;
-  background-image: url(Car/audi.webp);
+  background-image: url(Car/audi.png);
   background-size: cover;
 }
 
 .hu {
   grid-area: hu;
-  background-image: url(Car/hyundai.webp);
+  background-image: url(Car/hyundai.png);
   background-size: cover;
 }
 
@@ -755,7 +758,7 @@ footer {
   border-radius: 5px;
 }
 
-.search-div input:focus ~ .fill {
+.search-div input:focus~.fill {
   width: 100%;
 }
 
@@ -879,6 +882,7 @@ footer {
 .scroolZero:hover {
   background-color: rgba(245, 222, 179, 0.651);
 }
+
 .scroolZero i {
   position: relative;
   right: 5px;
@@ -1207,7 +1211,7 @@ footer {
     border-radius: 5px;
   }
 
-  .search-div input:focus ~ .fill {
+  .search-div input:focus~.fill {
     width: 100%;
   }
 

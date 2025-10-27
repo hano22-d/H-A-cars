@@ -1,382 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" href="img/Website-icon.webp" />
-    <link rel="stylesheet" href="home.css" />
-    <!--خط الازرار والخيارات-->
-    <link rel="icon" href="img/Website-icon.webp" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!--خط الازرار والخيارات-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!--خط العناوين-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!--خط اسم الموقع-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
-    <!--خط عنوان المعرض-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" href="img/Website-icon.webp" />
+  <link rel="stylesheet" href="home.css" />
+  <!--خط الازرار والخيارات-->
+  <link rel="icon" href="img/Website-icon.webp" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!--خط الازرار والخيارات-->
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!--خط العناوين-->
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <!--خط اسم الموقع-->
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
+  <!--خط عنوان المعرض-->
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet" />
 
-  <body>
-    <button id="scroolZer" class="scroolZero">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
-    <header>
-      <div class="material">
-        <div class="icon">
-          <img
-            src="img/Car-Automobile-Fast-Vector-Logo-Design-Graphics-13409048-1-1-580x387.png"
-            alt=""
-          />
-          <h2 class="h2a"><span>H&A</span> CARS</h2>
-        </div>
-        <input class="header_search" type="search" value="search" />
-        <button class="header_submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <div class="setting">
-          <button><i class="fa-solid fa-user"></i></button>
-          <button><i class="fa-solid fa-moon"></i></button>
-          <select name="" id="">
-            <option value="">English</option>
-            <option value="">Arabic</option>
-          </select>
-        </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+  <button id="scroolZer" class="scroolZero">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <header>
+    <div class="material">
+      <div class="icon">
+        <img src="img/Car-Automobile-Fast-Vector-Logo-Design-Graphics-13409048-1-1-580x387.png" alt="" />
+        <h2 class="h2a"><span>H&A</span> CARS</h2>
       </div>
-
-      <div class="tab">
-        <a class="a1" href="home.html">Home</a>
-        <a class="a1" href="cars.html">cars</a>
-        <a class="a1" href="compare.html">Compare</a>
-        <a class="a1" href="news.html">news</a>
-        <a class="a1" href="store.html">store</a>
-        <a class="a1" href="login.html">login</a>
+      <input class="header_search" type="search" value="search" />
+      <button class="header_submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="setting">
+        <button><i class="fa-solid fa-user"></i></button>
+        <button id="darkmoodBtn"><i class="fa-solid fa-moon"></i></button>
+        <select name="" id="">
+          <option value="">English</option>
+          <option value="">Arabic</option>
+        </select>
       </div>
-    </header>
-
-    <div class="infobar">
-      <img id="infoImage" src="img/tes.jpg" alt="Car" />
-      <p class="price1">f🚗 إطلاق Tesla Cybertruck</p>
     </div>
 
-    <div class="container">
-      <div class="main1">
-        <div class="main2">
-          <img class="img_news1" src="img/hyundai-unveils-2025-e-2.jpg" />
-          <div class="paragraf1">
-            <h2 class="h2c">
-              سيارة Nio Firefly الكهربائية الصغيرة – أول طراز من علامة الـ
-              Firefly (مُلك لشركة Nio)
-            </h2>
-            <p class="p1">
-              معلومات أساسية كشفت عنه شركة Nio في 21 ديسمبر 2024، وبدأت
-              التسليمات رسميًا في 19 أبريل 2025 بالصين سعر البداية حوالي 16,770
-              دولار أمريكي، ومع خيار اشتراك البطارية (Battery-as-a-Service) أصبح
-              السعر الأقل عند نحو 11,100 دولار شهريًا . ستُطرح في السوق
-              الأوروبية خلال صيف 2025 v3cars.com . ⚙️ أبرز المواصفات تصميم
-              هاتشباك مدمجة وعصرية مع شعار Firefly distinct، وليست مموّهة بعلامة
-              Nio التقليدية . تركز على كفاءة استخدام الطاقة، مع نظام تبديل
-              بطاريات سريع وآمن عبر شبكة التبادل التابعة لـ Nio
-            </p>
-          </div>
-        </div>
+    <div class="tab">
+      <a class="a1" href="home.html">Home</a>
+      <a class="a1" href="cars.html">cars</a>
+      <a class="a1" href="compare.html">Compare</a>
+      <a class="a1" href="news.html">news</a>
+      <a class="a1" href="store.html">store</a>
+      <a class="a1" href="login.html">login</a>
+    </div>
+  </header>
 
-        <div class="main2">
-          <img class="img_news1" src="img/Stellantis-plant-morocco.png" />
-          <div class="paragraf1">
-            <h2 class="h2c">صناعة السيارات الكهربائية في المغرب</h2>
-            <p class="p1">
-              أعلنت مؤخّرًا عن استثمار بقيمة 1.2 مليار يورو لتوسيع مصنعها في
-              القنيطرة، المغرب، بهدف زيادة الإنتاج السنوي من 20,000 إلى 70,000
-              سيارة كهربائية من نماذج مثلStellantis Citroën Ami، Opel Rocks‑e،
-              وFiat Topolino Reuters . تأتي هذه الخطوة كجزء من استراتيجية المغرب
-              لتعزيز صناعة السيارات المحلية؛ مع هدف رفع نسبة المكونات المصنعة
-              محليًا إلى 75% بحلول 2030، مقارنةً بحاليًا حوالي 69% Reuters .
-              توسعة المصنع الخامسة منذ افتتاحه عام 2019، وهي خطوة تؤكد مكانة
-              المغرب كمركز إنتاج عالمي للسيارات الكهربائية.
-            </p>
-          </div>
+  <div class="infobar">
+    <img id="infoImage" src="img/tes.jpg" alt="Car" />
+    <p class="price1">f🚗 إطلاق Tesla Cybertruck</p>
+  </div>
+
+  <div class="container">
+    <div class="main1">
+      <div class="main2">
+        <img class="img_news1" src="img/hyundai-unveils-2025-e-2.jpg" />
+        <div class="paragraf1">
+          <h2 class="h2c">
+            سيارة Nio Firefly الكهربائية الصغيرة – أول طراز من علامة الـ
+            Firefly (مُلك لشركة Nio)
+          </h2>
+          <p class="p1">
+            معلومات أساسية كشفت عنه شركة Nio في 21 ديسمبر 2024، وبدأت
+            التسليمات رسميًا في 19 أبريل 2025 بالصين سعر البداية حوالي 16,770
+            دولار أمريكي، ومع خيار اشتراك البطارية (Battery-as-a-Service) أصبح
+            السعر الأقل عند نحو 11,100 دولار شهريًا . ستُطرح في السوق
+            الأوروبية خلال صيف 2025 v3cars.com . ⚙️ أبرز المواصفات تصميم
+            هاتشباك مدمجة وعصرية مع شعار Firefly distinct، وليست مموّهة بعلامة
+            Nio التقليدية . تركز على كفاءة استخدام الطاقة، مع نظام تبديل
+            بطاريات سريع وآمن عبر شبكة التبادل التابعة لـ Nio
+          </p>
         </div>
       </div>
 
-      <div class="main3">
-        <div class="main3_title">
-          <h1 class="m3tt">!... أحدث تطورات العام القادم</h1>
-        </div>
-        <div class="modern_news">
-          <div class="big_photo"></div>
-          <h1 class="big_photo_text1">! منافس شرس جديد في الاسواق</h1>
-          <h1 class="big_photo_text2">
-            باليسيد 2026 الامتداد الأحدث لسلسلة سيارات الدفع الرباعي العائلية
-            الفاخرة من هيونداي
-          </h1>
-          <div class="pictures">
-            <div class="photo1">
-              <img src="img/Mercedes-Benz-2026.jpg" alt="" />
-              <div class="para_text">
-                <h1 class="picture_text">...مرسيدس 2026 قريبا</h1>
-                <p class="picture_paragraph">
-                  تستعد مرسيدس بنز لإطلاق سيارتها الجديدة اس كلاس 2026 بمحرك 6
-                  و8 سلندر بقوة 496 و442 حصان
-                </p>
-              </div>
-            </div>
-            <div class="photo2">
-              <img src="img/Rolls-Royse-spectre.jpg" alt="" />
-              <div class="para_text">
-                <h1 class="picture_text">! السيارة الملكية عادت من جديد</h1>
-                <p class="picture_paragraph">
-                  أعلنت شركة رولز رويس عن إصدار جديد من سياراتها الكهربائية
-                  الفاخرة، سبيكتر
-                </p>
-              </div>
-            </div>
-            <div class="photo3">
-              <img src="img/BMW-ix3-112.jpg" alt="" />
-              <div class="para_text">
-                <h1 class="picture_text">. بي أم دبليو تأبى التراجع</h1>
-                <p class="picture_paragraph">
-                  تستعد شركة بي أم دبليو لإحداث تغيير جذري في عالم السيارات
-                  الكهربائية من خلال سيارتها الجديدة
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="main5">
-        <h1>Top 10 Popular Cars</h1>
-        <video controls src="car/video1.mp4" type="video/mp4"></video>
-      </div>
-
-      <div class="main4">
-        <div class="title1">
-          <h2 class="h2e">Photo gallery</h2>
-        </div>
-
-        <div class="img_gallery">
-          <div class="ma logo"></div>
-          <div class="bm logo"></div>
-          <div class="au logo"></div>
-          <div class="hu logo"></div>
-
-          <div class="text_gallary" id="imgo">
-            <p id="CarNames"></p>
-          </div>
-          <img
-            onmouseover="ShowCarsName(this,kan.a)"
-            class="a all"
-            src="Home-gallary/Hyundai-Elantra.webp"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.b)"
-            class="b all"
-            src="Home-gallary/Audi-A4.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.c)"
-            class="c all"
-            src="Home-gallary/BMW-3series.jpg"
-          />
-
-          <img
-            onmouseover="ShowCarsName(this,kan.d)"
-            class="d all"
-            src="Home-gallary/Mercedes-Bemz-CLS-Class.jpg"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.e)"
-            class="e all"
-            src="Home-gallary/Hyundai-Palisade.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.f)"
-            class="f all"
-            src="Home-gallary/Audi-Q7.avif"
-          />
-
-          <img
-            onmouseover="ShowCarsName(this,kan.g)"
-            class="g all"
-            src="Home-gallary/BMW-7series.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.h)"
-            class="h all"
-            src="Home-gallary/Mercedes-Benz-E-Class.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.i)"
-            class="i all"
-            src="Home-gallary/Hyundai-Tucson.avif"
-            alt=""
-          />
-
-          <img
-            onmouseover="ShowCarsName(this,kan.j)"
-            class="j all"
-            src="Home-gallary/Audi-SQ8.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.k)"
-            class="k all"
-            src="Home-gallary/BMW-i5.jpg"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.l)"
-            class="l all"
-            src="Home-gallary/Mercedes-Benz-G-Class.avif"
-          />
-
-          <img
-            onmouseover="ShowCarsName(this,kan.m)"
-            class="m all"
-            src="Home-gallary/Hyundai-Sonata.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.n)"
-            class="n all"
-            src="Home-gallary/Audi-S8.jpg"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.o)"
-            class="o all"
-            src="Home-gallary/BMW-X3.avif"
-          />
-
-          <img
-            onmouseover="ShowCarsName(this,kan.p)"
-            class="p all"
-            src="Home-gallary/Mercedes-Benz-Maybach.jpg"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.q)"
-            class="q all"
-            src="Home-gallary/Hyundai-SantaFe.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.r)"
-            class="r all"
-            src="Home-gallary/Audi-TT.avif"
-          />
-
-          <img
-            onmouseover="ShowCarsName(this,kan.s)"
-            class="s all"
-            src="Home-gallary/BMW-X5.avif"
-          />
-          <img
-            onmouseover="ShowCarsName(this,kan.t)"
-            class="t all"
-            src="Home-gallary/Mercedes-Benz-S-Class.avif"
-          />
-          <img id="imgbigers" class="imgbigers" src="img/Website-icon.webp" />
+      <div class="main2">
+        <img class="img_news1" src="img/Stellantis-plant-morocco.png" />
+        <div class="paragraf1">
+          <h2 class="h2c">صناعة السيارات الكهربائية في المغرب</h2>
+          <p class="p1">
+            أعلنت مؤخّرًا عن استثمار بقيمة 1.2 مليار يورو لتوسيع مصنعها في
+            القنيطرة، المغرب، بهدف زيادة الإنتاج السنوي من 20,000 إلى 70,000
+            سيارة كهربائية من نماذج مثلStellantis Citroën Ami، Opel Rocks‑e،
+            وFiat Topolino Reuters . تأتي هذه الخطوة كجزء من استراتيجية المغرب
+            لتعزيز صناعة السيارات المحلية؛ مع هدف رفع نسبة المكونات المصنعة
+            محليًا إلى 75% بحلول 2030، مقارنةً بحاليًا حوالي 69% Reuters .
+            توسعة المصنع الخامسة منذ افتتاحه عام 2019، وهي خطوة تؤكد مكانة
+            المغرب كمركز إنتاج عالمي للسيارات الكهربائية.
+          </p>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="search-div">
-        <input type="search" placeholder="Seatch" />
-        <span class="fill"></span>
+
+    <div class="main3">
+      <div class="main3_title">
+        <h1 class="m3tt">!... أحدث تطورات العام القادم</h1>
       </div>
-
-      <div class="about">
-        <p class="p2">مرحباً بك في <span>H&A Cars</span></p>
-        <p>
-          نحن هاني جمعة و علي سعدو، شغفنا بالسيارات كان الدافع الأكبر لإنشاء هذا
-          الموقع. هنا، نأخذك في جولة بين أحدث الطرازات، أخبار الصناعة، وتقنيات
-          المستقبل في عالم السيارات. هدفنا أن نصبح مرجعك الأول لكل ما تحتاجه عن
-          السيارات، من المواصفات والأسعار، إلى أحدث الإصدارات والنصائح الذكية.
-          في H&A Cars، نؤمن أن السيارة ليست مجرد وسيلة نقل، بل هي تجربة، قصة،
-          وعالم من الإبداع.
-        </p>
-      </div>
-
-      <h2>Links</h2>
-      <div class="links">
-        <a
-          id="email"
-          class="a2"
-          href="mailto:"
-          title="تواصل معنا عبر البريد الإلكتروني"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a id="about" class="a2" href="" title="أسئلة شائعة"
-          ><i class="fa-solid fa-question"></i
-        ></a>
-        <a id="phone" class="a2" href="" title="اتصل عبر الهاتف"
-          ><i class="fa-solid fa-phone-volume"></i
-        ></a>
-      </div>
-
-      <div class="direction">
-        <div class="Services-blog">
-          <h2>Services</h2>
-          <a href="">خدمة البحث عن السيارات</a>
-          <a href="">تقييم السيارات المستعملة</a>
-          <h2>Blog</h2>
-          <a href="">أخبار عالم السيارات</a>
-          <a href="">دليل المشتري</a>
-          <a href="">مقارنة السيارات</a>
-        </div>
-
-        <div class="privacy">
-          <h2>Site policies</h2>
-          <a href="">سياسة الخصوصية</a>
-          <a href="">الشروط والاحكام</a>
-          <a href="">الكوكيز</a>
-        </div>
-
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
-            width="100%"
-            height="200"
-            loading="lazy"
-            title="Our title"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+      <div class="modern_news">
+        <div class="big_photo"></div>
+        <h1 class="big_photo_text1">! منافس شرس جديد في الاسواق</h1>
+        <h1 class="big_photo_text2">
+          باليسيد 2026 الامتداد الأحدث لسلسلة سيارات الدفع الرباعي العائلية
+          الفاخرة من هيونداي
+        </h1>
+        <div class="pictures">
+          <div class="photo1">
+            <img src="img/Mercedes-Benz-2026.jpg" alt="" />
+            <div class="para_text">
+              <h1 class="picture_text">...مرسيدس 2026 قريبا</h1>
+              <p class="picture_paragraph">
+                تستعد مرسيدس بنز لإطلاق سيارتها الجديدة اس كلاس 2026 بمحرك 6
+                و8 سلندر بقوة 496 و442 حصان
+              </p>
+            </div>
+          </div>
+          <div class="photo2">
+            <img src="img/Rolls-Royse-spectre.jpg" alt="" />
+            <div class="para_text">
+              <h1 class="picture_text">! السيارة الملكية عادت من جديد</h1>
+              <p class="picture_paragraph">
+                أعلنت شركة رولز رويس عن إصدار جديد من سياراتها الكهربائية
+                الفاخرة، سبيكتر
+              </p>
+            </div>
+          </div>
+          <div class="photo3">
+            <img src="img/BMW-ix3-112.jpg" alt="" />
+            <div class="para_text">
+              <h1 class="picture_text">. بي أم دبليو تأبى التراجع</h1>
+              <p class="picture_paragraph">
+                تستعد شركة بي أم دبليو لإحداث تغيير جذري في عالم السيارات
+                الكهربائية من خلال سيارتها الجديدة
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <script src="home.js"></script>
-  </body>
+    </div>
+
+    <div class="main5">
+      <h1>Top 10 Popular Cars</h1>
+      <video controls src="car/video1.mp4" type="video/mp4"></video>
+    </div>
+
+    <div class="main4">
+      <div class="title1">
+        <h2 class="h2e">Photo gallery</h2>
+      </div>
+
+      <div class="img_gallery">
+        <div class="ma logo"></div>
+        <div class="bm logo"></div>
+        <div class="au logo"></div>
+        <div class="hu logo"></div>
+
+        <div class="text_gallary" id="imgo">
+          <p id="CarNames"></p>
+        </div>
+        <img onmouseover="ShowCarsName(this,kan.a)" class="a all" src="Home-gallary/Hyundai-Elantra.webp" />
+        <img onmouseover="ShowCarsName(this,kan.b)" class="b all" src="Home-gallary/Audi-A4.avif" />
+        <img onmouseover="ShowCarsName(this,kan.c)" class="c all" src="Home-gallary/BMW-3series.jpg" />
+
+        <img onmouseover="ShowCarsName(this,kan.d)" class="d all" src="Home-gallary/Mercedes-Bemz-CLS-Class.jpg" />
+        <img onmouseover="ShowCarsName(this,kan.e)" class="e all" src="Home-gallary/Hyundai-Palisade.avif" />
+        <img onmouseover="ShowCarsName(this,kan.f)" class="f all" src="Home-gallary/Audi-Q7.avif" />
+
+        <img onmouseover="ShowCarsName(this,kan.g)" class="g all" src="Home-gallary/BMW-7series.avif" />
+        <img onmouseover="ShowCarsName(this,kan.h)" class="h all" src="Home-gallary/Mercedes-Benz-E-Class.avif" />
+        <img onmouseover="ShowCarsName(this,kan.i)" class="i all" src="Home-gallary/Hyundai-Tucson.avif" alt="" />
+
+        <img onmouseover="ShowCarsName(this,kan.j)" class="j all" src="Home-gallary/Audi-SQ8.avif" />
+        <img onmouseover="ShowCarsName(this,kan.k)" class="k all" src="Home-gallary/BMW-i5.jpg" />
+        <img onmouseover="ShowCarsName(this,kan.l)" class="l all" src="Home-gallary/Mercedes-Benz-G-Class.avif" />
+
+        <img onmouseover="ShowCarsName(this,kan.m)" class="m all" src="Home-gallary/Hyundai-Sonata.avif" />
+        <img onmouseover="ShowCarsName(this,kan.n)" class="n all" src="Home-gallary/Audi-S8.jpg" />
+        <img onmouseover="ShowCarsName(this,kan.o)" class="o all" src="Home-gallary/BMW-X3.avif" />
+
+        <img onmouseover="ShowCarsName(this,kan.p)" class="p all" src="Home-gallary/Mercedes-Benz-Maybach.jpg" />
+        <img onmouseover="ShowCarsName(this,kan.q)" class="q all" src="Home-gallary/Hyundai-SantaFe.avif" />
+        <img onmouseover="ShowCarsName(this,kan.r)" class="r all" src="Home-gallary/Audi-TT.avif" />
+
+        <img onmouseover="ShowCarsName(this,kan.s)" class="s all" src="Home-gallary/BMW-X5.avif" />
+        <img onmouseover="ShowCarsName(this,kan.t)" class="t all" src="Home-gallary/Mercedes-Benz-S-Class.avif" />
+        <img id="imgbigers" class="imgbigers" src="img/Website-icon.webp" />
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="search-div">
+      <input type="search" placeholder="Seatch" />
+      <span class="fill"></span>
+    </div>
+
+    <div class="about">
+      <p class="p2">مرحباً بك في <span>H&A Cars</span></p>
+      <p>
+        نحن هاني جمعة و علي سعدو، شغفنا بالسيارات كان الدافع الأكبر لإنشاء هذا
+        الموقع. هنا، نأخذك في جولة بين أحدث الطرازات، أخبار الصناعة، وتقنيات
+        المستقبل في عالم السيارات. هدفنا أن نصبح مرجعك الأول لكل ما تحتاجه عن
+        السيارات، من المواصفات والأسعار، إلى أحدث الإصدارات والنصائح الذكية.
+        في H&A Cars، نؤمن أن السيارة ليست مجرد وسيلة نقل، بل هي تجربة، قصة،
+        وعالم من الإبداع.
+      </p>
+    </div>
+
+    <h2>Links</h2>
+    <div class="links">
+      <a id="email" class="a2" href="mailto:" title="تواصل معنا عبر البريد الإلكتروني"><i
+          class="fa-solid fa-envelope"></i></a>
+      <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"><i class="fa-brands fa-facebook"></i></a>
+      <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"><i class="fa-brands fa-instagram"></i></a>
+      <a id="about" class="a2" href="" title="أسئلة شائعة"><i class="fa-solid fa-question"></i></a>
+      <a id="phone" class="a2" href="" title="اتصل عبر الهاتف"><i class="fa-solid fa-phone-volume"></i></a>
+    </div>
+
+    <div class="direction">
+      <div class="Services-blog">
+        <h2>Services</h2>
+        <a href="">خدمة البحث عن السيارات</a>
+        <a href="">تقييم السيارات المستعملة</a>
+        <h2>Blog</h2>
+        <a href="">أخبار عالم السيارات</a>
+        <a href="">دليل المشتري</a>
+        <a href="">مقارنة السيارات</a>
+      </div>
+
+      <div class="privacy">
+        <h2>Site policies</h2>
+        <a href="">سياسة الخصوصية</a>
+        <a href="">الشروط والاحكام</a>
+        <a href="">الكوكيز</a>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
+          width="100%" height="200" loading="lazy" title="Our title" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+  <script src="home.js"></script>
+</body>
+
 </html>

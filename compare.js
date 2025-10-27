@@ -19,4 +19,12 @@ function scroolbtn () {
 
 window.addEventListener('scroll',() => scroolbtn())
 
-
+/*برنامج تطبيق الثيم الليلي*/
+const darkmoodBtn = document.getElementById('darkmoodBtn');
+let iconChange = true;
+darkmoodBtn.onclick = _ => {
+  document.documentElement.classList.toggle('darkmood');
+  iconChange ? darkmoodBtn.innerHTML = '<i class="fa-solid fa-sun"></i>'
+    : darkmoodBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+  iconChange = !iconChange
+}

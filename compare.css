@@ -20,6 +20,17 @@ body {
   --icon: #ff4c29;
   --font-English: ;
 }
+.darkmood {
+  --Body-color: #121212;
+  --headerAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ffffff;
+  --text-color: #e5e5e5;
+  --text-headerFoter-color: wheat;
+  --window-color: #1e1e1e;
+  --icon: #ff4c29;
+}
 
 header,
 footer {
@@ -190,6 +201,7 @@ header {
 }
 
 .h2a {
+  color: #ff4c29;
   margin: 0;
   font-family: "Bowlby One SC", sans-serif;
   font-size: 1.6rem;
@@ -233,15 +245,16 @@ header {
   gap: 35px;
 }
 
-.datain input,
-select {
+.datain input,.datain select {
   padding: 4px;
   background: none;
   font-size: 15px;
-  border: 1.5px solid black;
+  border: 1.5px solid var(--text-color);
   box-shadow: 0 0 5px 1px black;
 }
-
+.datain select {
+  background: var(--link-color);
+}
 .datain select:hover {
   transition: 0.2s;
   background: rgb(240, 248, 255);
@@ -253,7 +266,9 @@ select {
   background: rgb(240, 248, 255);
   box-shadow: 0 0 5px 1px black;
 }
-
+.datain input::placeholder {
+  color: var(--text-color);
+}
 .datain button {
   padding: 5px 25px;
   font-size: 30px;
@@ -318,6 +333,7 @@ h1 {
   font-size: 25px;
   width: 100%;
   padding: 6px;
+  color: var(--text-color);
 }
 
 .card_button {
@@ -398,6 +414,7 @@ th {
 td {
   padding: 10px;
   font-size: 20px;
+  color: var(--text-color);
 }
 
 footer {

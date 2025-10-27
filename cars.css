@@ -21,6 +21,18 @@ body {
   --font-English: ;
 }
 
+.darkmood {
+  --Body-color: #121212;
+  --headerAndfooter-color: #1b1b1b;
+  --button-color: #ff4c29;
+  --link-color: wheat;
+  --title-color: #ffffff;
+  --text-color: #e5e5e5;
+  --text-headerFoter-color: wheat;
+  --window-color: #1e1e1e;
+  --icon: #ff4c29;
+}
+
 header,
 footer {
   background-color: var(--headerAndfooter-color);
@@ -190,6 +202,7 @@ header {
 }
 
 .h2a {
+  color: #ff4c29;
   margin: 0;
   font-family: "Bowlby One SC", sans-serif;
   font-size: 1.6rem;
@@ -334,6 +347,7 @@ h1 {
   padding: 10px 0px;
   text-shadow: 1px 1px 1px black;
 }
+
 .img1,
 .img2,
 .img3,
@@ -342,9 +356,7 @@ h1 {
   height: 160px;
   object-fit: contain;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 4px rgba(245, 222, 179, 0.829))
-    drop-shadow(0 8px 7px rgba(245, 222, 179, 0.671))
-    drop-shadow(0 12px 10px rgba(245, 222, 179, 0.377));
+  filter: drop-shadow(0 5px 4px rgba(245, 222, 179, 0.829)) drop-shadow(0 8px 7px rgba(245, 222, 179, 0.671)) drop-shadow(0 12px 10px rgba(245, 222, 179, 0.377));
 }
 
 .h31,
@@ -377,6 +389,7 @@ h1 {
 }
 
 .listdiv h1 {
+  color: var(--title-color);
   font-weight: bold;
 }
 
@@ -384,6 +397,7 @@ h1 {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 .listdiv select,
@@ -455,7 +469,7 @@ footer {
   border-radius: 5px;
 }
 
-.search-div input:focus ~ .fill {
+.search-div input:focus~.fill {
   width: 100%;
 }
 
@@ -581,9 +595,10 @@ footer {
 .scroolZero:hover {
   background-color: rgba(245, 222, 179, 0.651)
 }
+
 .scroolZero i {
- position: relative;
- right: 5px;
+  position: relative;
+  right: 5px;
 }
 
 /*Responsive to mobile*/
@@ -697,7 +712,7 @@ footer {
     border-radius: 5px;
   }
 
-  .search-div input:focus ~ .fill {
+  .search-div input:focus~.fill {
     width: 100%;
   }
 
