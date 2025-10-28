@@ -1,276 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Store</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/Main-Logo.png" />
-    <link rel="stylesheet" href="store.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!--خط الازرار والخيارات-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!--خط العناوين-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!--خط اسم الموقع-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!--مكتبة fontAwesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
+<head>
+  <title>Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/Main-Logo.png" />
+  <link rel="stylesheet" href="store.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!--خط الازرار والخيارات-->
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!--خط العناوين-->
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <!--خط اسم الموقع-->
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
 
-  <body>
-    <button id="scroolZer" class="scroolZero">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
-    <div class="controlar">
-      <header>
-        <div class="material">
-          <div class="icon">
-            <!--
+  <!--مكتبة fontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <button id="scroolZer" class="scroolZero">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <div class="controlar">
+    <header>
+      <div class="material">
+        <div class="icon">
+          <!--
             <img
               src="img/Car-Automobile-Fast-Vector-Logo-Design-Graphics-13409048-1-1-580x387.png"
               alt=""
             />
             <h2 class="h2a"><span>H&A</span> CARS</h2>
             -->
-            <img src="img/Main-Logo.png" alt="">
-          </div>
-          <input class="header_search" type="search" value="search" />
-          <button class="header_submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <div class="setting">
-            <button><i class="fa-solid fa-user"></i></button>
-            <button id="darkmoodBtn"><i class="fa-solid fa-moon"></i></button>
-            <select name="" id="">
-              <option value="">English</option>
-              <option value="">Arabic</option>
-            </select>
-          </div>
+          <img src="img/Main-Logo.png" alt="">
         </div>
+        <input id="headerSearch" class="header_search" type="search" placeholder="search" />
+        <button id="headerSubmit" class="header_submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="setting">
+          <button><i class="fa-solid fa-user"></i></button>
+          <button id="darkmoodBtn"><i class="fa-solid fa-moon"></i></button>
+          <select name="" id="">
+            <option value="">English</option>
+            <option value="">Arabic</option>
+          </select>
+        </div>
+      </div>
 
-        <div class="tab">
-          <a class="a1" href="home.html">Home</a>
-          <a class="a1" href="cars.html">cars</a>
-          <a class="a1" href="compare.html">Compare</a>
-          <a class="a1" href="news.html">news</a>
-          <a class="a1" href="store.html">store</a>
-          <a class="a1" href="login.html">login</a>
+      <div class="tab">
+        <a class="a1" href="home.html">Home</a>
+        <a class="a1" href="cars.html">cars</a>
+        <a class="a1" href="compare.html">Compare</a>
+        <a class="a1" href="news.html">news</a>
+        <a class="a1" href="store.html">store</a>
+        <a class="a1" href="login.html">login</a>
+      </div>
+    </header>
+    <!-- قسم العروض -->
+    <aside class="sale">
+      <h1 class="sale_title">Offers</h1>
+      <h1 class="car_name">Genesis GV80 2020</h1>
+      <div class="sale_img-text">
+        <img class="sale_img" src="cars img (store page)/genesis-gv80-2020.jpg" alt="Tesla Y" title="Genesis GV80 2020"
+          width="300px" />
+        <ol class="sale_text">
+          <li>محرك 6 سلندر بسعة 3.5 لتر و بقوة 375 حصان</li>
+          <li>نظام دفع رباعي للعجلات</li>
+          <li>التسارع من 0 الى 100 كم/س خلال 5.5 ثانية</li>
+          <li>سعة خزان الوقود 80 لتر</li>
+        </ol>
+      </div>
+      <div class="offer-go">
+        <div class="o-go">
+          <button class="go11 off">التالي</button>
+          <button class="go11 off">السابق</button>
         </div>
-      </header>
-      <!-- قسم العروض -->
-      <aside class="sale">
-        <h1 class="sale_title">Offers</h1>
-        <h1 class="car_name">Genesis GV80 2020</h1>
-        <div class="sale_img-text">
-          <img
-            class="sale_img"
-            src="cars img (store page)/genesis-gv80-2020.jpg"
-            alt="Tesla Y"
-            title="Genesis GV80 2020"
-            width="300px"
-          />
-          <ol class="sale_text">
-            <li>محرك 6 سلندر بسعة 3.5 لتر و بقوة 375 حصان</li>
-            <li>نظام دفع رباعي للعجلات</li>
-            <li>التسارع من 0 الى 100 كم/س خلال 5.5 ثانية</li>
-            <li>سعة خزان الوقود 80 لتر</li>
-          </ol>
+        <div class="o-go">
+          <button class="go12 off">شراء</button>
+          <button class="go12 off">عرض التفاصيل</button>
         </div>
-        <div class="offer-go">
-          <div class="o-go">
-            <button class="go11 off">التالي</button>
-            <button class="go11 off">السابق</button>
-          </div>
-          <div class="o-go">
-            <button class="go12 off">شراء</button>
-            <button class="go12 off">عرض التفاصيل</button>
-          </div>
+      </div>
+    </aside>
+    <!-- قسم الاقتراحات-->
+    <aside class="suggestions">
+      <h1 class="sale_title">Suggestions</h1>
+      <h1 class="car_name">Kia Sorento 2021</h1>
+      <div class="sale_img-text">
+        <img class="sale_img" src="cars img (store page)/Kia-sorento-2021.jpg" alt="Tuscan 2010"
+          title="Kia Sorento 2021" />
+        <ol class="sale_text">
+          <li>محرك 6 سلندر بسعة 3.5 لتر و بقوة 290 حصان</li>
+          <li>نظام دفع رباعي للعجلات</li>
+          <li>التسارع من 0 الى 100 كم/س خلال 7.5 ثانية</li>
+          <li>سعة خزان الوقود 67 لتر</li>
+        </ol>
+      </div>
+      <div class="suggestion-go">
+        <div class="s-go">
+          <button class="go21 sug">التالي</button>
+          <button class="go21 sug">السابق</button>
         </div>
-      </aside>
-      <!-- قسم الاقتراحات-->
-      <aside class="suggestions">
-        <h1 class="sale_title">Suggestions</h1>
-        <h1 class="car_name">Kia Sorento 2021</h1>
-        <div class="sale_img-text">
-          <img
-            class="sale_img"
-            src="cars img (store page)/Kia-sorento-2021.jpg"
-            alt="Tuscan 2010"
-            title="Kia Sorento 2021"
-          />
-          <ol class="sale_text">
-            <li>محرك 6 سلندر بسعة 3.5 لتر و بقوة 290 حصان</li>
-            <li>نظام دفع رباعي للعجلات</li>
-            <li>التسارع من 0 الى 100 كم/س خلال 7.5 ثانية</li>
-            <li>سعة خزان الوقود 67 لتر</li>
-          </ol>
+        <div class="s-go">
+          <button class="go22 sug">شراء</button>
+          <button class="go22 sug">عرض التفاصيل</button>
         </div>
-        <div class="suggestion-go">
-          <div class="s-go">
-            <button class="go21 sug">التالي</button>
-            <button class="go21 sug">السابق</button>
-          </div>
-          <div class="s-go">
-            <button class="go22 sug">شراء</button>
-            <button class="go22 sug">عرض التفاصيل</button>
-          </div>
-        </div>
-      </aside>
-      <!--قسم العرض -->
+      </div>
+    </aside>
+    <!--قسم العرض -->
 
-      <main class="view">
-        <div class="company">
-          <img class="marsids img" src="img/marsidsicon (2).png" />
-          <img class="bmw img" src="img/bmwico (1).png" />
-          <img class="kia img" src="img/images (3).png" />
-          <img class="hyundai img" src="img/Hyundai-Logo-11.png" />
-        </div>
-      </main>
+    <main class="view">
+      <div class="company">
+        <img class="marsids img" src="img/marsidsicon (2).png" />
+        <img class="bmw img" src="img/bmwico (1).png" />
+        <img class="kia img" src="img/images (3).png" />
+        <img class="hyundai img" src="img/Hyundai-Logo-11.png" />
+      </div>
+    </main>
 
-      <!--قسم البحث-->
+    <!--قسم البحث-->
 
-      <main class="view_search">
-        <div class="input_search">
-          <label class="s_label">Chosse your reuest</label>
-          <div class="in_search">
-            <input
-              class="in_ss"
-              type="search"
-              placeholder="chose the company"
-            />
-            <input class="in_ss" type="search" placeholder="chose the model" />
-            <input class="in_ss" type="search" placeholder="Year" />
-            <div class="in_submit">
-              <a class="in_s" href="#sec1">View</a>
-              <button class="in_s" type="submit">search</button>
-            </div>
+    <main class="view_search">
+      <div class="input_search">
+        <label class="s_label">Chosse your reuest</label>
+        <div class="in_search">
+          <input class="in_ss" type="search" placeholder="chose the company" />
+          <input class="in_ss" type="search" placeholder="chose the model" />
+          <input class="in_ss" type="search" placeholder="Year" />
+          <div class="in_submit">
+            <a class="in_s" href="#sec1">View</a>
+            <button class="in_s" type="submit">search</button>
           </div>
         </div>
+      </div>
 
-        <section id="sec1">
-          <div class="img_list_search">
-            <!--لتطبيق التعتيم-->
-            <div class="overlay"></div>
+      <section id="sec1">
+        <div class="img_list_search">
+          <!--لتطبيق التعتيم-->
+          <div class="overlay"></div>
 
-            <!--حاوية العنوان-->
-            <span class="the_car">🔥 CLS-Class 2012 🔥</span>
+          <!--حاوية العنوان-->
+          <span class="the_car">🔥 CLS-Class 2012 🔥</span>
 
-            <!--حاوية الصورة والمواصفات-->
-            <div class="list">
-              <img
-                class="img_search"
-                src="cars img (store page)/mercedes-cls-2012.jpg"
-              />
-              <ul class="list_s">
-                <!--    <li><i class="fas fa-gauge"></i></li>       -->
-                <li><i class="fas fa-cogs"></i>المحرك: 8 سلندر بسعة 4.6 لتر</li>
-                <li><i class="fas fa-bolt"></i>قوة المحرك: 402 حصان</li>
-                <li><i class="fas fa-gear"></i>ناقل الحركة: 7 سرعات أوتوماتيكي</li>
-                <li><i class="fas fa-road"></i>نظام الدفع: دفع خلفي</li>
-                <li><i class="fas fa-user-friends"></i>عدد المقاعد: 4</li>
-                <li><i class="fas fa-wrench"></i>الحالة: مستعمل</li>
-                <li><i class="fas fa-percent"></i>نسبة النظافة: 100%</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- التذييل-->
-      <footer>
-        <div class="search-div">
-          <input type="search" placeholder="Seatch" />
-          <span class="fill"></span>
-        </div>
-
-        <div class="about">
-          <p class="p2">مرحباً بك في <span>H&A Cars</span></p>
-          <p>
-            نحن هاني جمعة و علي سعدو، شغفنا بالسيارات كان الدافع الأكبر لإنشاء
-            هذا الموقع. هنا، نأخذك في جولة بين أحدث الطرازات، أخبار الصناعة،
-            وتقنيات المستقبل في عالم السيارات. هدفنا أن نصبح مرجعك الأول لكل ما
-            تحتاجه عن السيارات، من المواصفات والأسعار، إلى أحدث الإصدارات
-            والنصائح الذكية. في H&A Cars، نؤمن أن السيارة ليست مجرد وسيلة نقل،
-            بل هي تجربة، قصة، وعالم من الإبداع.
-          </p>
-        </div>
-
-        <h2>Links</h2>
-        <div class="links">
-          <a
-            id="email"
-            class="a2"
-            href="mailto:"
-            title="تواصل معنا عبر البريد الإلكتروني"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-          <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a id="about" class="a2" href="" title="أسئلة شائعة"
-            ><i class="fa-solid fa-question"></i
-          ></a>
-          <a id="phone" class="a2" href="" title="اتصل عبر الهاتف"
-            ><i class="fa-solid fa-phone-volume"></i
-          ></a>
-        </div>
-
-        <div class="direction">
-          <div class="Services-blog">
-            <h2>Services</h2>
-            <a href="">خدمة البحث عن السيارات</a>
-            <a href="">تقييم السيارات المستعملة</a>
-            <h2>Blog</h2>
-            <a href="">أخبار عالم السيارات</a>
-            <a href="">دليل المشتري</a>
-            <a href="">مقارنة السيارات</a>
-          </div>
-
-          <div class="privacy">
-            <h2>Site policies</h2>
-            <a href="">سياسة الخصوصية</a>
-            <a href="">الشروط والاحكام</a>
-            <a href="">الكوكيز</a>
-          </div>
-
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
-              width="100%"
-              height="200"
-              loading="lazy"
-              title="Our title"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+          <!--حاوية الصورة والمواصفات-->
+          <div class="list">
+            <img class="img_search" src="cars img (store page)/mercedes-cls-2012.jpg" />
+            <ul class="list_s">
+              <!--    <li><i class="fas fa-gauge"></i></li>       -->
+              <li><i class="fas fa-cogs"></i>المحرك: 8 سلندر بسعة 4.6 لتر</li>
+              <li><i class="fas fa-bolt"></i>قوة المحرك: 402 حصان</li>
+              <li><i class="fas fa-gear"></i>ناقل الحركة: 7 سرعات أوتوماتيكي</li>
+              <li><i class="fas fa-road"></i>نظام الدفع: دفع خلفي</li>
+              <li><i class="fas fa-user-friends"></i>عدد المقاعد: 4</li>
+              <li><i class="fas fa-wrench"></i>الحالة: مستعمل</li>
+              <li><i class="fas fa-percent"></i>نسبة النظافة: 100%</li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
 
-    <script src="store.js"></script>
-  </body>
+    <!-- التذييل-->
+    <footer>
+      <div class="search-div">
+        <input type="search" placeholder="Seatch" />
+        <span class="fill"></span>
+      </div>
+
+      <div class="about">
+        <p class="p2">مرحباً بك في <span>H&A Cars</span></p>
+        <p>
+          نحن هاني جمعة و علي سعدو، شغفنا بالسيارات كان الدافع الأكبر لإنشاء
+          هذا الموقع. هنا، نأخذك في جولة بين أحدث الطرازات، أخبار الصناعة،
+          وتقنيات المستقبل في عالم السيارات. هدفنا أن نصبح مرجعك الأول لكل ما
+          تحتاجه عن السيارات، من المواصفات والأسعار، إلى أحدث الإصدارات
+          والنصائح الذكية. في H&A Cars، نؤمن أن السيارة ليست مجرد وسيلة نقل،
+          بل هي تجربة، قصة، وعالم من الإبداع.
+        </p>
+      </div>
+
+      <h2>Links</h2>
+      <div class="links">
+        <a id="email" class="a2" href="mailto:" title="تواصل معنا عبر البريد الإلكتروني"><i
+            class="fa-solid fa-envelope"></i></a>
+        <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"><i class="fa-brands fa-facebook"></i></a>
+        <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"><i class="fa-brands fa-instagram"></i></a>
+        <a id="about" class="a2" href="" title="أسئلة شائعة"><i class="fa-solid fa-question"></i></a>
+        <a id="phone" class="a2" href="" title="اتصل عبر الهاتف"><i class="fa-solid fa-phone-volume"></i></a>
+      </div>
+
+      <div class="direction">
+        <div class="Services-blog">
+          <h2>Services</h2>
+          <a href="">خدمة البحث عن السيارات</a>
+          <a href="">تقييم السيارات المستعملة</a>
+          <h2>Blog</h2>
+          <a href="">أخبار عالم السيارات</a>
+          <a href="">دليل المشتري</a>
+          <a href="">مقارنة السيارات</a>
+        </div>
+
+        <div class="privacy">
+          <h2>Site policies</h2>
+          <a href="">سياسة الخصوصية</a>
+          <a href="">الشروط والاحكام</a>
+          <a href="">الكوكيز</a>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
+            width="100%" height="200" loading="lazy" title="Our title" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="store.js"></script>
+</body>
+
 </html>

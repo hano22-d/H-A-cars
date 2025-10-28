@@ -9,7 +9,7 @@ body {
   background-color: var(--Body-color);
 }
 
-:root {
+.lightmood {
   --Body-color: #b1afaf;
   --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
