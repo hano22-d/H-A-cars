@@ -103,5 +103,11 @@ darkmoodBtn.onclick = _ => {
   iconChange = !iconChange
 }
 
+/*حفظ القيم في HeaderSearch*/
+const headerSearch = document.getElementById('headerSearch');
+const headerSubmit = document.getElementById('headerSubmit');
+const headerSearchSaved = sessionStorage.getItem('headerSearchValue');
+headerSubmit.onclick = _ => sessionStorage.setItem('headerSearchValue',headerSearch.value);
+headerSearchSaved? headerSearch.value = headerSearchSaved : '';
 
 
