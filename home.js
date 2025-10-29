@@ -132,14 +132,19 @@ headerSearch.oninput = _ => sessionStorage.setItem('headerSearchValue', headerSe
 headerSearchSaved ? headerSearch.value = headerSearchSaved : '';
 
 /*برنامج تغيير خلفية الهيدر*/
-const images =
-  [
-    'img/Tesla.jpg',
-    'img/Mercedes5.jpg',
-    'img/BMW.jpg',
-    'img/Rolls_Royce.jpg',
-    'img/Audi.jpg'
-  ]
+const images = [
+  "img/Tesla.jpg",
+  "img/Mercedes5.jpg",
+  "Header/Audi-4.jpg",
+  "img/Rolls_Royce.jpg",
+  "Header/BMW-4.jpg",
+  "img/Mercedes5.jpg",
+  "Header/Audi-2.jpeg",
+  "img/Audi.jpg",
+  "Header/Mercedes-3.jpg",
+  "img/Mercedes5.jpg",
+  "Header/BMW-3.jpg",
+];
 
 let headersaved = localStorage.getItem('header')
 
