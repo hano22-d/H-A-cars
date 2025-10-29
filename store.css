@@ -99,6 +99,9 @@ i {
 
 
 header {
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
   height: 300px;
   filter: drop-shadow(0 6px 5px #ff4c29);
   background-color: var(--headerAndfooter-color);
@@ -109,12 +112,21 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(to top, black, transparent 150%),
-    url(img/Audi.jpg);
   background-size: cover;
 }
 
+#header::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.568);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .material {
+  z-index: 2;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -122,6 +134,7 @@ header {
 }
 
 .header_search {
+  z-index: 2;
   width: 50%;
   height: 35px;
   padding: 15px;
@@ -135,6 +148,7 @@ header {
 }
 
 .header_submit {
+  z-index: 2;
   width: 35px;
   height: 35px;
   display: flex;
@@ -155,6 +169,7 @@ header {
 }
 
 .setting {
+  z-index: 2;
   width: 15%;
   display: flex;
   gap: 10px;
@@ -186,6 +201,7 @@ header {
 }
 
 .icon {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +215,9 @@ header {
 
 .icon img {
   width: 100%;
+
 }
+
 /*
 .h2a {
   color: #ff4c29;
@@ -213,6 +231,7 @@ header {
 }
 */
 .tab {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,11 +421,9 @@ header {
   width: 158px;
   height: 158px;
   margin: 50px;
-  background-image: linear-gradient(
-    to left,
-    rgb(72, 168, 233),
-    transparent 95%
-  );
+  background-image: linear-gradient(to left,
+      rgb(72, 168, 233),
+      transparent 95%);
 }
 
 .hyundai {
@@ -664,7 +681,7 @@ footer {
   border-radius: 5px;
 }
 
-.search-div input:focus ~ .fill {
+.search-div input:focus~.fill {
   width: 100%;
 }
 
@@ -793,10 +810,11 @@ footer {
 .scroolZero:hover {
   background-color: rgba(245, 222, 179, 0.651)
 }
+
 .scroolZero i {
   position: relative;
   right: 5px;
- }
+}
 
 /*Responsive to mobile*/
 @media (max-width: 600px) {
@@ -1077,7 +1095,7 @@ footer {
     border-radius: 5px;
   }
 
-  .search-div input:focus ~ .fill {
+  .search-div input:focus~.fill {
     width: 100%;
   }
 

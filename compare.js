@@ -57,3 +57,33 @@ const headerSearchSaved = sessionStorage.getItem('headerSearchValue');
 headerSearch.oninput = _ => sessionStorage.setItem('headerSearchValue', headerSearch.value);
 headerSearchSaved ? headerSearch.value = headerSearchSaved : '';
 
+/*برنامج تغيير خلفية الهيدر*/
+const images =
+  [
+    'img/Audi.jpg',
+    'img/Rolls_Royce.jpg',
+    'img/Mercedes5.jpg',
+    'img/BMW.jpg',
+    'img/Tesla.jpg',
+  ]
+
+let headersaved = localStorage.getItem('header')
+
+headersaved = headersaved ? parseInt(headersaved) : 0
+
+const header = document.getElementById('header')
+let a = 0;
+function dinamicHeaderBackground() {
+  header.style.backgroundImage = `url(${images[a]})`
+  header.style.backgroundSize = 'cover';
+  header.style.transition = `all 1s ease`
+  a = (a + 1) % images.length
+
+  localStorage.setItem('header', headersaved)
+}
+dinamicHeaderBackground()
+
+setInterval(
+  dinamicHeaderBackground, 15000
+)
+

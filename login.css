@@ -25,6 +25,7 @@ body {
   grid-area: head2;
   display: flex;
   justify-content: space-evenly;
+ 
 }
 
 .icon {
