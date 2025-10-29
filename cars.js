@@ -36,6 +36,7 @@ else if (themeSaved === 'light') {
 
 }
 
+/* */
 let iconChange = themeSaved === 'dark' ? false : true;
 
 darkmoodBtn.onclick = _ => {
