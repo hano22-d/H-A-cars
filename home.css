@@ -575,7 +575,7 @@ video {
   transform: translateX(-25px);
   opacity: 0;
   position: absolute;
-  bottom: 6%;
+  bottom: 7%;
   right: 5.5%;
 }
 
@@ -603,7 +603,7 @@ video {
 
 .bm {
   grid-area: bm;
-  background-image: url(car/bmw.webp);
+  background-image: url(car/bmw.png);
   background-size: cover;
 }
 
