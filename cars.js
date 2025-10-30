@@ -59,17 +59,17 @@ headerSearchSaved ? (headerSearch.value = headerSearchSaved) : "";
 
 /*برنامج تغيير خلفية الهيدر*/
 const images = [
-  "Header/BMW-3.jpg",
-  "img/Tesla.jpg",
-  "Header/Mercedes-3.jpg",
-  "img/Mercedes5.jpg",
-  "Header/Audi-4.jpg",
-  "img/Rolls_Royce.jpg",
-  "Header/Audi-2.jpeg",
+  "Header/Tesla.jpg",
   "Header/BMW-4.jpg",
-  "img/Audi.jpg",
-  "img/Mercedes5.jpg",
-  "img/Mercedes5.jpg",
+  "Header/Audi-4.jpg",
+  "Header/Mercedes-13.jpg",
+  "Header/Rolls-Royce-1.jpg",
+  "Header/Audi.jpg",
+  "Header/Mercedes-1.jpg",
+  "Header/Rolls-Royce-0.jpg",
+  "Header/BMW-2.jpg",
+  "Header/BMW-3.jpg",
+  "Header/Mercedes-11.jpg",
 ];
 
 let headersaved = localStorage.getItem("header");
