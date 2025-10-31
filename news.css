@@ -94,6 +94,28 @@ pre {
 i {
   color: var(--icon);
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff4c29, #a62717);
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(255, 76, 41, 0.7);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6f4f, #c4351e);
+  box-shadow: 0 0 12px rgba(255, 76, 41, 1);
+}
 
 header {
   z-index: 0;

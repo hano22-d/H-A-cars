@@ -98,6 +98,30 @@ i {
   color: var(--icon);
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff4c29, #a62717);
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(255, 76, 41, 0.7);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6f4f, #c4351e);
+  box-shadow: 0 0 12px rgba(255, 76, 41, 1);
+}
+
+
 header {
   z-index: 0;
   position: relative;
@@ -114,6 +138,7 @@ header {
   align-items: center;
   background-size: cover;
 }
+
 #header::before {
   z-index: 1;
   content: "";
@@ -123,6 +148,7 @@ header {
   z-index: 1;
   pointer-events: none;
 }
+
 .material {
   z-index: 2;
   width: 100%;
@@ -190,12 +216,19 @@ header {
 }
 
 .setting select {
+  cursor: pointer;
   padding: 0;
   box-shadow: none;
   font-size: 15px;
   background-color: transparent;
   border: none;
   color: wheat;
+  font-weight: 700;
+}
+
+.setting select option {
+  font-weight: 700;
+  color: var(--text-color);
 }
 
 .icon {
@@ -215,18 +248,7 @@ header {
   width: 100%;
 
 }
-/*
-.h2a {
-  color: #ff4c29;
-  margin: 0;
-  font-family: "Bowlby One SC", sans-serif;
-  font-size: 1.6rem;
-}
 
-.h2a span {
-  font-family: "Bowlby One SC", sans-serif;
-}
-*/
 .tab {
   z-index: 2;
   display: flex;
@@ -241,6 +263,7 @@ header {
   margin: 20px 40px 30px 20px;
   text-decoration: none;
   padding: 10px 25px;
+  font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.2s ease;
 }
@@ -340,9 +363,9 @@ header {
 .main2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .img_news1 {
@@ -353,6 +376,7 @@ header {
 }
 
 .paragraf1 {
+  overflow: auto;
   box-shadow: 0 0 10px 2px #1b1b1b;
   background-color: var(--window-color);
   width: 40vw;
@@ -365,6 +389,7 @@ header {
   font-size: 15px;
   text-align: right;
   direction: rtl;
+  color: var(--title-color);
 }
 
 .p1 {
@@ -372,6 +397,7 @@ header {
   font-size: 16px;
   padding: 10px;
   line-height: 30px;
+  height: auto;
 }
 
 /* أحدث السيارات */
@@ -390,8 +416,8 @@ header {
 }
 
 .m3tt {
-  font-size: 50px;
-  text-align: center;
+  font-size: 40px;
+  text-align: center !important;
   color: var(--text-color);
   text-shadow: 1px 1px 2px white;
   margin-top: 150px;
@@ -410,7 +436,12 @@ header {
 }
 
 .big_photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
   height: 500px;
+  padding-bottom: 25px;
   border: 2.5px solid #919090dc;
   box-shadow: 0 0 10px 2px black;
   margin: 0 15px;
@@ -432,18 +463,21 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .photo2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .photo3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .photo1 img,
@@ -456,19 +490,15 @@ header {
 
 .big_photo_text1 {
   grid-area: pt1;
-  font-size: 25px;
-  position: relative;
-  bottom: 150px;
-  right: 292.5px;
+  font-size: 20px;
+  text-align: center !important;
 }
 
 .big_photo_text2 {
   grid-area: pt2;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--link-color);
-  position: relative;
-  bottom: 100px;
-  left: 25px;
+  text-align: center !important;
 }
 
 .para_text {
@@ -476,7 +506,7 @@ header {
 }
 
 .picture_text {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   text-align: right;
@@ -536,7 +566,6 @@ video {
 
 .title1 {
   width: 500px;
-  height: 300px;
   background-size: cover;
 }
 
@@ -545,7 +574,7 @@ video {
   text-align: center;
   color: var(--text-color);
   letter-spacing: 0.5rem;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .img_gallery {
@@ -588,6 +617,7 @@ video {
   font-weight: 800;
   -webkit-text-fill-color: wheat;
   background-image: linear-gradient(to right, #111, transparent);
+  text-align: left !important;
 }
 
 .logo {
@@ -788,10 +818,6 @@ footer {
   text-align: right;
   line-height: 1.7rem;
   font-size: 1.2rem;
-}
-
-.p2 span {
-  color: var(--title-color);
 }
 
 .links {

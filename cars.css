@@ -97,6 +97,29 @@ i {
   color: var(--icon);
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff4c29, #a62717);
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(255, 76, 41, 0.7);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6f4f, #c4351e);
+  box-shadow: 0 0 12px rgba(255, 76, 41, 1);
+}
+
 header {
   z-index: 0;
   position: relative;
@@ -215,18 +238,6 @@ header {
   width: 100%;
 }
 
-/*
-.h2a {
-  color: #ff4c29;
-  margin: 0;
-  font-family: "Bowlby One SC", sans-serif;
-  font-size: 1.6rem;
-}
-
-.h2a span {
-  font-family: "Bowlby One SC", sans-serif;
-}
-*/
 .tab {
   z-index: 2;
   display: flex;
@@ -241,6 +252,7 @@ header {
   margin: 20px 40px 30px 20px;
   text-decoration: none;
   padding: 10px 25px;
+  font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.2s ease;
 }
@@ -407,6 +419,7 @@ h1 {
 .listdiv h1 {
   color: var(--title-color);
   font-weight: bold;
+  text-align: center !important;
 }
 
 .listdiv label {
