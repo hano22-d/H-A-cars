@@ -99,15 +99,15 @@ const darkmoodBtn = document.getElementById('darkmoodBtn');
 const themeSaved = localStorage.getItem('theme');
 let html = document.documentElement;
 
-
 if (themeSaved === 'dark') {
+  html.classList.remove('lightmood')
   html.classList.add('darkmood')
   darkmoodBtn.innerHTML = '<i class="fa-solid fa-sun"></i>'
 }
-else if (themeSaved === 'light') {
+else {
+  html.classList.remove('darkmood')
   html.classList.add('lightmood')
   darkmoodBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'
-
 }
 
 let iconChange = themeSaved === 'dark' ? false : true;
@@ -158,7 +158,7 @@ function dinamicHeaderBackground() {
   header.style.transition = `all 1s ease`
   a = (a + 1) % images.length
 
-  localStorage.setItem('header', headersaved)
+  localStorage.setItem('header', a)
 }
 dinamicHeaderBackground()
 
@@ -308,7 +308,6 @@ function language(lang) {
 if (lansaved) {
   language(lansaved);
 } else {
-
   language('English');
 }
 

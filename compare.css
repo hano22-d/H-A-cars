@@ -264,6 +264,7 @@ header {
   margin: 20px 40px 30px 20px;
   text-decoration: none;
   padding: 10px 25px;
+  font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.2s ease;
 }
