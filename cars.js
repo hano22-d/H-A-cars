@@ -234,3 +234,12 @@ select.addEventListener('change', () => {
   localStorage.setItem('lan', newLang);
 });
 
+
+const Sections = document.querySelectorAll('a1');
+
+Sections.forEach(a => {
+  a.onclick = _ => {
+    Sections.forEach(s => {s.classList.remove('a1Active');})
+    a.classList.add('a1Active');
+  }
+})

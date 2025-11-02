@@ -92,6 +92,15 @@ setInterval(
 )
 
 
+const Sections = document.querySelectorAll('.a1');
+
+Sections.forEach(a => {
+  a.addEventListener('click', () => {
+    e.preventDefault()
+    Sections.forEach(s => { s.classList.remove('a1Active'); })
+    a.classList.add('a1Active');
+  });
+});
 
 
 
