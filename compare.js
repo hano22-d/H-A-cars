@@ -109,7 +109,7 @@ const information = {
     h1Special: 'BMW Series 3 - 2025',
     Specifications: 'Specifications',
     value: 'value',
-    p2: 'Welcome to',
+    p2: 'Welcome to H&A Cars',
     p3: `We are Hani Jomaa and Ali Saadou, and our passion for cars was the greatest motivation for
      creating this website. Here, we take you on a tour of the latest models, industry news, and future
       technologies in the automotive world. Our goal is to become your primary reference for everything
@@ -145,7 +145,7 @@ const information = {
     h1Special: 'بي ام دبليو الفئة الثالثة - 2025',
     Specifications: 'المواصفات',
     value: 'القيمة',
-    p2: 'مرحبا بكم في',
+    p2: 'مرحبا بكم في H&A Cars',
     p3: `نحن هاني جمعة وعلي سعدو، وشغفنا في عالم السيارات كان الدافع الأكبر لإنشاء هذا الموقع.
      هنا نأخذكم في جولة لأحدث الطرازات، أخبار الصناعة، والتقنيات المستقبلية في عالم السيارات.
      هدفنا أن نصبح مرجعكم الأول لكل ما يتعلق بالسيارات من مواصفات وأسعار إلى أحدث الإصدارات
@@ -194,5 +194,22 @@ select.addEventListener('change', () => {
   let newLang = select.value;
   language(newLang);
   localStorage.setItem('lan', newLang);
+});
+
+
+const Sections = document.querySelectorAll('.a1');
+
+let savedIndex = localStorage.getItem('active');
+if (savedIndex !== null) {
+  Sections[savedIndex].classList.add('a1Active');
+}
+
+Sections.forEach((a, index) => {
+  a.addEventListener('click', () => {
+    Sections.forEach(s => s.classList.remove('a1Active'));
+    a.classList.add('a1Active');
+
+    localStorage.setItem('active', index);
+  });
 });
 

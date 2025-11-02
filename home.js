@@ -203,7 +203,7 @@ const information = {
     pictureParagraph3: 'BMW is preparing to make a radical change in the world of electric cars with its new vehicle.',
     titlemain5: 'Top 10 Popular Cars',
     h2e: 'Photo gallery',
-    p2: 'Welcome to',
+    p2: 'Welcome to H&A Cars',
     p3: `We are Hani Jomaa and Ali Saadou, and our passion for cars was the greatest motivation for
      creating this website. Here, we take you on a tour of the latest models, industry news, and future
       technologies in the automotive world. Our goal is to become your primary reference for everything
@@ -317,13 +317,18 @@ select.addEventListener('change', () => {
   localStorage.setItem('lan', newLang);
 });
 
-
 const Sections = document.querySelectorAll('.a1');
 
-Sections.forEach(a => {
+let savedIndex = localStorage.getItem('active');
+if (savedIndex !== null) {
+  Sections[savedIndex].classList.add('a1Active');
+}
+
+Sections.forEach((a, index) => {
   a.addEventListener('click', () => {
-    e.preventDefault()
-    Sections.forEach(s => { s.classList.remove('a1Active'); })
+    Sections.forEach(s => s.classList.remove('a1Active'));
     a.classList.add('a1Active');
+
+    localStorage.setItem('active', index);
   });
 });

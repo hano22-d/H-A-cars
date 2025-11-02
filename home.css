@@ -274,9 +274,9 @@ header {
   border-radius: 20px;
 }
 .a1Active {
-  color: #ff4c29;
-  font-weight: bold;
-  border-bottom: 2px solid #ff4c29;
+  color: var(--text-color);
+  background-color: #ff4c29;
+  border-radius: 20px;
 }
 .container {
   display: grid;

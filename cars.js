@@ -134,6 +134,24 @@ const information = {
     model: 'Model',
     year: 'Year',
     go: 'Go',
+    p2: 'Welcome to H&A Cars',
+    p3: `We are Hani Jomaa and Ali Saadou, and our passion for cars was the greatest motivation for
+     creating this website. Here, we take you on a tour of the latest models, industry news, and future
+      technologies in the automotive world. Our goal is to become your primary reference for everything
+       you need about cars, from specifications and prices to the latest releases and smart tips. At H&A Cars,
+        we believe that a car is not just a means of transportation, but an experience, a story, and a world
+         of creativity.`,
+    Services: 'Services',
+    ServicesBlog1: 'Car search service',
+    ServicesBlog2: 'Used car evaluation',
+    blog: 'blog',
+    ServicesBlog3: 'Automotive News',
+    ServicesBlog4: 'Buyer`s Guide',
+    ServicesBlog5: 'Car Comparison',
+    site: 'Site policies',
+    privacy1: 'Privacy Policy',
+    privacy2: 'Terms and Conditions',
+    privacy3: 'Cookies',
   },
   ar: {
     home: 'الرئيسية',
@@ -235,11 +253,19 @@ select.addEventListener('change', () => {
 });
 
 
-const Sections = document.querySelectorAll('a1');
+const Sections = document.querySelectorAll('.a1');
 
-Sections.forEach(a => {
-  a.onclick = _ => {
-    Sections.forEach(s => {s.classList.remove('a1Active');})
+let savedIndex = localStorage.getItem('active');
+if (savedIndex !== null) {
+  Sections[savedIndex].classList.add('a1Active');
+}
+
+Sections.forEach((a, index) => {
+  a.addEventListener('click', () => {
+    Sections.forEach(s => s.classList.remove('a1Active'));
     a.classList.add('a1Active');
-  }
-})
+
+    localStorage.setItem('active', index);
+  });
+});
+

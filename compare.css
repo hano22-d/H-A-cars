@@ -274,7 +274,11 @@ header {
   background-color: #ff4c29;
   border-radius: 20px;
 }
-
+.a1Active {
+  color: var(--text-color);
+  background-color: #ff4c29;
+  border-radius: 20px;
+}
 /*جدولا المقارنة */
 
 .datain {

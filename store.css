@@ -266,6 +266,7 @@ header {
   margin: 20px 40px 30px 20px;
   text-decoration: none;
   padding: 10px 25px;
+  font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.2s ease;
 }
@@ -275,11 +276,13 @@ header {
   background-color: #ff4c29;
   border-radius: 20px;
 }
+
 .a1Active {
-  color: #ff4c29;
-  font-weight: bold;
-  border-bottom: 2px solid #ff4c29;
+  color: var(--text-color);
+  background-color: #ff4c29;
+  border-radius: 20px;
 }
+
 .controlar {
   background-color: var(--Body-color);
   display: grid;
@@ -374,15 +377,15 @@ header {
 }
 
 .go11 {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
   padding: 5px;
   border-radius: 5px;
 }
 
 .go12 {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
   padding: 5px;
   border-radius: 5px;
 }
@@ -405,15 +408,15 @@ header {
 }
 
 .go21 {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
   padding: 5px;
   border-radius: 5px;
 }
 
 .go22 {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
   padding: 5px;
   border-radius: 5px;
 }
