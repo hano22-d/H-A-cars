@@ -68,7 +68,7 @@ const images = [
   "Header/BMW-4.jpg",
   "Header/Rolls-Royce-1.jpg",
   "Header/Audi-4.jpg",
-  "Header/Mercedes-1.jpg",
+  "Header/Mercedes-15.jpg",
   "Header/BMW-3.jpg",
 ];
 let headersaved = localStorage.getItem('header')
