@@ -262,6 +262,7 @@ header {
   margin: 20px 40px 30px 20px;
   text-decoration: none;
   padding: 10px 25px;
+  font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.2s ease;
 }
@@ -271,7 +272,11 @@ header {
   background-color: #ff4c29;
   border-radius: 20px;
 }
-
+.a1Active {
+  color: var(--text-color);
+  background-color: #ff4c29;
+  border-radius: 20px;
+}
 .mudir {
   background-color: var(--Body-color);
   display: grid;
@@ -400,64 +405,47 @@ header {
 
 .results {
   padding: 40px 20px 0px 20px;
-  text-align: right;
   font-size: 30px;
   color: #ff4c29;
-}
-
-.all2 {
-  background-color: var(--window-color);
 }
 
 .news1 {
   background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
   margin-top: 20px;
   padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .news2 {
   padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .news3 {
   padding: 20px;
   background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .news4 {
   padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .news5 {
   padding: 20px;
   background-image: linear-gradient(to right, rgba(240, 248, 255, 0.623), transparent 90%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .news6 {
   padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
+}
+.all2 {
+  background-color: var(--window-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 .fixed_ntext {
-  font-size: 21px;
-  text-align: right;
+  font-size: 20px;
   line-height: 40px;
 }
 

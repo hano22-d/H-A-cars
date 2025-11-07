@@ -273,7 +273,11 @@ header {
   background-color: #ff4c29;
   border-radius: 20px;
 }
-
+.a1Active {
+  color: var(--text-color);
+  background-color: #ff4c29;
+  border-radius: 20px;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -41,26 +41,25 @@
         <div class="setting">
           <button><i class="fa-solid fa-user"></i></button>
           <button id="darkmoodBtn"><i class="fa-solid fa-moon"></i></button>
-          <select name="" id="">
-            <option value="">English</option>
-            <option value="">Arabic</option>
+          <select id="selectlan">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
           </select>
         </div>
       </div>
 
       <div class="tab">
-        <a class="a1" href="home.html">Home</a>
-        <a class="a1" href="cars.html">cars</a>
-        <a class="a1" href="compare.html">Compare</a>
-        <a class="a1" href="news.html">news</a>
-        <a class="a1" href="store.html">store</a>
-        <a class="a1" href="login.html">login</a>
+        <a data-key="home" class="a1" href="home.html"></a>
+        <a data-key="cars" class="a1" href="cars.html"></a>
+        <a data-key="compare" class="a1" href="compare.html"></a>
+        <a data-key="news" class="a1" href="news.html"></a>
+        <a data-key="store" class="a1" href="store.html"></a>
       </div>
     </header>
 
     <main class="dinamic_news">
       <div class="dinamic_news_image">
-        <p class="dinamic_news_text">
+        <p data-key="dinamicNewsText" class="dinamic_news_text">
           تراجعت أرباح شركة "مرسيدس بنز" الألمانية للسيارات الفاخرة على نحو
           كبير العام الماضي، ويرجع ذلك بصورة رئيسية إلى ضعف أعمالها في الصين.
           وأعلنت الشركة المدرجة في مؤشر "داكس" للبورصة الألمانية، الخميس، أن
@@ -70,31 +69,31 @@
         <img src="car img (news page)/Mercedes-Benz-logo.jpg" width="500px" />
       </div>
       <div class="dinamic_news_button">
-        <button class="next_page NP" type="button">Next</button>
-        <button class="last_page NP" type="button">Last</button>
+        <button data-key="nextPage" class="next_page NP" type="button">Next</button>
+        <button data-key="lastPage" class="last_page NP" type="button">Last</button>
       </div>
     </main>
 
     <div class="filter">
       <div class="result_filters">
-        <h2 class="filter_title">:فلترة النتائج</h2>
+        <h2 data-key="filterTitle" class="filter_title">:فلترة النتائج</h2>
         <input class="result_search R" type="search" />
-        <button class="result_submit R" type="button">بحث</button>
+        <button data-key="resultSubmit" class="result_submit R" type="button">بحث</button>
       </div>
       <div class="button_filters">
-        <button class="BU">Mercedes-Benz</button>
-        <button class="BU">BMW</button>
-        <button class="BU">Tesla</button>
-        <button class="BU">احدث الاخبار</button>
-        <button class="BU">هذا الاسبوع</button>
+        <button data-key="BU1" class="BU">Mercedes-Benz</button>
+        <button data-key="BU2" class="BU">BMW</button>
+        <button data-key="BU3" class="BU">Tesla</button>
+        <button data-key="BU4" class="BU">احدث الاخبار</button>
+        <button data-key="BU5" class="BU">هذا الاسبوع</button>
       </div>
     </div>
 
     <main class="fixed_news">
-      <h2 class="results">:أبرز النتائج</h2>
+      <h1 data-key="results" class="results">:أبرز النتائج</h1>
       <div class="news1 all2">
         <img class="fixed_nimage" src="car img (news page)/kadilac_in_UK.png" alt="" width="500px" />
-        <p class="fixed_ntext">
+        <p data-key="fixedNtext1" class="fixed_ntext">
           كاديلاك تعود إلى السوق البريطانية بعد غياب 8 سنوات بسيارات كهربائية
           فقط أكدت General Motors نية إعادة العلامة التجارية الفاخرة Cadillac
           إلى المملكة المتحدة، وذلك بطراز Lyriq الكهربائي فقط، والمتوفر حالياً
@@ -105,7 +104,7 @@
 
       <div class="news2 all2">
         <img class="fixed_nimage" src="car img (news page)/Nissancompany.jpg" alt="" width="500px" />
-        <p class="fixed_ntext">
+        <p data-key="fixedNtext2" class="fixed_ntext">
           غلقت شركة Nissan وكيلها في ولاية كاليفورنيا بعد انخفاض الأرباح بنسبة
           90٪ خلال عام، وتخطط لإغلاق مصانع في المكسيك واليابان بحلول 2028، مما
           يثير مخاوف واسعة حول تأثير تراجع الطلب في الصين على أدائها العالمي
@@ -115,7 +114,7 @@
       <div class="news3 all2">
         <img class="fixed_nimage" src="car img (news page)/vximg.jpeg" alt="vx comany" title="شعار شركة VX"
           width="500px" />
-        <p class="fixed_ntext">
+        <p data-key="fixedNtext3" class="fixed_ntext">
           ولكس‌فاجن تحذر من خسائر ضخمة وتطرح إنشاء مصانع بأمريكا تكبدت VW نحو
           1.5 مليار دولار نتيجة الرسوم. وتدرس فكرة تصنيع سيارات Audi في
           الولايات المتحدة كجزء من استراتيجيتها للتوسع، ضمن استثمارات تتجاوز 5
@@ -126,7 +125,7 @@
       <div class="news4 all2">
         <img class="fixed_nimage" src="car img (news page)/Rivian-R1S.webp" alt="Rivian-R1S" width="500px"
           title=" Rivian-R1S سيارة" />
-        <p class="fixed_ntext">
+        <p data-key="fixedNtext4" class="fixed_ntext">
           رحلة تجربة من ميشيغان إلى مين في الولايات المتحدة عبر سيارة Rivian
           R1S حققت مدى تشغيل فعلي حوالي 326 ميلًا، مع وضوح نمو شبكات الشحن
           السريع، رغم ارتفاع تكاليف الشحن خارج المنزل
@@ -136,7 +135,7 @@
       <div class="news5 all2">
         <img class="fixed_nimage" src="car img (news page)/BMW-USA.jpg" alt="BMW car in USA" width="500px"
           title="سيارة BMW" />
-        <p class="fixed_ntext">
+        <p data-key="fixedNtext5" class="fixed_ntext">
           ارتفعت مبيعات علامة BMW في الولايات المتحدة بنسبة 1.6٪ خلال النصف
           الأول من 2025 مقارنة بالعام السابق، رغم تباطؤ طفيف في الربع الثاني
         </p>
@@ -145,7 +144,7 @@
       <div class="news6 all2">
         <img class="fixed_nimage" src="car img (news page)/teslacar_inRyad.png" alt="Tesla cars in Ryad" width="500px"
           title="معرض تيسلا في مدينة الرياض" />
-        <p class="fixed_ntext">
+        <p data-key="fixedNtext6" class="fixed_ntext">
           تم افتتاح أول صالة عرض ومركز خدمة لتيسلا في الرياض، وسيبدأ تقديم
           موديلات Model 3، Y وCybertruck قريبًا، مع خطة لافتتاح فروع أخرى في
           جدة والدمام، ضمن رؤية المملكة لجعل 30٪ من سيارات الرياض كهربائية
@@ -156,23 +155,16 @@
 
     <footer>
       <div class="search-div">
-        <input type="search" placeholder="Seatch" />
+        <input type="search" placeholder="Search" />
         <span class="fill"></span>
       </div>
 
       <div class="about">
-        <p class="p2">مرحباً بك في <span>H&A Cars</span></p>
-        <p>
-          نحن هاني جمعة و علي سعدو، شغفنا بالسيارات كان الدافع الأكبر لإنشاء
-          هذا الموقع. هنا، نأخذك في جولة بين أحدث الطرازات، أخبار الصناعة،
-          وتقنيات المستقبل في عالم السيارات. هدفنا أن نصبح مرجعك الأول لكل ما
-          تحتاجه عن السيارات، من المواصفات والأسعار، إلى أحدث الإصدارات
-          والنصائح الذكية. في H&A Cars، نؤمن أن السيارة ليست مجرد وسيلة نقل،
-          بل هي تجربة، قصة، وعالم من الإبداع.
-        </p>
+        <p data-key="p2" class="p2"></p>
+        <p data-key="p3"></p>
       </div>
 
-      <h2>Links</h2>
+      <h2 data-key="links"></h2>
       <div class="links">
         <a id="email" class="a2" href="mailto:" title="تواصل معنا عبر البريد الإلكتروني"><i
             class="fa-solid fa-envelope"></i></a>
@@ -184,20 +176,20 @@
 
       <div class="direction">
         <div class="Services-blog">
-          <h2>Services</h2>
-          <a href="">خدمة البحث عن السيارات</a>
-          <a href="">تقييم السيارات المستعملة</a>
-          <h2>Blog</h2>
-          <a href="">أخبار عالم السيارات</a>
-          <a href="">دليل المشتري</a>
-          <a href="">مقارنة السيارات</a>
+          <h2 data-key="Services"></h2>
+          <a data-key="ServicesBlog1" href=""></a>
+          <a data-key="ServicesBlog2" href=""></a>
+          <h2 data-key="blog">Blog</h2>
+          <a data-key="ServicesBlog3" href=""></a>
+          <a data-key="ServicesBlog4" href=""></a>
+          <a data-key="ServicesBlog5" href=""></a>
         </div>
 
         <div class="privacy">
-          <h2>Site policies</h2>
-          <a href="">سياسة الخصوصية</a>
-          <a href="">الشروط والاحكام</a>
-          <a href="">الكوكيز</a>
+          <h2 data-key="site"></h2>
+          <a data-key="privacy1" href=""></a>
+          <a data-key="privacy2" href=""></a>
+          <a data-key="privacy3" href=""></a>
         </div>
 
         <div class="map">

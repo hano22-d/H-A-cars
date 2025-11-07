@@ -99,15 +99,15 @@ const darkmoodBtn = document.getElementById('darkmoodBtn');
 const themeSaved = localStorage.getItem('theme');
 let html = document.documentElement;
 
-
 if (themeSaved === 'dark') {
+  html.classList.remove('lightmood')
   html.classList.add('darkmood')
   darkmoodBtn.innerHTML = '<i class="fa-solid fa-sun"></i>'
 }
-else if (themeSaved === 'light') {
+else {
+  html.classList.remove('darkmood')
   html.classList.add('lightmood')
   darkmoodBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'
-
 }
 
 let iconChange = themeSaved === 'dark' ? false : true;
@@ -158,7 +158,7 @@ function dinamicHeaderBackground() {
   header.style.transition = `all 1s ease`
   a = (a + 1) % images.length
 
-  localStorage.setItem('header', headersaved)
+  localStorage.setItem('header', a)
 }
 dinamicHeaderBackground()
 
@@ -203,7 +203,7 @@ const information = {
     pictureParagraph3: 'BMW is preparing to make a radical change in the world of electric cars with its new vehicle.',
     titlemain5: 'Top 10 Popular Cars',
     h2e: 'Photo gallery',
-    p2: 'Welcome to',
+    p2: 'Welcome to H&A Cars',
     p3: `We are Hani Jomaa and Ali Saadou, and our passion for cars was the greatest motivation for
      creating this website. Here, we take you on a tour of the latest models, industry news, and future
       technologies in the automotive world. Our goal is to become your primary reference for everything
@@ -308,7 +308,6 @@ function language(lang) {
 if (lansaved) {
   language(lansaved);
 } else {
-
   language('English');
 }
 
@@ -316,4 +315,20 @@ select.addEventListener('change', () => {
   let newLang = select.value;
   language(newLang);
   localStorage.setItem('lan', newLang);
+});
+
+const Sections = document.querySelectorAll('.a1');
+
+let savedIndex = localStorage.getItem('active');
+if (savedIndex !== null) {
+  Sections[savedIndex].classList.add('a1Active');
+}
+
+Sections.forEach((a, index) => {
+  a.addEventListener('click', () => {
+    Sections.forEach(s => s.classList.remove('a1Active'));
+    a.classList.add('a1Active');
+
+    localStorage.setItem('active', index);
+  });
 });
