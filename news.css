@@ -4,18 +4,19 @@ html {
 }
 
 body {
+  background: var(--Body-color);
   margin: 0%;
 }
 
 :root {
-  --Body-color: #b1afaf;
+  --Body-color: linear-gradient(135deg, #e3e6e8, #cfd2d4);
   --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
   --link-color: wheat;
   --title-color: #ff4c29;
   --text-color: #111;
   --text-headerFoter-color: wheat;
-  --window-color: #919090dc;
+  --window-color: rgba(255, 255, 255, 0.8);
   --icon: #ff4c29;
 }
 
@@ -94,6 +95,7 @@ pre {
 i {
   color: var(--icon);
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -272,11 +274,13 @@ header {
   background-color: #ff4c29;
   border-radius: 20px;
 }
+
 .a1Active {
   color: var(--text-color);
   background-color: #ff4c29;
   border-radius: 20px;
 }
+
 .mudir {
   background-color: var(--Body-color);
   display: grid;
@@ -305,7 +309,8 @@ header {
   align-items: center;
   gap: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 7px 2px black;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
 }
 
 .dinamic_news_image img {
@@ -384,7 +389,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   display: flex;
-  background-color: wheat;
+  background-color: var(--window-color);
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
@@ -437,13 +442,17 @@ header {
   padding: 20px;
 
 }
+
 .all2 {
   background-color: var(--window-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
+
 .fixed_ntext {
   font-size: 20px;
   line-height: 40px;
@@ -461,11 +470,13 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  grid-area: footer;
   padding: 65px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
-  background-color: #1b1b1b;
   border-top-left-radius: 50% 5%;
   border-top-right-radius: 50% 5%;
+  background-color: var(--window-color);
+  backdrop-filter: blur(10px);
 }
 
 .search-div {
@@ -565,7 +576,7 @@ footer {
 .Services-blog a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
+  color: var(--text-color);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -585,14 +596,14 @@ footer {
 
 .privacy h2 {
   font-size: 2rem;
-  color: #ff4c29;
+  color: var(--title-color);
   text-align: center;
 }
 
 .privacy a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
+  color: var(--text-color);
   font-size: 1.2rem;
   align-self: center;
 }
@@ -635,6 +646,7 @@ footer {
   position: relative;
   right: 5px;
 }
+
 
 /*Responsive to mobile*/
 @media (max-width: 600px) {

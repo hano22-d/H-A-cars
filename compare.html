@@ -16,6 +16,7 @@
   <!--خط اسم الموقع-->
   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -25,13 +26,6 @@
   <header id="header">
     <div class="material">
       <div class="icon">
-        <!--
-          <img
-            src="img/Car-Automobile-Fast-Vector-Logo-Design-Graphics-13409048-1-1-580x387.png"
-            alt=""
-          />
-          <h2 class="h2a"><span>H&A</span> CARS</h2>
-          -->
         <img src="img/Main-Logo.png" alt="">
       </div>
       <input id="headerSearch" class="header_search" type="search" placeholder="search" />
@@ -57,78 +51,93 @@
     </div>
   </header>
   <div class="datain">
-    <input list="id1" placeholder="The Company" style="border-radius: 5px" />
-    <datalist id="id1">
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </datalist>
-    <input list="id2" placeholder="Model" style="border-radius: 5px" />
-    <datalist id="id2">
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </datalist>
-    <select class="selectCar1" style="border-radius: 5px; font-size: 17px">
-      <option value="">2001</option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </select>
-
-    <button data-key="go">go</button>
-
-    <select class="selectCar2" style="border-radius: 5px; font-size: 17px">
-      <option value="">2001</option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </select>
-    <input list="id4" placeholder="Model" style="border-radius: 5px" />
-    <datalist id="id4">
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </datalist>
-    <input list="id3" placeholder="The Company" style="border-radius: 5px" />
+    <input id="CompanyA" list="id3" placeholder="The Company" style="border-radius: 5px" />
     <datalist id="id3">
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
+      <option value="Mercedes-Benz"></option>
+      <option value="BMW"></option>
+      <option value="Hyundai"></option>
+      <option value="Kia"></option>
     </datalist>
+
+    <input id="modelA" list="id4" placeholder="Model" style="border-radius: 5px" />
+    <datalist id="id4">
+      <option value="S-Class"></option>
+      <option value="CLS-Class"></option>
+      <option value="G-Class"></option>
+      <option value="E-Class"></option>
+      <option value="Maybach"></option>
+    </datalist>
+
+    <select id="sel1" class="selectCar2" style="border-radius: 5px; font-size: 17px">
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2009">2010</option>
+      <option value="2011">2011</option>
+      <option value="2022">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+
+    <button id="btnGO" data-key="go">go</button>
+
+    <input id="CompanyB" list="id3" placeholder="The Company" style="border-radius: 5px" />
+    <datalist id="id3">
+      <option value="Mercedes-Benz"></option>
+      <option value="BMW"></option>
+      <option value="Hyundai"></option>
+      <option value="Kia"></option>
+    </datalist>
+
+    <input id="modelB" list="id4" placeholder="Model" style="border-radius: 5px" />
+    <datalist id="id4">
+      <option value="S-Class"></option>
+      <option value="CLS-Class"></option>
+      <option value="G-Class"></option>
+      <option value="E-Class"></option>
+      <option value="Maybach"></option>
+    </datalist>
+
+    <select id="sel2" class="selectCar2" style="border-radius: 5px; font-size: 17px">
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2009">2010</option>
+      <option value="2011">2011</option>
+      <option value="2022">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+
   </div>
 
   <div class="comparison_container">
     <!--first car-->
-    <div class="car_card1">
-      <img class="car_image1" src="img/audi_e_tron.jpg" />
-      <h1 data-key="carTitle" class="car_title"></h1>
-      <ul class="spacialists">
-        <li data-key="Engine"></li>
-        <li data-key="power"></li>
-        <li data-key="Transmission"></li>
-        <li data-key="Drivetrain"></li>
-        <li data-key="price"></li>
-      </ul>
-      <button data-key="cardButton" class="card_button" type="submit"></button>
-    </div>
+    <div class="car_card1 divcard"></div>
     <!--second car-->
-    <div class="car_card2">
-      <img class="car_image2" src="img/audi_e_tron.jpg" />
-      <h1 data-key="carTitle" class="car_title"></h1>
-      <ul class="spacialists">
-        <li data-key="Engine"></li>
-        <li data-key="power"></li>
-        <li data-key="Transmission"></li>
-        <li data-key="Drivetrain"></li>
-        <li data-key="price"></li>
-      </ul>
-      <button data-key="cardButton" class="card_button" type="submit"></button>
-    </div>
+    <div class="car_card2 divcard"></div>
   </div>
 
   <div class="compare">

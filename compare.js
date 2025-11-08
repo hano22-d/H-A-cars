@@ -213,3 +213,431 @@ Sections.forEach((a, index) => {
   });
 });
 
+
+const btnGO = document.getElementById('btnGO')
+const companyA = document.getElementById('CompanyA');
+const companyB = document.getElementById('CompanyB');
+const modelA = document.getElementById('modelA');
+const modelB = document.getElementById('modelB');
+const selectA = document.getElementById('sel1');
+const selectB = document.getElementById('sel2');
+
+const listA = document.getElementById('listSpacialistsA');
+const listB = document.getElementById('listSpacialistsB');
+const img1 = document.getElementById('img1');
+const img2 = document.getElementById('img2');
+
+let car_card1 = document.querySelectorAll('.divcard');
+
+
+let CarsInfo = [
+  {
+    company: 'Mercedes-Benz',
+    model: 'S-Class',
+    year: '2009',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2009.jpg',
+    info: {
+      EngineCapacity: '5.5L',
+      NumberCylinders: '8',
+      EnginePower: '382 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'S-Class',
+    year: '2013',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2013.jpg',
+    info: {
+      EngineCapacity: '3.5L',
+      NumberCylinders: '6',
+      EnginePower: '295 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'S-Class',
+    year: '2015',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015.jpg',
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '436 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'S-Class',
+    year: '2021',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2021.jpg',
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '429 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'S-Class',
+    year: '2025',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2025.jpg',
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '442 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'G-Class',
+    year: '2013',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2013.jpg',
+    info: {
+      EngineCapacity: '5.5L Twin-Turbo',
+      NumberCylinders: '8',
+      EnginePower: '382 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'G-Class',
+    year: '2018',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2018.jpg',
+    info: {
+      EngineCapacity: '4.0L Twin-Turbo',
+      NumberCylinders: '8',
+      EnginePower: '416 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'G-Class',
+    year: '2022',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2022.jpg',
+    info: {
+      EngineCapacity: '4.0L Twin-Turbo',
+      NumberCylinders: '8',
+      EnginePower: '577 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'G-Class',
+    year: '2025',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2025.jpg',
+    info: {
+      EngineCapacity: '3.0L Twin-Turbo',
+      NumberCylinders: '6',
+      EnginePower: '443 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'E-Class',
+    year: '2008',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2008.jpg',
+    info: {
+      EngineCapacity: '3.5L',
+      NumberCylinders: '6',
+      EnginePower: '268 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'E-Class',
+    year: '2012',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2012.jpg',
+    info: {
+      EngineCapacity: '3.5L',
+      NumberCylinders: '6',
+      EnginePower: '302 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'E-Class',
+    year: '2015',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2015.jpg',
+    info: {
+      EngineCapacity: '2.1L',
+      NumberCylinders: '4',
+      EnginePower: '195 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'E-Class',
+    year: '2020',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2020.jpg',
+    info: {
+      EngineCapacity: '2.0L',
+      NumberCylinders: '4',
+      EnginePower: '255 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'E-Class',
+    year: '2024',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2024.jpg',
+    info: {
+      EngineCapacity: '2.0L',
+      NumberCylinders: '4',
+      EnginePower: '255 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'CLS-Class',
+    year: '2007',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2007.jpg',
+    info: {
+      EngineCapacity: '5.5L Turbo',
+      NumberCylinders: '8',
+      EnginePower: '382 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'CLS-Class',
+    year: '2010',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010.jpg',
+    info: {
+      EngineCapacity: '5.5L Turbo',
+      NumberCylinders: '8',
+      EnginePower: '382 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'CLS-Class',
+    year: '2014',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014.jpg',
+    info: {
+      EngineCapacity: '4.7L Turbo',
+      NumberCylinders: '8',
+      EnginePower: '402 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'CLS-Class',
+    year: '2019',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp',
+    info: {
+      EngineCapacity: '3.0L Turbo',
+      NumberCylinders: '6',
+      EnginePower: '362 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'CLS-Class',
+    year: '2023',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp',
+    info: {
+      EngineCapacity: '3.0L Turbo',
+      NumberCylinders: '6',
+      EnginePower: '362 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'Maybach',
+    year: '2016',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2016.jpg',
+    info: {
+      EngineCapacity: '6.0L',
+      NumberCylinders: '12',
+      EnginePower: '523 HP',
+      PaymentSystem: 'Rear wheel drive'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'Maybach',
+    year: '2023',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2023.jpg',
+    info: {
+      EngineCapacity: '4.0L',
+      NumberCylinders: '8',
+      EnginePower: '496 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'Maybach EQS-SVU',
+    year: '2024',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-EQS-SVU-2024.jpg',
+    info: {
+      EngineCapacity: 'Electric motor',
+      EnginePower: '649 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'Maybach GLS',
+    year: '2021',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2021.jpg',
+    info: {
+      EngineCapacity: '4.0L',
+      NumberCylinders: '8',
+      EnginePower: '550 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  },
+  {
+    company: 'Mercedes-Benz',
+    model: 'Maybach GLS',
+    year: '2024',
+    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2024.jpg',
+    info: {
+      EngineCapacity: '4.0L',
+      NumberCylinders: '8',
+      EnginePower: '550 HP',
+      PaymentSystem: 'All wheel drive (4MATIC)'
+    }
+  }
+]
+
+function carsCopmare(company, model, year, Cardindex) {
+
+  let check = false;
+
+  car_card1[Cardindex].innerHTML = '';
+
+  let unavailable = document.createElement('p');
+  unavailable.classList.add('unavailable');
+  unavailable.textContent = 'This model is not available';
+
+
+  for (let i = 0; i < CarsInfo.length; i++) {
+    let car = CarsInfo[i];
+
+    if (
+      company.value === car.company &&
+      model.value === car.model &&
+      year.value === car.year
+    ) {
+      let title = document.createElement('h1');
+      title.textContent = 'Car spacialists:';
+
+
+      let btn = document.createElement('button');
+      btn.classList.add('card_button');
+      btn.innerHTML = ' <i class="fas fa-chevron-down"></i>';
+      btn.title = 'More';
+
+      let img = document.createElement('img');
+      img.src = car.img;
+      img.classList.add('car_image1')
+      setTimeout(() => img.classList.add('showCarimage'), 50)
+
+      let ul = document.createElement('ul');
+      ul.classList.add('spacialists');
+      setTimeout(() => ul.classList.add('showSpacialists'), 50);
+
+      for (let key in car.info) {
+        let li = document.createElement('li');
+        li.textContent = `${key}: ${car.info[key]}`;
+        ul.appendChild(li);
+      }
+
+      car_card1[Cardindex].appendChild(img);
+      car_card1[Cardindex].appendChild(title);
+      car_card1[Cardindex].appendChild(ul);
+      car_card1[Cardindex].appendChild(btn);
+
+      check = true;
+      break;
+    }
+  }
+
+  if (!check) {
+    car_card1[Cardindex].appendChild(unavailable);
+  }
+}
+
+
+
+btnGO.onclick = function () {
+  let inputs = [companyA, modelA, selectA, companyB, modelB, selectB];
+  let empty = inputs.some(input => input.value.trim() === "");
+
+  if (empty) {
+    inputs.forEach(input => {
+      if (input.value === "") {
+        input.style.border = '1.5px solid red';
+        input.placeholder = 'This field is required';
+        input.classList.add("error");
+      }
+    });
+    return;
+  }
+
+  localStorage.setItem("carA", JSON.stringify({
+    company: companyA.value,
+    model: modelA.value,
+    year: selectA.value
+  }));
+
+  localStorage.setItem("carB", JSON.stringify({
+    company: companyB.value,
+    model: modelB.value,
+    year: selectB.value
+  }));
+
+
+  carsCopmare(companyA, modelA, selectA, 0);
+  carsCopmare(companyB, modelB, selectB, 1);
+
+  scroll({
+    top: 400,
+    behavior: "smooth"
+  });
+};
+
+function savedCars() {
+  let savedCarA = JSON.parse(localStorage.getItem("carA"));
+  let savedCarB = JSON.parse(localStorage.getItem("carB"));
+
+  if (savedCarA) {
+    companyA.value = savedCarA.company;
+    modelA.value = savedCarA.model;
+    selectA.value = savedCarA.year;
+  }
+
+  if (savedCarB) {
+    companyB.value = savedCarB.company;
+    modelB.value = savedCarB.model;
+    selectB.value = savedCarB.year;
+  }
+
+  if (savedCarA && savedCarB) {
+    carsCopmare(companyA, modelA, selectA, 0);
+    carsCopmare(companyB, modelB, selectB, 1);
+  }
+};
+savedCars()
+
+

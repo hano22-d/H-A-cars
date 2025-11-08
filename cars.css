@@ -5,18 +5,18 @@ html {
 
 body {
   margin: 0%;
-  background-color: var(--Body-color);
+  background: var(--Body-color);
 }
 
 :root {
-  --Body-color: #b1afaf;
+  --Body-color: linear-gradient(135deg, #e3e6e8, #cfd2d4);
   --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
   --link-color: wheat;
   --title-color: #ff4c29;
   --text-color: #111;
   --text-headerFoter-color: wheat;
-  --window-color: #919090dc;
+  --window-color:rgba(255, 255, 255, 0.8);
   --icon: #ff4c29;
   --font-English: ;
 }
@@ -347,11 +347,12 @@ h1 {
   backface-visibility: hidden;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0px 0px 7px 2px black;
+  background-color: var(--window-color);
 }
 
 .face1 {
-  background-color: var(--window-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,7 +360,6 @@ h1 {
 }
 
 .face2 {
-  background-image: radial-gradient(circle, #919090dc 50%, #ff4c29);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -377,7 +377,7 @@ h1 {
 
 .list_face li {
   padding: 10px 0px;
-  text-shadow: 1px 1px 1px black;
+  color: var(--text-color);
 }
 
 .img1,
@@ -414,9 +414,10 @@ h1 {
   height: 400px;
   align-self: center;
   background-color: var(--window-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0px 0px 7px 2px black;
   grid-area: listdiv;
 }
 
@@ -461,12 +462,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 50% 5%;
-  border-top-right-radius: 50% 5%;
   gap: 3rem;
   grid-area: footer;
   padding: 65px;
-  filter: drop-shadow(10px 0 10px #ff4c29);
+  box-shadow: 0px 0px 4px 4px #ff4c29;
+  border-top-left-radius: 50% 5%;
+  border-top-right-radius: 50% 5%;
+  background-color: var(--window-color);
+  backdrop-filter: blur(10px);
 }
 
 .search-div {
@@ -508,7 +511,6 @@ footer {
 
 .about {
   width: 100%;
-  color: wheat;
   display: block;
   order: -1;
 }
@@ -518,6 +520,7 @@ footer {
   text-align: right;
   line-height: 1.7rem;
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 .p2 span {
@@ -541,6 +544,7 @@ footer {
 
 .aboutlink h2 {
   font-size: 1.7rem;
+  color: #ff4c29;
 }
 
 .direction {
@@ -559,11 +563,13 @@ footer {
 
 .Services-blog h2 {
   font-size: 2rem;
+  color: #ff4c29;
 }
 
 .Services-blog a {
   width: fit-content;
   text-decoration: none;
+  color: var(--text-color);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -583,13 +589,14 @@ footer {
 
 .privacy h2 {
   font-size: 2rem;
+  color: var(--title-color);
   text-align: center;
 }
 
 .privacy a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
+  color: var(--text-color);
   font-size: 1.2rem;
   align-self: center;
 }
@@ -610,7 +617,6 @@ footer {
   border: #ff4c29 2px solid;
 }
 
-
 .scroolZero {
   background-color: transparent;
   cursor: pointer;
@@ -618,9 +624,9 @@ footer {
   position: fixed;
   bottom: 3%;
   right: 2%;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   border: 2px solid #ff4c29;
   box-shadow: 0 0 5px 0 #111;
 }

@@ -5,20 +5,19 @@ html {
 
 body {
   margin: 0%;
-  background-color: var(--Body-color);
+  background: var(--Body-color);
 }
 
 :root {
-  --Body-color: #b1afaf;
+  --Body-color: linear-gradient(135deg, #e3e6e8, #cfd2d4);
   --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
   --link-color: wheat;
   --title-color: #ff4c29;
   --text-color: #111;
   --text-headerFoter-color: wheat;
-  --window-color: #919090dc;
+  --window-color: rgba(255, 255, 255, 0.8);
   --icon: #ff4c29;
-  --font-English: ;
 }
 
 .darkmood {
@@ -33,13 +32,11 @@ body {
   --icon: #ff4c29;
 }
 
-header,
-footer {
+header {
   background-color: var(--headerAndfooter-color);
 }
 
 header p,
-footer p,
 header span {
   color: var(--text-headerFoter-color);
 }
@@ -51,7 +48,7 @@ button {
   background-color: var(--button-color);
   color: var(--link-color);
   padding: 10px 18px;
-  box-shadow: 0 0 5px 1px black;
+  box-shadow: 0 0 5px 0 black;
   border-radius: 5px;
   border: none;
   transition: 0.5s;
@@ -85,6 +82,8 @@ h1,
 h2,
 h3 {
   color: var(--title-color);
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
 }
 
 p,
@@ -96,6 +95,7 @@ pre {
 i {
   color: var(--icon);
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -274,11 +274,13 @@ header {
   background-color: #ff4c29;
   border-radius: 20px;
 }
+
 .a1Active {
   color: var(--text-color);
   background-color: #ff4c29;
   border-radius: 20px;
 }
+
 /*جدولا المقارنة */
 
 .datain {
@@ -287,36 +289,46 @@ header {
   align-items: center;
   padding: 10px;
   margin: 30px auto;
-  gap: 35px;
+  gap: 14px;
 }
 
 .datain input,
 .datain select {
-  padding: 4px;
-  background: none;
+  color: var(--text-color);
+  padding: 6px 12px;
+  background: var(--window-color);
   font-size: 15px;
-  border: 1.5px solid var(--text-color);
-  box-shadow: 0 0 5px 1px black;
+  border: 1px solid var(--text-color);
 }
 
 .datain select {
-  background: var(--link-color);
+  background: var(--window-color);
 }
 
 .datain select:hover {
   transition: 0.2s;
   background: rgb(240, 248, 255);
   box-shadow: 0 0 5px 1px black;
+  cursor: pointer;
+}
+
+.datain input:focus {
+  box-shadow: 0 0 10px #ff4c29;
 }
 
 .datain input:hover {
-  transition: 0.2s;
-  background: rgb(240, 248, 255);
-  box-shadow: 0 0 5px 1px black;
+  background-color: rgba(240, 248, 255, 0.336);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 4px 0 black;
 }
 
 .datain input::placeholder {
-  color: var(--text-color);
+  color: #949090;
+  transition: 0.3s;
+}
+
+.datain input:focus::placeholder {
+  color: #ff4c29;
 }
 
 .datain button {
@@ -325,74 +337,120 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
-
 }
 
 .comparison_container {
   grid-area: comp1;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 30px auto;
 }
 
 .car_card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   background-color: var(--window-color);
-  box-shadow: 0 0 7px 3px #1b1b1b;
   border-radius: 5px;
-  width: 45%;
+  width: 40%;
   padding: 20px;
-  animation: card1 2s infinite ease-in-out alternate;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
 }
 
 .car_card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   background-color: var(--window-color);
   box-shadow: 0 0 7px 3px #1b1b1b;
   border-radius: 5px;
-  width: 45%;
+  width: 40%;
   padding: 20px;
-  animation: card2 2s infinite ease-in-out alternate;
-}
-
-.car_image1 {
-  width: 100%;
-  height: 300px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  box-shadow: 0 0 5px 1px black;
-  background-image: url(img/audi_e_tron.jpg);
-  background-size: cover;
-}
-
-.car_image2 {
-  width: 100%;
-  height: 300px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  box-shadow: 0 0 5px 1px black;
-  background-image: url(img/audi_e_tron.jpg);
-  background-size: cover;
-}
-
-h1 {
-  font-size: 35px;
-  text-shadow: 1px 1px 1px black;
-  animation: special 2s infinite ease-in-out alternate;
-}
-
-.spacialists li {
-  font-size: 25px;
-  width: 100%;
-  padding: 6px;
-  color: var(--text-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
 }
 
 .card_button {
-  margin-left: 460px;
-  font-size: 22px;
-  font-weight: 800;
+  align-self: flex-end;
+  font-size: 1.3rem;
+  font-weight: 600;
   padding: 5px;
   border-radius: 5px;
+  background: transparent;
+  box-shadow: 0 0 0;
+}
+
+.card_button:hover {
+  transform: translateY(5px);
+}
+
+/*js كلاسات مطبقة في*/
+.unavailable {
+  align-self: center;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+input.error::placeholder {
+  color: red;
+}
+
+.car_image1 {
+  transform: translateY(-30px);
+  opacity: 0;
+  align-self: center;
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px 1px black;
+  transition: all 0.8s ease;
+}
+
+.showCarimage {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.spacialists li {
+  opacity: 0;
+  transform: translateX(-30px);
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  padding: 6px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(255, 76, 41, 1), rgba(255, 76, 41, 0));
+  color: var(--text-color);
+  transition: all 0.6s ease;
+}
+
+.showSpacialists li {
+  list-style: none;
+  position: relative;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.spacialists li:hover {
+  transform: translateX(10px);
+  background: linear-gradient(to right, rgba(255, 77, 41, 0.308), rgba(255, 76, 41, 0));
+}
+
+.spacialists li::before {
+  content: "";
+  position: absolute;
+  left: -7%;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #ff4c29;
+  box-shadow: 0 0 20px 0 #4e4e4e;
+  border-radius: 3px;
 }
 
 /*جدولا المقارنة الجاهزة */
@@ -412,6 +470,8 @@ h1 {
   box-shadow: 0 0 7px 3px black;
   transition: transform 2s;
   background-color: var(--window-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
 }
 
 .car_card4 {
@@ -421,6 +481,8 @@ h1 {
   box-shadow: 0 0 7px 3px black;
   transition: transform 2s;
   background-color: var(--window-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
 }
 
 .car_card3 img {
@@ -477,9 +539,10 @@ footer {
   grid-area: footer;
   padding: 65px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
-  background-color: #1b1b1b;
   border-top-left-radius: 50% 5%;
   border-top-right-radius: 50% 5%;
+  background-color: var(--window-color);
+  backdrop-filter: blur(10px);
 }
 
 .search-div {
@@ -579,7 +642,7 @@ footer {
 .Services-blog a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
+  color: var(--text-color);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -599,14 +662,14 @@ footer {
 
 .privacy h2 {
   font-size: 2rem;
-  color: #ff4c29;
+  color: var(--title-color);
   text-align: center;
 }
 
 .privacy a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
+  color: var(--text-color);
   font-size: 1.2rem;
   align-self: center;
 }

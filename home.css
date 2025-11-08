@@ -6,18 +6,18 @@ html {
 
 body {
   margin: 0%;
-  background-color: var(--Body-color);
+  background: var(--Body-color);
 }
 
 .lightmood {
-  --Body-color: #b1afaf;
+  --Body-color: linear-gradient(135deg, #e3e6e8, #cfd2d4);
   --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
   --link-color: wheat;
   --title-color: #ff4c29;
   --text-color: #111;
   --text-headerFoter-color: wheat;
-  --window-color: #919090dc;
+  --window-color: rgba(255, 255, 255, 0.8);
   --icon: #ff4c29;
   --font-English: ;
 }
@@ -34,13 +34,11 @@ body {
   --icon: #ff4c29;
 }
 
-header,
-footer {
+header {
   background-color: var(--headerAndfooter-color);
 }
 
 header p,
-footer p,
 header span {
   color: var(--text-headerFoter-color);
 }
@@ -273,11 +271,13 @@ header {
   background-color: #ff4c29;
   border-radius: 20px;
 }
+
 .a1Active {
   color: var(--text-color);
   background-color: #ff4c29;
   border-radius: 20px;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -304,7 +304,8 @@ header {
   top: 100px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 4px 4px #111;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   background-color: var(--window-color);
   padding: 10px 30px;
   font-size: 1.1rem;
@@ -383,6 +384,8 @@ header {
   overflow: auto;
   box-shadow: 0 0 10px 2px #1b1b1b;
   background-color: var(--window-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   width: 40vw;
   height: 300px;
   border-radius: 5px;
@@ -761,18 +764,19 @@ video {
 }
 
 /*الذيل*/
-
 footer {
-  grid-area: aboutlinkk;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+  grid-area: footer;
+  padding: 65px;
+  box-shadow: 0px 0px 4px 4px #ff4c29;
   border-top-left-radius: 50% 5%;
   border-top-right-radius: 50% 5%;
-  gap: 3rem;
-  padding: 65px;
-  filter: drop-shadow(10px 0 10px #ff4c29);
+  background-color: var(--window-color);
+  backdrop-filter: blur(10px);
 }
 
 .search-div {
@@ -868,6 +872,7 @@ footer {
   text-decoration: none;
   font-size: 1.2rem;
   text-align: center;
+  color: var(--text-color);
 }
 
 .Services-blog a:hover {
@@ -893,6 +898,7 @@ footer {
   text-decoration: none;
   font-size: 1.2rem;
   align-self: center;
+  color: var(--text-color);
 }
 
 .privacy a:hover {

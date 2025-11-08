@@ -5,18 +5,19 @@ html {
 }
 
 body {
+  background: var(--Body-color);
   margin: 0%;
 }
 
 :root {
-  --Body-color: #b1afaf;
+  --Body-color: linear-gradient(135deg, #e3e6e8, #cfd2d4);
   --headerAndfooter-color: #1b1b1b;
   --button-color: #ff4c29;
   --link-color: wheat;
   --title-color: #ff4c29;
   --text-color: #111;
   --text-headerFoter-color: wheat;
-  --window-color: #919090dc;
+  --window-color: rgba(255, 255, 255, 0.8);
   --icon: #ff4c29;
   --font-English: ;
 }
@@ -33,13 +34,11 @@ body {
   --icon: #ff4c29;
 }
 
-header,
-footer {
+header {
   background-color: var(--headerAndfooter-color);
 }
 
 header p,
-footer p,
 header span {
   color: var(--text-headerFoter-color);
 }
@@ -301,7 +300,8 @@ header {
   margin: 20px;
   grid-area: sale;
   border-radius: 15px;
-  box-shadow: 0px 0px 7px 2px black;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   background-color: var(--window-color);
   display: flex;
   flex-direction: column;
@@ -313,7 +313,8 @@ header {
   margin: 20px;
   grid-area: suggestions;
   border-radius: 15px;
-  box-shadow: 0px 0px 7px 2px black;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   background-color: var(--window-color);
   display: flex;
   flex-direction: column;
@@ -426,7 +427,8 @@ header {
 .view {
   grid-area: view;
   border-radius: 15px;
-  box-shadow: 0px 0px 7px 2px black;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   background-color: var(--window-color);
   display: flex;
   justify-content: center;
@@ -531,17 +533,18 @@ header {
   align-items: center;
   background-color: var(--window-color);
   border-radius: 20px 5px 20px 5px;
-  box-shadow: 0px 0px 7px 2px black;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
 }
 
 .in_search [placeholder] {
-  background-color: azure;
+  background-color: transparent;
   padding: 10px 15px;
   font-size: 20px;
   border-radius: 5px;
   margin: 30px;
-  border: none;
-  color: black;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
 }
 
 .in_search [placeholder]:hover {
@@ -600,12 +603,13 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--window-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
   border-radius: 15px;
   padding: 25px;
   color: white;
   position: relative;
   z-index: 1;
-  box-shadow: 0 0 7px 2px black;
 }
 
 .the_car {
@@ -672,9 +676,10 @@ footer {
   grid-area: footer;
   padding: 65px;
   box-shadow: 0px 0px 4px 4px #ff4c29;
-  background-color: #1b1b1b;
   border-top-left-radius: 50% 5%;
   border-top-right-radius: 50% 5%;
+  background-color: var(--window-color);
+  backdrop-filter: blur(10px);
 }
 
 .search-div {
@@ -726,6 +731,7 @@ footer {
   text-align: right;
   line-height: 1.7rem;
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 .p2 span {
@@ -774,7 +780,7 @@ footer {
 .Services-blog a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
+  color: var(--text-color);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -794,14 +800,14 @@ footer {
 
 .privacy h2 {
   font-size: 2rem;
-  color: #ff4c29;
+  color: var(--title-color);
   text-align: center;
 }
 
 .privacy a {
   width: fit-content;
   text-decoration: none;
-  color: wheat;
+  color: var(--text-color);
   font-size: 1.2rem;
   align-self: center;
 }
