@@ -745,13 +745,13 @@ function carsCopmare(company, model, year, Cardindex) {
 
 
       let btn = document.createElement('button');
-      btn.classList.add('card_button');
       btn.innerHTML = ' <i class="fas fa-chevron-down"></i>';
-      btn.title = 'More';
+      btn.classList.add('card_button');
+      btn.title = 'Show More';
 
       let btnimg = document.createElement('button');
       btnimg.innerHTML = ' <i class="fas fa-chevron-down"></i>';
-      btnimg.classList.add('btnImgRight');
+      btnimg.classList.add('btnImg');
 
 
       let img = document.createElement('img');
@@ -763,7 +763,13 @@ function carsCopmare(company, model, year, Cardindex) {
       ul.classList.add('spacialists');
       setTimeout(() => ul.classList.add('showSpacialists'), 50);
 
+
+      img.addEventListener('mouseenter', () => btnimg.style.opacity = '0.8');
+      img.addEventListener('mouseleave', () => btnimg.style.opacity = '0');
+      btnimg.addEventListener('mouseenter', () => btnimg.style.opacity = '0.8')
+
       btnimg.onclick = () => {
+
         imgindex++;
         img.src = car.img[imgindex];
         if (imgindex === 2) {
@@ -795,7 +801,7 @@ function carsCopmare(company, model, year, Cardindex) {
             li.textContent = `${key}: ${car.info[key]}`;
             ul.appendChild(li);
           }
-          btn.innerHTML = ' <i class="fas fa-chevron-down"></i>';
+          btn.title = 'Show Less';
           btn.style.transform = 'rotate(180deg)';
           state = false;
           scroll({
@@ -812,7 +818,7 @@ function carsCopmare(company, model, year, Cardindex) {
               ul.appendChild(li);
             }
           }
-          btn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+          btn.title = 'Show More';
           btn.style.transform = 'rotate(0deg)';
           state = true;
           scroll({
@@ -896,6 +902,3 @@ function savedCars() {
   }
 };
 savedCars()
-
-
-console.log(imgindex)
