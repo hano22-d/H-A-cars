@@ -235,290 +235,491 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2009',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2009.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2009.jpg', 'cars img (store page)/Kia-sorento-2021.jpg'],
     info: {
       EngineCapacity: '5.5L',
       NumberCylinders: '8',
       EnginePower: '382 HP',
-      PaymentSystem: 'Rear wheel drive'
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '45,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2013',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2013.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2013.jpg'],
     info: {
       EngineCapacity: '3.5L',
       NumberCylinders: '6',
       EnginePower: '295 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '45,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2015',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
       EnginePower: '436 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '45,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2021',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2021.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2021.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
       EnginePower: '429 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '45,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2025',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2025.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2025.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
       EnginePower: '442 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '45,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
+
+  /* G-Class */
   {
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2013',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2013.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2013.jpg'],
     info: {
       EngineCapacity: '5.5L Twin-Turbo',
       NumberCylinders: '8',
       EnginePower: '382 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '60,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2018',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2018.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2018.jpg'],
     info: {
       EngineCapacity: '4.0L Twin-Turbo',
       NumberCylinders: '8',
       EnginePower: '416 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '50,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2022',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2022.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2022.jpg'],
     info: {
       EngineCapacity: '4.0L Twin-Turbo',
       NumberCylinders: '8',
       EnginePower: '577 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '35,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2025',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2025.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2025.jpg'],
     info: {
       EngineCapacity: '3.0L Twin-Turbo',
       NumberCylinders: '6',
       EnginePower: '443 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'New',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '5 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
+
+  /* E-Class */
   {
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2008',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2008.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2008.jpg'],
     info: {
       EngineCapacity: '3.5L',
       NumberCylinders: '6',
       EnginePower: '268 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '95,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2012',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2012.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2012.jpg'],
     info: {
       EngineCapacity: '3.5L',
       NumberCylinders: '6',
       EnginePower: '302 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '80,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2015',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2015.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2015.jpg'],
     info: {
       EngineCapacity: '2.1L',
       NumberCylinders: '4',
       EnginePower: '195 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '70,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2020',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2020.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2020.jpg'],
     info: {
       EngineCapacity: '2.0L',
       NumberCylinders: '4',
       EnginePower: '255 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '30,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2024',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2024.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2024.jpg'],
     info: {
       EngineCapacity: '2.0L',
       NumberCylinders: '4',
       EnginePower: '255 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'New',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '5 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
+
+  /* CLS-Class */
   {
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2007',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2007.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2007.jpg'],
     info: {
       EngineCapacity: '5.5L Turbo',
       NumberCylinders: '8',
       EnginePower: '382 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '110,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2010',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010.jpg'],
     info: {
       EngineCapacity: '5.5L Turbo',
       NumberCylinders: '8',
       EnginePower: '382 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '95,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2014',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014.jpg'],
     info: {
       EngineCapacity: '4.7L Turbo',
       NumberCylinders: '8',
       EnginePower: '402 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '70,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2019',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp'],
     info: {
       EngineCapacity: '3.0L Turbo',
       NumberCylinders: '6',
       EnginePower: '362 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '45,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2023',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp'],
     info: {
       EngineCapacity: '3.0L Turbo',
       NumberCylinders: '6',
       EnginePower: '362 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'New',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '5 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
+
+  /* Maybach */
   {
     company: 'Mercedes-Benz',
     model: 'Maybach',
     year: '2016',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2016.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2016.jpg'],
     info: {
       EngineCapacity: '6.0L',
       NumberCylinders: '12',
       EnginePower: '523 HP',
-      PaymentSystem: 'Rear wheel drive'
+      PaymentSystem: 'Rear wheel drive',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '40,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'Maybach',
     year: '2023',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2023.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2023.jpg'],
     info: {
       EngineCapacity: '4.0L',
       NumberCylinders: '8',
       EnginePower: '496 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '12,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'Maybach EQS-SVU',
     year: '2024',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-EQS-SVU-2024.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-EQS-SVU-2024.jpg'],
     info: {
       EngineCapacity: 'Electric motor',
       EnginePower: '649 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'New',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '5 km',
+      fuelType: 'Electric',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'Maybach GLS',
     year: '2021',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2021.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2021.jpg'],
     info: {
       EngineCapacity: '4.0L',
       NumberCylinders: '8',
       EnginePower: '550 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '30,000 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   },
   {
     company: 'Mercedes-Benz',
     model: 'Maybach GLS',
     year: '2024',
-    img: 'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2024.jpg',
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2024.jpg'],
     info: {
       EngineCapacity: '4.0L',
       NumberCylinders: '8',
       EnginePower: '550 HP',
-      PaymentSystem: 'All wheel drive (4MATIC)'
+      PaymentSystem: 'All wheel drive (4MATIC)',
+      condition: 'New',
+      seats: 5,
+      cleanliness: '100%',
+      color: 'Black',
+      mileage: '5 km',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany'
     }
   }
-]
+];
+
+let imgindex = 0;
 
 function carsCopmare(company, model, year, Cardindex) {
 
@@ -548,8 +749,13 @@ function carsCopmare(company, model, year, Cardindex) {
       btn.innerHTML = ' <i class="fas fa-chevron-down"></i>';
       btn.title = 'More';
 
+      let btnimg = document.createElement('button');
+      btnimg.innerHTML = ' <i class="fas fa-chevron-down"></i>';
+      btnimg.classList.add('btnImgRight');
+
+
       let img = document.createElement('img');
-      img.src = car.img;
+      img.src = car.img[imgindex];
       img.classList.add('car_image1')
       setTimeout(() => img.classList.add('showCarimage'), 50)
 
@@ -557,13 +763,66 @@ function carsCopmare(company, model, year, Cardindex) {
       ul.classList.add('spacialists');
       setTimeout(() => ul.classList.add('showSpacialists'), 50);
 
-      for (let key in car.info) {
-        let li = document.createElement('li');
-        li.textContent = `${key}: ${car.info[key]}`;
-        ul.appendChild(li);
+      btnimg.onclick = () => {
+        imgindex++;
+        img.src = car.img[imgindex];
+        if (imgindex === 2) {
+          imgindex = 0;
+          img.src = car.img[imgindex];
+        }
       }
 
+      let state = false;
+      let l = 0;
+
+      for (let key in car.info) {
+        l++;
+        if (!state) {
+          let li = document.createElement('li');
+          li.textContent = `${key}: ${car.info[key]}`;
+          ul.appendChild(li);
+        }
+        if (l === 4) { state = true; }
+      }
+
+      btn.onclick = () => {
+        if (state) {
+          ul.innerHTML = '';
+          let count = 0;
+          for (let key in car.info) {
+            count++;
+            let li = document.createElement('li');
+            li.textContent = `${key}: ${car.info[key]}`;
+            ul.appendChild(li);
+          }
+          btn.innerHTML = ' <i class="fas fa-chevron-down"></i>';
+          btn.style.transform = 'rotate(180deg)';
+          state = false;
+          scroll({
+            top: 800
+          })
+        } else {
+          ul.innerHTML = '';
+          let count = 0;
+          for (let key in car.info) {
+            count++;
+            if (count <= 4) {
+              let li = document.createElement('li');
+              li.textContent = `${key}: ${car.info[key]}`;
+              ul.appendChild(li);
+            }
+          }
+          btn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+          btn.style.transform = 'rotate(0deg)';
+          state = true;
+          scroll({
+            top: 430
+          })
+        }
+      };
+
       car_card1[Cardindex].appendChild(img);
+      car_card1[Cardindex].appendChild(btnimg)
       car_card1[Cardindex].appendChild(title);
       car_card1[Cardindex].appendChild(ul);
       car_card1[Cardindex].appendChild(btn);
@@ -577,8 +836,6 @@ function carsCopmare(company, model, year, Cardindex) {
     car_card1[Cardindex].appendChild(unavailable);
   }
 }
-
-
 
 btnGO.onclick = function () {
   let inputs = [companyA, modelA, selectA, companyB, modelB, selectB];
@@ -641,3 +898,4 @@ function savedCars() {
 savedCars()
 
 
+console.log(imgindex)

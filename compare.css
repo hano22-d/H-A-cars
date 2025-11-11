@@ -348,6 +348,7 @@ header {
 }
 
 .car_card1 {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,6 +362,7 @@ header {
 }
 
 .car_card2 {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -386,6 +388,18 @@ header {
 
 .card_button:hover {
   transform: translateY(5px);
+}
+.btnImgRight {
+  position: absolute;
+  right: 1%;
+  top: 25%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: 0 0 0;
+  transform: rotate(270deg);
 }
 
 /*js كلاسات مطبقة في*/
