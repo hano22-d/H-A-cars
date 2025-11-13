@@ -1,55 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Minimal Car Input</title>
+  <title>نافذة منبثقة بتعتيم الخلفية</title>
   <style>
     body {
-      background: #0f0f0f;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      font-family: sans-serif;
+      text-align: center;
+      transition: background-color 0.3s ease;
     }
 
-    input {
-      width: 280px;
-      padding: 12px 15px;
+    /* الزر */
+    button {
+      margin-top: 50px;
+      padding: 10px 20px;
       font-size: 16px;
-      color: #fff;
-      background: #1a1a1a;
-      border: 2px solid #b1afaf;
-      border-radius: 6px;
-      outline: none;
-      transition: 0.3s ease;
-      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
     }
 
-    input:focus {
-      border-color: #ff4c29;
-      box-shadow: 0 0 10px #ff4c29;
-      background: #151515;
+    /* عند فتح النافذة يصبح خلف الصفحة معتم قليلاً */
+    body.dimmed {
+      background-color: rgba(0,0,0,0.3);
     }
 
-    input::placeholder {
-      color: #888;
+    /* النافذة المنبثقة */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.9);
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      opacity: 0;
+      visibility: hidden;
       transition: 0.3s;
+      z-index: 10;
+      width: 300px;
     }
 
-    input:focus::placeholder {
-      color: #ff4c29;
-      letter-spacing: 1px;
+    .popup.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
     }
   </style>
 </head>
 <body>
 
-  <input type="text" placeholder="Enter car name" id="carInput">
+  <button id="open">افتح النافذة</button>
+
+  <div class="popup" id="popup">
+    <h2>تسجيل الدخول</h2>
+    <p>أدخل بياناتك هنا...</p>
+    <button id="close">إغلاق</button>
+  </div>
 
   <script>
-    const input = document.getElementById('carInput');
-    input.addEventListener('focus', () => console.log('Input focused'));
-    input.addEventListener('blur', () => console.log('Input unfocused'));
+    const body = document.body;
+    const popup = document.getElementById('popup');
+    const openBtn = document.getElementById('open');
+    const closeBtn = document.getElementById('close');
+
+    openBtn.onclick = () => {
+      popup.classList.add('show');
+      body.classList.add('dimmed'); // إضافة التعتيم
+    };
+
+    closeBtn.onclick = () => {
+      popup.classList.remove('show');
+      body.classList.remove('dimmed'); // إزالة التعتيم
+    };
   </script>
 
 </body>
