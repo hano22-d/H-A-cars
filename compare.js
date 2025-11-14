@@ -235,7 +235,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2009',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2009.jpg', 'cars img (store page)/Kia-sorento-2021.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2009-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2009-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2009-inside.jpg'
+    ],
     info: {
       EngineCapacity: '5.5L',
       NumberCylinders: '8',
@@ -254,7 +257,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2013',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2013.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2013.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2013-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2013-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.5L',
       NumberCylinders: '6',
@@ -274,7 +280,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2015',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2015-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -294,7 +303,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2021',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2021.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2021-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2021-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2021-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -314,7 +326,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'S-Class',
     year: '2025',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2025.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2025.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2025-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-S-Class-2025-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -336,7 +351,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2013',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2013.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2013-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2013-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2013-inside.jpg'
+    ],
     info: {
       EngineCapacity: '5.5L Twin-Turbo',
       NumberCylinders: '8',
@@ -356,7 +374,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2018',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2018.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2018-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2018-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2018-inside.jpg'
+    ],
     info: {
       EngineCapacity: '4.0L Twin-Turbo',
       NumberCylinders: '8',
@@ -376,7 +397,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2022',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2022.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2022-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2022-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2022-inside.jpg'
+    ],
     info: {
       EngineCapacity: '4.0L Twin-Turbo',
       NumberCylinders: '8',
@@ -396,7 +420,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'G-Class',
     year: '2025',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2025.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2025.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2025-back.avif',
+      'cars img (store page)/Mercedes-Benz/Mercedes-G-Class-2025-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.0L Twin-Turbo',
       NumberCylinders: '6',
@@ -418,7 +445,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2008',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2008.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2008.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2008-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2008-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.5L',
       NumberCylinders: '6',
@@ -438,7 +468,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2012',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2012.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2012.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2012-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2012-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.5L',
       NumberCylinders: '6',
@@ -458,7 +491,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2015',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2015.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2015-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2015-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2015-inside.webp'
+    ],
     info: {
       EngineCapacity: '2.1L',
       NumberCylinders: '4',
@@ -478,7 +514,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2020',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2020.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2020-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2020-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2020-inside.jpg'
+    ],
     info: {
       EngineCapacity: '2.0L',
       NumberCylinders: '4',
@@ -498,7 +537,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'E-Class',
     year: '2024',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2024.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2024.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2024-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-E-Class-2024-inside.jpg'
+    ],
     info: {
       EngineCapacity: '2.0L',
       NumberCylinders: '4',
@@ -520,7 +562,9 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2007',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2007.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2007-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2007-inside.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2007-back.jpg'],
     info: {
       EngineCapacity: '5.5L Turbo',
       NumberCylinders: '8',
@@ -540,7 +584,9 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2010',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010.jpg'
+      ,'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010-inside.jpg'],
     info: {
       EngineCapacity: '5.5L Turbo',
       NumberCylinders: '8',
@@ -560,7 +606,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2014',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2014-inside.jpg'
+    ],
     info: {
       EngineCapacity: '4.7L Turbo',
       NumberCylinders: '8',
@@ -580,7 +629,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2019',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019-back.jpg',
+       'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.0L Turbo',
       NumberCylinders: '6',
@@ -600,7 +652,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'CLS-Class',
     year: '2023',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2023-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2023-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2023-inside.jpg'
+    ],
     info: {
       EngineCapacity: '3.0L Turbo',
       NumberCylinders: '6',
@@ -622,7 +677,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'Maybach',
     year: '2016',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2016.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2016-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2016-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2016-inside.jpg'
+    ],
     info: {
       EngineCapacity: '6.0L',
       NumberCylinders: '12',
@@ -642,7 +700,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'Maybach',
     year: '2023',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2023.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2023-front.avif',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2023-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-2023-inside.jpg'
+    ],
     info: {
       EngineCapacity: '4.0L',
       NumberCylinders: '8',
@@ -662,7 +723,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'Maybach EQS-SVU',
     year: '2024',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-EQS-SVU-2024.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-EQS-SVU-2024-front.avif',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-EQS-SVU-2024-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-EQS-SVU-2024-inside.jpg'
+    ],
     info: {
       EngineCapacity: 'Electric motor',
       EnginePower: '649 HP',
@@ -681,7 +745,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'Maybach GLS',
     year: '2021',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2021.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2021-front.avif',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2021-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2021-inside.avif'
+    ],
     info: {
       EngineCapacity: '4.0L',
       NumberCylinders: '8',
@@ -701,7 +768,10 @@ let CarsInfo = [
     company: 'Mercedes-Benz',
     model: 'Maybach GLS',
     year: '2024',
-    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2024.jpg'],
+    img: ['cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2024-front.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2024-back.jpg',
+      'cars img (store page)/Mercedes-Benz/Mercedes-Maybach-GLS-SUV-2024-inside.jpg'
+    ],
     info: {
       EngineCapacity: '4.0L',
       NumberCylinders: '8',
@@ -772,7 +842,7 @@ function carsCopmare(company, model, year, Cardindex) {
 
         imgindex++;
         img.src = car.img[imgindex];
-        if (imgindex === 2) {
+        if (imgindex === 3) {
           imgindex = 0;
           img.src = car.img[imgindex];
         }
