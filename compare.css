@@ -389,6 +389,7 @@ header {
 .card_button:hover {
   transform: translateY(5px);
 }
+
 .btnImg {
   opacity: 0;
   position: absolute;
@@ -465,6 +466,50 @@ input.error::placeholder {
   background-color: #ff4c29;
   box-shadow: 0 0 20px 0 #4e4e4e;
   border-radius: 3px;
+}
+
+.btnZoom {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  align-self: flex-end;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: 0 0 0;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.btnZoom::before {
+  width: 0;
+}
+
+.btnZoom i:hover {
+  color: var(--text-color);
+}
+
+.divZoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: transparent;
+  z-index: 10;
+  transition: all 0.2s ease-out;
+}
+
+.imgZoom {
+  max-width: 900px;
+  border-radius: 10px;
+  z-index: 10;
 }
 
 /*جدولا المقارنة الجاهزة */

@@ -585,7 +585,7 @@ let CarsInfo = [
     model: 'CLS-Class',
     year: '2010',
     img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010.jpg'
-      ,'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010-back.jpg',
+      , 'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010-back.jpg',
       'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2010-inside.jpg'],
     info: {
       EngineCapacity: '5.5L Turbo',
@@ -631,7 +631,7 @@ let CarsInfo = [
     year: '2019',
     img: ['cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019.webp',
       'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019-back.jpg',
-       'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019-inside.jpg'
+      'cars img (store page)/Mercedes-Benz/Mercedes-CLS-Class-2019-inside.jpg'
     ],
     info: {
       EngineCapacity: '3.0L Turbo',
@@ -786,8 +786,216 @@ let CarsInfo = [
       transmission: 'Automatic',
       origin: 'Germany'
     }
-  }
+  },
+  /* BMW Z4 */
+  {
+    company: 'BMW',
+    model: 'Z4',
+    year: 2010,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '260 HP',
+      condition: 'Used',
+      seats: 2,
+      cleanliness: '78%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'Rear Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'Z4',
+    year: 2014,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '240 HP',
+      condition: 'Used',
+      seats: 2,
+      cleanliness: '78%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'Rear Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'Z4',
+    year: 2019,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '255 HP',
+      condition: 'Used',
+      seats: 2,
+      cleanliness: '100%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'Rear Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'Z4',
+    year: 2023,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '255 HP',
+      condition: 'New',
+      seats: 2,
+      cleanliness: '100%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'Rear Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'Z4',
+    year: 2025,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '4',
+      EnginePower: '255 HP',
+      condition: 'New',
+      seats: 2,
+      cleanliness: '100%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'Rear Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'X5',
+    year: 2009,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '260 HP',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '78%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'All Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'X5',
+    year: 2013,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '300 HP',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '70%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'All Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'X5',
+    year: 2017,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '300 HP',
+      condition: 'Used',
+      seats: 5,
+      cleanliness: '70%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'All Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'X5',
+    year: 2022,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '335 HP',
+      condition: 'New',
+      seats: 5,
+      cleanliness: '100%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'All Wheel Drive'
+    }
+  },
+  {
+    company: 'BMW',
+    model: 'X5',
+    year: 2026,
+    img: ['', '', ''],
+    info: {
+      EngineCapacity: '3.0L',
+      NumberCylinders: '6',
+      EnginePower: '375 HP',
+      condition: 'New',
+      seats: 5,
+      cleanliness: '100%',
+      color: '',
+      mileage: '',
+      fuelType: 'Gasoline',
+      transmission: 'Automatic',
+      origin: 'Germany',
+      driveType: 'All Wheel Drive'
+    }
+  },
 ];
+
+function ErrorMessage() {
+  let unavailable = document.createElement('p');
+  unavailable.classList.add('unavailable');
+  unavailable.textContent = 'This model is not available';
+  return unavailable;
+}
 
 let imgindex = 0;
 
@@ -796,11 +1004,6 @@ function carsCopmare(company, model, year, Cardindex) {
   let check = false;
 
   car_card1[Cardindex].innerHTML = '';
-
-  let unavailable = document.createElement('p');
-  unavailable.classList.add('unavailable');
-  unavailable.textContent = 'This model is not available';
-
 
   for (let i = 0; i < CarsInfo.length; i++) {
     let car = CarsInfo[i];
@@ -823,6 +1026,9 @@ function carsCopmare(company, model, year, Cardindex) {
       btnimg.innerHTML = ' <i class="fas fa-chevron-down"></i>';
       btnimg.classList.add('btnImg');
 
+      let btnZoom = document.createElement('button');
+      btnZoom.classList.add('btnZoom');
+      btnZoom.innerHTML = '<i class="fas fa-expand-alt"></i>';
 
       let img = document.createElement('img');
       img.src = car.img[imgindex];
@@ -836,7 +1042,7 @@ function carsCopmare(company, model, year, Cardindex) {
 
       img.addEventListener('mouseenter', () => btnimg.style.opacity = '0.8');
       img.addEventListener('mouseleave', () => btnimg.style.opacity = '0');
-      btnimg.addEventListener('mouseenter', () => btnimg.style.opacity = '0.8')
+      btnimg.addEventListener('mouseenter', () => btnimg.style.opacity = '0.8');
 
       btnimg.onclick = () => {
 
@@ -846,6 +1052,28 @@ function carsCopmare(company, model, year, Cardindex) {
           imgindex = 0;
           img.src = car.img[imgindex];
         }
+      }
+
+      btnZoom.onclick = () => {
+        let div = document.createElement('div');
+        div.classList.add('divZoom')
+
+        let imgZoom = document.createElement('img');
+        imgZoom.classList.add('imgZoom')
+        imgZoom.src = img.src;
+
+        setTimeout(function () {
+          div.style.opacity = '1';
+          div.style.background = 'rgba(0, 0, 0, 0.8)'
+        }, 10)
+
+        div.addEventListener('click', () => {
+          div.style.opacity = '0';
+          setTimeout(() => div.remove(), 500);
+        });
+
+        div.appendChild(imgZoom);
+        document.body.appendChild(div);
       }
 
       let state = false;
@@ -897,6 +1125,7 @@ function carsCopmare(company, model, year, Cardindex) {
         }
       };
 
+      car_card1[Cardindex].appendChild(btnZoom)
       car_card1[Cardindex].appendChild(img);
       car_card1[Cardindex].appendChild(btnimg)
       car_card1[Cardindex].appendChild(title);
@@ -909,7 +1138,9 @@ function carsCopmare(company, model, year, Cardindex) {
   }
 
   if (!check) {
-    car_card1[Cardindex].appendChild(unavailable);
+    car_card1[Cardindex].innerHTML = '';
+    let msg = ErrorMessage()
+    car_card1[Cardindex].appendChild(msg)
   }
 }
 
