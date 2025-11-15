@@ -791,8 +791,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'Z4',
-    year: 2010,
-    img: ['', '', ''],
+    year: '2010',
+    img: ['cars img (store page)/BMW/BMW-Z4-2010.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2010-back.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2010-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -811,8 +813,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'Z4',
-    year: 2014,
-    img: ['', '', ''],
+    year: '2014',
+    img: ['cars img (store page)/BMW/BMW-Z4-2014.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2014-back.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2014-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -831,8 +835,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'Z4',
-    year: 2019,
-    img: ['', '', ''],
+    year: '2019',
+    img: ['cars img (store page)/BMW/BMW-Z4-2019.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2019-back.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2019-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -851,8 +857,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'Z4',
-    year: 2023,
-    img: ['', '', ''],
+    year: '2023',
+    img: ['cars img (store page)/BMW/BMW-Z4-2023.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2023-back.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2023-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -871,8 +879,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'Z4',
-    year: 2025,
-    img: ['', '', ''],
+    year: '2025',
+    img: ['cars img (store page)/BMW/BMW-Z4-2025.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2023-back.jpg',
+      'cars img (store page)/BMW/BMW-Z4-2023-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '4',
@@ -888,11 +898,14 @@ let CarsInfo = [
       driveType: 'Rear Wheel Drive'
     }
   },
+  /* BMW X5*/
   {
     company: 'BMW',
     model: 'X5',
-    year: 2009,
-    img: ['', '', ''],
+    year: '2009',
+    img: ['cars img (store page)/BMW/BMW-X5-2009.jpg',
+      'cars img (store page)/BMW/BMW-X5-2009-back.jpg',
+      'cars img (store page)/BMW/BMW-X5-2009-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -911,8 +924,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'X5',
-    year: 2013,
-    img: ['', '', ''],
+    year: '2013',
+    img: ['cars img (store page)/BMW/BMW-X5-2013.jpg',
+      'cars img (store page)/BMW/BMW-X5-2013-back.jpg',
+      'cars img (store page)/BMW/BMW-X5-2013-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -931,8 +946,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'X5',
-    year: 2017,
-    img: ['', '', ''],
+    year: '2017',
+    img: ['cars img (store page)/BMW/BMW-X5-2017.jpg',
+      'cars img (store page)/BMW/BMW-X5-2017-back.jpg',
+      'cars img (store page)/BMW/bmw-x5-2017-inside.jpg'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -951,8 +968,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'X5',
-    year: 2022,
-    img: ['', '', ''],
+    year: '2022',
+    img: ['cars img (store page)/BMW/BMW-X5-2022.jpg',
+      'cars img (store page)/BMW/bmw-x5-2022-back.jpg',
+      'cars img (store page)/BMW/bmw-x5-2022-inside.avif'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -971,8 +990,10 @@ let CarsInfo = [
   {
     company: 'BMW',
     model: 'X5',
-    year: 2026,
-    img: ['', '', ''],
+    year: '2026',
+    img: ['cars img (store page)/BMW/bmw-x5-2026.jpg',
+      'cars img (store page)/BMW/bmw-x5-2026-back.jpg',
+      'cars img (store page)/BMW/bmw-x5-2026-inside.avif'],
     info: {
       EngineCapacity: '3.0L',
       NumberCylinders: '6',
@@ -1009,8 +1030,8 @@ function carsCopmare(company, model, year, Cardindex) {
     let car = CarsInfo[i];
 
     if (
-      company.value === car.company &&
-      model.value === car.model &&
+      company.value.trim().toLowerCase() === car.company.toLowerCase() &&
+      model.value.trim().toLowerCase() === car.model.toLowerCase() &&
       year.value === car.year
     ) {
       let title = document.createElement('h1');
