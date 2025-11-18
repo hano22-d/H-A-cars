@@ -1009,6 +1009,115 @@ let CarsInfo = [
       driveType: 'All Wheel Drive'
     }
   },
+  // Hyundai SantaFe 2023
+  {
+    company: 'Hyundai',
+    model: 'SantaFe',
+    year: '2023',
+    img: [
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2023.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2023-back.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2023-inside.avif'
+    ],
+    info: {
+      EngineCapacity: '2.5L',
+      NumberCylinders: '4',
+      EnginePower: '191 HP',
+      transmission: 'Automatic',
+      driveType: 'Front Wheel Drive',
+      seats: 5,
+      condition: 'New',
+      cleanliness: '100%'
+    }
+  },
+
+  // Hyundai SantaFe 2018
+  {
+    company: 'Hyundai',
+    model: 'SantaFe',
+    year: '2018',
+    img: [
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2018.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2018-back.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2018-inside.jpg'
+    ],
+    info: {
+      EngineCapacity: '2.4L',
+      NumberCylinders: '4',
+      EnginePower: '185 HP',
+      transmission: 'Automatic',
+      driveType: 'Front Wheel Drive',
+      seats: 5,
+      condition: 'Used',
+      cleanliness: '85%'
+    }
+  },
+
+  // Hyundai SantaFe 2011
+  {
+    company: 'Hyundai',
+    model: 'SantaFe',
+    year: '2011',
+    img: [
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2011.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2011-back.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2011-inside.jpg'
+    ],
+    info: {
+      EngineCapacity: '2.4L',
+      NumberCylinders: '4',
+      EnginePower: '170 HP',
+      transmission: 'Automatic',
+      driveType: 'Front Wheel Drive',
+      seats: 5,
+      condition: 'Used',
+      cleanliness: '80%'
+    }
+  },
+
+  // Hyundai SantaFe 2007
+  {
+    company: 'Hyundai',
+    model: 'SantaFe',
+    year: '2007',
+    img: [
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2007.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2007-back.avif',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2007-inside.jpg'
+    ],
+    info: {
+      EngineCapacity: '2.7L',
+      NumberCylinders: '6',
+      EnginePower: '185 HP',
+      transmission: 'Automatic',
+      driveType: 'Front Wheel Drive',
+      seats: 5,
+      condition: 'Used',
+      cleanliness: '75%'
+    }
+  },
+
+  // Hyundai SantaFe 2005
+  {
+    company: 'Hyundai',
+    model: 'SantaFe',
+    year: '2005',
+    img: [
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2005.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2005-back.jpg',
+      'cars img (store page)/Hyundai/Hyundai-SantaFe-2005-inside.avif'
+    ],
+    info: {
+      EngineCapacity: '2.4L',
+      NumberCylinders: '4',
+      EnginePower: '142 HP',
+      transmission: 'Automatic',
+      driveType: 'Front Wheel Drive',
+      seats: 5,
+      condition: 'Used',
+      cleanliness: '70%'
+    }
+  }
 ];
 
 function ErrorMessage() {

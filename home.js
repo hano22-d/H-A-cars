@@ -332,3 +332,4 @@ Sections.forEach((a, index) => {
     localStorage.setItem('active', index);
   });
 });
+
