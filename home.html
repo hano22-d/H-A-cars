@@ -1,214 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Main-Logo.png" />
+    <link rel="stylesheet" href="home.css" />
+    <!--خط الازرار والخيارات-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--خط العناوين-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--خط اسم الموقع-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
+      rel="stylesheet"
+    />
+    <!--خط عنوان المعرض-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <title>Home</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="img/Main-Logo.png" />
-  <link rel="stylesheet" href="home.css" />
-  <!--خط الازرار والخيارات-->
-  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-  <!--خط العناوين-->
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
-  <!--خط اسم الموقع-->
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
-  <!--خط عنوان المعرض-->
-  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-</head>
-
-<body>
-  <button id="scroolZer" class="scroolZero">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-  <header id="header">
-    <div class="material">
-      <div class="icon">
-        <img src="img/Main-Logo.png" alt="" />
+  <body>
+    <template id="tem1">
+      <div class="div1">
+        <h2>Welcome to H & A CARS</h2>
+        <div class="div2">
+          <button class="google"><i class="fa-brands fa-google"></i></button>
+          <button class="faceBook">
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+          <button class="gitHub"><i class="fa-brands fa-github"></i></button>
+        </div>
+        <input type="text" placeholder="user" />
+        <input type="password" placeholder="password" />
+        <button class="loginBtn">Login</button>
+        <a href="">Forget the password?</a>
       </div>
-      <input id="headerSearch" class="header_search" type="search" placeholder="search" />
-      <button id="headerSubmit" class="header_submit">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-      <div class="setting">
-        <button><i class="fa-solid fa-user"></i></button>
-        <button id="darkmoodBtn"></button>
-        <select id="selectlan">
-          <option value="English">English</option>
-          <option value="Arabic">Arabic</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="tab">
-      <a data-key="home" class="a1" href="home.html"></a>
-      <a data-key="cars" class="a1" href="cars.html"></a>
-      <a data-key="compare" class="a1" href="compare.html"></a>
-      <a data-key="news" class="a1" href="news.html"></a>
-      <a data-key="store" class="a1" href="store.html"></a>
-    </div>
-  </header>
-
-  <div class="infobar">
-    <img id="infoImage" src="img/tes.jpg" alt="Car" />
-    <p class="price1"></p>
-  </div>
-
-  <div class="container">
-    <div class="main1">
-      <div class="main2">
-        <img class="img_news1" src="img/hyundai-unveils-2025-e-2.jpg" />
-        <div class="paragraf1">
-          <h1 data-key="h2c" class="h2c"></h1>
-          <p data-key="paragrafa" class="p1"></p>
+    </template>
+    <button id="scroolZer" class="scroolZero">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <header id="header">
+      <div class="material">
+        <div class="icon">
+          <img src="img/Main-Logo.png" alt="" />
+        </div>
+        <input
+          id="headerSearch"
+          class="header_search"
+          type="search"
+          placeholder="search"
+        />
+        <button id="headerSubmit" class="header_submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="setting">
+          <button><i class="fa-solid fa-user"></i></button>
+          <button id="darkmoodBtn"></button>
+          <select id="selectlan">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
+          </select>
         </div>
       </div>
 
-      <div class="main2">
-        <img class="img_news1" src="img/Stellantis-plant-morocco.png" />
-        <div class="paragraf1">
-          <h1 data-key="h2c2" class="h2c"></h1>
-          <p data-key="paragrafb" class="p1"></p>
-        </div>
+      <div class="tab">
+        <a data-key="home" class="a1" href="home.html"></a>
+        <a data-key="cars" class="a1" href="cars.html"></a>
+        <a data-key="compare" class="a1" href="compare.html"></a>
+        <a data-key="news" class="a1" href="news.html"></a>
+        <a data-key="store" class="a1" href="store.html"></a>
       </div>
+    </header>
+
+    <div class="infobar">
+      <img id="infoImage" src="img/tes.jpg" alt="Car" />
+      <p class="price1"></p>
     </div>
 
-    <div class="main3">
-      <div class="main3_title">
-        <h1 data-key="titlemain3" class="m3tt"></h1>
-      </div>
-      <div class="modern_news">
-        <div class="big_photo">
-          <h1 data-key="bigPhotoText1" class="big_photo_text1"></h1>
-          <h1 data-key="bigPhotoText2" class="big_photo_text2"></h1>
-        </div>
-        <div class="pictures">
-          <div class="photo1">
-            <img src="img/Mercedes-Benz-2026.jpg" alt="" />
-            <div class="para_text">
-              <h1 data-key="pictureText1" class="picture_text"></h1>
-              <p data-key="pictureParagraph1" class="picture_paragraph"></p>
-            </div>
-          </div>
-          <div class="photo2">
-            <img src="img/Rolls-Royse-spectre.jpg" alt="" />
-            <div class="para_text">
-              <h1 data-key="pictureText2" class="picture_text"></h1>
-              <p data-key="pictureParagraph2" class="picture_paragraph"></p>
-            </div>
-          </div>
-          <div class="photo3">
-            <img src="img/BMW-ix3-112.jpg" alt="" />
-            <div class="para_text">
-              <h1 data-key="pictureText3" class="picture_text"></h1>
-              <p data-key="pictureParagraph3" class="picture_paragraph"></p>
-            </div>
+    <div class="container">
+      <div class="main1">
+        <div class="main2">
+          <img class="img_news1" src="img/hyundai-unveils-2025-e-2.jpg" />
+          <div class="paragraf1">
+            <h1 data-key="h2c" class="h2c"></h1>
+            <p data-key="paragrafa" class="p1"></p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="main5">
-      <h1 data-key="titlemain5"></h1>
-      <video controls src="" type="video/mp4"></video>
-    </div>
-
-    <div class="main4">
-      <div class="title1">
-        <h2 data-key="h2e" class="h2e"></h2>
-      </div>
-
-      <div class="img_gallery">
-        <div class="ma logo"></div>
-        <div class="bm logo"></div>
-        <div class="au logo"></div>
-        <div class="hu logo"></div>
-
-        <div class="text_gallary" id="imgo">
-          <p data-key="CarNames" id="CarNames"></p>
+        <div class="main2">
+          <img class="img_news1" src="img/Stellantis-plant-morocco.png" />
+          <div class="paragraf1">
+            <h1 data-key="h2c2" class="h2c"></h1>
+            <p data-key="paragrafb" class="p1"></p>
+          </div>
         </div>
-        <img onmouseover="ShowCarsName(this,kan.a)" class="a all" src="Home-gallary/Hyundai-Elantra.webp" />
-        <img onmouseover="ShowCarsName(this,kan.b)" class="b all" src="Home-gallary/Audi-A4.avif" />
-        <img onmouseover="ShowCarsName(this,kan.c)" class="c all" src="Home-gallary/BMW-3series.jpg" />
-
-        <img onmouseover="ShowCarsName(this,kan.d)" class="d all" src="Home-gallary/Mercedes-Bemz-CLS-Class.jpg" />
-        <img onmouseover="ShowCarsName(this,kan.e)" class="e all" src="Home-gallary/Hyundai-Palisade.avif" />
-        <img onmouseover="ShowCarsName(this,kan.f)" class="f all" src="Home-gallary/Audi-Q7.avif" />
-
-        <img onmouseover="ShowCarsName(this,kan.g)" class="g all" src="Home-gallary/BMW-7series.avif" />
-        <img onmouseover="ShowCarsName(this,kan.h)" class="h all" src="Home-gallary/Mercedes-Benz-E-Class.avif" />
-        <img onmouseover="ShowCarsName(this,kan.i)" class="i all" src="Home-gallary/Hyundai-Tucson.avif" alt="" />
-
-        <img onmouseover="ShowCarsName(this,kan.j)" class="j all" src="Home-gallary/Audi-SQ8.avif" />
-        <img onmouseover="ShowCarsName(this,kan.k)" class="k all" src="Home-gallary/BMW-i5.jpg" />
-        <img onmouseover="ShowCarsName(this,kan.l)" class="l all" src="Home-gallary/Mercedes-Benz-G-Class.avif" />
-
-        <img onmouseover="ShowCarsName(this,kan.m)" class="m all" src="Home-gallary/Hyundai-Sonata.avif" />
-        <img onmouseover="ShowCarsName(this,kan.n)" class="n all" src="Home-gallary/Audi-S8.jpg" />
-        <img onmouseover="ShowCarsName(this,kan.o)" class="o all" src="Home-gallary/BMW-X3.avif" />
-
-        <img onmouseover="ShowCarsName(this,kan.p)" class="p all" src="Home-gallary/Mercedes-Benz-Maybach.jpg" />
-        <img onmouseover="ShowCarsName(this,kan.q)" class="q all" src="Home-gallary/Hyundai-SantaFe.avif" />
-        <img onmouseover="ShowCarsName(this,kan.r)" class="r all" src="Home-gallary/Audi-TT.avif" />
-
-        <img onmouseover="ShowCarsName(this,kan.s)" class="s all" src="Home-gallary/BMW-X5.avif" />
-        <img onmouseover="ShowCarsName(this,kan.t)" class="t all" src="Home-gallary/Mercedes-Benz-S-Class.avif" />
-        <img id="imgbigers" class="imgbigers" src="img/Website-icon.webp" />
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="search-div">
-      <input type="search" placeholder="Search" />
-      <span class="fill"></span>
-    </div>
-
-    <div class="about">
-      <p data-key="p2" class="p2"></p>
-      <p data-key="p3"></p>
-    </div>
-
-    <h2 data-key="links"></h2>
-    <div class="links">
-      <a id="email" class="a2" href="mailto:" title="تواصل معنا عبر البريد الإلكتروني"><i
-          class="fa-solid fa-envelope"></i></a>
-      <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"><i class="fa-brands fa-facebook"></i></a>
-      <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"><i class="fa-brands fa-instagram"></i></a>
-      <a id="about" class="a2" href="" title="أسئلة شائعة"><i class="fa-solid fa-question"></i></a>
-      <a id="phone" class="a2" href="" title="اتصل عبر الهاتف"><i class="fa-solid fa-phone-volume"></i></a>
-    </div>
-
-    <div class="direction">
-      <div class="Services-blog">
-        <h2 data-key="Services"></h2>
-        <a data-key="ServicesBlog1" href=""></a>
-        <a data-key="ServicesBlog2" href=""></a>
-        <h2 data-key="blog">Blog</h2>
-        <a data-key="ServicesBlog3" href=""></a>
-        <a data-key="ServicesBlog4" href=""></a>
-        <a data-key="ServicesBlog5" href=""></a>
       </div>
 
-      <div class="privacy">
-        <h2 data-key="site"></h2>
-        <a data-key="privacy1" href=""></a>
-        <a data-key="privacy2" href=""></a>
-        <a data-key="privacy3" href=""></a>
+      <div class="main3">
+        <div class="main3_title">
+          <h1 data-key="titlemain3" class="m3tt"></h1>
+        </div>
+        <div class="modern_news">
+          <div class="big_photo">
+            <h1 data-key="bigPhotoText1" class="big_photo_text1"></h1>
+            <h1 data-key="bigPhotoText2" class="big_photo_text2"></h1>
+          </div>
+          <div class="pictures">
+            <div class="photo1">
+              <img src="img/Mercedes-Benz-2026.jpg" alt="" />
+              <div class="para_text">
+                <h1 data-key="pictureText1" class="picture_text"></h1>
+                <p data-key="pictureParagraph1" class="picture_paragraph"></p>
+              </div>
+            </div>
+            <div class="photo2">
+              <img src="img/Rolls-Royse-spectre.jpg" alt="" />
+              <div class="para_text">
+                <h1 data-key="pictureText2" class="picture_text"></h1>
+                <p data-key="pictureParagraph2" class="picture_paragraph"></p>
+              </div>
+            </div>
+            <div class="photo3">
+              <img src="img/BMW-ix3-112.jpg" alt="" />
+              <div class="para_text">
+                <h1 data-key="pictureText3" class="picture_text"></h1>
+                <p data-key="pictureParagraph3" class="picture_paragraph"></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
-          width="100%" height="200" loading="lazy" title="Our title" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <div class="main5">
+        <h1 data-key="titlemain5"></h1>
+        <video controls src="" type="video/mp4"></video>
+      </div>
+
+      <div class="main4">
+        <div class="title1">
+          <h2 data-key="h2e" class="h2e"></h2>
+        </div>
+
+        <div class="img_gallery">
+          <div class="ma logo"></div>
+          <div class="bm logo"></div>
+          <div class="au logo"></div>
+          <div class="hu logo"></div>
+
+          <div class="text_gallary" id="imgo">
+            <p data-key="CarNames" id="CarNames"></p>
+          </div>
+          <img
+            onmouseover="ShowCarsName(this,kan.a)"
+            class="a all"
+            src="Home-gallary/Hyundai-Elantra.webp"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.b)"
+            class="b all"
+            src="Home-gallary/Audi-A4.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.c)"
+            class="c all"
+            src="Home-gallary/BMW-3series.jpg"
+          />
+
+          <img
+            onmouseover="ShowCarsName(this,kan.d)"
+            class="d all"
+            src="Home-gallary/Mercedes-Bemz-CLS-Class.jpg"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.e)"
+            class="e all"
+            src="Home-gallary/Hyundai-Palisade.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.f)"
+            class="f all"
+            src="Home-gallary/Audi-Q7.avif"
+          />
+
+          <img
+            onmouseover="ShowCarsName(this,kan.g)"
+            class="g all"
+            src="Home-gallary/BMW-7series.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.h)"
+            class="h all"
+            src="Home-gallary/Mercedes-Benz-E-Class.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.i)"
+            class="i all"
+            src="Home-gallary/Hyundai-Tucson.avif"
+            alt=""
+          />
+
+          <img
+            onmouseover="ShowCarsName(this,kan.j)"
+            class="j all"
+            src="Home-gallary/Audi-SQ8.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.k)"
+            class="k all"
+            src="Home-gallary/BMW-i5.jpg"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.l)"
+            class="l all"
+            src="Home-gallary/Mercedes-Benz-G-Class.avif"
+          />
+
+          <img
+            onmouseover="ShowCarsName(this,kan.m)"
+            class="m all"
+            src="Home-gallary/Hyundai-Sonata.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.n)"
+            class="n all"
+            src="Home-gallary/Audi-S8.jpg"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.o)"
+            class="o all"
+            src="Home-gallary/BMW-X3.avif"
+          />
+
+          <img
+            onmouseover="ShowCarsName(this,kan.p)"
+            class="p all"
+            src="Home-gallary/Mercedes-Benz-Maybach.jpg"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.q)"
+            class="q all"
+            src="Home-gallary/Hyundai-SantaFe.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.r)"
+            class="r all"
+            src="Home-gallary/Audi-TT.avif"
+          />
+
+          <img
+            onmouseover="ShowCarsName(this,kan.s)"
+            class="s all"
+            src="Home-gallary/BMW-X5.avif"
+          />
+          <img
+            onmouseover="ShowCarsName(this,kan.t)"
+            class="t all"
+            src="Home-gallary/Mercedes-Benz-S-Class.avif"
+          />
+          <img id="imgbigers" class="imgbigers" src="img/Website-icon.webp" />
+        </div>
       </div>
     </div>
-  </footer>
-  <script src="home.js"></script>
-</body>
+    <footer>
+      <div class="search-div">
+        <input type="search" placeholder="Search" />
+        <span class="fill"></span>
+      </div>
 
+      <div class="about">
+        <p data-key="p2" class="p2"></p>
+        <p data-key="p3"></p>
+      </div>
+
+      <h2 data-key="links"></h2>
+      <div class="links">
+        <a
+          id="email"
+          class="a2"
+          href="mailto:"
+          title="تواصل معنا عبر البريد الإلكتروني"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a id="facebook" class="a2" href="" title="صفحتنا على الفيسبوك"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a id="instagram" class="a2" href="" title="حسابنا على الانستغرام"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a id="about" class="a2" href="" title="أسئلة شائعة"
+          ><i class="fa-solid fa-question"></i
+        ></a>
+        <a id="phone" class="a2" href="" title="اتصل عبر الهاتف"
+          ><i class="fa-solid fa-phone-volume"></i
+        ></a>
+      </div>
+
+      <div class="direction">
+        <div class="Services-blog">
+          <h2 data-key="Services"></h2>
+          <a data-key="ServicesBlog1" href=""></a>
+          <a data-key="ServicesBlog2" href=""></a>
+          <h2 data-key="blog">Blog</h2>
+          <a data-key="ServicesBlog3" href=""></a>
+          <a data-key="ServicesBlog4" href=""></a>
+          <a data-key="ServicesBlog5" href=""></a>
+        </div>
+
+        <div class="privacy">
+          <h2 data-key="site"></h2>
+          <a data-key="privacy1" href=""></a>
+          <a data-key="privacy2" href=""></a>
+          <a data-key="privacy3" href=""></a>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941508468105!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a1234567%3A0xabcdef1234567890!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
+            width="100%"
+            height="200"
+            loading="lazy"
+            title="Our title"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </footer>
+    <script src="home.js"></script>
+  </body>
 </html>
