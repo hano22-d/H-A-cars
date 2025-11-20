@@ -333,9 +333,6 @@ Sections.forEach((a, index) => {
   });
 });
 
-<<<<<<< HEAD
 let template = document.getElementById('tem1');
 let clone = template.content.cloneNode(true);
 document.body.appendChild(clone);
-=======
->>>>>>> 61be182c54ddc6dcf5489ad3e22cb327724c6d50
