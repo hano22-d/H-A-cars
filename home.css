@@ -303,12 +303,14 @@ header {
   padding: 10px;
   background-color: var(--window-color);
   border: 5px double var(--button-color);
-  border-radius: 5px;
+  border-radius: 30px 5px 30px 5px;
   position: absolute;
   top: 15%;
   right: 5%;
   opacity: 0;
+  transform: translateY(-30px);
   visibility: hidden;
+  transition: 0.4s ease;
 }
 
 .div2 button {
@@ -347,6 +349,20 @@ header {
 }
 .div1 a:hover {
   color: blue;
+}
+.templateShow {
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease;
+  transform: translateY(0);
+}
+.bodyOverlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+.loginHidden {
+  opacity: 0;
 }
 /*شريط متنقل*/
 
