@@ -349,6 +349,7 @@ Sections.forEach((a, index) => {
   });
 });
 
+let overlay = document.getElementsByClassName("overlay")[0];
 let loginBtn = document.getElementById("loginBtn");
 let template = document.getElementById("tem1");
 let clone = template.content.cloneNode(true);
@@ -357,21 +358,35 @@ document.body.appendChild(clone);
 
 function loginWindow() {
   div1.classList.add("templateShow");
-  document.body.classList.add("bodyOverlay");
+  overlay.classList.add("overlayShow");
 }
 function loginHidden() {
   div1.classList.remove("templateShow");
-  document.body.classList.remove("bodyOverlay");
+  overlay.classList.remove("overlayShow");
 }
-let check = true;
 loginBtn.onclick = function () {
-  if (check === true) {
-    loginWindow();
-    check = false;
-  } else {
-    loginHidden();
-    check = true
-  }
+  loginWindow();
 };
+overlay.addEventListener("click", () => loginHidden());
 
+let buttonLogin = div1.querySelector(`#sendLoginData`);
 
+let checkInput = div1.querySelectorAll(`input`);
+
+function errorValue(input0) {
+  input0.style.border = `2.5px solid red`;
+}
+
+function successValue(input1) {
+  input1.style.border = `2.5px solid green`;
+}
+
+buttonLogin.onclick = function () {
+  checkInput.forEach((input) => {
+    if (input.value === "") {
+      errorValue(input);
+    } else {
+      successValue(input);
+    }
+  });
+};
