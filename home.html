@@ -21,44 +21,49 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
-<body>
-  <template id="tem1">
-    <div class="div1">
-      <h2>Welcome to H & A CARS</h2>
-      <div class="div2">
-        <button class="google"><i class="fa-brands fa-google"></i></button>
-        <button class="faceBook">
-          <i class="fa-brands fa-facebook"></i>
+  <body>
+    <template id="tem1">
+      <div class="div1">
+        <h2>Welcome to H & A CARS</h2>
+        <div class="div2">
+          <button class="google"><i class="fa-brands fa-google"></i></button>
+          <button class="faceBook">
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+          <button class="gitHub"><i class="fa-brands fa-github"></i></button>
+        </div>
+        <input type="text" placeholder="user" />
+        <input type="password" placeholder="password" />
+        <button class="">Login</button>
+        <a href="">Forget the password?</a>
+      </div>
+    </template>
+    <button id="scroolZer" class="scroolZero">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <header id="header">
+      <div class="material">
+        <div class="icon">
+          <img src="img/Main-Logo.png" alt="" />
+        </div>
+        <input
+          id="headerSearch"
+          class="header_search"
+          type="search"
+          placeholder="search"
+        />
+        <button id="headerSubmit" class="header_submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        <button class="gitHub"><i class="fa-brands fa-github"></i></button>
+        <div class="setting">
+          <button id="loginBtn"><i class="fa-solid fa-user"></i></button>
+          <button id="darkmoodBtn"></button>
+          <select id="selectlan">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
+          </select>
+        </div>
       </div>
-      <input type="text" placeholder="user" />
-      <input type="password" placeholder="password" />
-      <button class="loginBtn">Login</button>
-      <a href="">Forget the password?</a>
-    </div>
-  </template>
-  <button id="scroolZer" class="scroolZero">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-  <header id="header">
-    <div class="material">
-      <div class="icon">
-        <img src="img/Main-Logo.png" alt="" />
-      </div>
-      <input id="headerSearch" class="header_search" type="search" placeholder="search" />
-      <button id="headerSubmit" class="header_submit">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-      <div class="setting">
-        <button><i class="fa-solid fa-user"></i></button>
-        <button id="darkmoodBtn"></button>
-        <select id="selectlan">
-          <option value="English">English</option>
-          <option value="Arabic">Arabic</option>
-        </select>
-      </div>
-    </div>
 
     <div class="tab">
       <a data-key="home" class="a1" href="home.html"></a>

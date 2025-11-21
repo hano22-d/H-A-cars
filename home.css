@@ -317,17 +317,21 @@ header {
   box-shadow: 0 0 0 0;
   font-size: 1.7rem;
 }
+
 .div2 button::before {
   top: 0;
   left: 0;
   width: 0;
 }
+
 .faceBook i:hover {
   color: blue;
 }
+
 .google i:hover {
   color: green;
 }
+
 .gitHub i:hover {
   color: black;
 }
@@ -341,13 +345,33 @@ header {
   width: 75%;
   height: 20px;
 }
+
 .div1 a {
   text-decoration: none;
   color: #111;
 }
+
 .div1 a:hover {
   color: blue;
 }
+
+.templateShow {
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease;
+  transform: translateY(0);
+}
+
+.bodyOverlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+
+.loginHidden {
+  opacity: 0;
+}
+
 /*شريط متنقل*/
 
 .infobar {
@@ -507,11 +531,9 @@ header {
   box-shadow: 0 0 10px 2px black;
   margin: 0 15px;
   background-size: cover;
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.87) 22%,
-      transparent 55%
-    ),
+      transparent 55%),
     url(img/new-palisade-15.jpg);
 }
 
@@ -867,7 +889,7 @@ footer {
   border-radius: 5px;
 }
 
-.search-div input:focus ~ .fill {
+.search-div input:focus~.fill {
   width: 100%;
 }
 
@@ -1318,7 +1340,7 @@ footer {
     border-radius: 5px;
   }
 
-  .search-div input:focus ~ .fill {
+  .search-div input:focus~.fill {
     width: 100%;
   }
 
