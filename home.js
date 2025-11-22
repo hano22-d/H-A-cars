@@ -369,8 +369,8 @@ loginBtn.onclick = function () {
 };
 overlay.addEventListener("click", () => loginHidden());
 
-let buttonLogin = div1.querySelector(`#sendLoginData`);
 
+let buttonLogin = div1.querySelector(`#sendLoginData`);
 let checkInput = div1.querySelectorAll(`input`);
 
 function errorValue(input0) {
