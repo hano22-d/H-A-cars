@@ -349,44 +349,88 @@ Sections.forEach((a, index) => {
   });
 });
 
+
 let overlay = document.getElementsByClassName("overlay")[0];
 let loginBtn = document.getElementById("loginBtn");
 let template = document.getElementById("tem1");
 let clone = template.content.cloneNode(true);
 let div1 = clone.querySelector("div");
+let divout = clone.querySelector('.logout');
 document.body.appendChild(clone);
 
 function loginWindow() {
-  div1.classList.add("templateShow");
+  div1.classList.add("div1Show");
   overlay.classList.add("overlayShow");
 }
 function loginHidden() {
-  div1.classList.remove("templateShow");
+  div1.classList.remove("div1Show");
   overlay.classList.remove("overlayShow");
 }
-loginBtn.onclick = function () {
-  loginWindow();
-};
+loginBtn.addEventListener('click', () => loginWindow());
 overlay.addEventListener("click", () => loginHidden());
 
-
+let form = div1.querySelector('.formLogin')
+let checkInput = div1.querySelectorAll('input');
 let buttonLogin = div1.querySelector(`#sendLoginData`);
-let checkInput = div1.querySelectorAll(`input`);
 
-function errorValue(input0) {
-  input0.style.border = `2.5px solid red`;
-}
+//send Data
+function checkData() {
 
-function successValue(input1) {
-  input1.style.border = `2.5px solid green`;
-}
+  let resultCheck = true;
 
-buttonLogin.onclick = function () {
   checkInput.forEach((input) => {
-    if (input.value === "") {
-      errorValue(input);
+    if (input.value.trim() === '') {
+      resultCheck = false;
+      input.classList.add('errorValue');
+      input.classList.remove('succesValue');
     } else {
-      successValue(input);
+      input.classList.remove('errorValue');
+      input.classList.add('succesValue');
     }
   });
+
+  let value = checkInput[0].value;
+
+  if (!/[a-zA-Z]/.test(value) || !/[@]/.test(value) || !/\d/.test(value)) {
+    resultCheck = false;
+    checkInput[0].classList.add('errorValue');
+    checkInput[0].classList.remove('succesValue');
+  } else {
+    checkInput[0].classList.remove('errorValue');
+    checkInput[0].classList.add('succesValue');
+  }
+  if (checkInput[1].value !== checkInput[2].value || checkInput[1].value.length < 8) {
+    resultCheck = false;
+    checkInput[1].classList.add('errorValue');
+    checkInput[2].classList.add('errorValue');
+    checkInput[1].classList.remove('succesValue');
+    checkInput[2].classList.remove('succesValue');
+  }
+  else {
+    checkInput[1].classList.remove('errorValue');
+    checkInput[2].classList.remove('errorValue');
+    checkInput[1].classList.add('succesValue');
+    checkInput[2].classList.add('succesValue');
+  }
+  return resultCheck
 };
+
+checkInput.forEach(input => {
+  input.addEventListener('keyup', () => checkData())
+})
+
+form.addEventListener('submit', (e) => {
+  if (checkData()) {
+    divout.classList.add("logoutShow");
+    div1.classList.remove("div1Show");
+    setTimeout(_ => {
+      divout.classList.remove("logoutShow");
+      overlay.classList.remove('overlayShow')
+    }, 2000)
+  } else {
+    e.preventDefault();
+  }
+})
+
+
+

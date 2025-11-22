@@ -291,6 +291,7 @@ header {
   gap: 7rem;
 }
 
+/*Template-login Window*/
 .div1 {
   z-index: 10;
   width: 300px;
@@ -303,12 +304,21 @@ header {
   padding: 10px;
   background-color: var(--window-color);
   border: 5px double var(--button-color);
-  border-radius: 5px;
+  border-radius: 10% 1% 10% 1%;
   position: absolute;
   top: 15%;
   right: 5%;
+  transform: translateY(-30px);
   opacity: 0;
   visibility: hidden;
+}
+
+.div1Show {
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease;
+  transform: translateY(0);
 }
 
 .div2 button {
@@ -341,17 +351,11 @@ header {
   text-shadow: 1px 1px 1px black;
 }
 
-.div1 input {
-  padding: 3px;
-  width: 75%;
-  height: 20px;
-  border: none;
-  border-radius: 5px;
-}
 .div1 input:focus::placeholder {
-  letter-spacing: 2px;
-  transition: 0.2s ease;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
 }
+
 .div1 a {
   text-decoration: none;
   color: #111;
@@ -361,29 +365,108 @@ header {
   color: blue;
 }
 
-.templateShow {
-  position: fixed;
-  opacity: 1;
-  visibility: visible;
-  transition: 0.4s ease;
-  transform: translateY(0);
-}
-.loginHidden {
-  opacity: 0;
-}
 .overlay {
   position: fixed;
   inset: 0;
   opacity: 0;
   transition: 0.2s ease;
 }
+
 .overlayShow {
   z-index: 5;
   position: fixed;
   opacity: 1;
-   background: rgba(0,0,0,0.5);
-   transition: 0.2s ease;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease;
 }
+
+.errorValue {
+  border: 1.5px solid red;
+  box-shadow: 0 0 7px 0 rgb(214, 5, 5);
+  animation: error 3s 1 ease-in-out normal;
+  transition: 0.4s ease;
+}
+
+@keyframes error {
+  0% {
+    box-shadow: 0 0 7px 2px rgb(214, 5, 5);
+  }
+
+  25% {
+    box-shadow: 0 0 7px 1.5px rgb(214, 5, 5);
+  }
+
+  50% {
+    box-shadow: 0 0 7px 1px rgb(214, 5, 5);
+  }
+
+  75% {
+    box-shadow: 0 0 7px 0.5px rgb(214, 5, 5);
+  }
+
+  100% {
+    box-shadow: 0 0 7px 0 rgb(214, 5, 5);
+  }
+}
+
+.succesValue {
+  border: 1.5px solid green !important
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.formLogin input {
+  padding: 3px;
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.logout {
+  z-index: 10;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: var(--window-color);
+  border: 5px double var(--button-color);
+  border-radius: 10% 1% 10% 1%;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease;
+  transform: translateY(-30px);
+}
+
+.logoutShow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.logout h2 {
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.logout i {
+  font-size: 3.5rem;
+}
+
 /*شريط متنقل*/
 
 .infobar {
