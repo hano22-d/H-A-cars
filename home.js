@@ -349,7 +349,7 @@ Sections.forEach((a, index) => {
   });
 });
 
-
+//  Login system  //
 let overlay = document.getElementsByClassName("overlay")[0];
 let loginBtn = document.getElementById("loginBtn");
 let template = document.getElementById("tem1");
@@ -358,71 +358,101 @@ let div1 = clone.querySelector("div");
 let divout = clone.querySelector('.logout');
 document.body.appendChild(clone);
 
+let form = div1.querySelector('.formLogin')
+let checkInput = div1.querySelectorAll('input');
+let buttonLogin = div1.querySelector(`#sendLoginData`);
+let logout = false;
+
+//Window display function
 function loginWindow() {
   div1.classList.add("div1Show");
   overlay.classList.add("overlayShow");
 }
+//Window hiding function
 function loginHidden() {
   div1.classList.remove("div1Show");
   overlay.classList.remove("overlayShow");
 }
-loginBtn.addEventListener('click', () => loginWindow());
-overlay.addEventListener("click", () => loginHidden());
+//Logout function
+function logOut() {
+  let WindowOut = document.createElement('div');
+  let divButtons = document.createElement('div')
+  let yes = document.createElement('button');
+  let no = document.createElement('button');
+  let textOut = document.createElement('h2');
+  textOut.innerText = 'Are you sure you want to log out?'
+  yes.innerText = 'Yes';
+  no.innerText = 'No';
+  divButtons.appendChild(yes);
+  divButtons.appendChild(no);
+  WindowOut.appendChild(textOut)
+  WindowOut.appendChild(divButtons);
+  WindowOut.classList.add('windowOut');
+  divButtons.classList.add('divButtons');
+  document.body.appendChild(WindowOut)
 
-let form = div1.querySelector('.formLogin')
-let checkInput = div1.querySelectorAll('input');
-let buttonLogin = div1.querySelector(`#sendLoginData`);
+  overlay.classList.add("overlayShow");
 
-//send Data
+  yes.onclick = function () {
+    overlay.classList.remove("overlayShow");
+    logout = false;
+    loginBtn.innerHTML = '<i class="fa-solid fa-user"></i>';
+    WindowOut.classList.remove('windowOut');
+    divButtons.classList.remove('divButtons');
+  }
+  no.onclick = _ => {
+    overlay.classList.remove("overlayShow");
+    WindowOut.classList.remove('windowOut');
+    divButtons.classList.remove('divButtons');
+  }
+}
+//Function to add classes to fields
+function setState(input, valid) {
+  if (!valid) {
+    input.classList.add('succesValue');
+    input.classList.remove('errorValue');
+  } else {
+    input.classList.remove('succesValue');
+    input.classList.add('errorValue');
+  }
+}
+//Data validation function
 function checkData() {
 
   let resultCheck = true;
 
   checkInput.forEach((input) => {
-    if (input.value.trim() === '') {
-      resultCheck = false;
-      input.classList.add('errorValue');
-      input.classList.remove('succesValue');
-    } else {
-      input.classList.remove('errorValue');
-      input.classList.add('succesValue');
-    }
+    let inValid = input.value.trim() === '';
+    inValid ? resultCheck = false : '';
+    setState(input, inValid)
   });
 
-  let value = checkInput[0].value;
+  let email = checkInput[0].value
+  let emailValid = !/[a-zA-Z]/.test(email) || !/[@]/.test(email) || !/\d/.test(email);
+  emailValid ? resultCheck = false : '';
+  setState(checkInput[0], emailValid)
 
-  if (!/[a-zA-Z]/.test(value) || !/[@]/.test(value) || !/\d/.test(value)) {
-    resultCheck = false;
-    checkInput[0].classList.add('errorValue');
-    checkInput[0].classList.remove('succesValue');
-  } else {
-    checkInput[0].classList.remove('errorValue');
-    checkInput[0].classList.add('succesValue');
-  }
-  if (checkInput[1].value !== checkInput[2].value || checkInput[1].value.length < 8) {
-    resultCheck = false;
-    checkInput[1].classList.add('errorValue');
-    checkInput[2].classList.add('errorValue');
-    checkInput[1].classList.remove('succesValue');
-    checkInput[2].classList.remove('succesValue');
-  }
-  else {
-    checkInput[1].classList.remove('errorValue');
-    checkInput[2].classList.remove('errorValue');
-    checkInput[1].classList.add('succesValue');
-    checkInput[2].classList.add('succesValue');
-  }
+  let Password = checkInput[1].value;
+  let rePassword = checkInput[2].value;
+  let passWordValid = Password !== rePassword || Password.length < 8;
+  passWordValid ? resultCheck = false : '';
+  setState(checkInput[1], passWordValid);
+  setState(checkInput[2], passWordValid);
+
   return resultCheck
 };
 
-checkInput.forEach(input => {
-  input.addEventListener('keyup', () => checkData())
-})
+loginBtn.addEventListener('click', () => !logout ? loginWindow() : logOut())
+overlay.addEventListener("click", () => !logout ? loginHidden() : '')
+checkInput.forEach(input => { input.addEventListener('keyup', _ => checkData()) })
 
+//send data
 form.addEventListener('submit', (e) => {
   if (checkData()) {
+    logout = true;
     divout.classList.add("logoutShow");
     div1.classList.remove("div1Show");
+    loginBtn.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i>';
     setTimeout(_ => {
       divout.classList.remove("logoutShow");
       overlay.classList.remove('overlayShow')
