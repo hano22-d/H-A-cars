@@ -428,7 +428,7 @@ function checkData() {
   });
 
   let email = checkInput[0].value
-  let emailValid = !/[a-zA-Z]/.test(email) || !/[@]/.test(email) || !/\d/.test(email);
+  let emailValid = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   emailValid ? resultCheck = false : '';
   setState(checkInput[0], emailValid)
 
