@@ -1334,5 +1334,22 @@ function savedCars() {
 };
 savedCars()
 
+let divCard = document.querySelectorAll('.divcard');
+let compare = document.querySelector('.compare')
+
+let element = [divCard[0],divCard[1],compare]
+
+function showElement (element) {
+  window.addEventListener('scroll',() => {
+    let elementPosition = element.getBoundingClientRect();
+    if (elementPosition.top < window.innerHeight) {
+      element.classList.add('ShowElement');
+    }
+    else {
+      element.classList.remove('ShowElement');
+    }
+  })
+}
+element.forEach(el => showElement(el))
 
 

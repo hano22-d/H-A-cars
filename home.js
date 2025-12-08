@@ -462,5 +462,27 @@ form.addEventListener('submit', (e) => {
   }
 })
 
+/*Show element program*/
+let main2 = document.querySelectorAll('.main2');
+let gallery = document.querySelector('.img_gallery');
+let imgbig = document.querySelector('.imgbigers');
+let title1 = document.querySelector('.title1')
+let big_photo = document.querySelector('.big_photo');
+let pictures = document.querySelector('.pictures');
+
+let element = [main2[0], main2[1], gallery, imgbig, title1, big_photo, pictures];
+
+function ShowElement(element) {
+  window.addEventListener("scroll", () => {
+    let elementPosition = element.getBoundingClientRect();
+    if (elementPosition.top < window.innerHeight - 200) {
+      element.classList.add('ShowElement')
+    }
+    else {
+      element.classList.remove('ShowElement')
+    }
+  });
+}
+element.forEach(el => ShowElement(el));
 
 

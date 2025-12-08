@@ -286,7 +286,10 @@ h1 {
     "card3  listdiv card4"
     "footer footer footer";
 }
-
+.cards {
+  opacity: 0;
+  transform: translateY(-50px);
+}
 .card1 {
   text-align: center;
   padding: 25px;
@@ -419,6 +422,8 @@ h1 {
   padding: 20px;
   border-radius: 12px;
   grid-area: listdiv;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .listdiv h1 {
@@ -638,6 +643,12 @@ footer {
 .scroolZero i {
   position: relative;
   right: 5px;
+}
+/*أظهار العناصر بسلاسة*/
+.ShowElement {
+  opacity: 1;
+  transform: translate(0,0);
+  transition: 0.7s ease;
 }
 
 /*Responsive to mobile*/

@@ -359,6 +359,8 @@ header {
   padding: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .car_card2 {
@@ -374,6 +376,8 @@ header {
   padding: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .card_button {
@@ -520,6 +524,8 @@ input.error::placeholder {
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .car_card3 {
@@ -771,7 +777,12 @@ footer {
   position: relative;
   right: 5px;
 }
-
+/*أظهار العناصر بسلاسة*/
+.ShowElement {
+  opacity: 1;
+  transform: translate(0,0);
+  transition: 0.7s ease;
+}
 
 /*Responsive to mobile*/
 @media (max-width: 600px) {

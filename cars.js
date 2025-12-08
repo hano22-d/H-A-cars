@@ -269,3 +269,21 @@ Sections.forEach((a, index) => {
   });
 });
 
+
+/*Show element program*/
+let cards = document.querySelectorAll('.cards');
+let listDiv = document.querySelector('.listdiv');
+const element = [cards[0], cards[1], cards[2], cards[3], listDiv];
+
+function ShowElement(element) {
+  window.addEventListener('scroll', () => {
+    let elementPosition = element.getBoundingClientRect();
+    if (elementPosition.top < window.innerHeight && elementPosition.bottom > 0) {
+      element.classList.add('ShowElement');
+    }
+    else {
+      element.classList.remove('ShowElement');
+    }
+  })
+}
+element.forEach(el => ShowElement(el));
