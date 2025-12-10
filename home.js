@@ -475,7 +475,7 @@ let element = [main2[0], main2[1], gallery, imgbig, title1, big_photo, pictures]
 function ShowElement(element) {
   window.addEventListener("scroll", () => {
     let elementPosition = element.getBoundingClientRect();
-    if (elementPosition.top < window.innerHeight - 200) {
+    if (elementPosition.top < window.innerHeight - 200 && elementPosition.bottom > 0) {
       element.classList.add('ShowElement')
     }
     else {

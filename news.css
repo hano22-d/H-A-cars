@@ -300,6 +300,8 @@ header {
   display: flex;
   flex-direction: column;
   margin: 15px;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .dinamic_news_image {
@@ -338,7 +340,8 @@ header {
   height: 200px;
   display: flex;
   flex-direction: column;
-
+ opacity: 0;
+  transform: translateY(50px);
 }
 
 .result_filters {
@@ -451,6 +454,8 @@ header {
   align-items: center;
   justify-content: center;
   gap: 20px;
+   opacity: 0;
+  transform: translateY(50px);
 }
 
 .fixed_ntext {
@@ -646,7 +651,12 @@ footer {
   position: relative;
   right: 5px;
 }
-
+/*أظهار العناصر بسلاسة*/
+.ShowElement {
+  opacity: 1;
+  transform: translate(0,0);
+  transition: 0.7s ease;
+}
 
 /*Responsive to mobile*/
 @media (max-width: 600px) {

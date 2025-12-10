@@ -1342,7 +1342,7 @@ let element = [divCard[0],divCard[1],compare]
 function showElement (element) {
   window.addEventListener('scroll',() => {
     let elementPosition = element.getBoundingClientRect();
-    if (elementPosition.top < window.innerHeight) {
+    if (elementPosition.top < window.innerHeight && elementPosition.bottom > 0) {
       element.classList.add('ShowElement');
     }
     else {
